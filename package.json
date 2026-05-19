@@ -1,0 +1,14 @@
+{
+  "name": "aignal-feed-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate-feed": "node scripts/generate-feed.mjs",
+    "validate-feed": "node scripts/validate-feed.mjs",
+    "check-feed": "npm run generate-feed -- --sample --date=2026-05-19 && npm run validate-feed -- --date=2026-05-19"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

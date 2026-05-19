@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000010000000000000001 /* AignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000001 /* AignalApp.swift */; };
+		1A0000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000002 /* ContentView.swift */; };
+		1A0000010000000000000003 /* NewsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000003 /* NewsCategory.swift */; };
+		1A0000010000000000000004 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000004 /* NewsItem.swift */; };
+		1A0000010000000000000005 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000005 /* AppLanguage.swift */; };
+		1A0000010000000000000006 /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000006 /* LanguageSettings.swift */; };
+		1A0000010000000000000007 /* SavedItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000007 /* SavedItemsStore.swift */; };
+		1A0000010000000000000008 /* NewsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000008 /* NewsStore.swift */; };
+		1A0000010000000000000009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000009 /* HomeView.swift */; };
+		1A000001000000000000000A /* NewsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000A /* NewsCardView.swift */; };
+		1A000001000000000000000B /* NewsVisualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000B /* NewsVisualView.swift */; };
+		1A000001000000000000000C /* NewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000C /* NewsDetailView.swift */; };
+		1A000001000000000000000D /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000D /* SavedView.swift */; };
+		1A000001000000000000000E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000E /* SettingsView.swift */; };
+		1A000001000000000000000F /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000101000000000000000F /* FlowLayout.swift */; };
+		1A0000010000000000000010 /* news_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000010 /* news_sample.json */; };
+		1A0000010000000000000011 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000011 /* Localizable.xcstrings */; };
+		1A0000010000000000000012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000012 /* Assets.xcassets */; };
+		1A0000010000000000000013 /* AignalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001010000000000000013 /* AignalTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0000200000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0000400000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0000300000000000000001;
+			remoteInfo = Aignal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0001000000000000000001 /* Aignal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0001000000000000000002 /* AignalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AignalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0001010000000000000001 /* AignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AignalApp.swift; sourceTree = "<group>"; };
+		1A0001010000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0001010000000000000003 /* NewsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCategory.swift; sourceTree = "<group>"; };
+		1A0001010000000000000004 /* NewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
+		1A0001010000000000000005 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		1A0001010000000000000006 /* LanguageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettings.swift; sourceTree = "<group>"; };
+		1A0001010000000000000007 /* SavedItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsStore.swift; sourceTree = "<group>"; };
+		1A0001010000000000000008 /* NewsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStore.swift; sourceTree = "<group>"; };
+		1A0001010000000000000009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000A /* NewsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000B /* NewsVisualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVisualView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000C /* NewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000D /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A000101000000000000000F /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		1A0001010000000000000010 /* news_sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news_sample.json; sourceTree = "<group>"; };
+		1A0001010000000000000011 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1A0001010000000000000012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0001010000000000000013 /* AignalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AignalTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000500000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000500000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000600000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1A0000600000000000000002 /* Aignal */,
+				1A0000600000000000000007 /* AignalTests */,
+				1A0000600000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000002 /* Aignal */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000001 /* AignalApp.swift */,
+				1A0001010000000000000002 /* ContentView.swift */,
+				1A0000600000000000000003 /* Models */,
+				1A0000600000000000000004 /* Services */,
+				1A0000600000000000000005 /* Views */,
+				1A0000600000000000000006 /* Resources */,
+				1A0001010000000000000012 /* Assets.xcassets */,
+			);
+			path = Aignal;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000003 /* NewsCategory.swift */,
+				1A0001010000000000000004 /* NewsItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000005 /* AppLanguage.swift */,
+				1A0001010000000000000006 /* LanguageSettings.swift */,
+				1A0001010000000000000007 /* SavedItemsStore.swift */,
+				1A0001010000000000000008 /* NewsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000009 /* HomeView.swift */,
+				1A000101000000000000000A /* NewsCardView.swift */,
+				1A000101000000000000000B /* NewsVisualView.swift */,
+				1A000101000000000000000C /* NewsDetailView.swift */,
+				1A000101000000000000000D /* SavedView.swift */,
+				1A000101000000000000000E /* SettingsView.swift */,
+				1A000101000000000000000F /* FlowLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000010 /* news_sample.json */,
+				1A0001010000000000000011 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000007 /* AignalTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001010000000000000013 /* AignalTests.swift */,
+			);
+			path = AignalTests;
+			sourceTree = "<group>";
+		};
+		1A0000600000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001000000000000000001 /* Aignal.app */,
+				1A0001000000000000000002 /* AignalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000300000000000000001 /* Aignal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000900000000000000002 /* Build configuration list for PBXNativeTarget "Aignal" */;
+			buildPhases = (
+				1A0000700000000000000001 /* Sources */,
+				1A0000500000000000000001 /* Frameworks */,
+				1A0000800000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aignal;
+			productName = Aignal;
+			productReference = 1A0001000000000000000001 /* Aignal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A0000300000000000000002 /* AignalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000900000000000000003 /* Build configuration list for PBXNativeTarget "AignalTests" */;
+			buildPhases = (
+				1A0000700000000000000002 /* Sources */,
+				1A0000500000000000000002 /* Frameworks */,
+				1A0000800000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0000210000000000000001 /* PBXTargetDependency */,
+			);
+			name = AignalTests;
+			productName = AignalTests;
+			productReference = 1A0001000000000000000002 /* AignalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000400000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1A0000300000000000000001 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					1A0000300000000000000002 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 1A0000300000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000900000000000000001 /* Build configuration list for PBXProject "Aignal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				zh-Hans,
+				Base,
+			);
+			mainGroup = 1A0000600000000000000001;
+			productRefGroup = 1A0000600000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000300000000000000001 /* Aignal */,
+				1A0000300000000000000002 /* AignalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000800000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000012 /* Assets.xcassets in Resources */,
+				1A0000010000000000000011 /* Localizable.xcstrings in Resources */,
+				1A0000010000000000000010 /* news_sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000800000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000700000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000001 /* AignalApp.swift in Sources */,
+				1A0000010000000000000002 /* ContentView.swift in Sources */,
+				1A0000010000000000000003 /* NewsCategory.swift in Sources */,
+				1A0000010000000000000004 /* NewsItem.swift in Sources */,
+				1A0000010000000000000005 /* AppLanguage.swift in Sources */,
+				1A0000010000000000000006 /* LanguageSettings.swift in Sources */,
+				1A0000010000000000000007 /* SavedItemsStore.swift in Sources */,
+				1A0000010000000000000008 /* NewsStore.swift in Sources */,
+				1A0000010000000000000009 /* HomeView.swift in Sources */,
+				1A000001000000000000000A /* NewsCardView.swift in Sources */,
+				1A000001000000000000000B /* NewsVisualView.swift in Sources */,
+				1A000001000000000000000C /* NewsDetailView.swift in Sources */,
+				1A000001000000000000000D /* SavedView.swift in Sources */,
+				1A000001000000000000000E /* SettingsView.swift in Sources */,
+				1A000001000000000000000F /* FlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000700000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000010000000000000013 /* AignalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0000210000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0000300000000000000001 /* Aignal */;
+			targetProxy = 1A0000200000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000910000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000910000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0000910000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_AIGNAL_FEED_BASE_URL = "https://ziboc.github.io/aignal-platform";
+				INFOPLIST_KEY_CFBundleDisplayName = Aignal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aignal.mobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A0000910000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_AIGNAL_FEED_BASE_URL = "https://ziboc.github.io/aignal-platform";
+				INFOPLIST_KEY_CFBundleDisplayName = Aignal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aignal.mobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1A0000910000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aignal.mobile.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aignal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aignal";
+			};
+			name = Debug;
+		};
+		1A0000910000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aignal.mobile.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aignal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aignal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000900000000000000001 /* Build configuration list for PBXProject "Aignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000910000000000000001 /* Debug */,
+				1A0000910000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000900000000000000002 /* Build configuration list for PBXNativeTarget "Aignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000910000000000000003 /* Debug */,
+				1A0000910000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000900000000000000003 /* Build configuration list for PBXNativeTarget "AignalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000910000000000000005 /* Debug */,
+				1A0000910000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000400000000000000001 /* Project object */;
+}
