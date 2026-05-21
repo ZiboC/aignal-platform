@@ -14,6 +14,16 @@ const generatedImageLimit = Number(process.env.OPENAI_IMAGE_LIMIT ?? args.imageL
 let generatedImageCount = 0;
 let openAITextDisabled = !openAIKey;
 let openAIImageDisabled = !openAIKey || !enableGeneratedImages || generatedImageLimit <= 0;
+const feedHeaders = {
+  "user-agent": "AignalFeedBot/0.1 (+https://github.com/ZiboC/aignal-platform)",
+  accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+};
+const pageHeaders = {
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+  "accept-language": "en-US,en;q=0.9",
+  "cache-control": "no-cache"
+};
 
 const categories = [
   "coding_ai",
@@ -93,6 +103,7 @@ if (validItems.length < 5) {
 }
 
 await publishFeed({ outDir, date, items: validItems });
+logImageStats(validItems);
 console.log(`Generated ${validItems.length} items for ${date}`);
 
 async function enrichSafely(record, category) {
@@ -110,7 +121,7 @@ async function collectRecords() {
   for (const source of sources) {
     try {
       const response = await fetch(source.url, {
-        headers: { "user-agent": "AignalFeedBot/0.1" }
+        headers: feedHeaders
       });
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       const xml = await response.text();
@@ -236,20 +247,32 @@ async function generateImage({ id, date, prompt, outDir }) {
 async function fetchSourcePageImage(record) {
   const url = record.originalUrl ?? record.sourceUrl;
   if (!url || /arxiv\.org\/(abs|pdf)\//i.test(url)) return null;
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 5000);
-    const response = await fetch(url, {
-      signal: controller.signal,
-      headers: { "user-agent": "AignalFeedBot/0.1" }
-    });
-    clearTimeout(timeout);
-    if (!response.ok) return null;
-    const html = await response.text();
-    return extractHTMLMetadataImage(html, url);
-  } catch {
-    return null;
+  for (const headers of [pageHeaders, feedHeaders]) {
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 5000);
+      const response = await fetch(url, {
+        signal: controller.signal,
+        headers,
+        redirect: "follow"
+      });
+      clearTimeout(timeout);
+      if (!response.ok) continue;
+      const html = await response.text();
+      const imageURL = extractHTMLMetadataImage(html, url);
+      if (imageURL) return imageURL;
+    } catch {
+      continue;
+    }
   }
+  return null;
+}
+
+function logImageStats(items) {
+  const withImages = items.filter((item) => item.image_url).length;
+  const sourceImages = items.filter((item) => item.image_source === "source").length;
+  const generatedImages = items.filter((item) => item.image_source === "generated").length;
+  console.log(`Image stats: ${withImages}/${items.length} with image_url, ${sourceImages} source, ${generatedImages} generated`);
 }
 
 function extractSourceImage(block, rawSummary) {

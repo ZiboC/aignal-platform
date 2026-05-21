@@ -30,14 +30,13 @@ final class NewsStore: ObservableObject {
     }
 
     nonisolated static var defaultFeedBaseURL: URL? {
-        guard
-            let value = Bundle.main.object(forInfoDictionaryKey: "AIGNAL_FEED_BASE_URL") as? String,
-            !value.isEmpty
-        else {
-            return nil
+        if let value = Bundle.main.object(forInfoDictionaryKey: "AIGNAL_FEED_BASE_URL") as? String,
+           !value.isEmpty,
+           let url = URL(string: value) {
+            return url
         }
 
-        return URL(string: value)
+        return URL(string: "https://ziboc.github.io/aignal-platform")
     }
 
     func items(in category: NewsCategory?) -> [NewsItem] {
@@ -146,7 +145,10 @@ final class NewsStore: ObservableObject {
     }
 
     private func fetchData(from url: URL) async throws -> Data {
-        let (data, response) = try await urlSession.data(from: url)
+        var request = URLRequest(url: url)
+        request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
+        request.timeoutInterval = 20
+        let (data, response) = try await urlSession.data(for: request)
         guard let httpResponse = response as? HTTPURLResponse,
               (200..<300).contains(httpResponse.statusCode) else {
             throw URLError(.badServerResponse)
