@@ -9,6 +9,8 @@ const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
+let openAITextDisabled = !openAIKey;
+let openAIImageDisabled = !openAIKey;
 
 const categories = [
   "coding_ai",
@@ -35,15 +37,15 @@ const items = [];
 
 for (const [index, record] of deduped.entries()) {
   const classified = classify(record);
-  const enriched = openAIKey
-    ? await enrichWithOpenAI(record, classified.category)
-    : heuristicEnrichment(record, classified.category);
+  const enriched = openAITextDisabled
+    ? heuristicEnrichment(record, classified.category)
+    : await enrichSafely(record, classified.category);
 
   const id = stableId(`${date}-${record.originalUrl ?? record.sourceUrl ?? record.title}`);
   const imagePrompt = buildImagePrompt(enriched.titleEn, classified.category);
   let imageUrl = record.imageUrl ?? null;
 
-  if (!imageUrl && openAIKey) {
+  if (!imageUrl && !openAIImageDisabled) {
     imageUrl = await generateImage({ id, date, prompt: imagePrompt, outDir });
   }
 
@@ -78,6 +80,16 @@ if (validItems.length < 5) {
 
 await publishFeed({ outDir, date, items: validItems });
 console.log(`Generated ${validItems.length} items for ${date}`);
+
+async function enrichSafely(record, category) {
+  try {
+    return await enrichWithOpenAI(record, category);
+  } catch (error) {
+    openAITextDisabled = true;
+    console.warn(`OpenAI text generation unavailable, using heuristic content: ${error.message}`);
+    return heuristicEnrichment(record, category);
+  }
+}
 
 async function collectRecords() {
   const collected = [];
@@ -188,7 +200,9 @@ async function generateImage({ id, date, prompt, outDir }) {
     })
   });
   if (!response.ok) {
-    console.warn(`Image generation failed for ${id}: ${response.status} ${await response.text()}`);
+    const body = await response.text();
+    openAIImageDisabled = true;
+    console.warn(`Image generation failed for ${id}: ${response.status} ${body}`);
     return null;
   }
   const data = await response.json();
