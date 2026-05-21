@@ -9,8 +9,11 @@ const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
+const enableGeneratedImages = parseBoolean(process.env.ENABLE_OPENAI_IMAGES ?? args.generateImages ?? "false");
+const generatedImageLimit = Number(process.env.OPENAI_IMAGE_LIMIT ?? args.imageLimit ?? 0);
+let generatedImageCount = 0;
 let openAITextDisabled = !openAIKey;
-let openAIImageDisabled = !openAIKey;
+let openAIImageDisabled = !openAIKey || !enableGeneratedImages || generatedImageLimit <= 0;
 
 const categories = [
   "coding_ai",
@@ -44,9 +47,19 @@ for (const [index, record] of deduped.entries()) {
   const id = stableId(`${date}-${record.originalUrl ?? record.sourceUrl ?? record.title}`);
   const imagePrompt = buildImagePrompt(enriched.titleEn, classified.category);
   let imageUrl = record.imageUrl ?? null;
+  let imageSource = record.imageSource ?? (imageUrl ? "source" : null);
 
-  if (!imageUrl && !openAIImageDisabled) {
+  if (!imageUrl) {
+    imageUrl = await fetchSourcePageImage(record);
+    if (imageUrl) imageSource = "source";
+  }
+
+  if (!imageUrl && !openAIImageDisabled && generatedImageCount < generatedImageLimit) {
     imageUrl = await generateImage({ id, date, prompt: imagePrompt, outDir });
+    if (imageUrl) {
+      imageSource = "generated";
+      generatedImageCount += 1;
+    }
   }
 
   items.push({
@@ -64,6 +77,7 @@ for (const [index, record] of deduped.entries()) {
     published_at: record.publishedAt,
     image_name: classified.category,
     image_url: imageUrl,
+    image_source: imageSource,
     image_prompt: imagePrompt,
     confidence: enriched.confidence,
     tags: buildTags(classified.category, record.title).slice(0, 5)
@@ -113,9 +127,10 @@ function parseRSS(xml, source) {
   return itemBlocks.map((block) => {
     const title = cleanXML(pick(block, "title")) || "Untitled AI update";
     const link = cleanXML(pick(block, "link")) || attr(block, "link", "href");
-    const summary = cleanXML(pick(block, "description") || pick(block, "summary") || pick(block, "content"));
+    const rawSummary = pick(block, "description") || pick(block, "summary") || pick(block, "content") || pick(block, "content:encoded");
+    const summary = cleanXML(rawSummary);
     const published = cleanXML(pick(block, "pubDate") || pick(block, "published") || pick(block, "updated"));
-    const imageUrl = attr(block, "media:content", "url") || attr(block, "enclosure", "url");
+    const imageUrl = extractSourceImage(block, rawSummary);
 
     return {
       title,
@@ -124,6 +139,7 @@ function parseRSS(xml, source) {
       sourceUrl: link,
       originalUrl: link,
       imageUrl,
+      imageSource: imageUrl ? "source" : null,
       publishedAt: published ? new Date(published).toISOString() : `${date}T08:00:00Z`,
       fallbackCategory: source.category
     };
@@ -215,6 +231,64 @@ async function generateImage({ id, date, prompt, outDir }) {
   return publicBaseURL
     ? `${publicBaseURL.replace(/\/$/, "")}${relativePath}`
     : relativePath;
+}
+
+async function fetchSourcePageImage(record) {
+  const url = record.originalUrl ?? record.sourceUrl;
+  if (!url || /arxiv\.org\/(abs|pdf)\//i.test(url)) return null;
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: { "user-agent": "AignalFeedBot/0.1" }
+    });
+    clearTimeout(timeout);
+    if (!response.ok) return null;
+    const html = await response.text();
+    return extractHTMLMetadataImage(html, url);
+  } catch {
+    return null;
+  }
+}
+
+function extractSourceImage(block, rawSummary) {
+  const candidates = [
+    attr(block, "media:content", "url", { typePrefix: "image/" }),
+    attr(block, "media:thumbnail", "url"),
+    attr(block, "enclosure", "url", { typePrefix: "image/" }),
+    attr(block, "image", "url"),
+    imageFromHTML(rawSummary),
+    imageFromHTML(block)
+  ];
+  return candidates.find(isUsableImageURL) ?? null;
+}
+
+function extractHTMLMetadataImage(html, pageURL) {
+  const candidates = [
+    metaContent(html, "property", "og:image"),
+    metaContent(html, "property", "og:image:url"),
+    metaContent(html, "name", "twitter:image"),
+    metaContent(html, "name", "twitter:image:src"),
+    imageFromHTML(html)
+  ];
+  const resolved = candidates
+    .filter(Boolean)
+    .map((candidate) => resolveURL(candidate, pageURL));
+  return resolved.find(isUsableImageURL) ?? null;
+}
+
+function metaContent(html, attrName, attrValue) {
+  const pattern = new RegExp(`<meta\\b(?=[^>]*\\s${attrName}=["']${escapeRegExp(attrValue)}["'])(?=[^>]*\\scontent=["']([^"']+)["'])[^>]*>`, "i");
+  return decodeEntities(html.match(pattern)?.[1] ?? "");
+}
+
+function resolveURL(value, baseURL) {
+  try {
+    return new URL(value, baseURL).toString();
+  } catch {
+    return value;
+  }
 }
 
 function inferPagesBaseURL() {
@@ -314,25 +388,59 @@ function normalize(value) {
   return String(value).toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[?#].*$/, "").trim();
 }
 
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function pick(block, tag) {
   const match = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
   return match?.[1] ?? "";
 }
 
-function attr(block, tag, name) {
-  const match = block.match(new RegExp(`<${tag}[^>]*\\s${name}=["']([^"']+)["'][^>]*>`, "i"));
-  return match?.[1] ?? null;
+function attr(block, tag, name, options = {}) {
+  const tagMatch = block.match(new RegExp(`<${tag}\\b[^>]*>`, "i"));
+  if (!tagMatch) return null;
+  const tagText = tagMatch[0];
+  if (options.typePrefix) {
+    const type = tagText.match(/\stype=["']([^"']+)["']/i)?.[1] ?? "";
+    if (!type.toLowerCase().startsWith(options.typePrefix)) return null;
+  }
+  return decodeEntities(tagText.match(new RegExp(`\\s${name}=["']([^"']+)["']`, "i"))?.[1] ?? "");
+}
+
+function imageFromHTML(value) {
+  const html = String(value ?? "").replace(/<!\[CDATA\[|\]\]>/g, "");
+  const imgMatch = html.match(/<img\b[^>]*\ssrc=["']([^"']+)["'][^>]*>/i);
+  return imgMatch ? decodeEntities(imgMatch[1]) : null;
+}
+
+function isUsableImageURL(value) {
+  if (!value) return false;
+  try {
+    const url = new URL(value);
+    if (!["http:", "https:"].includes(url.protocol)) return false;
+    return !/\.(svg|gif)(\?|#|$)/i.test(url.pathname);
+  } catch {
+    return false;
+  }
 }
 
 function cleanXML(value) {
-  return String(value)
+  return decodeEntities(String(value)
     .replace(/<!\[CDATA\[|\]\]>/g, "")
     .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim());
+}
+
+function decodeEntities(value) {
+  return String(value)
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, "\"")
     .replace(/&#39;/g, "'")
-    .replace(/\s+/g, " ")
-    .trim();
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
 }
 
 function firstSentence(value, limit) {
@@ -359,6 +467,10 @@ function parseArgs(argv) {
     const [key, value] = arg.replace(/^--/, "").split("=");
     return [key, value ?? true];
   }));
+}
+
+function parseBoolean(value) {
+  return /^(1|true|yes|on)$/i.test(String(value));
 }
 
 function sleep(ms) {
