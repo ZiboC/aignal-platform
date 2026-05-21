@@ -4,6 +4,7 @@ import path from "node:path";
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
 const outDir = args.out ?? "public";
+const minSourceImages = Number(args.minSourceImages ?? 0);
 const feedPath = path.join(outDir, "feed", "daily", `${date}.json`);
 const latestPath = path.join(outDir, "feed", "latest.json");
 const indexPath = path.join(outDir, "feed", "index.json");
@@ -39,6 +40,12 @@ for (const item of daily) {
   assert(Array.isArray(item.tags), `item ${item.id} tags must be an array`);
   assert(!Number.isNaN(Date.parse(item.published_at)), `item ${item.id} has invalid published_at`);
 }
+
+const sourceImageCount = daily.filter((item) => item.image_url && item.image_source === "source").length;
+assert(
+  sourceImageCount >= minSourceImages,
+  `daily feed must contain at least ${minSourceImages} source images; found ${sourceImageCount}`
+);
 
 console.log(`Validated ${daily.length} items for ${date}`);
 

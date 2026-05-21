@@ -33,7 +33,7 @@ jobs:
         run: npm run generate-feed
 
       - name: Validate daily feed
-        run: npm run validate-feed
+        run: npm run validate-feed -- --min-source-images=6
 
       - name: Commit generated feed archive
         run: |

@@ -45,10 +45,11 @@ const sources = [
 ];
 
 const records = sampleMode ? sampleRecords(date) : await collectRecords();
-const deduped = dedupe(records).slice(0, itemLimit);
+const deduped = dedupe(records);
+const selectedRecords = selectRecords(deduped, itemLimit);
 const items = [];
 
-for (const [index, record] of deduped.entries()) {
+for (const [index, record] of selectedRecords.entries()) {
   const classified = classify(record);
   const enriched = openAITextDisabled
     ? heuristicEnrichment(record, classified.category)
@@ -99,7 +100,7 @@ for (const [index, record] of deduped.entries()) {
   });
 
   if (items.length >= itemLimit) break;
-  if (index < deduped.length - 1) await sleep(150);
+  if (index < selectedRecords.length - 1) await sleep(150);
 }
 
 const validItems = items.filter((item) => item.source_url || item.original_url);
@@ -422,6 +423,38 @@ function dedupe(records) {
   });
 }
 
+function selectRecords(records, limit) {
+  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sources.length - 1)));
+  const maxPerCategory = Math.max(3, Math.ceil(limit / 3));
+  const sorted = [...records].sort((a, b) => {
+    const imageDelta = Number(Boolean(b.imageUrl)) - Number(Boolean(a.imageUrl));
+    if (imageDelta !== 0) return imageDelta;
+    return Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
+  });
+  const selected = [];
+  const sourceCounts = new Map();
+  const categoryCounts = new Map();
+
+  for (const record of sorted) {
+    if (selected.length >= limit) break;
+    const category = classify(record).category;
+    const sourceCount = sourceCounts.get(record.sourceName) ?? 0;
+    const categoryCount = categoryCounts.get(category) ?? 0;
+    if (sourceCount >= maxPerSource || categoryCount >= maxPerCategory) continue;
+    selected.push(record);
+    sourceCounts.set(record.sourceName, sourceCount + 1);
+    categoryCounts.set(category, categoryCount + 1);
+  }
+
+  for (const record of sorted) {
+    if (selected.length >= limit) break;
+    if (selected.includes(record)) continue;
+    selected.push(record);
+  }
+
+  return selected;
+}
+
 function normalize(value) {
   return String(value).toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[?#].*$/, "").trim();
 }
@@ -441,13 +474,16 @@ function attr(block, tag, name, options = {}) {
   const tagText = tagMatch[0];
   if (options.typePrefix) {
     const type = tagText.match(/\stype=["']([^"']+)["']/i)?.[1] ?? "";
-    if (!type.toLowerCase().startsWith(options.typePrefix)) return null;
+    const medium = tagText.match(/\smedium=["']([^"']+)["']/i)?.[1] ?? "";
+    if (!type.toLowerCase().startsWith(options.typePrefix) && medium.toLowerCase() !== "image") {
+      return null;
+    }
   }
   return decodeEntities(tagText.match(new RegExp(`\\s${name}=["']([^"']+)["']`, "i"))?.[1] ?? "");
 }
 
 function imageFromHTML(value) {
-  const html = String(value ?? "").replace(/<!\[CDATA\[|\]\]>/g, "");
+  const html = decodeEntities(String(value ?? "").replace(/<!\[CDATA\[|\]\]>/g, ""));
   const imgMatch = html.match(/<img\b[^>]*\ssrc=["']([^"']+)["'][^>]*>/i);
   return imgMatch ? decodeEntities(imgMatch[1]) : null;
 }
