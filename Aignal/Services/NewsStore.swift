@@ -182,7 +182,19 @@ extension JSONDecoder {
     static var aignalFeedDecoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .iso8601
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            let value = try container.decode(String.self)
+
+            if let date = FeedDateFormatter.date(from: value) {
+                return date
+            }
+
+            throw DecodingError.dataCorruptedError(
+                in: container,
+                debugDescription: "Invalid feed date: \(value)"
+            )
+        }
         return decoder
     }
 }
@@ -208,5 +220,23 @@ enum FeedValidationError: LocalizedError, Equatable {
         case .missingReadableSource(let itemID):
             return "Feed item \(itemID) is missing source_url and original_url"
         }
+    }
+}
+
+private enum FeedDateFormatter {
+    private static let fractionalFormatter: ISO8601DateFormatter = {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return formatter
+    }()
+
+    private static let standardFormatter: ISO8601DateFormatter = {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime]
+        return formatter
+    }()
+
+    static func date(from value: String) -> Date? {
+        fractionalFormatter.date(from: value) ?? standardFormatter.date(from: value)
     }
 }

@@ -64,6 +64,11 @@ for (const [index, record] of deduped.entries()) {
     if (imageUrl) imageSource = "source";
   }
 
+  if (!imageUrl) {
+    imageUrl = existingGeneratedImageURL({ id, date, outDir });
+    if (imageUrl) imageSource = "generated";
+  }
+
   if (!imageUrl && !openAIImageDisabled && generatedImageCount < generatedImageLimit) {
     imageUrl = await generateImage({ id, date, prompt: imagePrompt, outDir });
     if (imageUrl) {
@@ -239,6 +244,16 @@ async function generateImage({ id, date, prompt, outDir }) {
   await mkdir(imageDir, { recursive: true });
   const relativePath = `/images/${date}/${id}.png`;
   await writeFile(path.join(outDir, "images", date, `${id}.png`), Buffer.from(b64, "base64"));
+  return publicBaseURL
+    ? `${publicBaseURL.replace(/\/$/, "")}${relativePath}`
+    : relativePath;
+}
+
+function existingGeneratedImageURL({ id, date, outDir }) {
+  const relativePath = `/images/${date}/${id}.png`;
+  const imagePath = path.join(outDir, "images", date, `${id}.png`);
+  if (!existsSync(imagePath)) return null;
+
   return publicBaseURL
     ? `${publicBaseURL.replace(/\/$/, "")}${relativePath}`
     : relativePath;

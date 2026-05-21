@@ -41,6 +41,35 @@ final class AignalTests: XCTestCase {
         XCTAssertEqual(items[0].confidence, 0.92)
     }
 
+    func testNewsJSONDecodingAcceptsFractionalISODate() throws {
+        let json = """
+        [
+          {
+            "id": "item-fractional-date",
+            "category": "models_products",
+            "title_zh": "中文标题",
+            "title_en": "English title",
+            "summary_zh": "中文摘要",
+            "summary_en": "English summary",
+            "why_it_matters_zh": "重要原因",
+            "why_it_matters_en": "Why it matters",
+            "source_name": "Source",
+            "source_url": "https://example.com",
+            "original_url": "https://example.com/original",
+            "published_at": "2026-05-20T00:00:00.000Z",
+            "image_name": "sample",
+            "image_url": null,
+            "tags": ["models", "ai"]
+          }
+        ]
+        """
+
+        let items = try NewsStore.decodeItems(from: Data(json.utf8))
+
+        XCTAssertEqual(items.count, 1)
+        XCTAssertEqual(items[0].id, "item-fractional-date")
+    }
+
     func testFeedValidationRejectsItemsWithoutReadableSource() {
         let json = """
         [
