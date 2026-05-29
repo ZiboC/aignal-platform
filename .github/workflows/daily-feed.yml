@@ -44,11 +44,19 @@ jobs:
           git diff --cached --quiet || git commit -m "Update daily Aignal feed"
           git push
 
+      - name: Install web dependencies
+        run: npm ci --prefix web
+
+      - name: Build web app
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+        run: npm run build-web
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: web/out
 
       - id: deployment
         uses: actions/deploy-pages@v4
