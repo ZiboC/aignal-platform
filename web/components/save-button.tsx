@@ -28,8 +28,8 @@ export function SaveButton({ itemId, compact = false, labels }: Props) {
         toggleSaved(itemId);
       }}
       className={[
-        "inline-flex items-center justify-center gap-2 rounded-md border text-sm font-semibold transition",
-        isSaved ? "border-signal bg-signal text-white" : "border-line bg-white text-ink hover:border-signal",
+        "inline-flex items-center justify-center gap-2 rounded-sm border text-sm font-black uppercase transition",
+        isSaved ? "border-source bg-source text-obsidian" : "border-white/25 bg-white/10 text-ink hover:border-signal hover:bg-signal/12",
         compact ? "h-9 w-9" : "px-4 py-2"
       ].join(" ")}
     >

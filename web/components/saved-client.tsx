@@ -38,7 +38,7 @@ export function SavedClient({ items }: Props) {
           </div>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-2 text-sm font-semibold text-muted shadow-sm"
+            className="inline-flex items-center gap-2 rounded-sm border border-cream/25 bg-graphite px-3 py-2 text-sm font-bold text-ink shadow-sm hover:bg-panel"
           >
             <ArrowLeft size={16} />
             {t.backHome}
@@ -63,8 +63,8 @@ export function SavedClient({ items }: Props) {
             ))}
           </div>
         ) : (
-          <div className="rounded-lg border border-line bg-white p-12 text-center shadow-sm">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-panel text-muted">
+          <div className="border border-cream/25 bg-graphite p-12 text-center shadow-sm">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-sm bg-white/10 text-muted">
               <Bookmark size={22} />
             </div>
             <h2 className="mt-4 text-xl font-bold text-ink">{t.savedEmpty}</h2>

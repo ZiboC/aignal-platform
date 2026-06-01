@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
-  background: #eef2f6;
+  color-scheme: dark;
+  background: #070a16;
 }
 
 * {
@@ -13,10 +13,16 @@
 
 body {
   margin: 0;
-  color: #15171a;
+  color: #eafbff;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(238, 242, 246, 0.92) 320px),
-    #eef2f6;
+    linear-gradient(rgba(34, 245, 255, 0.052) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 255, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 16% 6%, rgba(34, 245, 255, 0.24), transparent 25rem),
+    radial-gradient(circle at 82% 1%, rgba(255, 56, 209, 0.2), transparent 32rem),
+    radial-gradient(circle at 52% 22%, rgba(139, 92, 255, 0.14), transparent 38rem),
+    linear-gradient(180deg, #070a16 0%, #0c1224 48%, #070a16 100%);
+  background-size: 42px 42px, 42px 42px, auto, auto, auto, auto;
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
@@ -31,5 +37,91 @@ input {
 }
 
 ::selection {
-  background: rgba(15, 118, 110, 0.18);
+  background: rgba(34, 245, 255, 0.34);
+}
+
+.radar-panel-motion {
+  position: relative;
+  isolation: isolate;
+}
+
+.radar-panel-motion__grid,
+.radar-panel-motion__scan,
+.radar-panel-motion__pulse {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.radar-panel-motion__grid {
+  background:
+    linear-gradient(rgba(34, 245, 255, 0.085) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 56, 209, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.42;
+  animation: radar-grid-drift 22s linear infinite;
+}
+
+.radar-panel-motion__scan {
+  background: linear-gradient(105deg, transparent 0%, rgba(34, 245, 255, 0.025) 42%, rgba(34, 245, 255, 0.2) 50%, rgba(255, 56, 209, 0.08) 58%, transparent 100%);
+  opacity: 0.72;
+  transform: translateX(-115%);
+  animation: radar-scan 9s ease-in-out infinite;
+}
+
+.radar-panel-motion__pulse {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(34, 245, 255, 0.24) 0 1px, transparent 2px 8rem),
+    radial-gradient(circle at 50% 50%, transparent 0 9rem, rgba(34, 245, 255, 0.14) 9.1rem, transparent 9.4rem),
+    radial-gradient(circle at 50% 50%, transparent 0 13rem, rgba(255, 56, 209, 0.14) 13.1rem, transparent 13.35rem);
+  opacity: 0.34;
+  animation: radar-pulse 5.8s ease-in-out infinite;
+}
+
+.radar-panel-motion__pulse--radar {
+  inset: 50% auto auto 50%;
+  height: min(520px, 100%);
+  width: min(520px, 100%);
+  transform: translate(-50%, -50%);
+}
+
+@keyframes radar-grid-drift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 48px 48px, 48px 48px;
+  }
+}
+
+@keyframes radar-scan {
+  0%,
+  18% {
+    transform: translateX(-115%);
+  }
+  55%,
+  100% {
+    transform: translateX(115%);
+  }
+}
+
+@keyframes radar-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+    transform: translate(-50%, -50%) scale(0.985);
+  }
+  50% {
+    opacity: 0.42;
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radar-panel-motion__grid,
+  .radar-panel-motion__scan,
+  .radar-panel-motion__pulse {
+    animation: none;
+  }
 }

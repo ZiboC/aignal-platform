@@ -29,7 +29,17 @@ export const copy = {
     openSource: "打开来源",
     published: "发布于",
     latestSignals: "最新信号",
-    dateArchive: "历史简报"
+    dateArchive: "历史简报",
+    dailyBrief: "当日信号总结",
+    dailyTakeaway: "今日判断",
+    urgentSignals: "关键变化",
+    sourceQuality: "来源质量",
+    signalRadar: "信号雷达",
+    topCategories: "重点类别",
+    watchTomorrow: "未来AI发展趋势预测",
+    whatChanged: "今日AI发展趋势总结",
+    whyMattersShort: "为什么重要",
+    radarCaption: "按类别热度和来源覆盖动态生成"
   },
   en: {
     navHome: "Signals",
@@ -59,6 +69,16 @@ export const copy = {
     openSource: "Open source",
     published: "Published",
     latestSignals: "Latest signals",
-    dateArchive: "Archive"
+    dateArchive: "Archive",
+    dailyBrief: "Daily Signal Summary",
+    dailyTakeaway: "Today's read",
+    urgentSignals: "Urgent signals",
+    sourceQuality: "Source quality",
+    signalRadar: "Signal radar",
+    topCategories: "Top categories",
+    watchTomorrow: "Future AI trend forecast",
+    whatChanged: "Today's AI trend summary",
+    whyMattersShort: "Why it matters",
+    radarCaption: "Generated from category heat and source coverage"
   }
 } satisfies Record<Language, Record<string, string>>;

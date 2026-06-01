@@ -14,30 +14,30 @@ export function Shell({ language, children, rightSlot }: Props) {
 
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-20 border-b border-line/80 bg-white/92 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-20 border-b border-cream/20 bg-obsidian/92 shadow-[0_1px_0_rgba(34,245,255,0.1)] backdrop-blur-xl">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-2 px-4 py-4 sm:gap-3 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex min-w-0 items-center gap-2">
-            <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-ink text-white">
+            <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-sm border border-data/40 bg-white/12 text-data shadow-glow">
               <Sparkles size={18} />
             </span>
-            <span className="text-lg font-bold tracking-normal text-ink">Aignal</span>
+            <span className="text-lg font-black uppercase tracking-normal text-ivory">Aignal</span>
           </Link>
 
-          <nav className="flex items-center gap-2">
+          <nav className="flex shrink-0 items-center gap-1 sm:gap-2">
             <Link
               href="/"
-              className="hidden rounded-md px-3 py-2 text-sm font-semibold text-muted hover:bg-panel hover:text-ink sm:inline-flex"
+              className="hidden rounded-sm px-3 py-2 text-xs font-black uppercase text-source hover:bg-source/12 hover:text-signal sm:inline-flex"
             >
               {t.navHome}
             </Link>
             <Link
               href="/saved"
-              className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-muted hover:bg-panel hover:text-ink"
+              className="inline-flex items-center gap-2 rounded-sm px-3 py-2 text-xs font-black uppercase text-source hover:bg-source/12 hover:text-signal"
             >
               <Bookmark size={16} />
-              {t.navSaved}
+              <span className="hidden sm:inline">{t.navSaved}</span>
             </Link>
-            {rightSlot}
+            {rightSlot ? <div className="hidden sm:block">{rightSlot}</div> : null}
           </nav>
         </div>
       </header>
