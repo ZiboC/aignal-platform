@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { canonicalizeCandidates } from "../lib/feed-quality/canonicalize.mjs";
+import { analyzeFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
 import { buildQualityReport, renderQualityReportMarkdown } from "../lib/feed-quality/report.mjs";
-import { scoreCandidate } from "../lib/feed-quality/scoring.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
 const args = parseArgs(process.argv.slice(2));
@@ -14,27 +13,12 @@ const feedPath = args.feed ?? path.join(outDir, "feed", "daily", `${date}.json`)
 const sourcePool = await loadSourcePool(args.sourcePool ?? "data/source-pool.json");
 const feedItems = JSON.parse(await readFile(feedPath, "utf8"));
 const categories = sourcePool.categories.map((category) => category.id);
-const sourceByName = new Map(sourcePool.sources.map((source) => [source.name.toLowerCase(), source]));
-
-const candidates = feedItems.map((item) => {
-  const source = sourceByName.get(String(item.source_name ?? "").toLowerCase());
-  return {
-    ...item,
-    source_pool_id: item.source_pool_id ?? source?.id ?? null,
-    authority_tier: item.authority_tier ?? source?.authority_tier ?? "C"
-  };
-});
-
-const canonical = canonicalizeCandidates(candidates);
-const scoredItems = canonical.items.map((item) => ({
-  ...item,
-  ...scoreCandidate(item)
-}));
+const analysis = analyzeFeedItemsWithQuality(feedItems, sourcePool);
 const report = buildQualityReport({
   date,
   categories,
-  scoredItems,
-  duplicateGroups: canonical.duplicateGroups,
+  scoredItems: analysis.items,
+  duplicateGroups: analysis.duplicateGroups,
   minQualityScore: Number(args.minQualityScore ?? 65)
 });
 

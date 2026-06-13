@@ -1,10 +1,13 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
+import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
 const outDir = args.out ?? "public";
+const sourcePool = await loadSourcePool(args.sourcePool ?? "data/source-pool.json");
 const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
 const openAIKey = process.env.OPENAI_API_KEY;
@@ -103,7 +106,10 @@ for (const [index, record] of selectedRecords.entries()) {
   if (index < selectedRecords.length - 1) await sleep(150);
 }
 
-const validItems = items.filter((item) => item.source_url || item.original_url);
+const validItems = enrichFeedItemsWithQuality(
+  items.filter((item) => item.source_url || item.original_url),
+  sourcePool
+);
 if (validItems.length < 5) {
   throw new Error(`Only generated ${validItems.length} valid feed items; expected at least 5.`);
 }
