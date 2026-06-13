@@ -1,0 +1,182 @@
+{
+  "date": "2026-05-28",
+  "min_quality_score": 65,
+  "total_candidates": 15,
+  "accepted_count": 0,
+  "rejected_count": 15,
+  "coverage": {
+    "coding_ai": {
+      "accepted": 0,
+      "rejected": 5,
+      "best_rejected_score": 22
+    },
+    "image_ai": {
+      "accepted": 0,
+      "rejected": 4,
+      "best_rejected_score": 59
+    },
+    "video_ai": {
+      "accepted": 0,
+      "rejected": 0,
+      "best_rejected_score": 0
+    },
+    "research_papers": {
+      "accepted": 0,
+      "rejected": 1,
+      "best_rejected_score": 15
+    },
+    "models_products": {
+      "accepted": 0,
+      "rejected": 3,
+      "best_rejected_score": 5
+    },
+    "business_investment": {
+      "accepted": 0,
+      "rejected": 0,
+      "best_rejected_score": 0
+    },
+    "tools_apps": {
+      "accepted": 0,
+      "rejected": 2,
+      "best_rejected_score": 2
+    }
+  },
+  "coverage_gaps": [
+    {
+      "category": "coding_ai",
+      "best_rejected_score": 22,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "image_ai",
+      "best_rejected_score": 59,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "video_ai",
+      "best_rejected_score": 0,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "research_papers",
+      "best_rejected_score": 15,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "models_products",
+      "best_rejected_score": 5,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "business_investment",
+      "best_rejected_score": 0,
+      "reason": "no_candidate_met_quality_threshold"
+    },
+    {
+      "category": "tools_apps",
+      "best_rejected_score": 2,
+      "reason": "no_candidate_met_quality_threshold"
+    }
+  ],
+  "duplicate_groups": [],
+  "per_source": {
+    "google_ai_blog": {
+      "accepted": 0,
+      "rejected": 3
+    },
+    "unknown": {
+      "accepted": 0,
+      "rejected": 12
+    }
+  },
+  "rejection_reasons": {
+    "community_source_requires_verification": 12,
+    "unknown_source_pool": 12
+  },
+  "warnings": [
+    "12 candidates were not matched to the source pool"
+  ],
+  "top_rejected": [
+    {
+      "id": "item-61afc0e",
+      "category": "image_ai",
+      "quality_score": 59,
+      "penalties": []
+    },
+    {
+      "id": "item-5bf3c58d",
+      "category": "image_ai",
+      "quality_score": 58,
+      "penalties": []
+    },
+    {
+      "id": "item-ab95a6fd",
+      "category": "image_ai",
+      "quality_score": 57,
+      "penalties": []
+    },
+    {
+      "id": "item-6e6ecc4e",
+      "category": "coding_ai",
+      "quality_score": 22,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-6f6ecde1",
+      "category": "image_ai",
+      "quality_score": 18,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-b1a0f585",
+      "category": "research_papers",
+      "quality_score": 15,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-6b6ec795",
+      "category": "coding_ai",
+      "quality_score": 12,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-6a6ec602",
+      "category": "coding_ai",
+      "quality_score": 11,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-1ef2821b",
+      "category": "models_products",
+      "quality_score": 5,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    },
+    {
+      "id": "item-656ebe23",
+      "category": "coding_ai",
+      "quality_score": 4,
+      "penalties": [
+        "community_source_requires_verification",
+        "unknown_source_pool"
+      ]
+    }
+  ]
+}
