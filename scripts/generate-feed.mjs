@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
+import { getCollectableFeedSources } from "../lib/feed-quality/source-selection.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
 const args = parseArgs(process.argv.slice(2));
@@ -38,7 +39,7 @@ const categories = [
   "tools_apps"
 ];
 
-const sources = [
+const legacySourceSeeds = [
   { name: "OpenAI Blog", url: "https://openai.com/news/rss.xml", category: "models_products" },
   { name: "Google AI Blog", url: "https://blog.google/technology/ai/rss/", category: "models_products" },
   { name: "Anthropic News", url: "https://www.anthropic.com/news/rss.xml", category: "models_products" },
@@ -46,6 +47,7 @@ const sources = [
   { name: "arXiv cs.AI", url: "https://export.arxiv.org/rss/cs.AI", category: "research_papers" },
   { name: "arXiv cs.CL", url: "https://export.arxiv.org/rss/cs.CL", category: "research_papers" }
 ];
+const feedSources = getCollectableFeedSources(sourcePool, { legacySources: legacySourceSeeds });
 
 const records = sampleMode ? sampleRecords(date) : await collectRecords();
 const deduped = dedupe(records);
@@ -93,6 +95,8 @@ for (const [index, record] of selectedRecords.entries()) {
     source_name: record.sourceName,
     source_url: record.sourceUrl,
     original_url: record.originalUrl ?? record.sourceUrl,
+    source_pool_id: record.sourcePoolId ?? null,
+    authority_tier: record.authorityTier ?? "C",
     published_at: record.publishedAt,
     image_name: classified.category,
     image_url: imageUrl,
@@ -130,7 +134,7 @@ async function enrichSafely(record, category) {
 
 async function collectRecords() {
   const collected = [];
-  for (const source of sources) {
+  for (const source of feedSources) {
     try {
       const response = await fetch(source.url, {
         headers: feedHeaders
@@ -161,6 +165,8 @@ function parseRSS(xml, source) {
       sourceName: source.name,
       sourceUrl: link,
       originalUrl: link,
+      sourcePoolId: source.sourcePoolId ?? null,
+      authorityTier: source.authorityTier ?? "C",
       imageUrl,
       imageSource: imageUrl ? "source" : null,
       publishedAt: published ? new Date(published).toISOString() : `${date}T08:00:00Z`,
@@ -430,7 +436,7 @@ function dedupe(records) {
 }
 
 function selectRecords(records, limit) {
-  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sources.length - 1)));
+  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, feedSources.length - 1)));
   const maxPerCategory = Math.max(3, Math.ceil(limit / 3));
   const sorted = [...records].sort((a, b) => {
     const imageDelta = Number(Boolean(b.imageUrl)) - Number(Boolean(a.imageUrl));
