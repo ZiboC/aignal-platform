@@ -5,7 +5,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: "30 13 * * *"
+    # 06:00 America/Los_Angeles during daylight saving time.
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,10 +31,10 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
-        run: npm run generate-feed
+        run: npm run generate-feed -- --fresh-window-hours=36
 
       - name: Validate daily feed
-        run: npm run validate-feed -- --min-source-images=6
+        run: npm run validate-feed -- --min-source-images=6 --require-images
 
       - name: Commit generated feed archive
         run: |

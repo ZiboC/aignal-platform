@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
+import { ensureFeedItemImage, filterFreshRecords } from "../lib/feed-quality/fresh-feed.mjs";
 import { getCollectableFeedSources } from "../lib/feed-quality/source-selection.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
@@ -11,6 +12,8 @@ const outDir = args.out ?? "public";
 const sourcePool = await loadSourcePool(args.sourcePool ?? "data/source-pool.json");
 const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
+const freshWindowHours = Number(args.freshWindowHours ?? args["fresh-window-hours"] ?? 36);
+const asOf = args.asOf ?? args["as-of"] ?? null;
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
 const enableGeneratedImages = parseBoolean(process.env.ENABLE_OPENAI_IMAGES ?? args.generateImages ?? "false");
@@ -50,7 +53,11 @@ const legacySourceSeeds = [
 const feedSources = getCollectableFeedSources(sourcePool, { legacySources: legacySourceSeeds });
 
 const records = sampleMode ? sampleRecords(date) : await collectRecords();
-const deduped = dedupe(records);
+const freshRecords = sampleMode ? records : filterFreshRecords(records, { date, hours: freshWindowHours, asOf });
+if (!sampleMode) {
+  console.log(`Freshness window: ${freshWindowHours}h; candidates ${freshRecords.length}/${records.length}`);
+}
+const deduped = dedupe(freshRecords);
 const selectedRecords = selectRecords(deduped, itemLimit);
 const items = [];
 
@@ -83,7 +90,7 @@ for (const [index, record] of selectedRecords.entries()) {
     }
   }
 
-  items.push({
+  items.push(ensureFeedItemImage({
     id,
     category: classified.category,
     title_zh: enriched.titleZh,
@@ -104,7 +111,7 @@ for (const [index, record] of selectedRecords.entries()) {
     image_prompt: imagePrompt,
     confidence: enriched.confidence,
     tags: buildTags(classified.category, record.title).slice(0, 5)
-  });
+  }, { publicBaseURL }));
 
   if (items.length >= itemLimit) break;
   if (index < selectedRecords.length - 1) await sleep(150);
