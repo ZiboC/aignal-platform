@@ -4,7 +4,7 @@ import { SaveButton } from "./save-button";
 import { TagList } from "./tag-list";
 import { CategoryIcon, categoryLabel } from "@/lib/categories";
 import { withBasePath } from "@/lib/base-path";
-import { formatDate } from "@/lib/format";
+import { formatDateOnly } from "@/lib/format";
 import type { DisplayItem, Language } from "@/lib/types";
 
 type Props = {
@@ -16,6 +16,7 @@ type Props = {
     remove: string;
     sourceImage: string;
     generatedImage: string;
+    sourcePublished: string;
   };
 };
 
@@ -53,7 +54,9 @@ export function SignalCard({ item, language, labels }: Props) {
           <div className="min-w-0 break-words text-[11px] font-black uppercase leading-4 text-source [overflow-wrap:anywhere]">
             <span className="text-data">{item.sourceName}</span>
             <span className="mx-1.5">/</span>
-            <span>{formatDate(item.publishedAt, language)}</span>
+            <span>
+              {labels.sourcePublished}: {formatDateOnly(item.publishedAt, language)}
+            </span>
           </div>
         </div>
         <div className="absolute right-4 top-4">

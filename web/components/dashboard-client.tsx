@@ -8,7 +8,7 @@ import { SignalCard } from "./signal-card";
 import { CategoryIcon, categories, categoryLabel } from "@/lib/categories";
 import { copy } from "@/lib/i18n";
 import { dedupeSignals } from "@/lib/dedupe";
-import { formatDate, toDisplayItem } from "@/lib/format";
+import { formatDateKey, toDisplayItem } from "@/lib/format";
 import { filterItems } from "@/lib/search";
 import type { DisplayItem, FeedArchive, FeedItem, Language, NewsCategory } from "@/lib/types";
 import { useLanguage } from "./use-preferences";
@@ -55,7 +55,10 @@ export function DashboardClient({ archive }: Props) {
         Date.parse(b.item.published_at) - Date.parse(a.item.published_at)
     );
     const dedupedItems = dedupeSignals(latestFirstEntries.map((entry) => entry.item));
-    const firstEntryById = new Map(entries.map((entry) => [entry.item.id, entry]));
+    const firstEntryById = new Map<string, ArchiveEntry>();
+    for (const entry of latestFirstEntries) {
+      if (!firstEntryById.has(entry.item.id)) firstEntryById.set(entry.item.id, entry);
+    }
 
     return dedupedItems.map((item) => firstEntryById.get(item.id) ?? { date: item.published_at.slice(0, 10), item });
   }, [archive.dates, archive.feedsByDate, archiveDateFilter]);
@@ -331,10 +334,10 @@ export function DashboardClient({ archive }: Props) {
                   <div className="mb-4 flex flex-wrap items-end justify-between gap-3 border-b border-white/16 pb-3">
                     <div>
                       <div className="text-xs font-black uppercase text-source">
-                        [ {section.date} ]
+                        [ {t.briefingDate} : {section.date} ]
                       </div>
                       <h3 className="mt-1 text-2xl font-black uppercase text-signal">
-                        {formatDate(`${section.date}T00:00:00.000Z`, language)}
+                        {formatDateKey(section.date, language)}
                       </h3>
                     </div>
                     <div className="rounded-sm border border-white/20 bg-white/10 px-3 py-2 text-xs font-black uppercase text-data">
@@ -353,7 +356,8 @@ export function DashboardClient({ archive }: Props) {
                           saved: t.saved,
                           remove: t.remove,
                           sourceImage: t.sourceImage,
-                          generatedImage: t.generatedImage
+                          generatedImage: t.generatedImage,
+                          sourcePublished: t.sourcePublished
                         }}
                       />
                     ))}
@@ -481,7 +485,7 @@ function ArchivePopover({
       return {
         key: String(day),
         day,
-        dateKey: formatDateKey(year, month, day)
+        dateKey: makeDateKey(year, month, day)
       };
     })
   ];
@@ -1011,7 +1015,7 @@ function parseDateKey(dateKey: string | undefined) {
   return new Date(Date.UTC(year, month - 1, day));
 }
 
-function formatDateKey(year: number, month: number, day: number) {
+function makeDateKey(year: number, month: number, day: number) {
   return `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 

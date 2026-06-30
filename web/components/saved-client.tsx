@@ -57,7 +57,8 @@ export function SavedClient({ items }: Props) {
                   saved: t.saved,
                   remove: t.remove,
                   sourceImage: t.sourceImage,
-                  generatedImage: t.generatedImage
+                  generatedImage: t.generatedImage,
+                  sourcePublished: t.sourcePublished
                 }}
               />
             ))}

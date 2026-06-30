@@ -26,6 +26,22 @@ export function formatDate(value: string, language: Language) {
   }).format(new Date(value));
 }
 
+export function formatDateOnly(value: string, language: Language) {
+  const locale = language === "zh" ? "zh-CN" : "en-US";
+  return new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC"
+  }).format(new Date(value));
+}
+
+export function formatDateKey(value: string, language: Language) {
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) return value;
+  return formatDateOnly(new Date(Date.UTC(year, month - 1, day, 12)).toISOString(), language);
+}
+
 export function formatDateTime(value: string, language: Language) {
   const locale = language === "zh" ? "zh-CN" : "en-US";
   return new Intl.DateTimeFormat(locale, {
