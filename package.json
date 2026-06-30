@@ -6,6 +6,13 @@
   "scripts": {
     "generate-feed": "node scripts/generate-feed.mjs",
     "validate-feed": "node scripts/validate-feed.mjs",
+    "validate-source-pool": "node scripts/validate-source-pool.mjs",
+    "test:quality": "node --test tests/feed-quality/*.test.mjs",
+    "quality-report": "node scripts/generate-quality-report.mjs",
+    "source-health": "node scripts/generate-source-health-report.mjs",
+    "backfill-feed": "node scripts/backfill-feed.mjs",
+    "sync-web-assets": "node scripts/sync-web-assets.mjs",
+    "build-web": "npm run sync-web-assets && npm --prefix web run build",
     "check-feed": "npm run generate-feed -- --sample --date=2026-05-19 && npm run validate-feed -- --date=2026-05-19"
   },
   "engines": {

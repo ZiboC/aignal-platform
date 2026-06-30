@@ -1,0 +1,2053 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-14",
+  "authority_tiers": {
+    "S": "Primary source: official company, research venue, government, regulatory, or formal filing source.",
+    "A": "Authoritative validation source: model hub, benchmark, leaderboard, or public dataset with traceable methods.",
+    "B": "Discovery and market-intelligence source: useful for leads, adoption, reviews, funding, or product discovery.",
+    "C": "Community source: use for early detection only; confirm with S or A sources before publishing as fact."
+  },
+  "categories": [
+    {
+      "id": "coding_ai",
+      "label_zh": "写代码 AI",
+      "label_en": "Coding AI",
+      "source_ids": [
+        "github_changelog",
+        "github_copilot_whats_new",
+        "openai_news",
+        "openai_api_changelog",
+        "claude_platform_release_notes",
+        "claude_code_changelog",
+        "google_gemini_api_changelog",
+        "cursor_changelog",
+        "replit_changelog",
+        "swe_bench",
+        "livecodebench",
+        "aider_leaderboards",
+        "lmarena",
+        "epoch_ai_benchmarks",
+        "github_trending",
+        "github_rest_api",
+        "github_releases_api",
+        "github_ai_topics",
+        "ossinsight_trending_ai",
+        "nvidia_developer_blog",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "zhipu_ai",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "microsoft_research_ai"
+      ]
+    },
+    {
+      "id": "image_ai",
+      "label_zh": "图片 AI",
+      "label_en": "Image AI",
+      "source_ids": [
+        "openai_news",
+        "google_deepmind_news",
+        "google_ai_blog",
+        "adobe_news",
+        "black_forest_labs_announcements",
+        "hugging_face_model_cards",
+        "artificial_analysis_text_to_image",
+        "runway_research",
+        "arxiv_cs_cv",
+        "cvf_open_access",
+        "qwen_hugging_face",
+        "lmarena",
+        "nvidia_blog",
+        "nvidia_research",
+        "stability_ai_news",
+        "midjourney_updates",
+        "ideogram_blog",
+        "leonardo_ai_news",
+        "canva_newsroom_ai",
+        "kling_ai",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "replicate_blog",
+        "meta_ai_blog",
+        "apple_ml_research",
+        "figma_ai"
+      ]
+    },
+    {
+      "id": "video_ai",
+      "label_zh": "视频 AI",
+      "label_en": "Video AI",
+      "source_ids": [
+        "openai_sora",
+        "google_deepmind_news",
+        "adobe_news",
+        "adobe_firefly_runway",
+        "artificial_analysis_text_to_video",
+        "artificial_analysis_image_to_video",
+        "vbench",
+        "luma_news",
+        "runway_research",
+        "pika_faq",
+        "arxiv_cs_cv",
+        "cvf_open_access",
+        "nvidia_blog",
+        "nvidia_developer_blog",
+        "nvidia_research",
+        "stability_ai_news",
+        "kling_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "replicate_blog",
+        "meta_ai_blog"
+      ]
+    },
+    {
+      "id": "research_papers",
+      "label_zh": "研究论文",
+      "label_en": "Research",
+      "source_ids": [
+        "arxiv_api",
+        "arxiv_taxonomy",
+        "arxiv_cs_cv",
+        "openreview",
+        "acl_anthology",
+        "cvf_open_access",
+        "pmlr",
+        "neurips_proceedings",
+        "hugging_face_papers",
+        "google_deepmind_news",
+        "vbench",
+        "hugging_face_hub",
+        "epoch_ai_benchmarks",
+        "stanford_ai_index",
+        "nvidia_developer_blog",
+        "nvidia_research",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "xai_news",
+        "together_ai_blog",
+        "anthropic_research",
+        "meta_ai_blog",
+        "microsoft_research_ai",
+        "apple_ml_research"
+      ]
+    },
+    {
+      "id": "models_products",
+      "label_zh": "模型/产品",
+      "label_en": "Models",
+      "source_ids": [
+        "openai_model_release_notes",
+        "openai_news",
+        "openai_api_changelog",
+        "claude_release_notes",
+        "claude_platform_release_notes",
+        "google_gemini_api_changelog",
+        "google_deepmind_news",
+        "google_ai_blog",
+        "meta_llama",
+        "mistral_news",
+        "mistral_changelog",
+        "cohere_changelog",
+        "deepseek_news",
+        "qwen_hugging_face",
+        "hugging_face_hub",
+        "artificial_analysis_models",
+        "lmarena",
+        "epoch_ai_benchmarks",
+        "black_forest_labs_announcements",
+        "hugging_face_model_cards",
+        "luma_news",
+        "runway_research",
+        "hugging_face_papers",
+        "nist_ai_rmf",
+        "eu_gpai_code",
+        "nvidia_newsroom",
+        "nvidia_blog",
+        "nvidia_developer_blog",
+        "nvidia_research",
+        "stability_ai_news",
+        "ideogram_blog",
+        "kling_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "baidu_ernie_bot",
+        "zhipu_ai",
+        "moonshot_ai",
+        "xai_news",
+        "perplexity_blog",
+        "replicate_blog",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "ai21_news",
+        "anthropic_research",
+        "meta_ai_blog",
+        "microsoft_research_ai",
+        "apple_ml_research",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "a16z_ai",
+        "sequoia_ai"
+      ]
+    },
+    {
+      "id": "business_investment",
+      "label_zh": "产业/投资",
+      "label_en": "Business",
+      "source_ids": [
+        "sec_edgar_api",
+        "sec_filings_search",
+        "crunchbase_data",
+        "cb_insights_ai_100",
+        "stanford_ai_index",
+        "oecd_ai",
+        "nist_ai_rmf",
+        "eu_gpai_code",
+        "ai_gov",
+        "google_ai_blog",
+        "adobe_news",
+        "mistral_news",
+        "g2_ai_category",
+        "nvidia_newsroom",
+        "nvidia_blog",
+        "canva_newsroom_ai",
+        "perplexity_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "ai21_news",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "the_information_ai",
+        "a16z_ai",
+        "sequoia_ai",
+        "notion_ai",
+        "figma_ai",
+        "zapier_ai",
+        "atlassian_ai"
+      ]
+    },
+    {
+      "id": "tools_apps",
+      "label_zh": "工具应用",
+      "label_en": "Tools",
+      "source_ids": [
+        "product_hunt",
+        "product_hunt_api",
+        "github_changelog",
+        "cursor_changelog",
+        "replit_changelog",
+        "hugging_face_model_cards",
+        "pika_faq",
+        "hugging_face_papers",
+        "hugging_face_hub",
+        "github_trending",
+        "github_rest_api",
+        "github_releases_api",
+        "g2_ai_category",
+        "chrome_web_store_docs",
+        "github_ai_topics",
+        "ossinsight_trending_ai",
+        "nvidia_developer_blog",
+        "leonardo_ai_news",
+        "canva_newsroom_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "baidu_ernie_bot",
+        "zhipu_ai",
+        "moonshot_ai",
+        "xai_news",
+        "perplexity_blog",
+        "replicate_blog",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "ai21_news",
+        "microsoft_research_ai",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "a16z_ai",
+        "notion_ai",
+        "figma_ai",
+        "zapier_ai",
+        "linear_changelog",
+        "atlassian_ai"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "github_changelog",
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "rss_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for GitHub platform and Copilot-adjacent product changes; confirm major Copilot model claims with product pages or release notes."
+    },
+    {
+      "id": "github_copilot_whats_new",
+      "name": "GitHub Copilot What's New",
+      "url": "https://github.com/features/copilot/whats-new",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_updates",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Copilot feature availability, product positioning, and preview announcements."
+    },
+    {
+      "id": "openai_news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/",
+      "category_ids": [
+        "coding_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "rss_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use as primary source for OpenAI model, product, safety, and partnership announcements."
+    },
+    {
+      "id": "openai_api_changelog",
+      "name": "OpenAI API Changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for API surface, developer platform, and model availability changes."
+    },
+    {
+      "id": "openai_model_release_notes",
+      "name": "OpenAI Model Release Notes",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_release_notes",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for OpenAI model-level changes; pair with API docs for developer availability."
+    },
+    {
+      "id": "openai_sora",
+      "name": "OpenAI Sora",
+      "url": "https://openai.com/index/sora/",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_page",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Sora capabilities and official product status; verify availability with current OpenAI release notes."
+    },
+    {
+      "id": "claude_platform_release_notes",
+      "name": "Claude Platform Release Notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_release_notes",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Anthropic API and platform changes; pair with Claude app notes for consumer features."
+    },
+    {
+      "id": "claude_release_notes",
+      "name": "Claude Release Notes",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_release_notes",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Claude app and model updates; confirm API availability through platform release notes."
+    },
+    {
+      "id": "claude_code_changelog",
+      "name": "Claude Code Changelog",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_github_changelog",
+      "access_method": "github_raw_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Claude Code CLI feature and behavior changes."
+    },
+    {
+      "id": "google_gemini_api_changelog",
+      "name": "Gemini API Changelog",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Gemini API model and developer platform changes."
+    },
+    {
+      "id": "google_deepmind_news",
+      "name": "Google DeepMind News",
+      "url": "https://deepmind.google/blog/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Google DeepMind research, model, responsibility, and product announcements."
+    },
+    {
+      "id": "google_ai_blog",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "category_ids": [
+        "image_ai",
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "rss_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Google AI product and ecosystem announcements."
+    },
+    {
+      "id": "cursor_changelog",
+      "name": "Cursor Changelog",
+      "url": "https://cursor.com/changelog",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Cursor IDE, agent, SDK, and product changes."
+    },
+    {
+      "id": "replit_changelog",
+      "name": "Replit Changelog",
+      "url": "https://docs.replit.com/updates/2026/06/05/changelog",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Replit Agent and product updates; prefer current updates index when integrating."
+    },
+    {
+      "id": "swe_bench",
+      "name": "SWE-bench",
+      "url": "https://www.swebench.com/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html_or_dataset",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for software engineering agent benchmark claims; note whether result is Verified, Lite, or another split."
+    },
+    {
+      "id": "livecodebench",
+      "name": "LiveCodeBench",
+      "url": "https://livecodebench.github.io/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html_or_github",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for code-generation and self-repair benchmark movement; record benchmark version or date window."
+    },
+    {
+      "id": "aider_leaderboards",
+      "name": "Aider LLM Leaderboards",
+      "url": "https://aider.chat/docs/leaderboards/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for edit-in-place coding performance; keep benchmark name and methodology with each signal."
+    },
+    {
+      "id": "adobe_news",
+      "name": "Adobe News",
+      "url": "https://news.adobe.com/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Firefly and Adobe creative AI launches, partnerships, and enterprise positioning."
+    },
+    {
+      "id": "adobe_firefly_runway",
+      "name": "Adobe Firefly Runway Partner Model Page",
+      "url": "https://www.adobe.com/products/firefly/partner-models/runway.html",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_page",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Adobe-hosted Runway model availability in Firefly workflows."
+    },
+    {
+      "id": "black_forest_labs_announcements",
+      "name": "Black Forest Labs Announcements",
+      "url": "https://blackforestlabs.ai/announcements/",
+      "category_ids": [
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for FLUX model, API, open-weight, safety, and partnership announcements."
+    },
+    {
+      "id": "hugging_face_model_cards",
+      "name": "Hugging Face Model Cards",
+      "url": "https://huggingface.co/docs/hub/en/model-cards",
+      "category_ids": [
+        "image_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "source_type": "model_metadata_standard",
+      "access_method": "hub_api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use model cards for model metadata and intended use; verify claims against linked papers or official repos."
+    },
+    {
+      "id": "artificial_analysis_text_to_image",
+      "name": "Artificial Analysis Text-to-Image Leaderboard",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "category_ids": [
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for comparative image model performance; include leaderboard date because rankings change."
+    },
+    {
+      "id": "artificial_analysis_text_to_video",
+      "name": "Artificial Analysis Text-to-Video Leaderboard",
+      "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for text-to-video comparison; include leaderboard date and whether audio is included."
+    },
+    {
+      "id": "artificial_analysis_image_to_video",
+      "name": "Artificial Analysis Image-to-Video Leaderboard",
+      "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for image-to-video comparison; include leaderboard date and model variant."
+    },
+    {
+      "id": "vbench",
+      "name": "VBench",
+      "url": "https://vchitect.github.io/VBench-project/",
+      "category_ids": [
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_suite",
+      "access_method": "html_or_github",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for video generation quality dimensions; include benchmark version when publishing."
+    },
+    {
+      "id": "luma_news",
+      "name": "Luma AI News",
+      "url": "https://lumalabs.ai/news",
+      "category_ids": [
+        "video_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Luma Ray and Dream Machine release claims."
+    },
+    {
+      "id": "runway_research",
+      "name": "Runway Research",
+      "url": "https://runwayml.com/research",
+      "category_ids": [
+        "video_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Runway model releases and capability claims; compare benchmark claims with independent leaderboards."
+    },
+    {
+      "id": "pika_faq",
+      "name": "Pika FAQ",
+      "url": "https://pika.art/faq",
+      "category_ids": [
+        "video_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_page",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for current Pika model capabilities and product constraints."
+    },
+    {
+      "id": "arxiv_api",
+      "name": "arXiv API",
+      "url": "https://info.arxiv.org/help/api/user-manual.html",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "paper_api",
+      "access_method": "api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for preprint discovery; classify with arXiv categories and avoid treating unreviewed papers as settled findings."
+    },
+    {
+      "id": "arxiv_taxonomy",
+      "name": "arXiv Category Taxonomy",
+      "url": "https://arxiv.org/category_taxonomy",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "taxonomy",
+      "access_method": "html",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for category mapping such as cs.AI, cs.CL, cs.CV, cs.LG, and stat.ML."
+    },
+    {
+      "id": "arxiv_cs_cv",
+      "name": "arXiv cs.CV",
+      "url": "https://arxiv.org/list/cs.CV/new",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "paper_feed",
+      "access_method": "rss_or_api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for computer vision, image, and video preprints; verify high-impact claims through code, benchmarks, or proceedings."
+    },
+    {
+      "id": "openreview",
+      "name": "OpenReview",
+      "url": "https://openreview.net/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "peer_review_platform",
+      "access_method": "api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for ICLR, ICML workshops, NeurIPS tracks, and active peer-review status; store venue and decision status."
+    },
+    {
+      "id": "acl_anthology",
+      "name": "ACL Anthology",
+      "url": "https://aclanthology.org/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "conference_proceedings",
+      "access_method": "html_or_metadata",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for computational linguistics and NLP papers from ACL venues."
+    },
+    {
+      "id": "cvf_open_access",
+      "name": "CVF Open Access",
+      "url": "https://openaccess.thecvf.com/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "conference_proceedings",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for CVPR, ICCV, ECCV open-access papers and accepted versions."
+    },
+    {
+      "id": "pmlr",
+      "name": "Proceedings of Machine Learning Research",
+      "url": "https://proceedings.mlr.press/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "conference_proceedings",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for ICML and other ML conference proceedings published through PMLR."
+    },
+    {
+      "id": "neurips_proceedings",
+      "name": "NeurIPS Proceedings",
+      "url": "https://papers.nips.cc/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "conference_proceedings",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for accepted NeurIPS papers and dataset/benchmark tracks."
+    },
+    {
+      "id": "hugging_face_papers",
+      "name": "Hugging Face Papers",
+      "url": "https://huggingface.co/papers/trending",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "source_type": "paper_discovery",
+      "access_method": "html_or_api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for trending paper discovery and linked repos; confirm paper details through arXiv, OpenReview, or proceedings."
+    },
+    {
+      "id": "meta_llama",
+      "name": "Meta Llama",
+      "url": "https://www.llama.com/",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_page",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for official Llama model availability, downloads, and product positioning."
+    },
+    {
+      "id": "mistral_news",
+      "name": "Mistral AI News",
+      "url": "https://mistral.ai/news/",
+      "category_ids": [
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Mistral model, product, research, and company updates."
+    },
+    {
+      "id": "mistral_changelog",
+      "name": "Mistral Docs Changelog",
+      "url": "https://docs.mistral.ai/resources/changelogs",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Mistral API, model release, and platform changes."
+    },
+    {
+      "id": "cohere_changelog",
+      "name": "Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Cohere model and API release notes."
+    },
+    {
+      "id": "deepseek_news",
+      "name": "DeepSeek News",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for official DeepSeek model and API releases; prefer current news index when integrating."
+    },
+    {
+      "id": "qwen_hugging_face",
+      "name": "Qwen on Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "category_ids": [
+        "models_products",
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "official_model_hub_org",
+      "access_method": "hub_api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Qwen model releases and model-card metadata; confirm strategic claims through Qwen blog or Alibaba Cloud pages."
+    },
+    {
+      "id": "hugging_face_hub",
+      "name": "Hugging Face Hub",
+      "url": "https://huggingface.co/docs/hub/en/index",
+      "category_ids": [
+        "models_products",
+        "research_papers",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "source_type": "model_dataset_hub",
+      "access_method": "hub_api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for public model, dataset, and space metadata; treat popularity metrics as adoption signals, not quality proof."
+    },
+    {
+      "id": "artificial_analysis_models",
+      "name": "Artificial Analysis Models Leaderboard",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for model quality, speed, price, and context comparison; include retrieval date."
+    },
+    {
+      "id": "lmarena",
+      "name": "LMArena Leaderboard",
+      "url": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "community_benchmark_leaderboard",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for preference-based model comparisons; avoid treating ranking alone as a factual capability claim."
+    },
+    {
+      "id": "epoch_ai_benchmarks",
+      "name": "Epoch AI Benchmarks",
+      "url": "https://epoch.ai/benchmarks",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "source_type": "benchmark_database",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for capability trends and benchmark aggregation; store benchmark name and evaluation source."
+    },
+    {
+      "id": "sec_edgar_api",
+      "name": "SEC EDGAR APIs",
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "regulatory_api",
+      "access_method": "api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for public-company filings and structured XBRL data; cite form type and filing date."
+    },
+    {
+      "id": "sec_filings_search",
+      "name": "SEC Filings Search",
+      "url": "https://www.sec.gov/search-filings",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "regulatory_search",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for 10-K, 10-Q, 8-K, S-1, and other filing discovery."
+    },
+    {
+      "id": "crunchbase_data",
+      "name": "Crunchbase Data",
+      "url": "https://data.crunchbase.com/docs/welcome-to-crunchbase-data",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "source_type": "private_market_data",
+      "access_method": "api_paid",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": true,
+      "verification_rule": "Use for funding and firmographic leads; confirm major funding rounds with company announcement or filings when available."
+    },
+    {
+      "id": "cb_insights_ai_100",
+      "name": "CB Insights AI 100",
+      "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "source_type": "market_research",
+      "access_method": "html_or_paid_report",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": "partial",
+      "verification_rule": "Use for startup discovery and categorization; verify company-specific claims through primary sources."
+    },
+    {
+      "id": "stanford_ai_index",
+      "name": "Stanford AI Index",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "category_ids": [
+        "business_investment",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "annual_research_report",
+      "access_method": "html_or_pdf",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for macro AI investment, adoption, research, and policy trend context; record report year."
+    },
+    {
+      "id": "oecd_ai",
+      "name": "OECD.AI Policy Observatory",
+      "url": "https://oecd.ai/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "policy_observatory",
+      "access_method": "html_or_data",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for AI policy, national initiatives, and live trend data; cite dataset or policy entry."
+    },
+    {
+      "id": "nist_ai_rmf",
+      "name": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "government_framework",
+      "access_method": "html_or_pdf",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for AI risk, governance, and safety framework updates."
+    },
+    {
+      "id": "eu_gpai_code",
+      "name": "EU General-Purpose AI Code of Practice",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "regulatory_guidance",
+      "access_method": "html_or_pdf",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for EU AI Act GPAI obligations, signatories, and compliance guidance."
+    },
+    {
+      "id": "ai_gov",
+      "name": "AI.gov",
+      "url": "https://www.ai.gov/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "government_policy_portal",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for U.S. AI strategy and federal policy direction; verify specific actions with White House or agency pages."
+    },
+    {
+      "id": "product_hunt",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "source_type": "product_discovery",
+      "access_method": "html_or_api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for new product discovery and launch momentum; confirm facts on official product website."
+    },
+    {
+      "id": "product_hunt_api",
+      "name": "Product Hunt API",
+      "url": "https://api.producthunt.com/v2/docs",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "source_type": "product_discovery_api",
+      "access_method": "graphql_api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use public GraphQL API for launch metadata; check API usage restrictions before commercial use."
+    },
+    {
+      "id": "github_trending",
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "source_type": "repo_discovery",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for open-source project discovery; verify project health through releases, commits, issues, and docs."
+    },
+    {
+      "id": "github_rest_api",
+      "name": "GitHub REST API",
+      "url": "https://docs.github.com/en/rest",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "developer_api",
+      "access_method": "api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for repository metadata, search, topics, stars, issues, and releases; respect rate limits."
+    },
+    {
+      "id": "github_releases_api",
+      "name": "GitHub Releases API",
+      "url": "https://docs.github.com/v3/repos/releases",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "source_type": "developer_api",
+      "access_method": "api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for versioned open-source tool releases; cite tag, release date, and repo."
+    },
+    {
+      "id": "g2_ai_category",
+      "name": "G2 Artificial Intelligence Category",
+      "url": "https://www.g2.com/categories/artificial-intelligence",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "source_type": "software_reviews",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": "partial",
+      "verification_rule": "Use for buyer sentiment and category position; avoid treating reviews as technical proof."
+    },
+    {
+      "id": "chrome_web_store_docs",
+      "name": "Chrome Web Store Developer Docs",
+      "url": "https://developer.chrome.com/docs/webstore",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_platform_docs",
+      "access_method": "html",
+      "refresh_cadence": "monthly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Chrome extension publishing, platform rules, and API changes."
+    },
+    {
+      "id": "github_ai_topics",
+      "name": "GitHub AI Topics",
+      "url": "https://github.com/topics/ai",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "source_type": "repo_discovery",
+      "access_method": "html_or_api",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for broad AI repository discovery; verify project relevance and activity before inclusion."
+    },
+    {
+      "id": "ossinsight_trending_ai",
+      "name": "OSSInsight Trending AI",
+      "url": "https://ossinsight.io/trending/ai",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "source_type": "repo_discovery_analytics",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for GitHub momentum discovery; confirm with GitHub repository metadata."
+    },
+    {
+      "id": "nvidia_newsroom",
+      "name": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/releases.xml",
+      "category_ids": [
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_newsroom_rss",
+      "access_method": "rss",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for NVIDIA company announcements, partnerships, AI infrastructure, AI factory, and industry deployment news; down-rank broad partnership PR unless it changes builder or market behavior."
+    },
+    {
+      "id": "nvidia_blog",
+      "name": "NVIDIA Blog",
+      "url": "https://feeds.feedburner.com/nvidiablog",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog_rss",
+      "access_method": "rss",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for NVIDIA product, AI platform, RTX AI, physical AI, robotics, creative AI, and industry ecosystem updates; verify technical claims against developer docs when possible."
+    },
+    {
+      "id": "nvidia_developer_blog",
+      "name": "NVIDIA Developer Blog",
+      "url": "https://developer.nvidia.com/blog/feed",
+      "category_ids": [
+        "coding_ai",
+        "video_ai",
+        "research_papers",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_technical_blog_rss",
+      "access_method": "rss",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for CUDA, TensorRT, NIM, NeMo, Omniverse, robotics, inference, RAG, and deployment implementation guidance; prioritize posts with reproducible workflow or developer actionability."
+    },
+    {
+      "id": "nvidia_research",
+      "name": "NVIDIA Research",
+      "url": "https://www.nvidia.com/en-us/research/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research_page",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for NVIDIA research areas, labs, publications, AI demos, graphics, robotics, simulation, and generative AI work; cite paper or project page for specific research claims."
+    },
+    {
+      "id": "stability_ai_news",
+      "name": "Stability AI News",
+      "url": "https://stability.ai/news",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use as a primary source for Stability AI image, video, and model announcements."
+    },
+    {
+      "id": "midjourney_updates",
+      "name": "Midjourney Updates",
+      "url": "https://updates.midjourney.com/",
+      "category_ids": [
+        "image_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_updates",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Midjourney image model and product update announcements."
+    },
+    {
+      "id": "ideogram_blog",
+      "name": "Ideogram Blog",
+      "url": "https://docs.ideogram.ai/about-ideogram/blog-posts",
+      "category_ids": [
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_docs_blog_index",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use the official Ideogram blog index for image model and product announcements; follow linked posts for primary details."
+    },
+    {
+      "id": "leonardo_ai_news",
+      "name": "Leonardo.Ai News",
+      "url": "https://leonardo.ai/news/",
+      "category_ids": [
+        "image_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Leonardo.Ai product, creative tooling, and image generation announcements."
+    },
+    {
+      "id": "canva_newsroom_ai",
+      "name": "Canva Newsroom AI",
+      "url": "https://www.canva.com/newsroom/news/",
+      "category_ids": [
+        "image_ai",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_newsroom",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Canva AI product updates and creative workflow announcements; select only AI-relevant items."
+    },
+    {
+      "id": "kling_ai",
+      "name": "Kling AI",
+      "url": "https://klingai.com/",
+      "category_ids": [
+        "video_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for English Kling AI product and model availability; confirm major claims with Kuaishou releases when available."
+    },
+    {
+      "id": "hailuo_ai_minimax",
+      "name": "Hailuo AI by MiniMax",
+      "url": "https://hailuoai.video/",
+      "category_ids": [
+        "video_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for English Hailuo AI video generation product updates from MiniMax."
+    },
+    {
+      "id": "minimax_news",
+      "name": "MiniMax News",
+      "url": "https://www.minimaxi.com/en/news",
+      "category_ids": [
+        "video_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use as a primary English source for MiniMax model, Hailuo, and product releases."
+    },
+    {
+      "id": "qwen_blog",
+      "name": "Qwen Blog",
+      "url": "https://qwenlm.github.io/blog/",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_model_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Alibaba Qwen model releases including multimodal, image, video, coding, and research model updates."
+    },
+    {
+      "id": "qwen_hugging_face_org",
+      "name": "Qwen Hugging Face Organization",
+      "url": "https://huggingface.co/Qwen",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "source_type": "model_hub_org",
+      "access_method": "hub_api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use to validate Qwen model artifacts and release timing; confirm announcements with Qwen Blog when possible."
+    },
+    {
+      "id": "tencent_hunyuan",
+      "name": "Tencent Hunyuan",
+      "url": "https://hunyuan.tencent.com/",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use only English Hunyuan model and product pages or releases; validate video/image model claims with official Tencent or model hub pages."
+    },
+    {
+      "id": "tencent_hunyuan_hugging_face",
+      "name": "Tencent Hunyuan on Hugging Face",
+      "url": "https://huggingface.co/tencent",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "source_type": "model_hub_org",
+      "access_method": "hub_api_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use to validate Tencent Hunyuan open model artifacts and metadata; confirm product claims with official Tencent sources."
+    },
+    {
+      "id": "bytedance_seed",
+      "name": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research_lab",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for English ByteDance Seed research and model updates, especially multimodal image/video generation."
+    },
+    {
+      "id": "baidu_research_blog",
+      "name": "Baidu Research Blog",
+      "url": "https://research.baidu.com/Blog",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for English Baidu research and model updates; include only AI-relevant research or productized model signals."
+    },
+    {
+      "id": "baidu_ernie_bot",
+      "name": "Baidu ERNIE Bot",
+      "url": "https://yiyan.baidu.com/",
+      "category_ids": [
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use only English-accessible ERNIE product or model information; verify major claims against Baidu Research or official releases."
+    },
+    {
+      "id": "zhipu_ai",
+      "name": "Zhipu AI",
+      "url": "https://www.zhipuai.cn/en/",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use English Zhipu AI pages for GLM model and product updates; confirm open artifacts with model hub pages when available."
+    },
+    {
+      "id": "moonshot_ai",
+      "name": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "category_ids": [
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for English Moonshot AI model and product updates when available."
+    },
+    {
+      "id": "xai_news",
+      "name": "xAI News",
+      "url": "https://x.ai/news",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use as primary source for xAI model, product, and research announcements."
+    },
+    {
+      "id": "perplexity_blog",
+      "name": "Perplexity Blog",
+      "url": "https://www.perplexity.ai/hub/blog",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Perplexity product, model, and business updates."
+    },
+    {
+      "id": "replicate_blog",
+      "name": "Replicate Blog",
+      "url": "https://replicate.com/blog",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for model deployment, image/video model hosting, and developer tooling updates from Replicate."
+    },
+    {
+      "id": "together_ai_blog",
+      "name": "Together AI Blog",
+      "url": "https://www.together.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "research_papers",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Together AI model serving, open model, benchmark, and developer platform announcements."
+    },
+    {
+      "id": "fireworks_ai_blog",
+      "name": "Fireworks AI Blog",
+      "url": "https://fireworks.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Fireworks AI model serving, fine-tuning, and developer platform updates."
+    },
+    {
+      "id": "groq_blog",
+      "name": "Groq Blog",
+      "url": "https://groq.com/blog/",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Groq model serving, inference infrastructure, developer platform, and business announcements."
+    },
+    {
+      "id": "cerebras_blog",
+      "name": "Cerebras Blog",
+      "url": "https://www.cerebras.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Cerebras model, inference, training infrastructure, and business announcements."
+    },
+    {
+      "id": "ai21_news",
+      "name": "AI21 News",
+      "url": "https://www.ai21.com/news/",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_news",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for AI21 model and enterprise product announcements."
+    },
+    {
+      "id": "anthropic_research",
+      "name": "Anthropic Research",
+      "url": "https://www.anthropic.com/research",
+      "category_ids": [
+        "research_papers",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Anthropic research and safety work; connect to model/product impact only when the article states it."
+    },
+    {
+      "id": "meta_ai_blog",
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_blog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use as primary source for Meta AI research, Llama, multimodal, and generative media announcements."
+    },
+    {
+      "id": "microsoft_research_ai",
+      "name": "Microsoft Research AI",
+      "url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Microsoft Research AI work; confirm productization with Microsoft product blogs when available."
+    },
+    {
+      "id": "apple_ml_research",
+      "name": "Apple Machine Learning Research",
+      "url": "https://machinelearning.apple.com/research",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_research",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Apple ML research signals; avoid treating papers as product availability unless Apple states it."
+    },
+    {
+      "id": "techcrunch_ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "source_type": "industry_news",
+      "access_method": "rss_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for business and startup discovery; confirm factual claims with primary company, filing, or product sources before publishing as final signal."
+    },
+    {
+      "id": "venturebeat_ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "source_type": "industry_news",
+      "access_method": "rss_or_html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for market and enterprise AI discovery; confirm major product or funding claims with primary sources."
+    },
+    {
+      "id": "the_information_ai",
+      "name": "The Information AI",
+      "url": "https://www.theinformation.com/topics/artificial-intelligence",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "source_type": "industry_news",
+      "access_method": "html_paywalled",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": true,
+      "verification_rule": "Use only as market-intelligence lead when accessible; confirm with primary filings, company announcements, or non-paywalled sources."
+    },
+    {
+      "id": "a16z_ai",
+      "name": "a16z AI",
+      "url": "https://a16z.com/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "source_type": "investor_research",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for market framing and startup trend discovery; avoid treating investor commentary as primary evidence for product claims."
+    },
+    {
+      "id": "sequoia_ai",
+      "name": "Sequoia AI",
+      "url": "https://www.sequoiacap.com/article/category/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "B",
+      "source_type": "investor_research",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for AI market analysis and startup trend discovery; confirm factual company claims with primary sources."
+    },
+    {
+      "id": "notion_ai",
+      "name": "Notion AI",
+      "url": "https://www.notion.com/product/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Notion AI product capabilities and availability; use changelog/blog when adapter is added."
+    },
+    {
+      "id": "figma_ai",
+      "name": "Figma AI",
+      "url": "https://www.figma.com/ai/",
+      "category_ids": [
+        "tools_apps",
+        "image_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Figma AI product capability and design workflow updates; confirm announcements with Figma blog/changelog when available."
+    },
+    {
+      "id": "zapier_ai",
+      "name": "Zapier AI",
+      "url": "https://zapier.com/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_site",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Zapier AI automation product updates and tool ecosystem signals."
+    },
+    {
+      "id": "linear_changelog",
+      "name": "Linear Changelog",
+      "url": "https://linear.app/changelog",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_changelog",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use only AI-related Linear feature updates and developer/productivity workflow signals."
+    },
+    {
+      "id": "atlassian_ai",
+      "name": "Atlassian Intelligence",
+      "url": "https://www.atlassian.com/trust/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_ai_trust_page",
+      "access_method": "html",
+      "refresh_cadence": "daily",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use for Atlassian AI capability, trust, and enterprise deployment signals; confirm launch timing with Atlassian blog or product pages."
+    }
+  ]
+}

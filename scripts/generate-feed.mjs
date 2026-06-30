@@ -1,12 +1,21 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { collectSourceRecords } from "../lib/feed-collectors/source-collection.mjs";
+import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
+import { ensureFeedItemImage, filterFreshRecords } from "../lib/feed-quality/fresh-feed.mjs";
+import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
 const outDir = args.out ?? "public";
+const sourcePool = await loadSourcePool(args.sourcePool ?? "data/source-pool.json");
 const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
+const minItems = Number(args.minItems ?? args["min-items"] ?? 1);
+const adapterLimitPerSource = Number(args.adapterLimitPerSource ?? args["adapter-limit-per-source"] ?? 4);
+const freshWindowHours = Number(args.freshWindowHours ?? args["fresh-window-hours"] ?? 36);
+const asOf = args.asOf ?? args["as-of"] ?? null;
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
 const enableGeneratedImages = parseBoolean(process.env.ENABLE_OPENAI_IMAGES ?? args.generateImages ?? "false");
@@ -35,7 +44,7 @@ const categories = [
   "tools_apps"
 ];
 
-const sources = [
+const legacySourceSeeds = [
   { name: "OpenAI Blog", url: "https://openai.com/news/rss.xml", category: "models_products" },
   { name: "Google AI Blog", url: "https://blog.google/technology/ai/rss/", category: "models_products" },
   { name: "Anthropic News", url: "https://www.anthropic.com/news/rss.xml", category: "models_products" },
@@ -45,7 +54,11 @@ const sources = [
 ];
 
 const records = sampleMode ? sampleRecords(date) : await collectRecords();
-const deduped = dedupe(records);
+const freshRecords = sampleMode ? records : filterFreshRecords(records, { date, hours: freshWindowHours, asOf });
+if (!sampleMode) {
+  console.log(`Freshness window: ${freshWindowHours}h; candidates ${freshRecords.length}/${records.length}`);
+}
+const deduped = dedupe(freshRecords);
 const selectedRecords = selectRecords(deduped, itemLimit);
 const items = [];
 
@@ -78,7 +91,7 @@ for (const [index, record] of selectedRecords.entries()) {
     }
   }
 
-  items.push({
+  items.push(ensureFeedItemImage({
     id,
     category: classified.category,
     title_zh: enriched.titleZh,
@@ -90,6 +103,8 @@ for (const [index, record] of selectedRecords.entries()) {
     source_name: record.sourceName,
     source_url: record.sourceUrl,
     original_url: record.originalUrl ?? record.sourceUrl,
+    source_pool_id: record.sourcePoolId ?? null,
+    authority_tier: record.authorityTier ?? "C",
     published_at: record.publishedAt,
     image_name: classified.category,
     image_url: imageUrl,
@@ -97,15 +112,18 @@ for (const [index, record] of selectedRecords.entries()) {
     image_prompt: imagePrompt,
     confidence: enriched.confidence,
     tags: buildTags(classified.category, record.title).slice(0, 5)
-  });
+  }, { publicBaseURL }));
 
   if (items.length >= itemLimit) break;
   if (index < selectedRecords.length - 1) await sleep(150);
 }
 
-const validItems = items.filter((item) => item.source_url || item.original_url);
-if (validItems.length < 5) {
-  throw new Error(`Only generated ${validItems.length} valid feed items; expected at least 5.`);
+const validItems = enrichFeedItemsWithQuality(
+  items.filter((item) => item.source_url || item.original_url),
+  sourcePool
+);
+if (validItems.length < minItems) {
+  throw new Error(`Only generated ${validItems.length} valid feed items; expected at least ${minItems}.`);
 }
 
 await publishFeed({ outDir, date, items: validItems });
@@ -123,44 +141,14 @@ async function enrichSafely(record, category) {
 }
 
 async function collectRecords() {
-  const collected = [];
-  for (const source of sources) {
-    try {
-      const response = await fetch(source.url, {
-        headers: feedHeaders
-      });
-      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-      const xml = await response.text();
-      collected.push(...parseRSS(xml, source));
-    } catch (error) {
-      console.warn(`Skipping ${source.name}: ${error.message}`);
-    }
-  }
+  const collected = await collectSourceRecords(sourcePool, {
+    date,
+    legacySources: legacySourceSeeds,
+    feedHeaders,
+    adapterHeaders: pageHeaders,
+    adapterLimitPerSource
+  });
   return collected.length > 0 ? collected : sampleRecords(date);
-}
-
-function parseRSS(xml, source) {
-  const itemBlocks = [...xml.matchAll(/<item\b[\s\S]*?<\/item>|<entry\b[\s\S]*?<\/entry>/gi)].map((match) => match[0]);
-  return itemBlocks.map((block) => {
-    const title = cleanXML(pick(block, "title")) || "Untitled AI update";
-    const link = cleanXML(pick(block, "link")) || attr(block, "link", "href");
-    const rawSummary = pick(block, "description") || pick(block, "summary") || pick(block, "content") || pick(block, "content:encoded");
-    const summary = cleanXML(rawSummary);
-    const published = cleanXML(pick(block, "pubDate") || pick(block, "published") || pick(block, "updated"));
-    const imageUrl = extractSourceImage(block, rawSummary);
-
-    return {
-      title,
-      summary,
-      sourceName: source.name,
-      sourceUrl: link,
-      originalUrl: link,
-      imageUrl,
-      imageSource: imageUrl ? "source" : null,
-      publishedAt: published ? new Date(published).toISOString() : `${date}T08:00:00Z`,
-      fallbackCategory: source.category
-    };
-  }).filter((item) => item.sourceUrl);
 }
 
 async function enrichWithOpenAI(record, category) {
@@ -291,18 +279,6 @@ function logImageStats(items) {
   console.log(`Image stats: ${withImages}/${items.length} with image_url, ${sourceImages} source, ${generatedImages} generated`);
 }
 
-function extractSourceImage(block, rawSummary) {
-  const candidates = [
-    attr(block, "media:content", "url", { typePrefix: "image/" }),
-    attr(block, "media:thumbnail", "url"),
-    attr(block, "enclosure", "url", { typePrefix: "image/" }),
-    attr(block, "image", "url"),
-    imageFromHTML(rawSummary),
-    imageFromHTML(block)
-  ];
-  return candidates.find(isUsableImageURL) ?? null;
-}
-
 function extractHTMLMetadataImage(html, pageURL) {
   const candidates = [
     metaContent(html, "property", "og:image"),
@@ -424,7 +400,8 @@ function dedupe(records) {
 }
 
 function selectRecords(records, limit) {
-  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sources.length - 1)));
+  const sourceCount = new Set(records.map((record) => record.sourceName)).size;
+  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sourceCount - 1)));
   const maxPerCategory = Math.max(3, Math.ceil(limit / 3));
   const sorted = [...records].sort((a, b) => {
     const imageDelta = Number(Boolean(b.imageUrl)) - Number(Boolean(a.imageUrl));
@@ -461,25 +438,6 @@ function normalize(value) {
 
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function pick(block, tag) {
-  const match = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i"));
-  return match?.[1] ?? "";
-}
-
-function attr(block, tag, name, options = {}) {
-  const tagMatch = block.match(new RegExp(`<${tag}\\b[^>]*>`, "i"));
-  if (!tagMatch) return null;
-  const tagText = tagMatch[0];
-  if (options.typePrefix) {
-    const type = tagText.match(/\stype=["']([^"']+)["']/i)?.[1] ?? "";
-    const medium = tagText.match(/\smedium=["']([^"']+)["']/i)?.[1] ?? "";
-    if (!type.toLowerCase().startsWith(options.typePrefix) && medium.toLowerCase() !== "image") {
-      return null;
-    }
-  }
-  return decodeEntities(tagText.match(new RegExp(`\\s${name}=["']([^"']+)["']`, "i"))?.[1] ?? "");
 }
 
 function imageFromHTML(value) {

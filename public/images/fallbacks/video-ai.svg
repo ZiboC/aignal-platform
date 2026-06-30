@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Video AI signal">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#061724"/><stop offset=".52" stop-color="#111630"/><stop offset="1" stop-color="#481143"/></linearGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0v54" fill="none" stroke="#22f5ff" stroke-opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <rect x="760" y="146" width="330" height="230" fill="none" stroke="#22f5ff" stroke-width="6" opacity=".72"/>
+  <path d="M888 204l150 57-150 57z" fill="#ff38d1" opacity=".82"/>
+  <text x="72" y="120" fill="#ff38d1" font-family="Arial, sans-serif" font-size="28" font-weight="800">AIGNAL / VIDEO AI</text>
+  <text x="72" y="372" fill="#eafbff" font-family="Arial, sans-serif" font-size="92" font-weight="900">VIDEO SIGNAL</text>
+  <text x="76" y="438" fill="#a8c5d8" font-family="Arial, sans-serif" font-size="30" font-weight="700">generation, world models, editing, media pipelines</text>
+</svg>

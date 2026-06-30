@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Tools signal">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#061724"/><stop offset=".52" stop-color="#10142f"/><stop offset="1" stop-color="#481143"/></linearGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0v54" fill="none" stroke="#22f5ff" stroke-opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <path d="M760 438l190-190 70 70-190 190h-70z" fill="none" stroke="#22f5ff" stroke-width="8" opacity=".72"/>
+  <circle cx="1020" cy="248" r="72" fill="none" stroke="#ff38d1" stroke-width="8" opacity=".65"/>
+  <text x="72" y="120" fill="#ff38d1" font-family="Arial, sans-serif" font-size="28" font-weight="800">AIGNAL / TOOLS</text>
+  <text x="72" y="372" fill="#eafbff" font-family="Arial, sans-serif" font-size="92" font-weight="900">TOOL SIGNAL</text>
+  <text x="76" y="438" fill="#a8c5d8" font-family="Arial, sans-serif" font-size="30" font-weight="700">apps, workflows, launches, integrations, utilities</text>
+</svg>

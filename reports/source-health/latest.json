@@ -1,0 +1,2352 @@
+{
+  "checked_at": "2026-06-14T19:33:01.382Z",
+  "summary": {
+    "total_sources": 108,
+    "checked_sources": 108,
+    "reachable_sources": 100,
+    "failing_sources": 8,
+    "directly_collectable_sources": 7,
+    "adapter_needed_sources": 101,
+    "status_counts": {
+      "reachable": 100,
+      "failing": 8
+    },
+    "access_method_counts": {
+      "rss_or_html": 5,
+      "html": 73,
+      "github_raw_or_html": 1,
+      "html_or_dataset": 1,
+      "html_or_github": 2,
+      "hub_api_or_html": 5,
+      "api": 4,
+      "rss_or_api": 1,
+      "api_or_html": 1,
+      "html_or_metadata": 1,
+      "html_or_api": 3,
+      "api_paid": 1,
+      "html_or_paid_report": 1,
+      "html_or_pdf": 3,
+      "html_or_data": 1,
+      "graphql_api": 1,
+      "rss": 3,
+      "html_paywalled": 1
+    }
+  },
+  "coverage_gaps": [],
+  "adapter_gaps": [],
+  "categories": [
+    {
+      "id": "coding_ai",
+      "label_zh": "写代码 AI",
+      "label_en": "Coding AI",
+      "source_count": 28,
+      "reachable_count": 27,
+      "failing_count": 1,
+      "directly_collectable_count": 3,
+      "adapter_needed_count": 25,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "openai_news"
+      ],
+      "adapter_needed_source_ids": [
+        "github_changelog",
+        "github_copilot_whats_new",
+        "openai_news",
+        "openai_api_changelog",
+        "claude_platform_release_notes",
+        "claude_code_changelog",
+        "google_gemini_api_changelog",
+        "cursor_changelog",
+        "replit_changelog",
+        "swe_bench",
+        "livecodebench",
+        "aider_leaderboards",
+        "lmarena",
+        "epoch_ai_benchmarks",
+        "github_trending",
+        "github_ai_topics",
+        "ossinsight_trending_ai",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "zhipu_ai",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "microsoft_research_ai"
+      ]
+    },
+    {
+      "id": "image_ai",
+      "label_zh": "图片 AI",
+      "label_en": "Image AI",
+      "source_count": 30,
+      "reachable_count": 27,
+      "failing_count": 3,
+      "directly_collectable_count": 1,
+      "adapter_needed_count": 29,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "openai_news",
+        "leonardo_ai_news",
+        "canva_newsroom_ai"
+      ],
+      "adapter_needed_source_ids": [
+        "openai_news",
+        "google_deepmind_news",
+        "google_ai_blog",
+        "adobe_news",
+        "black_forest_labs_announcements",
+        "hugging_face_model_cards",
+        "artificial_analysis_text_to_image",
+        "runway_research",
+        "arxiv_cs_cv",
+        "cvf_open_access",
+        "qwen_hugging_face",
+        "lmarena",
+        "nvidia_research",
+        "stability_ai_news",
+        "midjourney_updates",
+        "ideogram_blog",
+        "leonardo_ai_news",
+        "canva_newsroom_ai",
+        "kling_ai",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "replicate_blog",
+        "meta_ai_blog",
+        "apple_ml_research",
+        "figma_ai"
+      ]
+    },
+    {
+      "id": "video_ai",
+      "label_zh": "视频 AI",
+      "label_en": "Video AI",
+      "source_count": 27,
+      "reachable_count": 26,
+      "failing_count": 1,
+      "directly_collectable_count": 2,
+      "adapter_needed_count": 25,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "openai_sora"
+      ],
+      "adapter_needed_source_ids": [
+        "openai_sora",
+        "google_deepmind_news",
+        "adobe_news",
+        "adobe_firefly_runway",
+        "artificial_analysis_text_to_video",
+        "artificial_analysis_image_to_video",
+        "vbench",
+        "luma_news",
+        "runway_research",
+        "pika_faq",
+        "arxiv_cs_cv",
+        "cvf_open_access",
+        "nvidia_research",
+        "stability_ai_news",
+        "kling_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "replicate_blog",
+        "meta_ai_blog"
+      ]
+    },
+    {
+      "id": "research_papers",
+      "label_zh": "研究论文",
+      "label_en": "Research",
+      "source_count": 27,
+      "reachable_count": 27,
+      "failing_count": 0,
+      "directly_collectable_count": 2,
+      "adapter_needed_count": 25,
+      "coverage_status": "ok",
+      "failing_source_ids": [],
+      "adapter_needed_source_ids": [
+        "arxiv_taxonomy",
+        "arxiv_cs_cv",
+        "openreview",
+        "acl_anthology",
+        "cvf_open_access",
+        "pmlr",
+        "neurips_proceedings",
+        "hugging_face_papers",
+        "google_deepmind_news",
+        "vbench",
+        "hugging_face_hub",
+        "epoch_ai_benchmarks",
+        "stanford_ai_index",
+        "nvidia_research",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "xai_news",
+        "together_ai_blog",
+        "anthropic_research",
+        "meta_ai_blog",
+        "microsoft_research_ai",
+        "apple_ml_research"
+      ]
+    },
+    {
+      "id": "models_products",
+      "label_zh": "模型/产品",
+      "label_en": "Models",
+      "source_count": 59,
+      "reachable_count": 56,
+      "failing_count": 3,
+      "directly_collectable_count": 3,
+      "adapter_needed_count": 56,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "openai_news",
+        "perplexity_blog",
+        "venturebeat_ai"
+      ],
+      "adapter_needed_source_ids": [
+        "openai_model_release_notes",
+        "openai_news",
+        "openai_api_changelog",
+        "claude_release_notes",
+        "claude_platform_release_notes",
+        "google_gemini_api_changelog",
+        "google_deepmind_news",
+        "google_ai_blog",
+        "meta_llama",
+        "mistral_news",
+        "mistral_changelog",
+        "cohere_changelog",
+        "deepseek_news",
+        "qwen_hugging_face",
+        "hugging_face_hub",
+        "artificial_analysis_models",
+        "lmarena",
+        "epoch_ai_benchmarks",
+        "black_forest_labs_announcements",
+        "hugging_face_model_cards",
+        "luma_news",
+        "runway_research",
+        "hugging_face_papers",
+        "nist_ai_rmf",
+        "eu_gpai_code",
+        "nvidia_research",
+        "stability_ai_news",
+        "ideogram_blog",
+        "kling_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "qwen_blog",
+        "qwen_hugging_face_org",
+        "tencent_hunyuan",
+        "tencent_hunyuan_hugging_face",
+        "bytedance_seed",
+        "baidu_research_blog",
+        "baidu_ernie_bot",
+        "zhipu_ai",
+        "moonshot_ai",
+        "xai_news",
+        "perplexity_blog",
+        "replicate_blog",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "ai21_news",
+        "anthropic_research",
+        "meta_ai_blog",
+        "microsoft_research_ai",
+        "apple_ml_research",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "a16z_ai",
+        "sequoia_ai"
+      ]
+    },
+    {
+      "id": "business_investment",
+      "label_zh": "产业/投资",
+      "label_en": "Business",
+      "source_count": 29,
+      "reachable_count": 24,
+      "failing_count": 5,
+      "directly_collectable_count": 3,
+      "adapter_needed_count": 26,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "g2_ai_category",
+        "canva_newsroom_ai",
+        "perplexity_blog",
+        "venturebeat_ai",
+        "the_information_ai"
+      ],
+      "adapter_needed_source_ids": [
+        "sec_filings_search",
+        "crunchbase_data",
+        "cb_insights_ai_100",
+        "stanford_ai_index",
+        "oecd_ai",
+        "nist_ai_rmf",
+        "eu_gpai_code",
+        "ai_gov",
+        "google_ai_blog",
+        "adobe_news",
+        "mistral_news",
+        "g2_ai_category",
+        "canva_newsroom_ai",
+        "perplexity_blog",
+        "groq_blog",
+        "cerebras_blog",
+        "ai21_news",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "the_information_ai",
+        "a16z_ai",
+        "sequoia_ai",
+        "notion_ai",
+        "figma_ai",
+        "zapier_ai",
+        "atlassian_ai"
+      ]
+    },
+    {
+      "id": "tools_apps",
+      "label_zh": "工具应用",
+      "label_en": "Tools",
+      "source_count": 39,
+      "reachable_count": 34,
+      "failing_count": 5,
+      "directly_collectable_count": 3,
+      "adapter_needed_count": 36,
+      "coverage_status": "degraded",
+      "failing_source_ids": [
+        "g2_ai_category",
+        "leonardo_ai_news",
+        "canva_newsroom_ai",
+        "perplexity_blog",
+        "venturebeat_ai"
+      ],
+      "adapter_needed_source_ids": [
+        "product_hunt",
+        "product_hunt_api",
+        "github_changelog",
+        "cursor_changelog",
+        "replit_changelog",
+        "hugging_face_model_cards",
+        "pika_faq",
+        "hugging_face_papers",
+        "hugging_face_hub",
+        "github_trending",
+        "g2_ai_category",
+        "chrome_web_store_docs",
+        "github_ai_topics",
+        "ossinsight_trending_ai",
+        "leonardo_ai_news",
+        "canva_newsroom_ai",
+        "hailuo_ai_minimax",
+        "minimax_news",
+        "baidu_ernie_bot",
+        "zhipu_ai",
+        "moonshot_ai",
+        "xai_news",
+        "perplexity_blog",
+        "replicate_blog",
+        "together_ai_blog",
+        "fireworks_ai_blog",
+        "ai21_news",
+        "microsoft_research_ai",
+        "techcrunch_ai",
+        "venturebeat_ai",
+        "a16z_ai",
+        "notion_ai",
+        "figma_ai",
+        "zapier_ai",
+        "linear_changelog",
+        "atlassian_ai"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "github_changelog",
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/",
+      "final_url": "https://github.blog/changelog/",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 76,
+      "error": null
+    },
+    {
+      "id": "github_copilot_whats_new",
+      "name": "GitHub Copilot What's New",
+      "url": "https://github.com/features/copilot/whats-new",
+      "final_url": "https://github.com/features/copilot/whats-new",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 440,
+      "error": null
+    },
+    {
+      "id": "openai_news",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/",
+      "final_url": "https://openai.com/news/",
+      "category_ids": [
+        "coding_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 84,
+      "error": "Forbidden"
+    },
+    {
+      "id": "openai_api_changelog",
+      "name": "OpenAI API Changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "final_url": "https://developers.openai.com/api/docs/changelog",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 143,
+      "error": null
+    },
+    {
+      "id": "openai_model_release_notes",
+      "name": "OpenAI Model Release Notes",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "final_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 302,
+      "error": null
+    },
+    {
+      "id": "openai_sora",
+      "name": "OpenAI Sora",
+      "url": "https://openai.com/index/sora/",
+      "final_url": "https://openai.com/index/sora/",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 89,
+      "error": "Forbidden"
+    },
+    {
+      "id": "claude_platform_release_notes",
+      "name": "Claude Platform Release Notes",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "final_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1130,
+      "error": null
+    },
+    {
+      "id": "claude_release_notes",
+      "name": "Claude Release Notes",
+      "url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "final_url": "https://support.claude.com/en/articles/12138966-release-notes",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 568,
+      "error": null
+    },
+    {
+      "id": "claude_code_changelog",
+      "name": "Claude Code Changelog",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "final_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "github_raw_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 790,
+      "error": null
+    },
+    {
+      "id": "google_gemini_api_changelog",
+      "name": "Gemini API Changelog",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "final_url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "category_ids": [
+        "coding_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 357,
+      "error": null
+    },
+    {
+      "id": "google_deepmind_news",
+      "name": "Google DeepMind News",
+      "url": "https://deepmind.google/blog/",
+      "final_url": "https://deepmind.google/blog/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 337,
+      "error": null
+    },
+    {
+      "id": "google_ai_blog",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "final_url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "category_ids": [
+        "image_ai",
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 132,
+      "error": null
+    },
+    {
+      "id": "cursor_changelog",
+      "name": "Cursor Changelog",
+      "url": "https://cursor.com/changelog",
+      "final_url": "https://cursor.com/changelog",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 91,
+      "error": null
+    },
+    {
+      "id": "replit_changelog",
+      "name": "Replit Changelog",
+      "url": "https://docs.replit.com/updates/2026/06/05/changelog",
+      "final_url": "https://docs.replit.com/updates/2026/06/05/changelog",
+      "category_ids": [
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 94,
+      "error": null
+    },
+    {
+      "id": "swe_bench",
+      "name": "SWE-bench",
+      "url": "https://www.swebench.com/",
+      "final_url": "https://www.swebench.com/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html_or_dataset",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 48,
+      "error": null
+    },
+    {
+      "id": "livecodebench",
+      "name": "LiveCodeBench",
+      "url": "https://livecodebench.github.io/",
+      "final_url": "https://livecodebench.github.io/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html_or_github",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 155,
+      "error": null
+    },
+    {
+      "id": "aider_leaderboards",
+      "name": "Aider LLM Leaderboards",
+      "url": "https://aider.chat/docs/leaderboards/",
+      "final_url": "https://aider.chat/docs/leaderboards/",
+      "category_ids": [
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 34,
+      "error": null
+    },
+    {
+      "id": "adobe_news",
+      "name": "Adobe News",
+      "url": "https://news.adobe.com/",
+      "final_url": "https://news.adobe.com/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 194,
+      "error": null
+    },
+    {
+      "id": "adobe_firefly_runway",
+      "name": "Adobe Firefly Runway Partner Model Page",
+      "url": "https://www.adobe.com/products/firefly/partner-models/runway.html",
+      "final_url": "https://www.adobe.com/products/firefly/partner-models/runway.html",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 193,
+      "error": null
+    },
+    {
+      "id": "black_forest_labs_announcements",
+      "name": "Black Forest Labs Announcements",
+      "url": "https://blackforestlabs.ai/announcements/",
+      "final_url": "https://bfl.ai/blog",
+      "category_ids": [
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 482,
+      "error": null
+    },
+    {
+      "id": "hugging_face_model_cards",
+      "name": "Hugging Face Model Cards",
+      "url": "https://huggingface.co/docs/hub/en/model-cards",
+      "final_url": "https://huggingface.co/docs/hub/en/model-cards",
+      "category_ids": [
+        "image_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "access_method": "hub_api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 229,
+      "error": null
+    },
+    {
+      "id": "artificial_analysis_text_to_image",
+      "name": "Artificial Analysis Text-to-Image Leaderboard",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "final_url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "category_ids": [
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 115,
+      "error": null
+    },
+    {
+      "id": "artificial_analysis_text_to_video",
+      "name": "Artificial Analysis Text-to-Video Leaderboard",
+      "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "final_url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 76,
+      "error": null
+    },
+    {
+      "id": "artificial_analysis_image_to_video",
+      "name": "Artificial Analysis Image-to-Video Leaderboard",
+      "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+      "final_url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+      "category_ids": [
+        "video_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 70,
+      "error": null
+    },
+    {
+      "id": "vbench",
+      "name": "VBench",
+      "url": "https://vchitect.github.io/VBench-project/",
+      "final_url": "https://vchitect.github.io/VBench-project/",
+      "category_ids": [
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "access_method": "html_or_github",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 40,
+      "error": null
+    },
+    {
+      "id": "luma_news",
+      "name": "Luma AI News",
+      "url": "https://lumalabs.ai/news",
+      "final_url": "https://lumalabs.ai/news",
+      "category_ids": [
+        "video_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 370,
+      "error": null
+    },
+    {
+      "id": "runway_research",
+      "name": "Runway Research",
+      "url": "https://runwayml.com/research",
+      "final_url": "https://runwayml.com/research",
+      "category_ids": [
+        "video_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 98,
+      "error": null
+    },
+    {
+      "id": "pika_faq",
+      "name": "Pika FAQ",
+      "url": "https://pika.art/faq",
+      "final_url": "https://pika.art/faq",
+      "category_ids": [
+        "video_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 816,
+      "error": null
+    },
+    {
+      "id": "arxiv_api",
+      "name": "arXiv API",
+      "url": "https://info.arxiv.org/help/api/user-manual.html",
+      "final_url": "https://info.arxiv.org/help/api/user-manual.html",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "api",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 91,
+      "error": null
+    },
+    {
+      "id": "arxiv_taxonomy",
+      "name": "arXiv Category Taxonomy",
+      "url": "https://arxiv.org/category_taxonomy",
+      "final_url": "https://arxiv.org/category_taxonomy",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 58,
+      "error": null
+    },
+    {
+      "id": "arxiv_cs_cv",
+      "name": "arXiv cs.CV",
+      "url": "https://arxiv.org/list/cs.CV/new",
+      "final_url": "https://arxiv.org/list/cs.CV/new",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss_or_api",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 30,
+      "error": null
+    },
+    {
+      "id": "openreview",
+      "name": "OpenReview",
+      "url": "https://openreview.net/",
+      "final_url": "https://openreview.net/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 451,
+      "error": null
+    },
+    {
+      "id": "acl_anthology",
+      "name": "ACL Anthology",
+      "url": "https://aclanthology.org/",
+      "final_url": "https://aclanthology.org/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html_or_metadata",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 263,
+      "error": null
+    },
+    {
+      "id": "cvf_open_access",
+      "name": "CVF Open Access",
+      "url": "https://openaccess.thecvf.com/",
+      "final_url": "https://openaccess.thecvf.com/menu",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 598,
+      "error": null
+    },
+    {
+      "id": "pmlr",
+      "name": "Proceedings of Machine Learning Research",
+      "url": "https://proceedings.mlr.press/",
+      "final_url": "https://proceedings.mlr.press/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 36,
+      "error": null
+    },
+    {
+      "id": "neurips_proceedings",
+      "name": "NeurIPS Proceedings",
+      "url": "https://papers.nips.cc/",
+      "final_url": "https://papers.nips.cc/",
+      "category_ids": [
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 162,
+      "error": null
+    },
+    {
+      "id": "hugging_face_papers",
+      "name": "Hugging Face Papers",
+      "url": "https://huggingface.co/papers/trending",
+      "final_url": "https://huggingface.co/papers/trending",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "access_method": "html_or_api",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 183,
+      "error": null
+    },
+    {
+      "id": "meta_llama",
+      "name": "Meta Llama",
+      "url": "https://www.llama.com/",
+      "final_url": "https://www.llama.com/",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 368,
+      "error": null
+    },
+    {
+      "id": "mistral_news",
+      "name": "Mistral AI News",
+      "url": "https://mistral.ai/news/",
+      "final_url": "https://mistral.ai/news/",
+      "category_ids": [
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 82,
+      "error": null
+    },
+    {
+      "id": "mistral_changelog",
+      "name": "Mistral Docs Changelog",
+      "url": "https://docs.mistral.ai/resources/changelogs",
+      "final_url": "https://docs.mistral.ai/resources/changelogs",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 87,
+      "error": null
+    },
+    {
+      "id": "cohere_changelog",
+      "name": "Cohere Release Notes",
+      "url": "https://docs.cohere.com/changelog",
+      "final_url": "https://docs.cohere.com/changelog",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 116,
+      "error": null
+    },
+    {
+      "id": "deepseek_news",
+      "name": "DeepSeek News",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "final_url": "https://api-docs.deepseek.com/news/news260424",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 834,
+      "error": null
+    },
+    {
+      "id": "qwen_hugging_face",
+      "name": "Qwen on Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "final_url": "https://huggingface.co/Qwen",
+      "category_ids": [
+        "models_products",
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "hub_api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 268,
+      "error": null
+    },
+    {
+      "id": "hugging_face_hub",
+      "name": "Hugging Face Hub",
+      "url": "https://huggingface.co/docs/hub/en/index",
+      "final_url": "https://huggingface.co/docs/hub/en/index",
+      "category_ids": [
+        "models_products",
+        "research_papers",
+        "tools_apps"
+      ],
+      "authority_tier": "A",
+      "access_method": "hub_api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 153,
+      "error": null
+    },
+    {
+      "id": "artificial_analysis_models",
+      "name": "Artificial Analysis Models Leaderboard",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "final_url": "https://artificialanalysis.ai/leaderboards/models",
+      "category_ids": [
+        "models_products"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 895,
+      "error": null
+    },
+    {
+      "id": "lmarena",
+      "name": "LMArena Leaderboard",
+      "url": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard",
+      "final_url": "https://huggingface.co/spaces/lmarena-ai/arena-leaderboard",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 97,
+      "error": null
+    },
+    {
+      "id": "epoch_ai_benchmarks",
+      "name": "Epoch AI Benchmarks",
+      "url": "https://epoch.ai/benchmarks",
+      "final_url": "https://epoch.ai/benchmarks",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 72,
+      "error": null
+    },
+    {
+      "id": "sec_edgar_api",
+      "name": "SEC EDGAR APIs",
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "final_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "api",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 151,
+      "error": null
+    },
+    {
+      "id": "sec_filings_search",
+      "name": "SEC Filings Search",
+      "url": "https://www.sec.gov/search-filings",
+      "final_url": "https://www.sec.gov/search-filings",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 104,
+      "error": null
+    },
+    {
+      "id": "crunchbase_data",
+      "name": "Crunchbase Data",
+      "url": "https://data.crunchbase.com/docs/welcome-to-crunchbase-data",
+      "final_url": "https://data.crunchbase.com/docs/welcome-to-crunchbase-data",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "access_method": "api_paid",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 79,
+      "error": null
+    },
+    {
+      "id": "cb_insights_ai_100",
+      "name": "CB Insights AI 100",
+      "url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+      "final_url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "access_method": "html_or_paid_report",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1500,
+      "error": null
+    },
+    {
+      "id": "stanford_ai_index",
+      "name": "Stanford AI Index",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "final_url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+      "category_ids": [
+        "business_investment",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html_or_pdf",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 136,
+      "error": null
+    },
+    {
+      "id": "oecd_ai",
+      "name": "OECD.AI Policy Observatory",
+      "url": "https://oecd.ai/",
+      "final_url": "https://oecd.ai/en/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html_or_data",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1047,
+      "error": null
+    },
+    {
+      "id": "nist_ai_rmf",
+      "name": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html_or_pdf",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 93,
+      "error": null
+    },
+    {
+      "id": "eu_gpai_code",
+      "name": "EU General-Purpose AI Code of Practice",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "final_url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html_or_pdf",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 124,
+      "error": null
+    },
+    {
+      "id": "ai_gov",
+      "name": "AI.gov",
+      "url": "https://www.ai.gov/",
+      "final_url": "https://www.ai.gov/",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 122,
+      "error": null
+    },
+    {
+      "id": "product_hunt",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "final_url": "https://www.producthunt.com/",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "access_method": "html_or_api",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 67,
+      "error": null
+    },
+    {
+      "id": "product_hunt_api",
+      "name": "Product Hunt API",
+      "url": "https://api.producthunt.com/v2/docs",
+      "final_url": "https://api.producthunt.com/v2/docs",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "access_method": "graphql_api",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 146,
+      "error": null
+    },
+    {
+      "id": "github_trending",
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "final_url": "https://github.com/trending",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1041,
+      "error": null
+    },
+    {
+      "id": "github_rest_api",
+      "name": "GitHub REST API",
+      "url": "https://docs.github.com/en/rest",
+      "final_url": "https://docs.github.com/en/rest",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "api",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 55,
+      "error": null
+    },
+    {
+      "id": "github_releases_api",
+      "name": "GitHub Releases API",
+      "url": "https://docs.github.com/v3/repos/releases",
+      "final_url": "https://docs.github.com/en/rest/releases/releases",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "A",
+      "access_method": "api",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 72,
+      "error": null
+    },
+    {
+      "id": "g2_ai_category",
+      "name": "G2 Artificial Intelligence Category",
+      "url": "https://www.g2.com/categories/artificial-intelligence",
+      "final_url": "https://www.g2.com/categories/artificial-intelligence",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 65,
+      "error": "Forbidden"
+    },
+    {
+      "id": "chrome_web_store_docs",
+      "name": "Chrome Web Store Developer Docs",
+      "url": "https://developer.chrome.com/docs/webstore",
+      "final_url": "https://developer.chrome.com/docs/webstore?hl=ja",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 739,
+      "error": null
+    },
+    {
+      "id": "github_ai_topics",
+      "name": "GitHub AI Topics",
+      "url": "https://github.com/topics/ai",
+      "final_url": "https://github.com/topics/ai",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "access_method": "html_or_api",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 743,
+      "error": null
+    },
+    {
+      "id": "ossinsight_trending_ai",
+      "name": "OSSInsight Trending AI",
+      "url": "https://ossinsight.io/trending/ai",
+      "final_url": "https://ossinsight.io/trending/ai",
+      "category_ids": [
+        "tools_apps",
+        "coding_ai"
+      ],
+      "authority_tier": "B",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 219,
+      "error": null
+    },
+    {
+      "id": "nvidia_newsroom",
+      "name": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/releases.xml",
+      "final_url": "https://nvidianews.nvidia.com/releases.xml",
+      "category_ids": [
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 101,
+      "error": null
+    },
+    {
+      "id": "nvidia_blog",
+      "name": "NVIDIA Blog",
+      "url": "https://feeds.feedburner.com/nvidiablog",
+      "final_url": "https://feeds.feedburner.com/nvidiablog",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 372,
+      "error": null
+    },
+    {
+      "id": "nvidia_developer_blog",
+      "name": "NVIDIA Developer Blog",
+      "url": "https://developer.nvidia.com/blog/feed",
+      "final_url": "https://developer.nvidia.com/blog/feed",
+      "category_ids": [
+        "coding_ai",
+        "video_ai",
+        "research_papers",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "rss",
+      "collection_status": "direct",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 651,
+      "error": null
+    },
+    {
+      "id": "nvidia_research",
+      "name": "NVIDIA Research",
+      "url": "https://www.nvidia.com/en-us/research/",
+      "final_url": "https://www.nvidia.com/en-us/research/",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "research_papers",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 216,
+      "error": null
+    },
+    {
+      "id": "stability_ai_news",
+      "name": "Stability AI News",
+      "url": "https://stability.ai/news",
+      "final_url": "https://stability.ai/news-updates",
+      "category_ids": [
+        "image_ai",
+        "video_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 419,
+      "error": null
+    },
+    {
+      "id": "midjourney_updates",
+      "name": "Midjourney Updates",
+      "url": "https://updates.midjourney.com/",
+      "final_url": "https://updates.midjourney.com/",
+      "category_ids": [
+        "image_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 89,
+      "error": null
+    },
+    {
+      "id": "ideogram_blog",
+      "name": "Ideogram Blog",
+      "url": "https://docs.ideogram.ai/about-ideogram/blog-posts",
+      "final_url": "https://docs.ideogram.ai/about-ideogram/blog-posts",
+      "category_ids": [
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 322,
+      "error": null
+    },
+    {
+      "id": "leonardo_ai_news",
+      "name": "Leonardo.Ai News",
+      "url": "https://leonardo.ai/news/",
+      "final_url": "https://leonardo.ai/news/",
+      "category_ids": [
+        "image_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 80,
+      "error": "Forbidden"
+    },
+    {
+      "id": "canva_newsroom_ai",
+      "name": "Canva Newsroom AI",
+      "url": "https://www.canva.com/newsroom/news/",
+      "final_url": "https://www.canva.com/newsroom/news/",
+      "category_ids": [
+        "image_ai",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 137,
+      "error": "Forbidden"
+    },
+    {
+      "id": "kling_ai",
+      "name": "Kling AI",
+      "url": "https://klingai.com/",
+      "final_url": "https://kling.ai/",
+      "category_ids": [
+        "video_ai",
+        "image_ai",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 579,
+      "error": null
+    },
+    {
+      "id": "hailuo_ai_minimax",
+      "name": "Hailuo AI by MiniMax",
+      "url": "https://hailuoai.video/",
+      "final_url": "https://hailuoai.video/",
+      "category_ids": [
+        "video_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 858,
+      "error": null
+    },
+    {
+      "id": "minimax_news",
+      "name": "MiniMax News",
+      "url": "https://www.minimaxi.com/en/news",
+      "final_url": "https://www.minimax.io/news",
+      "category_ids": [
+        "video_ai",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1340,
+      "error": null
+    },
+    {
+      "id": "qwen_blog",
+      "name": "Qwen Blog",
+      "url": "https://qwenlm.github.io/blog/",
+      "final_url": "https://qwenlm.github.io/blog/",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 31,
+      "error": null
+    },
+    {
+      "id": "qwen_hugging_face_org",
+      "name": "Qwen Hugging Face Organization",
+      "url": "https://huggingface.co/Qwen",
+      "final_url": "https://huggingface.co/Qwen",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "access_method": "hub_api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 256,
+      "error": null
+    },
+    {
+      "id": "tencent_hunyuan",
+      "name": "Tencent Hunyuan",
+      "url": "https://hunyuan.tencent.com/",
+      "final_url": "https://hunyuan.tencent.com/",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 258,
+      "error": null
+    },
+    {
+      "id": "tencent_hunyuan_hugging_face",
+      "name": "Tencent Hunyuan on Hugging Face",
+      "url": "https://huggingface.co/tencent",
+      "final_url": "https://huggingface.co/tencent",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "A",
+      "access_method": "hub_api_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 212,
+      "error": null
+    },
+    {
+      "id": "bytedance_seed",
+      "name": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "final_url": "https://seed.bytedance.com/en/",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1104,
+      "error": null
+    },
+    {
+      "id": "baidu_research_blog",
+      "name": "Baidu Research Blog",
+      "url": "https://research.baidu.com/Blog",
+      "final_url": "https://research.baidu.com/Blog",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 735,
+      "error": null
+    },
+    {
+      "id": "baidu_ernie_bot",
+      "name": "Baidu ERNIE Bot",
+      "url": "https://yiyan.baidu.com/",
+      "final_url": "https://yiyan.baidu.com/",
+      "category_ids": [
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1026,
+      "error": null
+    },
+    {
+      "id": "zhipu_ai",
+      "name": "Zhipu AI",
+      "url": "https://www.zhipuai.cn/en/",
+      "final_url": "https://www.zhipuai.cn/en",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 1492,
+      "error": null
+    },
+    {
+      "id": "moonshot_ai",
+      "name": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "final_url": "https://www.moonshot.ai/",
+      "category_ids": [
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 453,
+      "error": null
+    },
+    {
+      "id": "xai_news",
+      "name": "xAI News",
+      "url": "https://x.ai/news",
+      "final_url": "https://x.ai/news",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "research_papers"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 185,
+      "error": null
+    },
+    {
+      "id": "perplexity_blog",
+      "name": "Perplexity Blog",
+      "url": "https://www.perplexity.ai/hub/blog",
+      "final_url": "https://www.perplexity.ai/hub/blog",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 101,
+      "error": "Forbidden"
+    },
+    {
+      "id": "replicate_blog",
+      "name": "Replicate Blog",
+      "url": "https://replicate.com/blog",
+      "final_url": "https://replicate.com/blog",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 318,
+      "error": null
+    },
+    {
+      "id": "together_ai_blog",
+      "name": "Together AI Blog",
+      "url": "https://www.together.ai/blog",
+      "final_url": "https://www.together.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "research_papers",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 77,
+      "error": null
+    },
+    {
+      "id": "fireworks_ai_blog",
+      "name": "Fireworks AI Blog",
+      "url": "https://fireworks.ai/blog",
+      "final_url": "https://fireworks.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 342,
+      "error": null
+    },
+    {
+      "id": "groq_blog",
+      "name": "Groq Blog",
+      "url": "https://groq.com/blog/",
+      "final_url": "https://groq.com/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 192,
+      "error": null
+    },
+    {
+      "id": "cerebras_blog",
+      "name": "Cerebras Blog",
+      "url": "https://www.cerebras.ai/blog",
+      "final_url": "https://www.cerebras.ai/blog",
+      "category_ids": [
+        "models_products",
+        "coding_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 399,
+      "error": null
+    },
+    {
+      "id": "ai21_news",
+      "name": "AI21 News",
+      "url": "https://www.ai21.com/news/",
+      "final_url": "https://www.ai21.com/newsroom/",
+      "category_ids": [
+        "models_products",
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 359,
+      "error": null
+    },
+    {
+      "id": "anthropic_research",
+      "name": "Anthropic Research",
+      "url": "https://www.anthropic.com/research",
+      "final_url": "https://www.anthropic.com/research",
+      "category_ids": [
+        "research_papers",
+        "models_products"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 409,
+      "error": null
+    },
+    {
+      "id": "meta_ai_blog",
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/",
+      "final_url": "https://ai.meta.com/blog/",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 2956,
+      "error": null
+    },
+    {
+      "id": "microsoft_research_ai",
+      "name": "Microsoft Research AI",
+      "url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+      "final_url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "coding_ai",
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 2695,
+      "error": null
+    },
+    {
+      "id": "apple_ml_research",
+      "name": "Apple Machine Learning Research",
+      "url": "https://machinelearning.apple.com/research",
+      "final_url": "https://machinelearning.apple.com/research/",
+      "category_ids": [
+        "research_papers",
+        "models_products",
+        "image_ai"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 133,
+      "error": null
+    },
+    {
+      "id": "techcrunch_ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "final_url": "https://techcrunch.com/category/artificial-intelligence/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "access_method": "rss_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 45,
+      "error": null
+    },
+    {
+      "id": "venturebeat_ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/",
+      "final_url": "https://venturebeat.com/category/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "access_method": "rss_or_html",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 429,
+      "elapsed_ms": 74,
+      "error": "Too Many Requests"
+    },
+    {
+      "id": "the_information_ai",
+      "name": "The Information AI",
+      "url": "https://www.theinformation.com/topics/artificial-intelligence",
+      "final_url": "https://www.theinformation.com/topics/artificial-intelligence",
+      "category_ids": [
+        "business_investment"
+      ],
+      "authority_tier": "B",
+      "access_method": "html_paywalled",
+      "collection_status": "needs_adapter",
+      "health_status": "failing",
+      "ok": false,
+      "status": 403,
+      "elapsed_ms": 54,
+      "error": "Forbidden"
+    },
+    {
+      "id": "a16z_ai",
+      "name": "a16z AI",
+      "url": "https://a16z.com/ai/",
+      "final_url": "https://a16z.com/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products",
+        "tools_apps"
+      ],
+      "authority_tier": "B",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 172,
+      "error": null
+    },
+    {
+      "id": "sequoia_ai",
+      "name": "Sequoia AI",
+      "url": "https://www.sequoiacap.com/article/category/ai/",
+      "final_url": "https://sequoiacap.com/article/category/ai/",
+      "category_ids": [
+        "business_investment",
+        "models_products"
+      ],
+      "authority_tier": "B",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 136,
+      "error": null
+    },
+    {
+      "id": "notion_ai",
+      "name": "Notion AI",
+      "url": "https://www.notion.com/product/ai",
+      "final_url": "https://www.notion.com/product/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 242,
+      "error": null
+    },
+    {
+      "id": "figma_ai",
+      "name": "Figma AI",
+      "url": "https://www.figma.com/ai/",
+      "final_url": "https://www.figma.com/ai/",
+      "category_ids": [
+        "tools_apps",
+        "image_ai",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 227,
+      "error": null
+    },
+    {
+      "id": "zapier_ai",
+      "name": "Zapier AI",
+      "url": "https://zapier.com/ai",
+      "final_url": "https://zapier.com/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 225,
+      "error": null
+    },
+    {
+      "id": "linear_changelog",
+      "name": "Linear Changelog",
+      "url": "https://linear.app/changelog",
+      "final_url": "https://linear.app/changelog",
+      "category_ids": [
+        "tools_apps"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 466,
+      "error": null
+    },
+    {
+      "id": "atlassian_ai",
+      "name": "Atlassian Intelligence",
+      "url": "https://www.atlassian.com/trust/ai",
+      "final_url": "https://www.atlassian.com/trust/ai",
+      "category_ids": [
+        "tools_apps",
+        "business_investment"
+      ],
+      "authority_tier": "S",
+      "access_method": "html",
+      "collection_status": "needs_adapter",
+      "health_status": "reachable",
+      "ok": true,
+      "status": 200,
+      "elapsed_ms": 196,
+      "error": null
+    }
+  ]
+}

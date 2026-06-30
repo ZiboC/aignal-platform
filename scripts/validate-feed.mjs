@@ -1,10 +1,14 @@
 import { readFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
 const outDir = args.out ?? "public";
+const minItems = Number(args.minItems ?? args["min-items"] ?? 1);
+const maxItems = Number(args.maxItems ?? args["max-items"] ?? 15);
 const minSourceImages = Number(args.minSourceImages ?? 0);
+const requireImages = parseBoolean(args.requireImages ?? args["require-images"] ?? false);
 const feedPath = path.join(outDir, "feed", "daily", `${date}.json`);
 const latestPath = path.join(outDir, "feed", "latest.json");
 const indexPath = path.join(outDir, "feed", "index.json");
@@ -17,7 +21,10 @@ assert(Array.isArray(daily), "daily feed must be an array");
 assert(Array.isArray(latest), "latest feed must be an array");
 assert(Array.isArray(index.dates), "index.dates must be an array");
 assert(index.dates.includes(date), `index.dates must include ${date}`);
-assert(daily.length >= 5 && daily.length <= 15, "daily feed must contain 5-15 items");
+assert(
+  daily.length >= minItems && daily.length <= maxItems,
+  `daily feed must contain ${minItems}-${maxItems} items`
+);
 
 for (const item of daily) {
   for (const key of [
@@ -39,6 +46,13 @@ for (const item of daily) {
   assert(item.source_url || item.original_url, `item ${item.id} needs source_url or original_url`);
   assert(Array.isArray(item.tags), `item ${item.id} tags must be an array`);
   assert(!Number.isNaN(Date.parse(item.published_at)), `item ${item.id} has invalid published_at`);
+  if (requireImages) {
+    assert(item.image_url, `item ${item.id} missing image_url`);
+    assert(item.image_source, `item ${item.id} missing image_source`);
+    if (String(item.image_url).startsWith("/images/")) {
+      assert(existsSync(path.join(outDir, item.image_url)), `item ${item.id} local image does not exist: ${item.image_url}`);
+    }
+  }
 }
 
 const sourceImageCount = daily.filter((item) => item.image_url && item.image_source === "source").length;
@@ -58,4 +72,8 @@ function parseArgs(argv) {
     const [key, value] = arg.replace(/^--/, "").split("=");
     return [key, value ?? true];
   }));
+}
+
+function parseBoolean(value) {
+  return value === true || value === "true" || value === "1";
 }
