@@ -12,7 +12,7 @@ type Props = {
 
 export function Shell({ language, children, rightSlot }: Props) {
   const t = copy[language];
-  const logoSrc = withBasePath("/brand/aignal-mark.svg");
+  const logoSrc = withBasePath("/brand/aignal-mark-v2.svg");
 
   return (
     <div className="min-h-screen">
