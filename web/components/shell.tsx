@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Bookmark } from "lucide-react";
 import { copy } from "@/lib/i18n";
+import { withBasePath } from "@/lib/base-path";
 import type { Language } from "@/lib/types";
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
 
 export function Shell({ language, children, rightSlot }: Props) {
   const t = copy[language];
+  const logoSrc = withBasePath("/brand/aignal-mark.svg");
 
   return (
     <div className="min-h-screen">
@@ -18,7 +20,7 @@ export function Shell({ language, children, rightSlot }: Props) {
         <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-2 px-4 py-4 sm:gap-3 sm:px-6 lg:px-8">
           <Link href="/" className="inline-flex min-w-0 items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/aignal-mark.svg" alt="" className="h-9 w-9 shrink-0" />
+            <img src={logoSrc ?? ""} alt="" className="h-9 w-9 shrink-0" />
             <span className="text-lg font-black uppercase tracking-normal text-ivory">Aignal</span>
           </Link>
 
