@@ -1,0 +1,11 @@
+<svg width="360" height="96" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Aignal logo</title>
+  <desc id="desc">Aignal horizontal logo with a minimal abstract A signal mark.</desc>
+  <rect x="7" y="7" width="82" height="82" rx="18" fill="#070A16" stroke="#22F5FF" stroke-width="4"/>
+  <path d="M21 69L41.5 28H54.5L75 69H60.8L48 41.8L35.2 69H21Z" fill="#22F5FF"/>
+  <path d="M39.5 56H56.5L48 39.5L39.5 56Z" fill="#070A16"/>
+  <circle cx="48" cy="70" r="7" fill="#22F5FF"/>
+  <text x="112" y="61" fill="#F7FDFF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="900" letter-spacing="0">Aignal</text>
+  <path d="M253 24H333" stroke="#22F5FF" stroke-width="2" stroke-opacity=".75"/>
+  <path d="M253 72H333" stroke="#FF38D1" stroke-width="2" stroke-opacity=".7"/>
+</svg>
