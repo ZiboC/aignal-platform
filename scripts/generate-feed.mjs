@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { collectSourceRecords } from "../lib/feed-collectors/source-collection.mjs";
 import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
-import { ensureFeedItemImage, filterFreshRecords } from "../lib/feed-quality/fresh-feed.mjs";
+import { ensureFeedItemImage, selectFreshRecordsWithFallback } from "../lib/feed-quality/fresh-feed.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 
 const args = parseArgs(process.argv.slice(2));
@@ -15,6 +15,9 @@ const itemLimit = Number(args.limit ?? 15);
 const minItems = Number(args.minItems ?? args["min-items"] ?? 1);
 const adapterLimitPerSource = Number(args.adapterLimitPerSource ?? args["adapter-limit-per-source"] ?? 4);
 const freshWindowHours = Number(args.freshWindowHours ?? args["fresh-window-hours"] ?? 36);
+const fallbackFreshWindowHours = Number(
+  args.fallbackFreshWindowHours ?? args["fallback-fresh-window-hours"] ?? 168
+);
 const asOf = args.asOf ?? args["as-of"] ?? null;
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
@@ -54,9 +57,24 @@ const legacySourceSeeds = [
 ];
 
 const records = sampleMode ? sampleRecords(date) : await collectRecords();
-const freshRecords = sampleMode ? records : filterFreshRecords(records, { date, hours: freshWindowHours, asOf });
+const freshSelection = sampleMode
+  ? { records, windowHours: freshWindowHours, usedFallback: false, primaryCount: records.length }
+  : selectFreshRecordsWithFallback(records, {
+    date,
+    hours: freshWindowHours,
+    fallbackHours: fallbackFreshWindowHours,
+    asOf,
+    minRecords: minItems
+  });
+const freshRecords = freshSelection.records;
 if (!sampleMode) {
-  console.log(`Freshness window: ${freshWindowHours}h; candidates ${freshRecords.length}/${records.length}`);
+  if (freshSelection.usedFallback) {
+    console.warn(
+      `Freshness fallback: ${freshSelection.primaryCount} candidates in ${freshWindowHours}h; ` +
+      `using ${freshRecords.length} candidates from ${freshSelection.windowHours}h window.`
+    );
+  }
+  console.log(`Freshness window: ${freshSelection.windowHours}h; candidates ${freshRecords.length}/${records.length}`);
 }
 const deduped = dedupe(freshRecords);
 const selectedRecords = selectRecords(deduped, itemLimit);

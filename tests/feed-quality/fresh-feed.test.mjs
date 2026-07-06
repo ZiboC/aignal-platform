@@ -3,7 +3,8 @@ import test from "node:test";
 import {
   buildFreshnessWindow,
   ensureFeedItemImage,
-  filterFreshRecords
+  filterFreshRecords,
+  selectFreshRecordsWithFallback
 } from "../../lib/feed-quality/fresh-feed.mjs";
 
 test("buildFreshnessWindow anchors a historical date at the end of that day", () => {
@@ -35,6 +36,46 @@ test("filterFreshRecords keeps only records inside the freshness window", () => 
   });
 
   assert.deepEqual(filtered.map((record) => record.title), ["fresh"]);
+});
+
+test("selectFreshRecordsWithFallback expands the window when the primary window is empty", () => {
+  const records = [
+    { title: "older but usable", publishedAt: "2026-07-03T18:00:00.000Z" },
+    { title: "too old", publishedAt: "2026-06-27T18:00:00.000Z" }
+  ];
+
+  const selected = selectFreshRecordsWithFallback(records, {
+    date: "2026-07-05",
+    now: new Date("2026-07-05T13:00:00.000Z"),
+    hours: 36,
+    fallbackHours: 168,
+    minRecords: 1
+  });
+
+  assert.equal(selected.usedFallback, true);
+  assert.equal(selected.windowHours, 168);
+  assert.equal(selected.primaryCount, 0);
+  assert.deepEqual(selected.records.map((record) => record.title), ["older but usable"]);
+});
+
+test("selectFreshRecordsWithFallback keeps the primary window when it has enough records", () => {
+  const records = [
+    { title: "fresh", publishedAt: "2026-07-05T12:00:00.000Z" },
+    { title: "older", publishedAt: "2026-07-03T18:00:00.000Z" }
+  ];
+
+  const selected = selectFreshRecordsWithFallback(records, {
+    date: "2026-07-05",
+    now: new Date("2026-07-05T13:00:00.000Z"),
+    hours: 36,
+    fallbackHours: 168,
+    minRecords: 1
+  });
+
+  assert.equal(selected.usedFallback, false);
+  assert.equal(selected.windowHours, 36);
+  assert.equal(selected.primaryCount, 1);
+  assert.deepEqual(selected.records.map((record) => record.title), ["fresh"]);
 });
 
 test("ensureFeedItemImage preserves source images", () => {
