@@ -21,6 +21,14 @@ const sourcePool = {
       access_method: "rss_or_html"
     },
     {
+      id: "vendor_updates",
+      name: "Vendor Updates",
+      url: "https://example.com/updates",
+      category_ids: ["tools_apps"],
+      authority_tier: "A",
+      access_method: "rss_or_api"
+    },
+    {
       id: "community_source",
       name: "Community Source",
       url: "https://example.com/community.xml",
@@ -34,10 +42,20 @@ const sourcePool = {
 test("getCollectableFeedSources selects S/A rss sources from the source pool", () => {
   const sources = getCollectableFeedSources(sourcePool);
 
-  assert.deepEqual(sources.map((source) => source.sourcePoolId), ["nvidia_blog"]);
+  assert.equal(sources[0].sourcePoolId, "nvidia_blog");
   assert.equal(sources[0].name, "NVIDIA Blog");
   assert.equal(sources[0].category, "models_products");
   assert.equal(sources[0].authorityTier, "S");
+});
+
+test("getCollectableFeedSources includes S/A RSS-like source pool entries", () => {
+  const sources = getCollectableFeedSources(sourcePool);
+
+  assert.deepEqual(sources.map((source) => source.sourcePoolId), [
+    "nvidia_blog",
+    "openai_news",
+    "vendor_updates"
+  ]);
 });
 
 test("getCollectableFeedSources keeps legacy feeds and resolves source metadata", () => {

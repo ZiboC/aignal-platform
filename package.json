@@ -9,6 +9,7 @@
     "validate-source-pool": "node scripts/validate-source-pool.mjs",
     "test:quality": "node --test tests/feed-quality/*.test.mjs",
     "quality-report": "node scripts/generate-quality-report.mjs",
+    "source-coverage": "node scripts/generate-feed.mjs --diagnostics",
     "source-health": "node scripts/generate-source-health-report.mjs",
     "backfill-feed": "node scripts/backfill-feed.mjs",
     "sync-web-assets": "node scripts/sync-web-assets.mjs",

@@ -73,6 +73,7 @@
         "tencent_hunyuan",
         "tencent_hunyuan_hugging_face",
         "bytedance_seed",
+        "seedance_ai",
         "baidu_research_blog",
         "replicate_blog",
         "meta_ai_blog",
@@ -109,6 +110,7 @@
         "tencent_hunyuan",
         "tencent_hunyuan_hugging_face",
         "bytedance_seed",
+        "seedance_ai",
         "baidu_research_blog",
         "replicate_blog",
         "meta_ai_blog"
@@ -192,6 +194,7 @@
         "tencent_hunyuan",
         "tencent_hunyuan_hugging_face",
         "bytedance_seed",
+        "seedance_ai",
         "baidu_research_blog",
         "baidu_ernie_bot",
         "zhipu_ai",
@@ -1612,6 +1615,23 @@
       "language": "en",
       "paywall": false,
       "verification_rule": "Use for English ByteDance Seed research and model updates, especially multimodal image/video generation."
+    },
+    {
+      "id": "seedance_ai",
+      "name": "Seedance AI",
+      "url": "https://seed.bytedance.com/en/seedance",
+      "category_ids": [
+        "models_products",
+        "image_ai",
+        "video_ai"
+      ],
+      "authority_tier": "S",
+      "source_type": "official_product_page",
+      "access_method": "html",
+      "refresh_cadence": "weekly",
+      "language": "en",
+      "paywall": false,
+      "verification_rule": "Use the official English Seedance page for ByteDance Seed video generation capabilities; include only dated official updates or launch pages."
     },
     {
       "id": "baidu_research_blog",

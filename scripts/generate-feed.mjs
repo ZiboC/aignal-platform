@@ -1,10 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { collectSourceRecords } from "../lib/feed-collectors/source-collection.mjs";
+import { collectSourceRecordsWithDiagnostics } from "../lib/feed-collectors/source-collection.mjs";
 import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
-import { ensureFeedItemImage, selectFreshRecordsWithFallback } from "../lib/feed-quality/fresh-feed.mjs";
+import { buildFreshnessWindow, ensureFeedItemImage, selectFreshRecordsWithFallback } from "../lib/feed-quality/fresh-feed.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
+import { buildSourceCoverageReport, renderSourceCoverageReportMarkdown } from "../lib/feed-quality/source-coverage.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
@@ -19,6 +20,12 @@ const fallbackFreshWindowHours = Number(
   args.fallbackFreshWindowHours ?? args["fallback-fresh-window-hours"] ?? 168
 );
 const asOf = args.asOf ?? args["as-of"] ?? null;
+const enableSourceCoverageDiagnostics = parseBoolean(
+  args.diagnostics ?? args["source-coverage"] ?? args["coverage-diagnostics"] ?? "false"
+);
+const sourceCoverageReportDir = args.sourceCoverageReportDir ?? args["source-coverage-report-dir"] ?? "reports/source-coverage";
+const categoryCoverageTarget = Number(args.categoryCoverageTarget ?? args["category-coverage-target"] ?? 1);
+const minQualityScore = Number(args.minQualityScore ?? args["min-quality-score"] ?? 65);
 const openAIKey = process.env.OPENAI_API_KEY;
 const publicBaseURL = process.env.PUBLIC_BASE_URL ?? inferPagesBaseURL();
 const enableGeneratedImages = parseBoolean(process.env.ENABLE_OPENAI_IMAGES ?? args.generateImages ?? "false");
@@ -26,6 +33,7 @@ const generatedImageLimit = Number(process.env.OPENAI_IMAGE_LIMIT ?? args.imageL
 let generatedImageCount = 0;
 let openAITextDisabled = !openAIKey;
 let openAIImageDisabled = !openAIKey || !enableGeneratedImages || generatedImageLimit <= 0;
+let collectionDiagnostics = { attempts: [] };
 const feedHeaders = {
   "user-agent": "AignalFeedBot/0.1 (+https://github.com/ZiboC/aignal-platform)",
   accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
@@ -67,6 +75,14 @@ const freshSelection = sampleMode
     minRecords: minItems
   });
 const freshRecords = freshSelection.records;
+const freshnessWindow = {
+  ...buildFreshnessWindow({
+    date,
+    hours: freshSelection.windowHours,
+    asOf
+  }),
+  hours: freshSelection.windowHours
+};
 if (!sampleMode) {
   if (freshSelection.usedFallback) {
     console.warn(
@@ -77,7 +93,8 @@ if (!sampleMode) {
   console.log(`Freshness window: ${freshSelection.windowHours}h; candidates ${freshRecords.length}/${records.length}`);
 }
 const deduped = dedupe(freshRecords);
-const selectedRecords = selectRecords(deduped, itemLimit);
+const selectionDiagnostics = {};
+const selectedRecords = selectRecords(deduped, itemLimit, selectionDiagnostics);
 const items = [];
 
 for (const [index, record] of selectedRecords.entries()) {
@@ -144,6 +161,29 @@ if (validItems.length < minItems) {
   throw new Error(`Only generated ${validItems.length} valid feed items; expected at least ${minItems}.`);
 }
 
+if (enableSourceCoverageDiagnostics) {
+  const report = buildSourceCoverageReport({
+    date,
+    sourcePool,
+    collectionDiagnostics,
+    allRecords: records,
+    freshRecords,
+    dedupedRecords: deduped,
+    selectedRecords,
+    finalItems: validItems,
+    freshnessWindow,
+    selectionDiagnostics,
+    categoryCoverageTarget,
+    minQualityScore,
+    recordCategory: (record) => classify(record).category
+  });
+  await writeSourceCoverageReport(report, sourceCoverageReportDir);
+  console.log(
+    `Source coverage diagnostic: attempted=${report.summary.attempted_sources}/${report.summary.total_pool_sources}; ` +
+    `candidate_sources=${report.summary.sources_with_candidates}; final_sources=${report.summary.final_unique_sources}`
+  );
+}
+
 await publishFeed({ outDir, date, items: validItems });
 logImageStats(validItems);
 console.log(`Generated ${validItems.length} items for ${date}`);
@@ -159,14 +199,15 @@ async function enrichSafely(record, category) {
 }
 
 async function collectRecords() {
-  const collected = await collectSourceRecords(sourcePool, {
+  const collected = await collectSourceRecordsWithDiagnostics(sourcePool, {
     date,
     legacySources: legacySourceSeeds,
     feedHeaders,
     adapterHeaders: pageHeaders,
     adapterLimitPerSource
   });
-  return collected.length > 0 ? collected : sampleRecords(date);
+  collectionDiagnostics = collected.diagnostics;
+  return collected.records.length > 0 ? collected.records : sampleRecords(date);
 }
 
 async function enrichWithOpenAI(record, category) {
@@ -345,6 +386,12 @@ async function publishFeed({ outDir, date, items }) {
   await writeJSON(indexPath, { dates });
 }
 
+async function writeSourceCoverageReport(report, reportDir) {
+  await mkdir(reportDir, { recursive: true });
+  await writeFile(path.join(reportDir, `${report.date}.json`), `${JSON.stringify(report, null, 2)}\n`);
+  await writeFile(path.join(reportDir, `${report.date}.md`), renderSourceCoverageReportMarkdown(report));
+}
+
 function heuristicEnrichment(record, category) {
   const title = record.title.trim();
   const summary = firstSentence(record.summary || title, 220);
@@ -417,7 +464,7 @@ function dedupe(records) {
   });
 }
 
-function selectRecords(records, limit) {
+function selectRecords(records, limit, diagnostics = null) {
   const sourceCount = new Set(records.map((record) => record.sourceName)).size;
   const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sourceCount - 1)));
   const maxPerCategory = Math.max(3, Math.ceil(limit / 3));
@@ -429,13 +476,27 @@ function selectRecords(records, limit) {
   const selected = [];
   const sourceCounts = new Map();
   const categoryCounts = new Map();
+  const firstPassSkipReasons = new Map();
+
+  if (diagnostics) {
+    diagnostics.max_per_source = maxPerSource;
+    diagnostics.max_per_category = maxPerCategory;
+    diagnostics.sorted_candidate_count = sorted.length;
+  }
 
   for (const record of sorted) {
     if (selected.length >= limit) break;
     const category = classify(record).category;
     const sourceCount = sourceCounts.get(record.sourceName) ?? 0;
     const categoryCount = categoryCounts.get(category) ?? 0;
-    if (sourceCount >= maxPerSource || categoryCount >= maxPerCategory) continue;
+    if (sourceCount >= maxPerSource) {
+      firstPassSkipReasons.set(record, "source_cap");
+      continue;
+    }
+    if (categoryCount >= maxPerCategory) {
+      firstPassSkipReasons.set(record, "category_cap");
+      continue;
+    }
     selected.push(record);
     sourceCounts.set(record.sourceName, sourceCount + 1);
     categoryCounts.set(category, categoryCount + 1);
@@ -445,6 +506,18 @@ function selectRecords(records, limit) {
     if (selected.length >= limit) break;
     if (selected.includes(record)) continue;
     selected.push(record);
+  }
+
+  if (diagnostics) {
+    diagnostics.not_selected = sorted
+      .filter((record) => !selected.includes(record))
+      .map((record) => ({
+        record,
+        source_id: record.sourcePoolId ?? null,
+        source_name: record.sourceName,
+        category: classify(record).category,
+        reason: firstPassSkipReasons.get(record) ?? "ranking_limit_after_image_date_sort"
+      }));
   }
 
   return selected;
