@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { classifyRecord } from "../../lib/feed-quality/category-classification.mjs";
+import {
+  classifyRecord,
+  hasExplicitAISignal
+} from "../../lib/feed-quality/category-classification.mjs";
 
 test("classifies explicit AI coding tools without treating generic developer copy as coding", () => {
   assert.equal(classifyRecord({
@@ -58,4 +61,30 @@ test("classifies model updates and business events by their primary subject", ()
     title: "AI startup raises $40 million Series B",
     summary: "The funding round supports enterprise expansion."
   }).category, "business_investment");
+});
+
+test("requires explicit AI evidence instead of trusting the source brand", () => {
+  assert.equal(hasExplicitAISignal({
+    title: "5 ways to upgrade your home decor with Google Search",
+    summary: "Find decor inspiration, shop for furniture, and tackle DIY projects.",
+    sourceName: "Google AI Blog"
+  }), false);
+
+  assert.equal(hasExplicitAISignal({
+    title: "Publishers bring blockbuster PC games to RTX Spark",
+    summary: "The release adds anti-cheat technology and enhanced visual quality.",
+    sourceName: "NVIDIA Newsroom"
+  }), false);
+
+  assert.equal(hasExplicitAISignal({
+    title: "Jetson robotics computer improves edge AI inference",
+    summary: "The new platform targets robotics and multimodal models.",
+    sourceName: "NVIDIA Newsroom"
+  }), true);
+
+  assert.equal(hasExplicitAISignal({
+    title: "A new benchmark for multimodal understanding",
+    summary: "The paper evaluates vision-language models.",
+    sourceName: "arXiv cs.CL"
+  }), true);
 });

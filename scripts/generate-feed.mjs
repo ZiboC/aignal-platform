@@ -10,6 +10,7 @@ import {
   CATEGORY_DEFINITIONS,
   CATEGORY_IDS,
   classifyRecord,
+  hasExplicitAISignal,
   isResearchSource
 } from "../lib/feed-quality/category-classification.mjs";
 
@@ -112,7 +113,7 @@ for (const [index, record] of selectedRecords.entries()) {
     ? "research_papers"
     : categories.includes(enriched.category) ? enriched.category : classified.category;
   const categoryConfidence = Number(enriched.categoryConfidence ?? classified.confidence);
-  if (enriched.isRelevantAISignal === false) {
+  if (!hasExplicitAISignal(record) || enriched.isRelevantAISignal === false) {
     console.log(`Skipped low-relevance candidate: ${record.sourceName} - ${record.title}`);
     continue;
   }
