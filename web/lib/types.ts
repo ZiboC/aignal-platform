@@ -27,6 +27,7 @@ export type FeedItem = {
   image_source?: "source" | "generated" | null;
   image_prompt?: string | null;
   confidence?: number | null;
+  relevance_confidence?: number | null;
   category_confidence?: number | null;
   classification_method?: "openai" | "heuristic" | null;
   tags: string[];

@@ -19,6 +19,9 @@ const outDir = args.out ?? "public";
 const sourcePool = await loadSourcePool(args.sourcePool ?? "data/source-pool.json");
 const sampleMode = Boolean(args.sample);
 const itemLimit = Number(args.limit ?? 15);
+const enrichmentCandidateLimit = Number(
+  args.enrichmentCandidateLimit ?? args["enrichment-candidate-limit"] ?? itemLimit * 2
+);
 const minItems = Number(args.minItems ?? args["min-items"] ?? 1);
 const adapterLimitPerSource = Number(args.adapterLimitPerSource ?? args["adapter-limit-per-source"] ?? 4);
 const freshWindowHours = Number(args.freshWindowHours ?? args["fresh-window-hours"] ?? 36);
@@ -92,7 +95,12 @@ if (!sampleMode) {
 }
 const deduped = dedupe(freshRecords);
 const selectionDiagnostics = {};
-const selectedRecords = selectRecords(deduped, itemLimit, selectionDiagnostics);
+const selectedRecords = selectRecords(
+  deduped,
+  Math.min(deduped.length, Math.max(itemLimit, enrichmentCandidateLimit)),
+  selectionDiagnostics,
+  { capBasis: itemLimit }
+);
 const items = [];
 
 for (const [index, record] of selectedRecords.entries()) {
@@ -104,6 +112,10 @@ for (const [index, record] of selectedRecords.entries()) {
     ? "research_papers"
     : categories.includes(enriched.category) ? enriched.category : classified.category;
   const categoryConfidence = Number(enriched.categoryConfidence ?? classified.confidence);
+  if (enriched.isRelevantAISignal === false) {
+    console.log(`Skipped low-relevance candidate: ${record.sourceName} - ${record.title}`);
+    continue;
+  }
 
   const id = stableId(`${date}-${record.originalUrl ?? record.sourceUrl ?? record.title}`);
   const imagePrompt = buildImagePrompt(enriched.titleEn, finalCategory);
@@ -148,6 +160,7 @@ for (const [index, record] of selectedRecords.entries()) {
     image_source: imageSource,
     image_prompt: imagePrompt,
     confidence: enriched.confidence,
+    relevance_confidence: Number(enriched.relevanceConfidence ?? 0.65),
     category_confidence: categoryConfidence,
     classification_method: enriched.classificationMethod ?? "heuristic",
     tags: buildTags(finalCategory, record.title).slice(0, 5)
@@ -233,7 +246,7 @@ async function enrichWithOpenAI(record, category) {
       input: [
         {
           role: "system",
-          content: "Return compact JSON only. Generate accurate bilingual AI news feed copy and choose exactly one category from the supplied definitions. Classify the primary subject, not incidental words such as developer, image, video, or model. Research papers, benchmarks, datasets, and scientific studies belong in research_papers unless the source describes a shipped product. Do not invent facts beyond the source text."
+          content: "Return compact JSON only. First decide whether this is a substantive, current AI signal: a concrete AI model, product, research, developer tool, business, policy, or industry development. Reject generic lifestyle tips, unrelated hardware or games, SEO listicles, and articles with no material AI development. For accepted signals, generate accurate bilingual copy and choose exactly one category from the supplied definitions. Classify the primary subject, not incidental words such as developer, image, video, or model. Research papers, benchmarks, datasets, and scientific studies belong in research_papers. Model releases and technical model methods belong in models_products; tools_apps is only for an actual end-user tool, application, or workflow product. Do not invent facts beyond the source text."
         },
         {
           role: "user",
@@ -255,10 +268,13 @@ async function enrichWithOpenAI(record, category) {
               whyZh: { type: "string" },
               whyEn: { type: "string" },
               confidence: { type: "number" },
+              isRelevantAISignal: { type: "boolean" },
+              relevanceConfidence: { type: "number", minimum: 0, maximum: 1 },
+              rejectionReason: { type: "string" },
               category: { type: "string", enum: CATEGORY_IDS },
               categoryConfidence: { type: "number", minimum: 0, maximum: 1 }
             },
-            required: ["titleZh", "titleEn", "summaryZh", "summaryEn", "whyZh", "whyEn", "confidence", "category", "categoryConfidence"]
+            required: ["titleZh", "titleEn", "summaryZh", "summaryEn", "whyZh", "whyEn", "confidence", "isRelevantAISignal", "relevanceConfidence", "rejectionReason", "category", "categoryConfidence"]
           }
         }
       }
@@ -413,6 +429,9 @@ function heuristicEnrichment(record, category) {
     whyZh: `这条动态属于 ${category}，值得关注其对 AI 产品、研发或产业应用的影响。`,
     whyEn: `This update is relevant to ${category} and may affect AI products, research, or industry adoption.`,
     confidence: 0.65,
+    isRelevantAISignal: true,
+    relevanceConfidence: 0.65,
+    rejectionReason: "",
     category,
     categoryConfidence: classify(record).confidence,
     classificationMethod: "heuristic"
@@ -470,10 +489,10 @@ function dedupe(records) {
   });
 }
 
-function selectRecords(records, limit, diagnostics = null) {
+function selectRecords(records, limit, diagnostics = null, { capBasis = limit } = {}) {
   const sourceCount = new Set(records.map((record) => record.sourceName)).size;
-  const maxPerSource = Math.max(2, Math.ceil(limit / Math.max(1, sourceCount - 1)));
-  const maxPerCategory = Math.max(3, Math.ceil(limit / 3));
+  const maxPerSource = Math.max(2, Math.ceil(capBasis / Math.max(1, sourceCount - 1)));
+  const maxPerCategory = Math.max(3, Math.ceil(capBasis / 3));
   const sorted = [...records].sort((a, b) => {
     const imageDelta = Number(Boolean(b.imageUrl)) - Number(Boolean(a.imageUrl));
     if (imageDelta !== 0) return imageDelta;
