@@ -235,7 +235,7 @@ export function DashboardClient({ archive }: Props) {
                 </p>
               </div>
 
-              <div className="mt-6 space-y-3" data-radar-interaction="true">
+              <div className="mt-6 grid grid-cols-2 gap-2 xl:block xl:space-y-3" data-radar-interaction="true">
                 {topCategories.slice(0, 5).map((category, index) => {
                   const percent = rawItems.length > 0 ? Math.round((category.count / rawItems.length) * 100) : 0;
                   return (
@@ -244,21 +244,21 @@ export function DashboardClient({ archive }: Props) {
                       type="button"
                       onClick={() => handleSelectRadarCategory(category.id)}
                       className={[
-                        "w-full border p-3 text-left transition focus:outline-none focus:ring-2 focus:ring-signal/70",
+                        "w-full border p-2 text-left transition focus:outline-none focus:ring-2 focus:ring-signal/70 sm:p-3",
                         activeRadarCategory === category.id
                           ? "border-signal bg-signal/12 shadow-glow"
                           : "border-white/18 bg-white/8 hover:border-category/60 hover:bg-white/12"
                       ].join(" ")}
                     >
-                      <div className="flex items-center justify-between gap-3 text-sm">
-                        <span className="inline-flex min-w-0 items-center gap-2 font-black text-ink">
+                      <div className="flex items-center justify-between gap-1.5 text-xs sm:gap-3 sm:text-sm">
+                        <span className="inline-flex min-w-0 items-center gap-1.5 font-black text-ink sm:gap-2">
                           <span className="text-source">{String(index + 1).padStart(2, "0")}</span>
                           <CategoryIcon category={category.id} size={15} />
                           <span className="truncate text-category">{categoryLabel(category.id, language)}</span>
                         </span>
                         <span className="font-black text-data">{category.count}</span>
                       </div>
-                      <div className="mt-2 grid grid-cols-[1fr_auto] items-center gap-3">
+                      <div className="mt-2 grid grid-cols-[1fr_auto] items-center gap-1.5 sm:gap-3">
                         <div className="h-1.5 overflow-hidden bg-white/12">
                           <div className="h-full bg-signal" style={{ width: `${percent}%` }} />
                         </div>
@@ -350,7 +350,7 @@ export function DashboardClient({ archive }: Props) {
                     </div>
                   </div>
 
-                  <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-5 xl:grid-cols-3 2xl:grid-cols-4">
                     {section.filteredItems.map((item) => (
                       <SignalCard
                         key={`${section.date}-${item.id}`}
@@ -662,7 +662,7 @@ function SignalRadar({
   const selectedPanelTransform = selectedPoint ? getRadarSummaryPanelTransform(selectedPoint, center) : "";
 
   return (
-    <div className="flex min-w-0 flex-1 flex-col items-center justify-center">
+    <div className="flex w-full min-w-0 flex-1 flex-col items-center justify-center">
       <div className="relative mx-auto flex aspect-square w-full max-w-[360px] items-center justify-center overflow-visible sm:h-[460px] sm:w-[460px] sm:max-w-none">
         <svg viewBox="0 0 320 320" role="img" aria-label="Signal distribution radar" className="h-full w-full overflow-visible">
           <defs>
@@ -748,40 +748,23 @@ function SignalRadar({
         </svg>
         {summary && selectedPoint ? (
           <div
-            className="absolute z-20 max-h-[330px] w-[min(300px,calc(100vw-48px))] overflow-y-auto border border-signal/60 bg-obsidian/95 p-3 text-left shadow-soft backdrop-blur-xl [scrollbar-width:thin] [scrollbar-color:rgba(34,245,255,0.65)_rgba(255,255,255,0.12)]"
+            className="absolute z-20 hidden max-h-[330px] w-[min(300px,calc(100vw-48px))] overflow-y-auto border border-signal/60 bg-obsidian/95 p-3 text-left shadow-soft backdrop-blur-xl [scrollbar-width:thin] [scrollbar-color:rgba(34,245,255,0.65)_rgba(255,255,255,0.12)] xl:block"
             style={{
               left: `${(selectedPoint.x / 320) * 100}%`,
               top: `${(selectedPoint.y / 320) * 100}%`,
               transform: selectedPanelTransform
             }}
           >
-            <div className="flex items-center justify-between gap-3">
-              <div className="inline-flex min-w-0 items-center gap-2 text-sm font-black text-ink">
-                <CategoryIcon category={summary.category} size={15} />
-                <span className="truncate">{summary.title}</span>
-              </div>
-              <span className="shrink-0 text-[11px] font-black text-signal">
-                {summary.count} / {total}
-              </span>
-            </div>
-            <p className="mt-2 break-words text-xs font-semibold leading-5 text-muted">{summary.body}</p>
-            <div className="mt-3 border-t border-white/18 pt-2">
-              <div className="text-[10px] font-black uppercase text-muted">
-                {language === "zh" ? "代表信号" : "Representative signals"}
-              </div>
-              <ul className="mt-1.5 space-y-1.5">
-                {summary.items.slice(0, 2).map((item) => (
-                  <li key={item.id} className="break-words text-[11px] font-semibold leading-4 text-ink">
-                    <span className="text-signal">{item.sourceName}</span>
-                    <span className="text-muted"> / </span>
-                    {item.title}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <RadarSummaryContent summary={summary} total={total} language={language} />
           </div>
         ) : null}
       </div>
+
+      {summary ? (
+        <div className="mt-3 w-full border border-signal/60 bg-obsidian/95 p-3 text-left shadow-soft xl:hidden">
+          <RadarSummaryContent summary={summary} total={total} language={language} />
+        </div>
+      ) : null}
 
       {showStats ? <div className="mt-2 grid gap-2 sm:grid-cols-2">
         {topStats.map((category) => {
@@ -806,6 +789,45 @@ function SignalRadar({
         })}
       </div> : null}
     </div>
+  );
+}
+
+function RadarSummaryContent({
+  summary,
+  total,
+  language
+}: {
+  summary: NonNullable<ReturnType<typeof buildCategorySummary>>;
+  total: number;
+  language: Language;
+}) {
+  return (
+    <>
+      <div className="flex items-center justify-between gap-3">
+        <div className="inline-flex min-w-0 items-center gap-2 text-sm font-black text-ink">
+          <CategoryIcon category={summary.category} size={15} />
+          <span className="truncate">{summary.title}</span>
+        </div>
+        <span className="shrink-0 text-[11px] font-black text-signal">
+          {summary.count} / {total}
+        </span>
+      </div>
+      <p className="mt-2 break-words text-xs font-semibold leading-5 text-muted">{summary.body}</p>
+      <div className="mt-3 border-t border-white/18 pt-2">
+        <div className="text-[10px] font-black uppercase text-muted">
+          {language === "zh" ? "代表信号" : "Representative signals"}
+        </div>
+        <ul className="mt-1.5 space-y-1.5">
+          {summary.items.slice(0, 2).map((item) => (
+            <li key={item.id} className="break-words text-[11px] font-semibold leading-4 text-ink">
+              <span className="text-signal">{item.sourceName}</span>
+              <span className="text-muted"> / </span>
+              {item.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
 
