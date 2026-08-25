@@ -70,7 +70,7 @@
   },
   {
     "id": "item-656ebe23",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "文本中识别与理解人类价值观：可定制的大型语言模型架构",
     "title_en": "Identifying and Understanding Human Values in Text: A Tailorable LLM-based Architecture",
     "summary_zh": "该论文提出了一种基于大型语言模型（LLM）的架构，用于检测和量化文本中人类价值观的强度，解决了以往方法依赖特定价值理论或复杂提示工程的局限。架构由三个模块组成：生成任意理论框架的结构化价值规范、基于规范标注文本，以及根据修辞和语义证据赋予支持或反对的等级。该方法将概念化与检测分离，实现了可扩展、可重复的价值识别流程。通过多个LLM和ValueEval数据集实验证明了良好的检测效果，展示出该方案的通用性。",
@@ -81,19 +81,21 @@
     "source_url": "https://arxiv.org/abs/2605.27373",
     "original_url": "https://arxiv.org/abs/2605.27373",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Identifying and Understanding Human Values in Text: A Tailorable LLM-based Architecture. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6f6ecde1",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Soro：针对塔吉克语的轻量级基础模型与聊天机器人",
     "title_en": "Soro: A Lightweight Foundation Model and Chatbot for Tajik",
     "summary_zh": "我们推出了Soro，一系列专为塔吉克语设计的对话大型语言模型（LLM），针对塔吉克斯坦计算和网络限制条件优化。基于开放权重的Gemma 3模型，使用1.9十亿词的塔吉克语语料进行持续预训练，结合4万条教师式指令微调。为评估效果，发布了涵盖知识、语言能力及入学考试的塔吉克语基准，并在Hugging Face开源。Soro在塔吉克语基准上显著优于同规模Gemma 3，同时保持良好英语表现。通过FP8和INT4量化，Soro减小了内存需求，助力边缘设备部署和教育领域推广。",
@@ -104,20 +106,22 @@
     "source_url": "https://arxiv.org/abs/2605.27379",
     "original_url": "https://arxiv.org/abs/2605.27379",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Soro: A Lightweight Foundation Model and Chatbot for Tajik. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c8849325",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过隐写继承实现合成信息的起源",
     "title_en": "On the Origin of Synthetic Information by Means of Steganographic Inheritance",
     "summary_zh": "物种起源一直是自然科学中的终极谜题。类似地，合成信息的起源被认为是信息科学中的终极谜题。本文提出了一种基于隐写术的继承机制，在合成信息的生成过程中，利用隐写编码将父代的特征隐藏并传递给子代，从而实现对合成信息谱系的追踪和鉴定。理论分析和实证评估表明，该方法在多种处理操作和语义修改下均表现出良好的谱系准确性。作者展望了一个合成信息能够拥有隐藏但可追溯的血统特征的网络生态系统，从简单起点演化出无穷多样的形式。",
@@ -128,19 +132,21 @@
     "source_url": "https://arxiv.org/abs/2605.27551",
     "original_url": "https://arxiv.org/abs/2605.27551",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: On the Origin of Synthetic Information by Means of Steganographic Inheritance. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6a6ec602",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ICG：通过基于多模态大语言模型的提示和个性化偏好对齐提升封面图生成",
     "title_en": "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
     "summary_zh": "近期多模态大语言模型（MLLM）与扩散模型（DM）在AI生成内容领域取得突破，但个性化封面图生成尚未深入研究。本文提出ICG框架，结合MLLM提示和个性化偏好对齐，通过提取标题和参考图像的语义特征并融合用户嵌入，注入扩散模型生成高质量且语境相关的封面图。采用多重奖励学习策略，融合公共审美、相关性奖励与用户行为训练的个性化偏好模型，实现端到端训练，无需标注监督。实验显示ICG提升了图像质量、语义一致性和个性化效果，增强用户吸引力和离线推荐准确度。同时ICG作为模块适配器，兼容多种模型检查点，应用灵活。",
@@ -151,19 +157,21 @@
     "source_url": "https://arxiv.org/abs/2605.27374",
     "original_url": "https://arxiv.org/abs/2605.27374",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6b6ec795",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "LCO：基于大型语言模型的约束优化以提升现实任务中智能代理LLM的安全性",
     "title_en": "LCO: LLM-based Constraint Optimization for Safer Agentic LLMs in Real-world Tasks",
     "summary_zh": "大型语言模型（LLM）作为自主代理在环境中持续交互时，可能出现上下文内奖励劫持（ICRH）现象，即模型过度优化代理目标导致有害副作用。现有防护措施难以解决此类模型自我过度优化带来的风险。本文提出的LLM基约束优化（LCO）框架通过两个模块——自我思考模块和进化采样模块，有效减少ICRH，且无需微调模型。实验显示，LCO在推文互动优化任务中将GPT-4的毒性增长率降低39%，在策略优化基准中减少ICRH发生率15.23%，实现安全性提升的同时不损失任务性能。",
@@ -174,20 +182,22 @@
     "source_url": "https://arxiv.org/abs/2605.27375",
     "original_url": "https://arxiv.org/abs/2605.27375",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LCO: LLM-based Constraint Optimization for Safer Agentic LLMs in Real-world Tasks. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6e6ecc4e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OralAgent：融合推理、工具与知识的交互式牙科影像分析",
     "title_en": "OralAgent: Integrating Reasoning, Tools, and Knowledge for Interactive Dental Image Analysis",
     "summary_zh": "口腔影像分析在口腔医疗的准确诊断与治疗规划中至关重要。尽管已有针对特定任务和单一影像模态的牙科AI模型，但其孤立设计限制了实际临床应用。本文提出了OralAgent，这是首个牙科专用AI代理，整合多模态推理、基于工具的决策及知识检索，构建端到端自动化框架。系统集成22种视觉分析工具和368本经典牙科教材，实现自主推理、规划、工具使用、知识调用及多步骤流程执行。同时发布了包含1.348亿词汇的大规模中英文牙科文本资源OralCorpus，以及涵盖11个口腔子领域的798题中文多项选择题基准OralQA-ZH。大量实验证明OralAgent在MMOral-Uni、MMOral-OPG和OralQA-ZH基准测试中表现领先，显示出其在真实临床环境中的有效性、可解释性和适应性。相关代码和模型已开源。",
@@ -198,16 +208,18 @@
     "source_url": "https://arxiv.org/abs/2605.27378",
     "original_url": "https://arxiv.org/abs/2605.27378",
     "published_at": "2026-05-28T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OralAgent: Integrating Reasoning, Tools, and Knowledge for Interactive Dental Image Analysis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1ef2821b",

@@ -45,7 +45,7 @@
   },
   {
     "id": "item-d25700e4",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场：推理是可学习的基于规则的过程",
     "title_en": "Position: Reasoning is a Learnable Rule-Based Process",
     "summary_zh": "本文认为自主推理是人工智能领域中极具科学和经济价值的主题。过去推理多由符号AI处理，而近期进展主要来自深度概率生成模型。尽管取得快速进展，生成式AI社区对推理缺乏明确的操作性定义，并常隐性排斥传统逻辑和可验证自动推理的处理方式。作者指出定义模糊导致推理评估构念效度不可验证，阻碍了对可信自主推理的量化进展。文章提出（1）基于文献综述的操作性定义，将有效且可靠的推理视为可学习的基于规则的过程；（2）推荐AI推理研究交流的最佳实践清单。",
@@ -58,14 +58,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: Reasoning is a Learnable Rule-Based Process. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12325",
     "supporting_sources": [
@@ -85,7 +85,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-565c4dde",
@@ -133,7 +135,7 @@
   },
   {
     "id": "item-555c4c4b",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场：AI对齐社区无意中构建了审查者的工具包",
     "title_en": "Position: The Alignment Community is Unintentionally Building a Censor's Toolkit",
     "summary_zh": "这篇立场论文认为，现代AI对齐方法最初旨在防止有害输出，但实际上它们是双重用途技术，容易被恶意行为者用于审查和操控。通过映射当前对齐技术与实际的滥用案例，作者展示了追求“完美对齐”模型无意中也为恶意者提供了一个不断改进的信息主导工具。论文呼吁社区关注这一双重用途风险，并提出缓解策略以防范滥用。",
@@ -146,14 +148,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: The Alignment Community is Unintentionally Building a Censor's Toolkit. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12346",
     "supporting_sources": [
@@ -173,7 +175,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4dd76396",
@@ -315,7 +319,7 @@
   },
   {
     "id": "item-ad1d2046",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "MV2：用于新视角合成的多视角多车辆驾驶数据集",
     "title_en": "MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis",
     "summary_zh": "微分渲染推动了新视角合成的发展，但在实际驾驶环境中应用仍面临视角稀疏、动态物体和多轨迹数据有限的挑战。我们推出了多视角多车辆（MV2）数据集及基准，评估在动态城市场景下大视角变化的新视角合成模型。MV2包含车、踏板车和无人机的同步捕获，车辆轨迹不同但时间同步。通过在一个车辆的摄像头数据上训练，在另一车辆数据上测试，实现了比现有单轨迹数据集更大范围视角变化的评价。全部场景通过结构光重建注册，且通过手动像素对应验证相机位姿，得到50个高质量场景共12000张图像。对比近期新视角合成及相机位姿估计方法发现，视角差距增大时性能下降，且前馈位姿估计落后于基于优化的方法，验证MV2作为驾驶场景下新视角合成严格测试平台的价值。该数据集、基准协议及资源已公开。",
@@ -328,14 +332,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12442",
     "supporting_sources": [
@@ -355,11 +359,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a3be3db5",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "HIMEC：遥感图像变化描述中的方向变化表示与固定接口解码",
     "title_en": "HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning",
     "summary_zh": "遥感图像变化描述（RSICC）将双时相影像转化为描述语义变化的句子。HIMEC方法结合了方向变化表示（DCR）和固定接口解码。DCR将带符号差异分为外观变化、消失和共享上下文三条流进行融合，随后通过学习的查询编码器生成视觉条件的变化查询token，作为场景解码器的唯一依赖记忆。训练过程中加入辅助短语解码器提供描述监督，场景解码器保持固定零输入接口以保证训练和推理一致。实验表明，HIMEC在LEVIR-CC和SECOND-CC数据集上均显著优于传统融合特征记忆方法，CIDEr得分分别达到142.81和75.67，显示了其在RSICC任务上的优势。代码将于论文发表后公开。",
@@ -372,14 +378,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12502",
     "supporting_sources": [
@@ -399,11 +405,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a0bbfa65",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "视觉语言模型能否从机器人第一视角图像评估亲近风险？",
     "title_en": "Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?",
     "summary_zh": "从机器人的第一视角评估亲近风险对于在人类环境中的安全导航至关重要，需结合视觉和环境推理。研究评估了三种开源视觉语言模型（InternVL、Qwen-VL、SmolVLM）对机器人图像按危险等级分类的表现，比较了三种提示策略及两轮QLoRA微调。未微调时表现接近随机基线，微调后整体提升有限。但Qwen-VL结合高级提示在高危险情况召回率上显著优于其他模型。对人物定位的分析表明，正确的危险分类并不意味着更好的空间定位，模型可在未聚焦关键区域下产生有效安全标签。结果显示当前模型在细粒度亲近推理和空间定位方面仍有限，但针对性提示和微调能提升部分模型的高危险检测能力。",
@@ -416,14 +424,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12515",
@@ -444,11 +452,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-cf618987",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "一致不等于对齐：人类与大型语言模型伦理判断中的道德基础差异",
     "title_en": "Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments",
     "summary_zh": "研究发现，虽然大型语言模型（LLM）与人类在伦理判断的最终标签上常有较高一致性，但背后的道德依据和推理方式存在显著差异。通过一个包含500项的伦理判断基准测试，结果显示模型和人类虽然给出相同的判断结果，但关注的道德类别如伤害、尊重、守诺、正义等分布不同。这表明仅靠标签一致性评价模型对齐容易产生误导，需结合对推理和道德原则的分析。",
@@ -461,14 +471,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Agreement Is Not Alignment: Divergent Moral Grounds in Human and LLM Ethical Judgments. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12368",
     "supporting_sources": [
@@ -488,11 +498,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-425e6cf9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于大语言模型辅助契约网协议的移动边缘计算流处理多智能体调度",
     "title_en": "Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing",
     "summary_zh": "流处理系统逐渐在异构的移动边缘-云基础设施中运行，面临负载波动、资源争用和严格的服务质量（QoS）需求，导致去中心化调度复杂。本文提出了MAS-DecStream，其核心贡献是LLM-MR-CNP：对经典契约网协议的扩展，包含语义CFP表述、渐进上下文披露、多轮提案修正、协商记忆及确定性验证。边缘集群智能体基于自然语言卸载提案、局部观察、预测资源状态和运行时上下文进行优化，保证硬性资源及QoS约束不变。基于阿里巴巴ASI轨迹的实验显示，多轮CNP和LLM辅助提升调度效果，MAS-DecStream将延时违例降低至3%，消除资源过度分配，20智能体中冲突解决率达0.91，效用提升最高22%。此外25案例测试揭示模型与提示词间的准确率与成本权衡。结果证明多轮CNP修正为主要协议层提升，LLM辅助对处理定性和不确定上下文有重要价值。",
@@ -505,14 +517,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Multi-Agent Scheduling with LLM-Assisted Contract Net Negotiation for Stream Processing in Mobile Edge Computing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.98,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12371",
@@ -533,11 +545,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3f5e6840",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场：我们需要实用的人工智能对齐方法以反映人类推理",
     "title_en": "Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning",
     "summary_zh": "本文讨论了人工智能系统在辅助决策、自主决策中的应用，强调高风险决策场景中需要认知对齐的AI系统，能够与用户类似地推理且忠实传达其推理过程。通过综述认知对齐如何提升可理解性与可信度，以及新调查数据展示许多用户认为认知对齐在AI解释判断或行动理由时“必不可少”。文章指出现有对齐方法与认知对齐需求之间的差距，提出研究方向，并认为认知不对齐可能阻碍AI的普及。",
@@ -550,14 +564,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: We Need Practical AI Alignment Methods to Mirror Human Reasoning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12372",
     "supporting_sources": [
@@ -577,11 +591,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-405e69d3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "不想让LLM建议核打击？试试用日语提问",
     "title_en": "Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese",
     "summary_zh": "最新研究发现，大型语言模型在语言选择上表现出安全性差异。研究测试了九个模型，发现在核打击决策场景中，若使用日语作为推理语言，部分模型的发射率显著下降。比如Claude Sonnet 4.6在无需打击情境下，发射率从40%降至0%，在争议情境下从93%降至17%。这种减少源于模型使用日语推理时，自动引入了道德相关词汇。五个模型无此语言效应，但其发射率本就极高。结果表明LLM的安全表现依赖于推理语言，单用英语评测可能遗漏风险或保护措施。",
@@ -594,14 +610,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Don't Want Your LLM to Recommend Nuclear Strike? Try Asking It in Japanese. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12373",
     "supporting_sources": [
@@ -621,6 +637,8 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

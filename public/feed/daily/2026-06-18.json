@@ -93,7 +93,7 @@
   },
   {
     "id": "item-f8f53611",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "NAVI-Orbital: First In-Orbit Demonstration of a Zero-Shot Vision-Language Model for Autonomous Earth Observation",
     "title_en": "NAVI-Orbital: First In-Orbit Demonstration of a Zero-Shot Vision-Language Model for Autonomous Earth Observation",
     "summary_zh": "arXiv:2606.18271v1 Announce Type: new Abstract: As Earth Observation data generation outpaces downlink bandwidth and human-in-the-loop processing, a widening gap has emerged between onboard collection and actionable gro…",
@@ -104,20 +104,22 @@
     "source_url": "https://arxiv.org/abs/2606.18271",
     "original_url": "https://arxiv.org/abs/2606.18271",
     "published_at": "2026-06-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: NAVI-Orbital: First In-Orbit Demonstration of a Zero-Shot Vision-Language Model for Autonomous Earth Observation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-106577cd",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
     "title_en": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
     "summary_zh": "arXiv:2606.18385v1 Announce Type: new Abstract: Vision-Language Models (VLMs) remain prone to hallucinations, producing fluent but visually unfaithful outputs. Existing chain-of-thought and retrieval-augmented methods o…",
@@ -128,20 +130,22 @@
     "source_url": "https://arxiv.org/abs/2606.18385",
     "original_url": "https://arxiv.org/abs/2606.18385",
     "published_at": "2026-06-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5152ba0b",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Searching for Synergy in Shared Workspace Human-AI Collaboration",
     "title_en": "Searching for Synergy in Shared Workspace Human-AI Collaboration",
     "summary_zh": "arXiv:2606.18413v1 Announce Type: new Abstract: Automated AI agents are increasingly capable, yet many scientific and professional tasks require human judgment and contextual expertise. We study shared-workspace human-A…",
@@ -152,19 +156,21 @@
     "source_url": "https://arxiv.org/abs/2606.18413",
     "original_url": "https://arxiv.org/abs/2606.18413",
     "published_at": "2026-06-18T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Searching for Synergy in Shared Workspace Human-AI Collaboration. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c657181",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
     "title_en": "SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG",
     "summary_zh": "arXiv:2606.18381v1 Announce Type: new Abstract: Retrieval-augmented generation (RAG) systems must balance retrieval granularity with contextual coherence, a challenge that existing methods address through LLM-guided chu…",
@@ -175,15 +181,17 @@
     "source_url": "https://arxiv.org/abs/2606.18381",
     "original_url": "https://arxiv.org/abs/2606.18381",
     "published_at": "2026-06-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SproutRAG: Attention-Guided Tree Search with Progressive Embeddings for Long-Document RAG. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d94902c7",
@@ -210,7 +218,7 @@
   },
   {
     "id": "item-e46cf428",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Speech-Driven End-to-End Language Discrimination towards Chinese Dialects",
     "title_en": "Speech-Driven End-to-End Language Discrimination towards Chinese Dialects",
     "summary_zh": "arXiv:2606.18584v1 Announce Type: new Abstract: Language discrimination among similar languages, varieties, and dialects is a challenging natural language processing task. The traditional text-driven focus leads to poor…",
@@ -221,15 +229,17 @@
     "source_url": "https://arxiv.org/abs/2606.18584",
     "original_url": "https://arxiv.org/abs/2606.18584",
     "published_at": "2026-06-18T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Speech-Driven End-to-End Language Discrimination towards Chinese Dialects. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-252e479c",

@@ -93,7 +93,7 @@
   },
   {
     "id": "item-8e52d955",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SOLAR：一种用于终身学习和持续适应的自我优化开放式自主代理",
     "title_en": "SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation",
     "summary_zh": "尽管大型语言模型（LLMs）取得了显著成功，但在动态实际环境中部署时仍面临概念漂移和基于梯度的适应高成本等瓶颈。传统微调难以适应非静态数据流，且容易遗忘或需大量手动数据整理。为解决这些问题，提出了自我优化终身自主推理器（SOLAR）。SOLAR作为一个开放式自主代理，利用参数级元学习自我提升，将模型权重视为探索环境。它通过建立常识知识的强先验，有效支持迁移学习。结合多层次强化学习，SOLAR自动发现适应策略，实现对未见领域的高效测试时适应。关键在于维护一个不断演变的有效修改策略知识库，作为情节记忆缓冲以平衡适应性与稳定性。实验表明，SOLAR在常识、数学、医疗、编码、社交及逻辑推理任务上优于强基线，推动了终身适应自主代理的发展。",
@@ -104,20 +104,22 @@
     "source_url": "https://arxiv.org/abs/2605.20189",
     "original_url": "https://arxiv.org/abs/2605.20189",
     "published_at": "2026-05-22T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SOLAR: A Self-Optimizing Open-Ended Autonomous Agent for Lifelong Learning and Continual Adaptation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7b54fa03",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "面向闭环优化、仿真与建模编排的工具增强代理",
     "title_en": "Tool-Augmented Agent for Closed-loop Optimization, Simulation, and Modeling Orchestration",
     "summary_zh": "该论文提出COSMO-Agent框架，一种工具增强的强化学习方法，旨在解决CAD与CAE之间的语义差距，实现闭环的设计-仿真-优化过程。通过将CAD生成、CAE求解、结果解析和几何修正视为交互式强化学习环境，使大语言模型能够协同外部工具，反复修正几何参数直至满足约束条件。该方法设计了多约束奖励机制，提升了学习的稳定性和工业适用性，并提供涵盖25种组件类别的工业数据集支持训练与评价。实验结果表明，COSMO-Agent显著提升了小型开源大语言模型在约束驱动设计中的性能，优于大型及商业模型。",
@@ -128,21 +130,23 @@
     "source_url": "https://arxiv.org/abs/2605.20190",
     "original_url": "https://arxiv.org/abs/2605.20190",
     "published_at": "2026-05-22T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Tool-Augmented Agent for Closed-loop Optimization, Simulation, and Modeling Orchestration. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b58f88d6",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OSCToM：基于强化学习的高阶心智理论对抗生成方法",
     "title_en": "OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind",
     "summary_zh": "大型语言模型在许多语言任务中表现出色，但其心智理论（ToM）推理在复杂社会环境中仍不稳定。现有基准测试如ExploreToM未完全涵盖递归信念和信息不对称等难点。本文提出OSCToM（观察者-自我冲突心智理论），通过强化学习、领域特定语言和组合替代模型生成观测者与自身信念冲突的嵌套信念冲突案例，支持多层递归推理。实验表明，OSCToM-8B在多个测试系统中表现最佳，在信息不对称的FANToM基准上准确率达76%，远超ExploreToM的0.2%，且数据合成效率提高6倍，说明针对性训练数据有助于小模型提升高级认知推理能力。项目代码公开。",
@@ -153,15 +157,17 @@
     "source_url": "https://arxiv.org/abs/2605.20423",
     "original_url": "https://arxiv.org/abs/2605.20423",
     "published_at": "2026-05-22T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8809f1c1",
@@ -188,7 +194,7 @@
   },
   {
     "id": "item-f99f04de",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "利用生成式人工智能拓宽交通安全数据访问：基于模式的空间自然语言查询框架",
     "title_en": "Broadening Access to Transportation Safety Data with Generative AI: A Schema-Grounded Framework for Spatial Natural Language Queries",
     "summary_zh": "交通安全分析需要整合事故记录、道路属性和地理空间数据，传统基于GIS的工作流程在不同机构和社区利益相关者间存在访问不均的问题。技术门槛导致安全规划所需的分析工具难以为众多实践者所用，尤其是地方机构、学校委员会和居民，他们面对安全问题却缺乏检索、筛选、映射和分析相关数据的能力。本文提出了一种基于大型语言模型的模式指导自然语言界面，通过将用户查询转换为结构化语义框架，并通过规则校验后执行确定性空间操作，确保执行结果可复现且来源权威。该框架在马萨诸塞州整合的交通安全数据库中评估，所有查询均成功执行，验证层修改了29%的查询错误，显示灵活自然语言与严格模式规范间的差距。结果表明，自然语言的易用性与确定性执行相结合，是扩大交通安全数据访问的实用方向，对公共部门规划中可信AI具有重要意义。",
@@ -199,19 +205,21 @@
     "source_url": "https://arxiv.org/abs/2605.21712",
     "original_url": "https://arxiv.org/abs/2605.21712",
     "published_at": "2026-05-22T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Broadening Access to Transportation Safety Data with Generative AI: A Schema-Grounded Framework for Spatial Natural Language Queries. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fa9f0671",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Sem-Detect：AI生成同行评审的语义层面检测",
     "title_en": "Sem-Detect: Semantic Level Detection of AI Generated Peer-Reviews",
     "summary_zh": "本文提出了Sem-Detect，一种结合文本特征与语义层面论点分析的同行评审作者身份检测方法。该方法通过比较目标评审与多份针对同一论文的AI生成评审，利用AI模型趋同于相似观点而人类评审呈现更多独特多样观点的特点，成功区分完全由AI生成的评审与真实人类撰写的评审。实证结果显示，在ICLR和NeurIPS的两万多份评审数据集上，Sem-Detect在二分类任务中较最强基线的TPR@0.1% FPR提升了25.5%。此外，在三分类设置里，LLM精修的人类评审仍保持独特的语义信号，误判率低于3.5%。",
@@ -222,15 +230,17 @@
     "source_url": "https://arxiv.org/abs/2605.21713",
     "original_url": "https://arxiv.org/abs/2605.21713",
     "published_at": "2026-05-22T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Sem-Detect: Semantic Level Detection of AI Generated Peer-Reviews. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a2e5d9ba",

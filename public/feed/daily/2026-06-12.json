@@ -94,7 +94,7 @@
   },
   {
     "id": "item-9084a35",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ToolSense：用于审计大规模语言模型参数化工具知识的诊断框架",
     "title_en": "ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs",
     "summary_zh": "大型语言模型作为代理在庞大工具库中面临关键的工具检索瓶颈。为解决嵌入式检索方法对专业工具语义捕捉不足的问题，参数化工具检索通过将工具编码为虚拟标记并进行两阶段微调，实现了强劲的检索性能。现有基准测试在查询和解码上存在限制，难以评估模型是否真正理解工具。ToolSense是一个开源的基于LLM的诊断框架，能自动生成多级歧义现实检索基准、多项选择和问答探测基准。应用ToolSense至ToolBench及多种训练配置揭示知识与检索能力的脱节现象，部分模型尽管检索表现优异，但在事实探测上表现接近随机。该框架及基准已开源。",
@@ -105,15 +105,17 @@
     "source_url": "https://arxiv.org/abs/2606.12451",
     "original_url": "https://arxiv.org/abs/2606.12451",
     "published_at": "2026-06-12T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ToolSense: A Diagnostic Framework for Auditing Parametric Tool Knowledge in LLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1a78827f",
@@ -165,7 +167,7 @@
   },
   {
     "id": "item-277ad58d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "帮助图表讲述故事！基于论文的复杂科学图视频生成",
     "title_en": "Helping Figures Tell their Story! Paper-Grounded Video Generation Explaining Complex Scientific Figures",
     "summary_zh": "科学图表将复杂流程浓缩于一幅画布，但理解它们需基于论文的逐步讲解和视觉重点，这在现有视频生成系统和评测中缺失。为此，我们提出基于论文的图表转视频生成：从图表及其论文生成带解说且区域定位的演示视频。我们设计了MINARD（通过区域分解的多模态架构解读）管线，生成与论文忠实对应的解说并依序定位至图表区域。我们还发布了FigTalk基准，包含新的连续和组件级定位指标。在FigTalk上，MINARD生成类人且论文忠实的解说，并在人机评测及自动评测中在解说条件下图表空间定位方面超越现有方法。",
@@ -176,19 +178,21 @@
     "source_url": "https://arxiv.org/abs/2606.12576",
     "original_url": "https://arxiv.org/abs/2606.12576",
     "published_at": "2026-06-12T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Helping Figures Tell their Story! Paper-Grounded Video Generation Explaining Complex Scientific Figures. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-197abf83",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "MARD：机制级药物相互作用预测的镜像增强推理蒸馏方法",
     "title_en": "MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction",
     "summary_zh": "本文提出了一种机制层面的药物相互作用（DDI）预测方法，能够识别涉及具体酶或药效学轴线、作用方向及证据，而不仅是判断药物间是否存在相互作用。作者设计了一个包含7大类147子类型的结构化DDI标注及评估协议，并提出了结合三种训练创新的7B参数规模镜像增强推理蒸馏（MARD）模型。该模型在2026年4月DrugBank数据上表现优异，在32个系统中，唯一保持药物对新颖性下的高准确率，超过最佳基线13.9个百分点，优于GPT-4o 6.7个百分点，且推理基于结构化药理知识而非药物频率记忆，成本仅为顶尖API的1%。同时，相关语料库和代码已公开。",
@@ -199,19 +203,21 @@
     "source_url": "https://arxiv.org/abs/2606.12578",
     "original_url": "https://arxiv.org/abs/2606.12578",
     "published_at": "2026-06-12T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MARD: Mirror-Augmented Reasoning Distillation for Mechanism-Level Drug-Drug Interaction Prediction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a4939f3a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过波斯谚语条件故事生成实现大型语言模型中的语义受限解压",
     "title_en": "Constrained Semantic Decompression in LLMs through Persian Proverb-Conditioned Story Generation",
     "summary_zh": "该研究将将抽象且富有内涵的谚语转化为生动且忠实于其道德寓意的故事，定义为一种“受限语义解压”任务。以波斯语谚语为例，团队构建了谚语对齐叙事数据集（PAND），结合人类撰写的故事和明确的寓意。通过人类校准的LLM评审和结构化指标的混合评估，分析了模型在不同提示条件下的表现。结果显示，目前的LLM虽然在语言流畅度上表现良好，但常常无法准确体现谚语中蕴含的道德和因果结构。研究还发现，借助显式推理和迭代优化可以部分缓解该问题，表明解压错误主要源于将抽象意义转化为叙事形式的难度，而非知识缺乏。该任务可扩展至其他压缩文化知识的形式。",
@@ -222,15 +228,17 @@
     "source_url": "https://arxiv.org/abs/2606.12599",
     "original_url": "https://arxiv.org/abs/2606.12599",
     "published_at": "2026-06-12T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Constrained Semantic Decompression in LLMs through Persian Proverb-Conditioned Story Generation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-42c6ecc7",

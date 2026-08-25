@@ -266,7 +266,7 @@
   },
   {
     "id": "item-769587ce",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "是什么驱动了反馈中的交互式提升？",
     "title_en": "What Drives Interactive Improvement from Feedback?",
     "summary_zh": "本文研究了自然语言反馈在多轮语言代理设置中如何带来超过仅重复尝试的改进。通过在多个任务集和模型中引入受控的师生协议，比较外部反馈、自我反馈和无指导自我优化，结果表明多轮改进通常并不能证明有效反馈的作用。自生成反馈较无指导自我优化改进有限，而最强的外部教师带来显著反馈特定提升，说明有用反馈需提供超越简单重试的引导。学生使用反馈的能力比教师身份更决定交互收益，但教师选择对于固定学生仍很重要。研究建议评价基于反馈的代理时应与重复尝试基线对比，反馈的可用性不如反馈的可操作性关键。我们公开了受控的师生评估框架。",
@@ -279,14 +279,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-01T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: What Drives Interactive Improvement from Feedback?. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2606.30774",
     "supporting_sources": [
@@ -306,11 +306,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 84."
+    "ranking_reason": "Selected from authoritative primary source; quality score 84.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-94347e34",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "对比反思：迭代式提示优化方法",
     "title_en": "Contrastive Reflection for Iterative Prompt Optimization",
     "summary_zh": "本文提出了一种用于智能信息检索代理的迭代提示优化框架——对比反思。该方法基于任务质量定义，利用问答代理和评分代理提供的结构化线索识别错误行为片段，结合成功示例，指导教师大型语言模型提出针对性的提示修改。仅当验证性能提升时接收修改，并可避免回退。在HotpotQA数据集上，该方法将准确率从51.4%提升至60.4%，优于仅使用失败示例或随机证据的方法。",
@@ -323,14 +325,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-01T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Contrastive Reflection for Iterative Prompt Optimization. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2606.30840",
     "supporting_sources": [
@@ -350,7 +352,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-81ff38ad",
@@ -487,7 +491,7 @@
   },
   {
     "id": "item-92632394",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "构建用于关键词提取的学术论文多模态数据集",
     "title_en": "Building a Multimodal Dataset of Academic Paper for Keyword Extraction",
     "summary_zh": "通常，关键词提取任务仅依赖文本数据，忽视了图像和音频中的视觉及音频信息，导致信息丰富度不足，且忽略潜在关联，限制了模型表示学习和预测准确性。现有用于关键词提取的多模态数据集稀缺，阻碍了多模态关键词提取研究进展。该研究构建了包含1000个样本的学术论文多模态数据集，每个样本包含论文文本、图像、音频和关键词。通过无监督和有监督方法，利用论文文本、图像及音频提取的文本进行了关键词提取实验，探讨了不同模态信息及其融合对性能的影响。实验结果表明，不同模态文本在模型中表现出特征差异，论文文本、图像文本和音频文本的组合显著提升了关键词提取效果。",
@@ -500,14 +504,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-01T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Building a Multimodal Dataset of Academic Paper for Keyword Extraction. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2606.31069",
     "supporting_sources": [
@@ -527,7 +531,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2b18abd6",

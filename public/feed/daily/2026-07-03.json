@@ -133,7 +133,7 @@
   },
   {
     "id": "item-641fcfd2",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "PACE：一种用于合理且可操作反事实解释的神经符号框架",
     "title_en": "PACE: A Neuro-Symbolic Framework for Plausible and Actionable Counterfactual Explanations",
     "summary_zh": "反事实解释通过识别最小输入变化来改变模型决策，但现有方法常产生不现实或不可行的建议。PACE框架结合神经预测模型和符号推理，显式考虑领域知识与干预限制，生成符合实际可行性的解释。此方法模型无关，适用于需真实决策支持的领域，在Adult Income数据集上的案例验证了其在有效性和合理性上的平衡，展示了神经符号方法在可解释AI中的潜力。",
@@ -146,14 +146,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: PACE: A Neuro-Symbolic Framework for Plausible and Actionable Counterfactual Explanations. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01306",
     "supporting_sources": [
@@ -173,11 +173,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-642eda5c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Auto-FL-Research：联邦学习算法的自主搜索",
     "title_en": "Auto-FL-Research: Agentic Search for Federated Learning Algorithms",
     "summary_zh": "联邦学习（FL）研究涉及许多小但关键的算法设计选择，如优化器变体、服务器聚合规则、本地训练计划、归一化、正则化和模型架构。这些选择人工探索成本高且难以公平比较。本文提出Auto-FL-Research（AFR），一种受限编码代理工作流，用于自动搜索FL算法配方。代理可以提出并实现候选训练算法，同时任务配置限定变异范围、计算预算、通信协议和最终模型评估。AFR在多个医疗跨孤岛FLamby任务和LEAF数据集上进行评估，结果显示在多项任务和配置上获得提升，同时揭示了种子敏感性和单次运行的失败案例，展示了代理生成候选中反复出现的机制、固定范围调优影响和单次运行假象的区别。",
@@ -190,14 +192,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Auto-FL-Research: Agentic Search for Federated Learning Algorithms. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01366",
@@ -218,11 +220,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7835b59d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "高效小型语言模型架构Wiola",
     "title_en": "The Wiola Architecture for Efficient Small Language Models",
     "summary_zh": "本文介绍了Wiola，一种全新的小型语言模型（SLM）架构，完全创新设计，不继承GPT、LLaMA、Mistral或Falcon等现有模型的结构。Wiola引入了五个独立创新组件：一是螺旋旋转位置编码（SRPE），将绝对、相对和层级位置信号嵌入三维螺旋流形；二是门控跨层注意力（GCLA），实现解码器层间的软跨层关注；三是自适应词元合并（ATM），动态合并语义冗余相邻词元降低复杂度；四是双流前馈网络（DSFF），用两条并行流代替传统MLP，融合方式为学习的逐维门控；五是WiolaRMSNorm，一种带学习偏置的标准化方法防止表示坍塌。文章详述了数学推导、架构图、复杂度分析，并与GPT-2、LLaMA-2、Mistral系统比较。Wiola发布四个规模（1.2亿~15亿参数），完全兼容HuggingFace Transformers生态，22个架构单元测试全部通过。",
@@ -235,14 +239,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The Wiola Architecture for Efficient Small Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01394",
@@ -263,11 +267,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5d739a60",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Agent4cs：用于大规模层次化代码库的多智能体代码摘要系统",
     "title_en": "Agent4cs: A Multi-agent System for Code Summarization in Large Hierarchical Codebases",
     "summary_zh": "理解大型复杂代码库尤其是结构晦涩、文档不全的代码仍具挑战。现有代码摘要多依赖单一语言模型或助手，将代码视为平面文本，未充分利用代码库中的丰富层次与依赖关系。Agent4cs提出一种自底向上多智能体框架，包含摘要智能体、关键词提取智能体和质量保证智能体，分别聚焦生成摘要、识别关键子文件夹信息及迭代优化输出。相比两种结构化提示基线，Agent4cs在所有文件夹层级实现语义一致性平均提升8%，真实数据集关键词覆盖率提升达38%。",
@@ -280,14 +286,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Agent4cs: A Multi-agent System for Code Summarization in Large Hierarchical Codebases. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01425",
@@ -308,11 +314,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-22ba3cf7",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "COMFYCLAW：自我进化技能助力图像生成工作流程",
     "title_en": "COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows",
     "summary_zh": "本文介绍了COMFYCLAW，一个用于控制ComfyUI工作流程的智能技能进化框架。该框架通过类型化图编辑构建工作流程，自动纠正无效操作，并利用视觉-语言模型验证器将视觉错误转化为可执行的修复建议。它还能从先前运行中提炼出可复用的智能技能，提升图像生成任务的效率和准确性。实验证明COMFYCLAW在多个基准和模型配置中均表现优异，且受人工标注者青睐。",
@@ -325,14 +333,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01709",
     "supporting_sources": [
@@ -352,7 +360,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e5c883d7",
@@ -576,7 +586,7 @@
   },
   {
     "id": "item-60739f19",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "服务代理何时应重新考虑？客户服务操作中的难度路由控制",
     "title_en": "When Should Service Agents Reconsider? Difficulty-Routed Control in Customer-Service Operations",
     "summary_zh": "随着自主客户服务代理从对话界面转向执行操作，它们负责检索公司记录、应用服务政策并执行退款、取消、交换、订单修改和预订变更等后台操作。本文提出了一种难度路由服务控制架构，通过轻量级路由器将常规服务请求保持在低成本路径，对于含有操作冲突的请求则引导至升级流程，以便在关键写操作前进行重新考虑和冲突感知的交流。该方法在零售和航空任务上验证，提升了操作冲突请求的可靠性，并且增强控制集中于冲突请求而非所有会话。对话和工具使用分析表明改进源于证据收集、写操作分离和写前复核，而非无差别扩展交互。案例研究显示升级流程有效维护备选方案，确保操作顺序和多实体请求的分解。",
@@ -589,14 +599,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: When Should Service Agents Reconsider? Difficulty-Routed Control in Customer-Service Operations. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01426",
@@ -617,11 +627,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5b7158a3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CreativityNeuro：通过调整语言模型权重提升发散性思维并减少模式崩溃",
     "title_en": "CreativityNeuro: Steering Language Model Weights to Improve Divergent Thinking and Reduce Mode Collapse",
     "summary_zh": "发散性思维是创造力的重要组成部分，但大型语言模型（LLM）在开放性问题上往往生成相似回答，出现“人工蜂群效应”。本文提出CreativityNeuro，一种无需数据通过对比权重引导来增强LLM发散思维的方法。在多项创造力测试中，CreativityNeuro在词汇空间创意测试（DAT）上提升表现达14百分位，在大型人类评估（720人）中的替代用途测试（AUT）和任务测试中显著提高原创性、惊喜度和创造力，同时减少模式崩溃。该方法无需重新训练或梯度微调，提供了提升语言模型创造力的简便方案。",
@@ -634,14 +646,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CreativityNeuro: Steering Language Model Weights to Improve Divergent Thinking and Reduce Mode Collapse. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.01433",
@@ -662,6 +674,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

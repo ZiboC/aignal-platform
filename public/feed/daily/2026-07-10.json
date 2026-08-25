@@ -178,7 +178,7 @@
   },
   {
     "id": "item-7aa2d003",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "GIRAF: Towards Generalizable Human Interactions with Articulated Objects",
     "title_en": "GIRAF: Towards Generalizable Human Interactions with Articulated Objects",
     "summary_zh": "Synthesizing realistic full-body human interactions with articulated objects is a fundamental challenge for embodied AI and graphics, with applications in robotics training and virtual agents. Existing models remain lim…",
@@ -191,14 +191,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-10T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: GIRAF: Towards Generalizable Human Interactions with Articulated Objects. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07880",
     "supporting_sources": [
@@ -218,11 +218,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fbaceaf",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "3D Reconstruction of deciduous Trees using low-cost UAV- and Crane-based Photogrammetry for Monitoring Shoot Elongation across entire Canopies",
     "title_en": "3D Reconstruction of deciduous Trees using low-cost UAV- and Crane-based Photogrammetry for Monitoring Shoot Elongation across entire Canopies",
     "summary_zh": "Tree growth determines how much CO2 is sequestered from the atmosphere and temporarily stored in woody biomass. At the same time tree growth is affected by increasing temperatures, more frequent drought periods, late fr…",
@@ -235,14 +237,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-10T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: 3D Reconstruction of deciduous Trees using low-cost UAV- and Crane-based Photogrammetry for Monitoring Shoot Elongation across entire Canopies. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07905",
     "supporting_sources": [
@@ -262,7 +264,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2cfb51e3",
@@ -310,7 +314,7 @@
   },
   {
     "id": "item-10536f4b",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Context Graphs for Proactive Enterprise Agents",
     "title_en": "Context Graphs for Proactive Enterprise Agents",
     "summary_zh": "arXiv:2607.07721v1 Announce Type: new Abstract: Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query…",
@@ -323,14 +327,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Context Graphs for Proactive Enterprise Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07721",
@@ -351,7 +355,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 68."
+    "ranking_reason": "Selected from authoritative primary source; quality score 68.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1064b86c",
@@ -400,7 +406,7 @@
   },
   {
     "id": "item-875d24fc",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
     "title_en": "Adversarial Social Epistemology for Assemblies of Humans and Large Language Models",
     "summary_zh": "arXiv:2607.07760v1 Announce Type: new Abstract: We outline an adversarial social epistemology (ASE) for densely interactive communicative landscapes in which public assertions are scaffolded by chains of testimony, infe…",
@@ -413,14 +419,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Adversarial Social Epistemology for Assemblies of Humans and Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07760",
@@ -441,11 +447,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8b5f69df",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models",
     "title_en": "Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models",
     "summary_zh": "arXiv:2607.07772v1 Announce Type: new Abstract: In this age of social media, sites like Twitter have become meeting places for people to share their views and feelings on a wide range of issues and current events as the…",
@@ -458,14 +466,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07772",
@@ -486,7 +494,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2285a767",

@@ -90,7 +90,7 @@
   },
   {
     "id": "item-aaa15007",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "用于自主无人机群搜救的智能三级学习架构",
     "title_en": "Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue",
     "summary_zh": "本文提出了一种新颖的三级层次学习架构，适用于执行搜救任务的自主无人机群。该架构结合了三种不同的学习机制，分别对应生物学中的反射、技能和推理层次，包含Hebbian神经可塑性、多智能体强化学习结合图神经网络与行为树，以及基于BDI推理和数字孪生的模型无关元学习。架构通过22个建筑契约保障安全性、预算正确性、最优性、活性等六类形式保证，并引入群体元认知，实现群体自我监控和策略切换。理论分析表明，该架构克服了现有层次强化学习方法的五个根本限制。",
@@ -103,14 +103,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14093",
     "supporting_sources": [
@@ -130,11 +130,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a8a14ce1",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "HG-RAG：用于结构化知识图谱的层级引导检索增强生成",
     "title_en": "HG-RAG: Hierarchy-Guided Retrieval-Augmented Generation for Structured Knowledge Graphs",
     "summary_zh": "本文提出了HG-RAG，一种基于层级知识图谱图遍历的检索增强生成框架。该方法通过解析查询中的命名实体锚点，向上扩展至父节点，横向扩展至关联邻居节点，并在需要时向下扩展至子节点，从而为语言模型提供结构化上下文。实验证明，HG-RAG在处理层级、关系和多跳推理任务时，性能优于传统的扁平文档检索方法，同时有效减少了生成中的幻觉并保持上下文连贯性。",
@@ -147,14 +149,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: HG-RAG: Hierarchy-Guided Retrieval-Augmented Generation for Structured Knowledge Graphs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14095",
     "supporting_sources": [
@@ -174,11 +176,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a5a14828",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于交互作用的模型解释（IMEX）",
     "title_en": "IMEX Interaction-Based Model Explanation",
     "summary_zh": "在预测建模中，解释模型为何给出特定预测结果变得越来越重要。IMEX方法是一种可解释预测建模方向，旨在识别对目标预测贡献最大的变量及其交互作用，支持高阶交互分析。IMEX包含静态相关力（PCS）和交互相关力（PCI）两项指标，分别衡量单变量贡献和变量间非加性效应。本文通过与INVASE对比，在三个人工数据集上验证了PCS，表明IMEX能够在非线性、条件及多重共线性关系下准确恢复特征结构。",
@@ -191,14 +195,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: IMEX Interaction-Based Model Explanation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14096",
@@ -219,7 +223,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1770751d",
@@ -311,7 +317,7 @@
   },
   {
     "id": "item-a6a149bb",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RegNetAgents：用于癌症基因组学中跨网络调控驱动因子识别的多智能体框架",
     "title_en": "RegNetAgents: A Multi-Agent Framework for Cross-Network Regulatory Driver Identification in Cancer Genomics",
     "summary_zh": "RegNetAgents 是一个面向 AI 的多智能体框架，用于在异构基因调控网络中结构化且基于查询的调控候选因子识别。该系统整合了来自 TCGA 的癌症网络和 GREmLN 项目的单细胞调控网络，实现了肿瘤块体和单细胞 ARACNe 网络的统一分析。针对特定基因，框架执行双网络分类、OncoKB 注释的癌症基因筛选及肿瘤衍生调控关系的作用模式分配。候选因子根据跨网络证据一致性进行排序。系统以多智能体 LangGraph DAG 工作流形式实现，通过 Python API 和 Model Context Protocol (MCP) 客户端访问，作为预计算调控网络上的下游分析层，而非网络推断工具。在十一种乳腺癌和十二种结直肠癌焦点基因分析中，RegNetAgents 识别的候选调控因子显著富集 OncoKB 注释的癌症基因，验证了其信号特异性。扩展模块支持肿瘤潜力、药物可及性、临床相关性和网络脆弱性的结构化评估，助力从候选识别到生物学假设生成的端到端解释。",
@@ -324,14 +330,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: RegNetAgents: A Multi-Agent Framework for Cross-Network Regulatory Driver Identification in Cancer Genomics. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14097",
@@ -352,11 +358,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2abdaad2",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "DialogueVPR：迈向对话式视觉地点识别",
     "title_en": "DialogueVPR: Towards Conversational Visual Place Recognition",
     "summary_zh": "Inspired by how humans communicate spatial information, DialogueVPR提出了一种基于对话的视觉地点识别新范式。该方法通过交互式对话推理过程处理语言描述中的歧义与不完整性，显著提升了地点定位的准确性。作者发布了首个对话式地点识别大规模基准DlgQuest-Cities，并设计一个联合多模态检索与智能提问的统一推理框架DQ-pilot，通过分阶段训练和强化学习优化检索性能。实验证明该方法在地点识别任务中明显优于传统静态检索基线。代码和模型已开源。",
@@ -369,14 +377,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: DialogueVPR: Towards Conversational Visual Place Recognition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14115",
     "supporting_sources": [
@@ -396,11 +404,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-27bfe4b0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向闭环1型糖尿病控制的可解释语言模型",
     "title_en": "Interpretable Language Model for Closed-Loop Type 1 Diabetes Control",
     "summary_zh": "本文提出了LLM-T1D，一种结合强化学习（RL）精度与大型语言模型（LLM）人类化推理的胰岛素泵控制器。通过训练专家RL系统并蒸馏知识至微调后的LLaMA 3.1 8B和Qwen3 8B模型，开发出不仅超越RL性能且能用易懂语言解释决策的控制器。经FDA批准的UVA/Padova模拟器测试，LLM控制器实现了73.5%的血糖控制时间在目标范围内，并通过正式方法严格验证，保证对幻觉信息的安全性。",
@@ -413,14 +423,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Interpretable Language Model for Closed-Loop Type 1 Diabetes Control. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14126",
@@ -441,11 +451,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 66."
+    "ranking_reason": "Selected from authoritative primary source; quality score 66.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bac54947",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "人工智能构建贝叶斯网络以支持运营决策——虚拟调查方法",
     "title_en": "Human AI Construction of Bayesian Networks for Operational Decision Support -- A Virtual Survey Approach",
     "summary_zh": "贝叶斯信念网络是处理不确定性决策的有力工具，但其结构构建和参数估计均较为困难。该研究提出一种利用大型语言模型和一组具有特定角色与场景的AI代理共同估计概率的方法，融合专家意见与数据驱动学习。通过裁剪均值法去噪，构建出六步贝叶斯信念网络框架，并以替代医疗体系中的客户咨询意向为例。结果显示，自我效能感的因果影响较小，主观规范影响更大，最有效策略是同步提升信心与社区规范。",
@@ -458,14 +470,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Human AI Construction of Bayesian Networks for Operational Decision Support -- A Virtual Survey Approach. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14141",
     "supporting_sources": [
@@ -485,11 +497,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b5c54168",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "来源于访问结构的能力，而非规模：混合序列模型的下界与预注册测试",
     "title_en": "Capability from Access Structure, Not Scale: Lower Bounds and Pre-Registered Tests for Hybrid Sequence Models",
     "summary_zh": "本文提出能力收敛假说（Capability Convergence Hypothesis, CCH），指出在固定的每步推理预算下，表示收敛并不等同于能力收敛。真正的能力收敛趋向于一种访问完备混合架构，该架构结合了压缩的O(1)状态通道和可扩展的逐字索引通道。通过牛顿苹果问题等基准任务，本文揭示了三大资源壁垒，并通过信息论下界和预注册实验验证了该假说，同时区分了理论证明和经济学动机的猜想。首次小规模预注册测试支持了模型在访问结构影响下的能力提升，表现出超加性特点。",
@@ -502,14 +516,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Capability from Access Structure, Not Scale: Lower Bounds and Pre-Registered Tests for Hybrid Sequence Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14144",
@@ -530,11 +544,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b6c542fb",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ToolAnchor：锚定反事实上下文以提升代理工具使用能力",
     "title_en": "ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability",
     "summary_zh": "ToolAnchor通过在关键决策点注入反事实锚定上下文，突破代理行为惯性，激发其利用新工具的能力，解决了工具集扩展时代理频繁依赖旧工具的难题。该框架利用教师模型假设反事实情境，由学生模型验证并通过后训练内化改进策略，在多项任务中展现出稳定的性能提升。",
@@ -547,14 +563,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14145",
@@ -575,11 +591,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b2c53caf",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过知识图谱定位提升小型语言模型的推理能力",
     "title_en": "Enhancing Small Language Models Reasoning through Knowledge Graph Grounding",
     "summary_zh": "尽管大型语言模型在零样本推理上表现出色，但其部署成本高且对环境影响大。小型语言模型（SLMs）作为可持续替代方案，在复杂多跳逻辑推理任务中易出错。本文提出一种神经符号代理框架，通过两种专用工具调用，利用关系图卷积网络（RGCN）为SLMs（如Gemma 3和Llama 3.2）提供知识图谱支持。实验基于CLUTRR亲属关系基准，在真实和Oracle场景下验证方法有效性。结果显示，RGCN提示相较故事文本基线性能提升1.5至2倍，但知识抽取瓶颈和多跳推理连锁错误限制了效果。此外，某些架构中自生成噪声事实导致“干扰效应”，削弱了专家提示的效果。该研究揭示了低资源神经符号系统中符号定位的挑战，并为迭代验证提供了路径。",
@@ -592,14 +610,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Enhancing Small Language Models Reasoning through Knowledge Graph Grounding. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14149",
@@ -620,11 +638,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b7c78325",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "利用多智能体AI与MCP服务器协调电力网研究",
     "title_en": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
     "summary_zh": "本文探讨了智能体AI与模型上下文协议（MCP）如何支持输电系统运营商（TSO）的电力网研究。重点是将大型语言模型与数值仿真工具、结构化工作流程和人工监督相结合。文章提出了工业界对智能体辅助电网研究的关键需求，介绍了基于MCP的接口pypowsybl-mcp，该接口向AI智能体开放仿真工具pypowsybl的部分功能。该平台可用于研究智能体如何设置仿真、执行分析、检索结果，并通过标准化工具调用与电力系统仿真器交互。文中还讨论了以人为中心的多智能体工作流程原则及结合技术指标和从业者反馈的评估策略，将MCP工具集成视为迈向更交互化、可审计及可扩展电网研究环境的步骤。",
@@ -637,14 +657,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-18T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.14158",
@@ -665,6 +685,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

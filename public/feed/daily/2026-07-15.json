@@ -223,7 +223,7 @@
   },
   {
     "id": "item-dda734",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "TSCA-Net: Temporal-Spatial Clique Attention for Interpretable Multimodal Pedestrian Trajectory Prediction",
     "title_en": "TSCA-Net: Temporal-Spatial Clique Attention for Interpretable Multimodal Pedestrian Trajectory Prediction",
     "summary_zh": "Accurate pedestrian trajectory prediction in crowded environments remains challenging due to the multimodal uncertainty of human motion and the variable complexity of motion dynamics across different scene contexts. Exi…",
@@ -236,14 +236,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-15T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: TSCA-Net: Temporal-Spatial Clique Attention for Interpretable Multimodal Pedestrian Trajectory Prediction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.11939",
     "supporting_sources": [
@@ -263,7 +263,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-14d93de5",
@@ -405,7 +407,7 @@
   },
   {
     "id": "item-f3cc499c",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization",
     "title_en": "MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization",
     "summary_zh": "arXiv:2607.11944v1 Announce Type: new Abstract: How do different components of iterative prompt optimization interact, and what happens when they are combined? We investigate this through MAGE (Memory-Augmented Goal-dir…",
@@ -418,14 +420,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-15T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.11944",
     "supporting_sources": [
@@ -445,7 +447,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f4cc4b2f",

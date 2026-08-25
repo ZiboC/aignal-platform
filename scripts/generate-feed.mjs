@@ -6,6 +6,12 @@ import { enrichFeedItemsWithQuality } from "../lib/feed-quality/feed-items.mjs";
 import { buildFreshnessWindow, ensureFeedItemImage, selectFreshRecordsWithFallback } from "../lib/feed-quality/fresh-feed.mjs";
 import { loadSourcePool } from "../lib/feed-quality/source-pool.mjs";
 import { buildSourceCoverageReport, renderSourceCoverageReportMarkdown } from "../lib/feed-quality/source-coverage.mjs";
+import {
+  CATEGORY_DEFINITIONS,
+  CATEGORY_IDS,
+  classifyRecord,
+  isResearchSource
+} from "../lib/feed-quality/category-classification.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const date = args.date ?? new Date().toISOString().slice(0, 10);
@@ -45,15 +51,7 @@ const pageHeaders = {
   "cache-control": "no-cache"
 };
 
-const categories = [
-  "coding_ai",
-  "image_ai",
-  "video_ai",
-  "research_papers",
-  "models_products",
-  "business_investment",
-  "tools_apps"
-];
+const categories = [...CATEGORY_IDS];
 
 const legacySourceSeeds = [
   { name: "OpenAI Blog", url: "https://openai.com/news/rss.xml", category: "models_products" },
@@ -102,9 +100,13 @@ for (const [index, record] of selectedRecords.entries()) {
   const enriched = openAITextDisabled
     ? heuristicEnrichment(record, classified.category)
     : await enrichSafely(record, classified.category);
+  const finalCategory = isResearchSource(record)
+    ? "research_papers"
+    : categories.includes(enriched.category) ? enriched.category : classified.category;
+  const categoryConfidence = Number(enriched.categoryConfidence ?? classified.confidence);
 
   const id = stableId(`${date}-${record.originalUrl ?? record.sourceUrl ?? record.title}`);
-  const imagePrompt = buildImagePrompt(enriched.titleEn, classified.category);
+  const imagePrompt = buildImagePrompt(enriched.titleEn, finalCategory);
   let imageUrl = record.imageUrl ?? null;
   let imageSource = record.imageSource ?? (imageUrl ? "source" : null);
 
@@ -128,7 +130,7 @@ for (const [index, record] of selectedRecords.entries()) {
 
   items.push(ensureFeedItemImage({
     id,
-    category: classified.category,
+    category: finalCategory,
     title_zh: enriched.titleZh,
     title_en: enriched.titleEn,
     summary_zh: enriched.summaryZh,
@@ -141,12 +143,14 @@ for (const [index, record] of selectedRecords.entries()) {
     source_pool_id: record.sourcePoolId ?? null,
     authority_tier: record.authorityTier ?? "C",
     published_at: record.publishedAt,
-    image_name: classified.category,
+    image_name: finalCategory,
     image_url: imageUrl,
     image_source: imageSource,
     image_prompt: imagePrompt,
     confidence: enriched.confidence,
-    tags: buildTags(classified.category, record.title).slice(0, 5)
+    category_confidence: categoryConfidence,
+    classification_method: enriched.classificationMethod ?? "heuristic",
+    tags: buildTags(finalCategory, record.title).slice(0, 5)
   }, { publicBaseURL }));
 
   if (items.length >= itemLimit) break;
@@ -215,7 +219,8 @@ async function enrichWithOpenAI(record, category) {
     title: record.title,
     summary: record.summary,
     source: record.sourceName,
-    category
+    suggested_category: category,
+    category_definitions: CATEGORY_DEFINITIONS
   };
   const response = await fetch("https://api.openai.com/v1/responses", {
     method: "POST",
@@ -228,7 +233,7 @@ async function enrichWithOpenAI(record, category) {
       input: [
         {
           role: "system",
-          content: "Return compact JSON only. Generate bilingual AI news feed copy. Do not invent facts beyond the source text."
+          content: "Return compact JSON only. Generate accurate bilingual AI news feed copy and choose exactly one category from the supplied definitions. Classify the primary subject, not incidental words such as developer, image, video, or model. Research papers, benchmarks, datasets, and scientific studies belong in research_papers unless the source describes a shipped product. Do not invent facts beyond the source text."
         },
         {
           role: "user",
@@ -249,9 +254,11 @@ async function enrichWithOpenAI(record, category) {
               summaryEn: { type: "string" },
               whyZh: { type: "string" },
               whyEn: { type: "string" },
-              confidence: { type: "number" }
+              confidence: { type: "number" },
+              category: { type: "string", enum: CATEGORY_IDS },
+              categoryConfidence: { type: "number", minimum: 0, maximum: 1 }
             },
-            required: ["titleZh", "titleEn", "summaryZh", "summaryEn", "whyZh", "whyEn", "confidence"]
+            required: ["titleZh", "titleEn", "summaryZh", "summaryEn", "whyZh", "whyEn", "confidence", "category", "categoryConfidence"]
           }
         }
       }
@@ -263,7 +270,10 @@ async function enrichWithOpenAI(record, category) {
   }
   const data = await response.json();
   const text = data.output_text ?? data.output?.flatMap((item) => item.content ?? []).find((part) => part.text)?.text;
-  return JSON.parse(text);
+  return {
+    ...JSON.parse(text),
+    classificationMethod: "openai"
+  };
 }
 
 async function generateImage({ id, date, prompt, outDir }) {
@@ -402,19 +412,15 @@ function heuristicEnrichment(record, category) {
     summaryEn: summary,
     whyZh: `这条动态属于 ${category}，值得关注其对 AI 产品、研发或产业应用的影响。`,
     whyEn: `This update is relevant to ${category} and may affect AI products, research, or industry adoption.`,
-    confidence: 0.65
+    confidence: 0.65,
+    category,
+    categoryConfidence: classify(record).confidence,
+    classificationMethod: "heuristic"
   };
 }
 
 function classify(record) {
-  const text = `${record.title} ${record.summary}`.toLowerCase();
-  if (/code|coding|developer|github|ide|test/.test(text)) return { category: "coding_ai" };
-  if (/image|photo|design|visual/.test(text)) return { category: "image_ai" };
-  if (/video|film|voice|audio/.test(text)) return { category: "video_ai" };
-  if (/paper|research|arxiv|benchmark|eval/.test(text)) return { category: "research_papers" };
-  if (/funding|investment|revenue|enterprise|business/.test(text)) return { category: "business_investment" };
-  if (/tool|app|workflow|productivity/.test(text)) return { category: "tools_apps" };
-  return { category: record.fallbackCategory && categories.includes(record.fallbackCategory) ? record.fallbackCategory : "models_products" };
+  return classifyRecord(record);
 }
 
 function buildTags(category, title) {

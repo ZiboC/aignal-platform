@@ -94,7 +94,7 @@
   },
   {
     "id": "item-c26d3fe1",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "神经符号驱动：基于规则的可信推理驱动视觉语言代理",
     "title_en": "Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs",
     "summary_zh": "本文提出Neuro-Symbolic Drive，一种结合经典基于规则规划器推理轨迹与视觉语言代理（VLA）的驾驶框架。该方法利用规则规划器的执行轨迹和决策痕迹作为结构化监督，微调Qwen3.5-4B模型，使推理过程与运动规划因果连接。实验表明，该方法显著降低了平均距离误差和目标漏检率，提升了多摄像头感知下的驾驶性能。",
@@ -105,19 +105,21 @@
     "source_url": "https://arxiv.org/abs/2606.23938",
     "original_url": "https://arxiv.org/abs/2606.23938",
     "published_at": "2026-06-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3585f9d0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "代理模型批判",
     "title_en": "Critique of Agent Model",
     "summary_zh": "本文探讨了“代理”及其构成，特别是在大型语言模型（LLM）兴起、被称为“编码代理”“AI共同科学家”等工具背景下的代理定义。文章梳理了AI代理的现状，从目标、身份、决策、自我调节和学习五个维度分析代理架构，强调真正的代理性需要这些结构内化于系统自身，而非依赖外部组成。区分了“代理性”系统（依赖外部工程流程）与“代理化”系统（内生能力包括社会交互），界定了自动化与自主性的边界。基于此，提出了通用代理模型——目标-身份-配置器（GIC）架构，融合分层目标分解、身份演进、基于世界模型的模拟推理、自我调节与自主学习。并讨论了拥有更大自主性的系统在审计、控制和安全方面的见解。",
@@ -128,21 +130,23 @@
     "source_url": "https://arxiv.org/abs/2606.23991",
     "original_url": "https://arxiv.org/abs/2606.23991",
     "published_at": "2026-06-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Critique of Agent Model. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-39f0ad1d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于图的嘈杂自动语音识别语音错误纠正",
     "title_en": "Graph-Based Phonetic Error Correction of Noisy ASR",
     "summary_zh": "尽管自动语音识别（ASR）系统整体词错误率较低，但仍存在影响语义关键标记（如命名实体、否定词和情感词）的残余词汇错误。这些错误往往具有结构性，源于语音相似性而非随机噪声，使得简单的逐词纠正不足。本文提出G-SPIN框架，结合语音图建模与上下文语言理解，通过图神经网络构建语音邻近候选词，再由掩码语言模型进行局部上下文评分，最后由指令调优的大型语言模型对候选集进行上下文感知重排序，提高纠正准确度。该框架轻量、模块化，完全在推理阶段运行。",
@@ -153,15 +157,17 @@
     "source_url": "https://arxiv.org/abs/2606.24889",
     "original_url": "https://arxiv.org/abs/2606.24889",
     "published_at": "2026-06-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Graph-Based Phonetic Error Correction of Noisy ASR. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b6f3b07b",
@@ -189,7 +195,7 @@
   },
   {
     "id": "item-b7f3b20e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "AgentOdyssey：用于测试时持续学习代理的开放式长时域文本游戏生成",
     "title_en": "AgentOdyssey: Open-Ended Long-Horizon Text Game Generation for Test-Time Continual Learning Agents",
     "summary_zh": "为了使代理能够在测试时持续地通过与世界的交互学习，它们必须有效探索、获取新知识与技能、保留相关经历并进行长时域规划。AgentOdyssey提出了一种新颖评估框架，程序化生成包含丰富实体和世界动态的开放式长时域文本游戏。此框架打破传统机器学习测试时不学习的假设，将学习与推理交错进行。评估方法不仅测量游戏进展，还涵盖世界知识获取、情节记忆、探索及动作多样性等诊断测试。实验显示代理存在关键能力限制，尽管性能随基础模型增强提升，但仍远低于人类水平。短期记忆被证明是多种代理范式的重要测试时训练组成部分。",
@@ -200,16 +206,18 @@
     "source_url": "https://arxiv.org/abs/2606.24893",
     "original_url": "https://arxiv.org/abs/2606.24893",
     "published_at": "2026-06-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AgentOdyssey: Open-Ended Long-Horizon Text Game Generation for Test-Time Continual Learning Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c9e612da",

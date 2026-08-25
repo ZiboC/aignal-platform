@@ -135,7 +135,7 @@
   },
   {
     "id": "item-9e45daee",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "UAV3DCrop：无人机多角度重复农作物三维重建基准测试",
     "title_en": "UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys",
     "summary_zh": "UAV3DCrop是一个公开数据集，包含大规模无人机多角度农作物图像，覆盖玉米、大豆、小麦和燕麦等作物，用于评估三维重建技术在重复农田监测中的表现。该基准测试包含七种场景优化方法和四种预训练模型的多指标对比，评估包括图像外观、深度和冠层高度恢复。结果显示不同方法在不同指标上表现不一，当前三维重建技术尚未能兼顾外观、几何和度量精度，且预训练模型中仅有部分能恢复准确的尺度，表明农业场景的三维重建仍具挑战。数据集公开提供，促进精准农业视觉技术发展。",
@@ -148,14 +148,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-10T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: UAV3DCrop: Benchmarking 3D Reconstruction in Repeated Multi-Angle UAV Crop Surveys. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06404",
     "supporting_sources": [
@@ -175,11 +175,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-9c45d7c8",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于深度证据回归的多模态卫星影像稀疏森林高度估计",
     "title_en": "Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery",
     "summary_zh": "准确估计森林高度对于碳核算、生物多样性监测和生态系统管理等应用至关重要。虽然深度学习方法能提供准确预测，但通常无法量化预测不确定性，这在稀疏标注和地理分布变化的地理空间环境中尤为重要。本文研究了用于森林高度估计的深度证据回归（DER），基于TreeUQ基准数据集，利用Sentinel-1/-2多模态卫星数据和巴伐利亚州的树木清单数据，提出了适应极端标签稀疏性的掩码证据损失。采用U-Net结构，实现树高及其不确定性的一次性预测。实验表明，DER在保持与确定性U-Net相当性能的同时，能有效提供校准良好的不确定性估计，展示了证据学习在地球观测数据不确定感知森林结构估计中的潜力。",
@@ -192,14 +194,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-10T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Deep Evidential Regression for Sparse Forest Height Estimation from Multimodal Satellite Imagery. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06406",
     "supporting_sources": [
@@ -219,11 +221,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d4b06d9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于在线个性化能量缓存的测试时适应用于细粒度视频表情识别",
     "title_en": "Test-Time Adaptation with Online Personalized Energy-Based Cache for Fine-Grained Video Expression Recognition",
     "summary_zh": "视频中的面部表情识别（FER）面临挑战，因为模型需要识别细微且随时间变化的个体差异情感状态。虽然视觉语言模型提供可转移的视觉语义表示，但基于独立主体训练的模型在推理时常因主体特异性分布差异而性能下降。现有测试时适应（TTA）方法通常在推理阶段更新模型参数，增加计算成本和延迟。基于缓存的方法避开参数更新，但早期适应或罕见类别由于目标样本不足难以形成可靠类原型。本文提出基于能量的缓存个性化（EB-CaP），一种面向视频FER的主体在线TTA方法，通过轻量级能量模型从当前无标签视频中采样个性化类原型，无需大量目标数据或存储多样的源原型。其能量函数基于预训练CLIP模型，利用目标视频嵌入与类别文本嵌入的相似度引导采样。同时设置正负缓存存储可靠与不确定目标嵌入，采用自适应熵门控控制缓存更新，并使用多样性门限制冗余样本。最终预测结合缓存分数和当前CLIP分数。实验证明EB-CaP在BioVid、StressID和BAH数据集上优于现有TTA方法，且保持低计算和内存开销。代码公开。",
@@ -236,14 +240,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-10T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Test-Time Adaptation with Online Personalized Energy-Based Cache for Fine-Grained Video Expression Recognition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06467",
     "supporting_sources": [
@@ -263,7 +267,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-55d2785",
@@ -311,7 +317,7 @@
   },
   {
     "id": "item-6e4c74a6",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "迈向多标签图基础模型：从单向量表示学习到多语义基学习",
     "title_en": "Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning",
     "summary_zh": "多标签节点分类是图学习中的一项重要且具有挑战性的任务，节点同时表现出多重语义。现有方法虽能有效建模多标签，但仅限于同域场景，跨域泛化能力有限。图基础模型（GFMs）作为一种新兴范式，能跨不同图域和任务学习可迁移的图表示，但其均基于单标签假设，即将节点嵌入单一向量，导致多标签节点的语义纠缠，难以同时区分多个标签。本文提出多语义基图基础模型（MSB-GFM），通过多语义基表示学习，将多标签节点表示为语义基的自适应组合，以灵活建模多重语义。同时，设计语义-结构双通道架构，结合域对抗训练，实现有效跨域知识转移。大量实验验证了模型的有效性。",
@@ -324,14 +330,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Towards Multi-Label Graph Foundation Models: from Single-Vector Representation Learning to Multi-Semantic Basis Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06394",
@@ -352,11 +358,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7a4c878a",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "EntropyMoE：面向无分词LLM的熵感知稀疏专家路由",
     "title_en": "EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs",
     "summary_zh": "近期字节级大型语言模型通过将字节动态分组为不同大小的片段，实现了无分词建模的竞争力。然而，现有字节片段架构对所有片段采用相同的密集前馈计算，无法根据片段语义和粒度变化调整模型容量。本文提出EntropyMoE，一种针对动态字节片段设计的专家混合（MoE）架构，用Top-K专家层替代全局片段Transformer中的密集前馈模块。路由器基于片段熵选择专家，利用熵与长度共同定义特征空间以调控专家专门化，达到稀疏条件计算。实验显示，EntropyMoE在保持下游任务准确率的同时，实现了匹配稠密与稀疏基线中的最低持出比特熵值，证明了基于片段熵的路由有效性，并扩展了MoE模型在无分词表示中的应用。",
@@ -369,14 +377,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-10T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: EntropyMoE: Entropy-Aware Sparse Expert Routing for Tokenizer-Free LLMs. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06398",
     "supporting_sources": [
@@ -396,11 +404,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a245e13a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "超越路由权重：通过贡献对比实现专家混合奖励模型的响应级忠实解释",
     "title_en": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast",
     "summary_zh": "奖励模型在基于人类偏好学习中至关重要，但其预测驱动因素难以识别。最新的稀疏专家混合（MoE）奖励模型通过将提示路由至专门专家，并根据高路由权重示例对专家进行表征，提升了解释性。然而，路由权重只反映专家接收了哪些提示，而未揭示专家如何评判响应，解释有限。本文提出贡献对比（CoCo）响应级解释方法，利用选择-拒绝响应对的最大贡献差异，联合捕捉路由和偏好行为，忠实表征专家作用。自动及人工评估表明，CoCo较基于路由、得分及稀疏自编码器的替代方案，提供更连贯、忠实和专业化的解释，且保持竞争性的奖励建模准确性。这是首个针对MoE奖励模型解释方法的系统研究。",
@@ -413,14 +423,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06400",
@@ -441,7 +451,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 68."
+    "ranking_reason": "Selected from authoritative primary source; quality score 68.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3811ec1f",
@@ -490,7 +502,7 @@
   },
   {
     "id": "item-ada2885a",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Stockmark-Nemotron-3-Nano-Omni-JapanDocReader：通过能力注入与遗忘控制实现结构化文档解析",
     "title_en": "Stockmark-Nemotron-3-Nano-Omni-JapanDocReader: Structured Document Parsing via Capability Injection and Forgetting Control",
     "summary_zh": "我们提出了Stockmark-Nemotron-3-Nano-Omni-JapanDocReader，这是基于Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16构建的日语文档理解模型。该模型旨在通过能力注入和遗忘控制，实现结构化文档解析，同时尽可能保留文档视觉问答（VQA）能力。研究方法包括仅使用结构化文档解析数据的解析中心微调（SFT），结合解析与VQA数据的混合微调，以及基于任务奖励优化结构化解析的解析中心强化学习（RL）。实验表明，解析中心微调提升了结构化解析性能但导致VQA能力下降，混合微调缓解了遗忘并保持解析性能，基于DAPO的解析中心强化学习进一步突破了微调性能极限。训练数据由日语文档VQA和程序化结构化解析两条合成数据流组成，研究还强调了奖励设计与基于方差的提示过滤对长推理结构化解析中RL效果的重要性。",
@@ -503,14 +515,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-10T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Stockmark-Nemotron-3-Nano-Omni-JapanDocReader: Structured Document Parsing via Capability Injection and Forgetting Control. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06758",
     "supporting_sources": [
@@ -530,7 +542,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6fb7e2e7",
@@ -625,7 +639,7 @@
   },
   {
     "id": "item-a045de14",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于大语言模型符号化结构化流程的可解释无监督社区检测",
     "title_en": "Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes",
     "summary_zh": "社区检测是图分析中的基础任务，旨在识别具有相似行为或兴趣的实体群体。传统目标驱动方法难以处理复杂图结构，深度学习方法虽提升性能但牺牲了解释性且依赖标注数据。本文提出LUCID，一种由大语言模型（LLM）引导、可解释、无需训练的无监督社区检测方法。LUCID受自然系统相变动力学启发，设计为初始化、合并、细化和选择四阶段流程，利用LLM生成的规则将隐性知识转化为显性逻辑结构。实验证明，LUCID在无监督条件下实现了最先进性能，持续优于主流无监督和半监督方法。",
@@ -638,14 +652,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Interpretable Unsupervised Community Detection with LLM-Symbolized Structured Processes. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.06402",
     "supporting_sources": [
@@ -665,6 +679,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

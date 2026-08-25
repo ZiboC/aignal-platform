@@ -70,7 +70,7 @@
   },
   {
     "id": "item-f66dd7dc",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "BOHM：复合AI系统的零成本分层归因方法",
     "title_en": "BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems",
     "summary_zh": "BOHM是一种针对复合AI系统的新型分层归因方法，该方法直接利用系统的路由权重提取归因树，实现了零边际成本且无需访问组件内部。相较于传统的基于Shapley方法的归因，BOHM能同时提供多层级归因，且在不需要大量子集评估的情况下，保持较高的排名一致性，适用于第三方API和不透明端点等场景。",
@@ -81,19 +81,21 @@
     "source_url": "https://arxiv.org/abs/2605.22866",
     "original_url": "https://arxiv.org/abs/2605.22866",
     "published_at": "2026-05-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f6701673",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "NeuroNL2LTL：一种用于线性时序逻辑自然语言翻译的神经符号框架",
     "title_en": "NeuroNL2LTL: A Neurosymbolic Framework for Natural Language Translation of Linear Temporal Logic",
     "summary_zh": "NeuroNL2LTL提出了一种结合学习翻译与形式验证的神经符号架构，通过结构保持的中间表示进行自然语言与线性时序逻辑（LTL）间的高效转换。系统对生成的规范进行可满足性和非平凡性检查，采用最小编辑修复机制纠正接近正确的输出，并通过验证器反馈的强化学习训练神经组件，优化翻译的形式正确性。该方法在超过20万个跨航空航天、机器人和自动驾驶等领域的需求上实现了28%的语义等价率，且86%的输出被验证为可满足，同时能生成上下文相关的解释，帮助领域专家验证规范，无需专业训练。",
@@ -104,15 +106,17 @@
     "source_url": "https://arxiv.org/abs/2605.22874",
     "original_url": "https://arxiv.org/abs/2605.22874",
     "published_at": "2026-05-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: NeuroNL2LTL: A Neurosymbolic Framework for Natural Language Translation of Linear Temporal Logic. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f57014e0",
@@ -140,7 +144,7 @@
   },
   {
     "id": "item-463608a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "豪萨语和丰贝语的文本与语音资源调查：NLP开发的可用性、质量及空白",
     "title_en": "A Survey of Text and Speech Resources for Hausa and Fongbe: Availability, Quality, and Gaps for NLP Development",
     "summary_zh": "本文综述了两种西非语言——豪萨语和丰贝语的公开文本与语音资源。豪萨语拥有约8000-1亿使用者，资源较丰富，包括新闻、百科和教育领域文本；丰贝语约有200万人口，文本资源有限，但近年来语音数据收集有所增加。两者均包含于Masakhane针对命名实体识别和词性标注的基准中。文章详细记录了各资源的规模、领域、格式、许可证和获取方式，并提出了任务导向的建议，指出丰贝文本多样性不足及豪萨语语音资源缺失为主要空白。",
@@ -151,19 +155,21 @@
     "source_url": "https://arxiv.org/abs/2605.22828",
     "original_url": "https://arxiv.org/abs/2605.22828",
     "published_at": "2026-05-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Survey of Text and Speech Resources for Hausa and Fongbe: Availability, Quality, and Gaps for NLP Development. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-86666bc7",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向查询的自适应语义分块：带上下文窗口扩展的动态检索增强生成策略",
     "title_en": "Query-Adaptive Semantic Chunking for Retrieval-Augmented Generation: A Dynamic Strategy with Contextual Window Expansion",
     "summary_zh": "检索增强生成（RAG）系统对文档分块质量高度依赖。传统固定分块忽略语义和用户意图，难以解决精确率与召回率的权衡。本文提出查询自适应语义分块（QASC），通过将查询融入分块过程，引入句子与查询嵌入的余弦相似度判定种子句，基于种子句的上下文窗口扩展保持连贯性，以及块级评分聚合确保整体相关性。实验在100篇技术文档和200个多类型查询上进行，QASC的F1值达0.85，相较固定分块提升18-27%，优于语义及代理分块8-12%。消融实验和人工评估（Cohen kappa=0.82）确认各组件贡献显著，且分块相关性与连贯性更优。",
@@ -174,19 +180,21 @@
     "source_url": "https://arxiv.org/abs/2605.22834",
     "original_url": "https://arxiv.org/abs/2605.22834",
     "published_at": "2026-05-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Query-Adaptive Semantic Chunking for Retrieval-Augmented Generation: A Dynamic Strategy with Contextual Window Expansion. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8b68b23d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向低资源开放源代码Text-to-SQL模型的知识蒸馏",
     "title_en": "Knowledge Distillation for Low-Resource Open-source Text-to-SQL Model",
     "summary_zh": "Text-to-SQL技术将自然语言问题转换为可执行的SQL查询，使非技术用户能够访问关系数据库进行分析和智能数据服务。在实际应用中，性能常受限于标注数据稀缺，尤其是领域特定数据库的高质量<问题, SQL>对。此外，数据库模式不透明、缩写使用及隐含业务逻辑带来额外挑战。现有的数据合成和提示技术提升覆盖但难以生成符合数据库约束的任务特定语义样本。为此，本文提出一种知识感知的Text-to-SQL框架，构建包括模式语义、缩写、业务逻辑及查询模式的任务知识库，并注入训练与推理过程。该框架生成多样且语境相关的合成训练数据，通过目标知识检索增强推理。七个基准测试显示，该方法显著提升了开源及闭源大语言模型在Text-to-SQL任务中的表现，尤其在低资源领域环境下提升泛化性、鲁棒性与适应性。",
@@ -197,16 +205,18 @@
     "source_url": "https://arxiv.org/abs/2605.22843",
     "original_url": "https://arxiv.org/abs/2605.22843",
     "published_at": "2026-05-25T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Knowledge Distillation for Low-Resource Open-source Text-to-SQL Model. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b1cc8e47",

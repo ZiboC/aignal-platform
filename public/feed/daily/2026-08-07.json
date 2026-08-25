@@ -178,7 +178,7 @@
   },
   {
     "id": "item-4d6f6017",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "StyleComposer：无需训练的多参考风格合成",
     "title_en": "StyleComposer: Training-Free Multi-Reference Style Composition",
     "summary_zh": "绘画风格不是单一的：颜色、纹理和结构可能来自不同来源。现有的参考引导方法将它们作为一个整体风格信号传递，用户无法控制各属性的来源和强度。我们探讨扩散模型中哪个部分能改变某一属性而保持其他属性不变，发现没有单一表示能完全分离三者。提出的StyleComposer针对各风格属性选择最佳分离表示并协调去噪过程，无需训练或反演，能更准确结合三参考和提示，且暴露每属性的强度滑块。",
@@ -191,14 +191,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-07T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: StyleComposer: Training-Free Multi-Reference Style Composition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05213",
     "supporting_sources": [
@@ -218,11 +218,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4a6d1cc7",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "NeuroAdaptTrainer：基于YOLO的神经元分割、交互式校正与迁移学习的Fiji/ImageJ插件",
     "title_en": "NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO-Based Neuron Segmentation, Interactive Correction and Transfer Learning",
     "summary_zh": "神经元计数和分割是神经科学研究中一项常规但耗时的任务，传统方法依赖人工检测或半自动工具。NeuroAdaptTrainer是一款开源Fiji/ImageJ插件，将YOLO实例分割模型直接整合到显微镜操作流程中。用户可对单张或批量图像进行自动神经元检测，且能在Fiji中手动校正检测结果，随后利用校正数据通过迁移学习适应新的成像条件。插件内置外部验证模块，可定量比较基础模型和适应后模型性能。NeuroAdaptTrainer降低了非专业用户应用深度学习分割的门槛，同时保持专家监督的核心地位。",
@@ -235,14 +237,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-07T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO-Based Neuron Segmentation, Interactive Correction and Transfer Learning. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05226",
     "supporting_sources": [
@@ -262,7 +264,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-62d68d06",
@@ -354,7 +358,7 @@
   },
   {
     "id": "item-a8021068",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "代理嵌套：一种面向现有企业应用集成与服务的新方法论",
     "title_en": "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
     "summary_zh": "企业运作广泛依赖多种异构业务系统和信息应用，导致数据孤岛和流程碎片化。尽管企业在建设这些应用上投入了大量资源，但有效利用和协调它们依然非常困难。传统的企业应用集成方法，如企业服务总线（ESB）、API网关和机器人流程自动化（RPA），存在耦合度高、运维成本增大及智能化能力有限等问题。本文提出代理嵌套框架，利用多智能体协作，将现有企业应用封装为自主的AI代理，按层级结构组织，反映企业生态系统的复杂性。该框架从每个遗留应用提取数字代理代理，支持自然语言交互和自主操作，通过中央协调者进行任务分解和动态分派，并提供统一的对话接口，实现跨应用查询和流程编排。主要贡献包括“应用即代理”的集成范式和“对话即集成”的交互理念，并探讨该方法在异构系统协调及大规模数据应用中的泛化潜力。",
@@ -367,14 +371,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-07T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05159",
@@ -395,11 +399,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2efa9628",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "点火指数：语言模型中全球工作空间动态的量化测量",
     "title_en": "The Ignition Index: Measuring Global Workspace Dynamics in Language Models",
     "summary_zh": "本文介绍了点火指数（Ignition Index，I），一种经过验证的标量指标，用于将全球工作空间理论（GWT）的全或无点火预测运用于变换器语言模型。该指标通过拟合四参数Sigmoid函数，基于输入信号强度来分析每层线性探针准确率，提取陡峭度参数beta-hat：高值表示突发点火式转变，低值则为渐进式增长。在涵盖五种架构家族的11个模型中，洗牌标签对照实验显示该指标对真实语言结构的选择性是伪探针能力的9.6倍（p<0.001）。主要发现包括：1）前馈变换器的beta-hat平均比状态空间模型高89%（p<1e-13）；2）Huginn-3.5B在迭代轴上展现出比深度轴高2.12倍的点火趋势，证明循环架构沿迭代维度体现工作空间式转变；3）Pythia-410M在训练步骤256时检测到相变，早于归纳头形成；4）点火与模型规模和信号强度的假设未被证实，暗示变换器架构可能已饱和其点火机制。点火指数为GWT动态预测与机制可解释性之间建立了首个经过验证的定量桥梁，展现前所未有的选择性和架构区分能力。代码公开于：https://github.com/saman-rahbar/ignition-index",
@@ -412,14 +418,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-07T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The Ignition Index: Measuring Global Workspace Dynamics in Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05160",
@@ -440,7 +446,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-26fa8990",
@@ -489,7 +497,7 @@
   },
   {
     "id": "item-a5020baf",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RIG-RoPE：带有时长感知时间坐标的关系与实例门控旋转位置编码",
     "title_en": "RIG-RoPE: Relation- and Instance-Gated Rotary Positional Encoding with Duration-Aware Temporal Coordinates",
     "summary_zh": "本文介绍了一种名为RIG-RoPE的机制，用于改进多模态大语言模型中的旋转位置编码（RoPE）。它针对多模态场景中静态多维位置分配的两个限制，提出通过模态指示、视觉实例标识和信息时长坐标来门控空间旋转和调整时间旋转，避免跨模态和跨实例的空间干扰，并实现不同模态间的时间坐标持续性。该方法无需新增学习参数，能高效集成于注意力机制中。",
@@ -502,14 +510,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-07T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: RIG-RoPE: Relation- and Instance-Gated Rotary Positional Encoding with Duration-Aware Temporal Coordinates. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05154",
     "supporting_sources": [
@@ -529,11 +537,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a7020ed5",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "基于支架的后训练：模型参数与程序支架图的协同进化",
     "title_en": "Scaffold-Mediated Post-Training: Co-Evolving Model Parameters and Procedural Scaffold Graphs",
     "summary_zh": "本文提出了一种基于支架的后训练方法，利用可进化的程序支架图结构与模型参数协同进化，从而改进大型语言模型的策略学习。该方法通过发现、蒸馏和动态重编译实现，实验证明在FeatureBench上自动发现的技能使通过率提升了8.1个百分点。经过渐进蒸馏后，模型在无外部支架辅助下仍保持27.7%的通过率，显著优于标准监督微调。",
@@ -546,14 +556,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-07T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Scaffold-Mediated Post-Training: Co-Evolving Model Parameters and Procedural Scaffold Graphs. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05156",
@@ -574,7 +584,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-dde95aaa",

@@ -221,7 +221,7 @@
   },
   {
     "id": "item-2d41c595",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "实时检测AI生成视频：压缩比特流中的 Anytime 检测方法",
     "title_en": "Detect Early, Escalate Rarely: Anytime Detection of AI-Generated Video from the Compressed Bitstream",
     "summary_zh": "传统的AI生成视频检测方法在离线环境下对解码后的视频像素进行评分，通常使用大型视觉语言模型，计算开销高。本文提出将检测任务重新定义为流式感知，直接解析视频压缩编码中的运动场信息，避免了像素域的复杂前向传播。该方法可在任何时间点基于当前数据有效做出判断，且计算成本比像素卷积神经网络低五个数量级。实验证明，在GenVidBench和AIGVDBench数据集中，延迟检测15%的视频片段即可将准确率从0.75提升至0.78，同时计算成本降低7倍。该研究未引入新的检测器，核心贡献在于问题重新定义、两个理论保证及计算边界的测量。代码和实验配置公开可用。",
@@ -234,14 +234,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-23T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Detect Early, Escalate Rarely: Anytime Detection of AI-Generated Video from the Compressed Bitstream. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.19476",
     "supporting_sources": [
@@ -261,11 +261,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a8d92707",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Crowd4D：场景感知的单目4D人群重建",
     "title_en": "Crowd4D: Scene-Aware Monocular 4D Crowd Reconstruction",
     "summary_zh": "从单目视频中恢复大规模场景中一致的4D人群运动具有挑战性，主要因深度模糊和复杂场景几何。现有方法通常基于单平面假设，导致度量尺度不可靠且复杂地形下空间漂移。Crowd4D是首个场景感知的4D人群重建框架，能联合优化人群与场景，实现场景几何的显式融合，并通过多阶段优化策略保证图像与场景空间一致性。引入了人群-场景交互代理（HSIP），利用场景交互点云(SIPC)与交互曲面(SIS)作为中间表示，融合显式场景几何先验，重新定义优化空间。为增强遮挡下的时间稳定性，设计人群结构连贯正则化(CSCR)，利用HSIP空间先验对局部邻域的相对位移和方向施加软时间一致性约束。大量实验表明Crowd4D在复杂大规模场景中显著优于现有方法，实现稳健的单目4D人群重建。",
@@ -278,14 +280,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-23T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Crowd4D: Scene-Aware Monocular 4D Crowd Reconstruction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.19517",
     "supporting_sources": [
@@ -305,11 +307,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4db692aa",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "FineServe：全球大型语言模型服务工作负载的细粒度数据集与特征分析",
     "title_en": "FineServe: A Fine-Grained Dataset and Characterization of Global LLM Serving Workloads",
     "summary_zh": "FineServe是一套从全球商业市场收集的多模型大型语言模型（LLM）服务工作负载数据集。该数据集支持对多样化模型和任务的真实服务动态进行细粒度分析，揭示了不同模型架构、规模及任务意图下的请求波动行为。基于此，研究人员开发了FineServe工作负载生成器，可生成定制化的细粒度模型感知工作负载，用于评估多模型服务平台的调度、路由及容量规划策略。数据集和工具已开源。",
@@ -322,14 +326,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-23T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: FineServe: A Fine-Grained Dataset and Characterization of Global LLM Serving Workloads. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.19349",
     "supporting_sources": [
@@ -349,7 +353,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-40b43f9c",
@@ -397,7 +403,7 @@
   },
   {
     "id": "item-1cd60c0c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "当推理限制了行动选择：大型语言模型游戏玩法中的多样性坍塌",
     "title_en": "When Reasoning Narrows the Move: Diversity Collapse in LLM Game Play",
     "summary_zh": "本文探讨监督微调（SFT）对大型语言模型在序列决策任务中行为多样性的影响，基于井字棋变体的确定性棋盘游戏进行实验，发现推理模式常抑制动作多样性且并非总提高动作准确率。标准SFT虽然提升准确率，却引发过早的多样性坍塌。通过动作增强训练，即对每状态所有最优动作进行训练，可部分缓解该问题。研究指出模仿学习中狭窄支持度是策略坍塌源头，强调在SFT中保持动作多样性对探索行为的重要性。",
@@ -410,14 +416,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-23T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: When Reasoning Narrows the Move: Diversity Collapse in LLM Game Play. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.19523",
     "supporting_sources": [
@@ -437,11 +443,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-72ee685c",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "超越相关性检索：面向评分标准的文档集选择与排序",
     "title_en": "Beyond Relevance-Centric Retrieval: Rubric-Oriented Document Set Selection and Ranking",
     "summary_zh": "随着大型语言模型和AI代理成为搜索结果的主要使用者，文档集质量决定了下游生成的上限。现有评估体系仅独立评分文档并通过nDCG聚合，忽略了文档间的冗余、冲突和互补等交互，无法判定何种文档集更优。本文提出完整的评估-诊断-优化框架，设计了覆盖短长文本的三层九维文档集评估基准SetwiseEvalKit，包含约2.8万条高质量评分标准。系统评估12种重排序方法，发现最佳方法覆盖率不超过45%，跨文档协同指标普遍较弱，且无单一方法能在两种场景均保持顶级表现。基于此，提出无训练的Rubric4Setwise方法，将评分标准转换为文档集选择信号，实现更优下游生成效果，使用文档更少、搜索轮次更少，且在两种场景下均保持最新成果，验证了从评估到优化闭环的有效性。",
@@ -454,14 +462,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-23T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Beyond Relevance-Centric Retrieval: Rubric-Oriented Document Set Selection and Ranking. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.19747",
     "supporting_sources": [
@@ -481,7 +489,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 79."
+    "ranking_reason": "Selected from authoritative primary source; quality score 79.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fb460c46",

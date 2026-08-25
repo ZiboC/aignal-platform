@@ -70,7 +70,7 @@
   },
   {
     "id": "item-a5d23651",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Deontic Policies for Runtime Governance of Agentic AI Systems",
     "title_en": "Deontic Policies for Runtime Governance of Agentic AI Systems",
     "summary_zh": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools,…",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2606.19464",
     "original_url": "https://arxiv.org/abs/2606.19464",
     "published_at": "2026-06-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Deontic Policies for Runtime Governance of Agentic AI Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a0d22e72",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
     "title_en": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
     "summary_zh": "arXiv:2606.19469v1 Announce Type: new Abstract: Undergraduate computer science is governed by international curricular guidelines revised about once a decade, yet programs lack a reliable, reproducible way to measure ho…",
@@ -105,19 +107,21 @@
     "source_url": "https://arxiv.org/abs/2606.19469",
     "original_url": "https://arxiv.org/abs/2606.19469",
     "published_at": "2026-06-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a0cfefdb",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Diffusion Language Models: An Experimental Analysis",
     "title_en": "Diffusion Language Models: An Experimental Analysis",
     "summary_zh": "arXiv:2606.19475v1 Announce Type: new Abstract: Large Language Models (LLMs) have revolutionized language modeling through autoregressive generation, enabling strong performance across a wide range of tasks. Recently, D…",
@@ -128,16 +132,18 @@
     "source_url": "https://arxiv.org/abs/2606.19475",
     "original_url": "https://arxiv.org/abs/2606.19475",
     "published_at": "2026-06-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Diffusion Language Models: An Experimental Analysis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ea56de9d",

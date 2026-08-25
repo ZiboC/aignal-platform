@@ -70,7 +70,7 @@
   },
   {
     "id": "item-2262eb05",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于义务逻辑的智能代理AI系统运行时治理策略",
     "title_en": "Deontic Policies for Runtime Governance of Agentic AI Systems",
     "summary_zh": "基于大型语言模型驱动的自主智能代理AI系统带来新的安全、隐私和合规挑战。这类智能代理能调用工具、操作数据、安装软件并跨组织协作，需超越传统认证和访问控制，实施全面的企业治理管理，包括允许或禁止的行为、行动后的义务（如通知CISO）、义务的豁免条件及策略冲突的优先级。现有策略引擎如XACML、Rego和Cedar仅涵盖许可/禁止，缺乏义务生命周期管理、冲突解决和领域本体推理。我们提出了AgenticRei，基于Rei框架的义务逻辑策略语言，使用OWL表达并由独立于LLM的高性能逻辑引擎运行时评估，处理工具调用及代理间消息，能捕捉当前生产系统难以表达的安全与隐私治理约束，并与行业标准框架A2AS自然集成。",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2606.19464",
     "original_url": "https://arxiv.org/abs/2606.19464",
     "published_at": "2026-06-19T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Deontic Policies for Runtime Governance of Agentic AI Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2562efbe",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "跨主题覆盖、能力与认知深度的课程对齐测量：应用于CS2013与CS2023的纵向框架",
     "title_en": "Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023",
     "summary_zh": "本科计算机科学教育遵循每十年修订一次的国际课程指导方针，但缺乏可靠且可复制的方法来评估课程对当前指导方针的覆盖完整度及其随指导方针重构而变化的情况。该研究提出了一个人机结合的流程，以结构化语料库表示课程和指导方针，利用语义检索生成课程与知识单元的匹配候选，并通过人工判断确认覆盖情况。实证应用于一项通过认证的计算机科学本科课程，分别针对CS2013与CS2023，发现该课程对CS2023和CS2013的知识单元覆盖率分别约为49.7%和50.9%，近十年变化甚微。能力表达方面，课程能满足约88%的覆盖单元，但在CS2023的认知深度达标率为76%，低于CS2013的95%，反映了新版指导方针对深度的更高要求。研究还区分了课程结构性缺口与标准演进引起的差异。此工具可复用且作者提供索取。",
@@ -105,19 +107,21 @@
     "source_url": "https://arxiv.org/abs/2606.19469",
     "original_url": "https://arxiv.org/abs/2606.19469",
     "published_at": "2026-06-19T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Measuring Curriculum Alignment across Topical Coverage, Competency, and Cognitive Depth: A Longitudinal Framework Applied to CS2013 and CS2023. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1d60a48f",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "扩散语言模型：实验分析",
     "title_en": "Diffusion Language Models: An Experimental Analysis",
     "summary_zh": "大型语言模型通过自回归生成实现了强大的任务表现。近年来，扩散语言模型作为替代范式，通过迭代去噪而非逐词预测生成文本，支持序列的并行优化。本文系统评测了八种先进的扩散语言模型，覆盖推理、编程、翻译、知识及结构化问题解决八个基准，综合考察生成质量与计算效率。并分析关键推理时因素如去噪步数、上下文长度、块大小及并行解码策略的影响，同时在相同条件下对小模型进行对比。研究揭示了任务、架构与推理预算对模型性能的影响及设计选择带来的性能与效率折中。研究为当代扩散语言模型的能力和部署特性提供了实用见解。",
@@ -128,20 +132,22 @@
     "source_url": "https://arxiv.org/abs/2606.19475",
     "original_url": "https://arxiv.org/abs/2606.19475",
     "published_at": "2026-06-19T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Diffusion Language Models: An Experimental Analysis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d3b63a13",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "因果归因剪枝法在大型语言模型中保持推理性能",
     "title_en": "Pruning via Causal Attribution Preserves Reasoning Performance in Large Language Models",
     "summary_zh": "大型语言模型在多步推理方面表现出色，但推理成本较高。本文提出了一种名为因果归因剪枝（CAP）的无训练方法，通过测量注意力头对推理任务的因果影响，识别关键注意力头，指导细粒度权重剪枝。CAP基于小规模校准集，估计屏蔽每个注意力头时的性能下降，并将因果得分转化为权重的重要性值。与仅基于权重大小或激活值的方法不同，CAP的干预测量直接反映注意力头的功能贡献，在20%稀疏率下，在ARC-Challenge数据集上相较于Wanda方法获得最高61%的相对准确率提升。在GSM8K、StrategyQA和ARC-Challenge数据集上的多种模型和稀疏率（10%、20%、50%）测试中，CAP大多优于Wanda，尤其是Llama-3模型在ARC-Challenge上的表现显著提升。结果表明，基于因果归因的注意力头剪枝在保持推理性能方面胜过相关性剪枝准则，但在50%高稀疏率下受限于粗粒度的MLP归因。",
@@ -152,20 +158,22 @@
     "source_url": "https://arxiv.org/abs/2606.19350",
     "original_url": "https://arxiv.org/abs/2606.19350",
     "published_at": "2026-06-19T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Pruning via Causal Attribution Preserves Reasoning Performance in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2fd31d03",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "LaViSA：语言与视觉结构歧义基准",
     "title_en": "LaViSA: A Language and Vision Structural Ambiguity Benchmark",
     "summary_zh": "结构歧义指单句因句法结构可有多种有效解读，语言理解面临根本挑战。视觉场景作为有效线索，有助解析此类歧义。LaViSA基准设计用于评估视觉与语言模型（VLMs）利用视觉信息解决结构歧义的能力。其包含多类别歧义句子、消歧句及对应图像。评测显示，尽管现有VLMs某种程度上能利用视觉场景消除结构歧义，但在处理某些歧义类型和细微语义区分时仍存在困难，表明此能力尚有提升空间。",
@@ -176,15 +184,17 @@
     "source_url": "https://arxiv.org/abs/2606.19552",
     "original_url": "https://arxiv.org/abs/2606.19552",
     "published_at": "2026-06-19T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LaViSA: A Language and Vision Structural Ambiguity Benchmark. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-860074a9",

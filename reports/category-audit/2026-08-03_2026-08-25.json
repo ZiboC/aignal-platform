@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-08-25T22:20:41.240Z",
+  "date_range": {
+    "from": "2026-08-03",
+    "to": "2026-08-25"
+  },
+  "methodology": {
+    "mode": "deterministic evidence audit",
+    "min_confidence": 0.72,
+    "notes": [
+      "The audit compares each archived category with an independent weighted classifier using title, summary, and source evidence.",
+      "Likely mismatch is a review flag, not an automatic historical rewrite.",
+      "Repeated archive URLs are counted once using their latest appearance."
+    ]
+  },
+  "summary": {
+    "archive_entries": 307,
+    "unique_signals": 253,
+    "likely_mismatches": 10,
+    "likely_mismatch_rate": 3.95,
+    "weak_assigned_evidence": 82,
+    "weak_assigned_evidence_rate": 32.41
+  },
+  "assigned_categories": {
+    "research_papers": 147,
+    "coding_ai": 35,
+    "tools_apps": 23,
+    "models_products": 19,
+    "image_ai": 18,
+    "video_ai": 7,
+    "business_investment": 4
+  },
+  "predicted_categories": {
+    "research_papers": 153,
+    "coding_ai": 27,
+    "tools_apps": 26,
+    "models_products": 18,
+    "video_ai": 10,
+    "business_investment": 10,
+    "image_ai": 9
+  },
+  "mismatch_routes": {
+    "image_ai -> models_products": 3,
+    "coding_ai -> research_papers": 3,
+    "models_products -> business_investment": 3,
+    "image_ai -> business_investment": 1
+  },
+  "category_review": [
+    {
+      "category": "coding_ai",
+      "assigned": 35,
+      "likely_mismatches": 3,
+      "weak_assigned_evidence": 25
+    },
+    {
+      "category": "image_ai",
+      "assigned": 18,
+      "likely_mismatches": 4,
+      "weak_assigned_evidence": 17
+    },
+    {
+      "category": "video_ai",
+      "assigned": 7,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 0
+    },
+    {
+      "category": "research_papers",
+      "assigned": 147,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 2
+    },
+    {
+      "category": "models_products",
+      "assigned": 19,
+      "likely_mismatches": 3,
+      "weak_assigned_evidence": 17
+    },
+    {
+      "category": "business_investment",
+      "assigned": 4,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 1
+    },
+    {
+      "category": "tools_apps",
+      "assigned": 23,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 20
+    }
+  ],
+  "examples": [
+    {
+      "id": "item-128eddc9",
+      "archive_date": "2026-08-16",
+      "title": "Qwen/Qwen3.8-27B Updated on Hugging Face",
+      "source_name": "Qwen on Hugging Face",
+      "original_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 10.45,
+      "assigned_score": 0.75,
+      "predicted_score": 11.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b",
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-5ba6d539",
+      "archive_date": "2026-08-18",
+      "title": "Tencent/UI-Mate-9B Updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/UI-Mate-9B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-3509c5fa",
+      "archive_date": "2026-08-21",
+      "title": "tencent/UI-Mate-democua-27B updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/UI-Mate-democua-27B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-de48c88",
+      "archive_date": "2026-08-16",
+      "title": "Aug 12, 2026 Economic Research Reviewing the Evidence on Worker Retraining Programs",
+      "source_name": "Anthropic Research",
+      "original_url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-644e3265",
+      "archive_date": "2026-08-19",
+      "title": "Run Massive-Scale UMAP in Minutes Using Multiple GPUs—Without Losing Accuracy",
+      "source_name": "NVIDIA Developer Blog",
+      "original_url": "https://developer.nvidia.com/blog/run-massive-scale-umap-in-minutes-using-multiple-gpus-without-losing-accuracy/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-6f31c2d0",
+      "archive_date": "2026-08-11",
+      "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.91,
+      "margin": 4.65,
+      "assigned_score": 0.75,
+      "predicted_score": 5.4,
+      "evidence": [
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-f7abdfa3",
+      "archive_date": "2026-08-11",
+      "title": "What Building an AI-Native Finance Function Taught Me",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.8,
+      "margin": 3.25,
+      "assigned_score": 0.75,
+      "predicted_score": 4,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-55d6d125",
+      "archive_date": "2026-08-12",
+      "title": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/",
+      "assigned_category": "image_ai",
+      "predicted_category": "business_investment",
+      "confidence": 0.8,
+      "margin": 3.25,
+      "assigned_score": 0.75,
+      "predicted_score": 4,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-7f9446e9",
+      "archive_date": "2026-08-05",
+      "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-25ed1c3e",
+      "archive_date": "2026-08-16",
+      "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study",
+      "source_name": "Google AI Blog",
+      "original_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    }
+  ]
+}

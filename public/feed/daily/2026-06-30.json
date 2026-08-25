@@ -533,7 +533,7 @@
   },
   {
     "id": "item-f8d389b8",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Can MLLMs Critique Like Humans? Evaluating Open-Ended Aesthetic Reasoning in Multimodal Large Language Models",
     "title_en": "Can MLLMs Critique Like Humans? Evaluating Open-Ended Aesthetic Reasoning in Multimodal Large Language Models",
     "summary_zh": "arXiv:2606.29689v1 Announce Type: new Abstract: Open-ended aesthetic critique is a challenge for multimodal large language models (MLLMs): unlike multiple-choice aesthetic benchmarks, it has no single correct answer, an…",
@@ -546,14 +546,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-06-30T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can MLLMs Critique Like Humans? Evaluating Open-Ended Aesthetic Reasoning in Multimodal Large Language Models. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2606.29689",
@@ -574,7 +574,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6795e1e2",

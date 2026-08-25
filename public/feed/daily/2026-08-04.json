@@ -354,7 +354,7 @@
   },
   {
     "id": "item-a6e38415",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ELECTRIC：通过迭代校正增强证据学习的CT重建方法",
     "title_en": "ELECTRIC: Evidential Learning-Enhanced CT Reconstruction via Iterative Correction",
     "summary_zh": "本文介绍了ELECTRIC，一种物理指导的贝叶斯框架。证据神经网络提供图像建议和误差预测的不确定性替代模型，该模型被转换为自适应精度场并应用于泊松加权MAP更新。此闭环将先验置信度视为迭代重建的学习状态变量。通过对AAPM Mayo Clinic低剂量CT数据集切片的仿真实验，验证了机制并展示了基于训练的Normal-Inverse-Gamma证据网络驱动的闭环效果。该方法在未见患者数据上，相较于滤波反投影减少了约70%的重建误差，预测不确定性能够支持选择性信任，物理指导的更新恢复测量一致性，自适应精度重建表现优于固定先验且更稳健。",
@@ -367,14 +367,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-04T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ELECTRIC: Evidential Learning-Enhanced CT Reconstruction via Iterative Correction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.00060",
     "supporting_sources": [
@@ -394,7 +394,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5724e015",
@@ -532,7 +534,7 @@
   },
   {
     "id": "item-32dc11b4",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Obshazard-bench：用于从原始地球观测流实时获取灾害情报的多模态基础模型基准测试",
     "title_en": "Obshazard-bench: Benchmarking Multimodal Foundation Models for Real-Time Disaster Intelligence from Raw Earth Observation Streams",
     "summary_zh": "多模态大型语言模型（MLLMs）越来越多地被用于解读地球观测数据，但其支持真实灾害应急响应的能力尚未得到充分评估。现有遥感基准多依赖静态、事后且专家处理的产品，难以适应灾害快速演变和决策时间受限的实际场景。为此，Obshazard-bench 提出了一种基于实时观测的基准测试，直接整合了来自多种卫星传感器的高频原始声学流及地面观测、历史灾害记录和社会经济指标，避免了专家延迟处理和物理反演流程。该基准涵盖8大类灾害和28个子类，覆盖60多个国家，包含超过120个历史极端事件案例和数千生命周期定向视觉问答样本。其三阶段评估体系对应灾害操作流程：预测危机预警、灾害演进推理及多维影响量化。实验显示现有通用与地球专用基础模型在将多通道物理观测转化为时间关联且决策相关的灾害推理方面存在显著局限。",
@@ -545,14 +547,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-04T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Obshazard-bench: Benchmarking Multimodal Foundation Models for Real-Time Disaster Intelligence from Raw Earth Observation Streams. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.00012",
@@ -573,7 +575,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 81."
+    "ranking_reason": "Selected from authoritative primary source; quality score 81.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a8d6bb48",

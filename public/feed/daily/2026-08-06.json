@@ -178,7 +178,7 @@
   },
   {
     "id": "item-b0bc50c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过深度学习推进公用电杆和标志检测技术",
     "title_en": "Advancing Utility Pole and Sign Detection Through Deep Learning",
     "summary_zh": "本文介绍了一种深度学习框架，用于自动检测、分割和估计木质公用电杆的倾斜角度，以及分类附着的电气警告标志。系统基于修改的检测变换器（DETR）模型，使用由4570张含模糊特征木杆的谷歌街景图像组成的定制数据集训练。该模型在杆和标志检测的平均精度上分别达到90.43%和88.26%，优于传统检测器。扩展模型添加了分割头用于生成实例掩模，成功实现倾斜角度的精确估计，平均误差仅为1.01度。此外，所用定制数据集已公开，作为基准数据供研究使用。",
@@ -191,14 +191,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-06T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Advancing Utility Pole and Sign Detection Through Deep Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04061",
     "supporting_sources": [
@@ -218,11 +218,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-abb53704",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "LoRetta：面向全球范围遥感密集图像匹配的基础模型与大型数据集",
     "title_en": "LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching",
     "summary_zh": "密集图像匹配实现像素级对应，是计算机视觉和摄影测量的基础。面对遥感图像在时间、季节、视角、分辨率及地表状态等方面的差异，直接密集匹配因大幅几何偏移、部分重叠及不可匹配区域而低效且不可靠。该工作将密集匹配重构为先定位匹配区域和仿射变换，再在对齐框架内精细注册。提出LoRetta模型，结合可匹配性感知的仿射定位与引导式密集配准，并构建包含10.3万个对齐对、82.7万个扩增对的全球多时相遥感匹配基准LEVIR-GM。统一评测稀疏、半密以及密集匹配器。LoRetta在LEVIR-GM上AUC达83.3%，超越RoMa v2 1.6个百分点，1和2像素内正确关键点率提升6.5与8.2个百分点，推理速度提升47.8%。通过航天员-卫星及无人机-卫星地理定位实验，验证其可迁移性和复用性。",
@@ -235,14 +237,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-06T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LoRetta: A Foundation Model and Extensive Dataset for Global-Scale Remote Sensing Dense Image Matching. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04106",
@@ -263,11 +265,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 81."
+    "ranking_reason": "Selected from authoritative primary source; quality score 81.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3fa70e6",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于冗余调整人工年龄分数（AAS）的AI系统长期持久性理论",
     "title_en": "A Long-Run Persistence Theory for AI Systems under the Redundancy-Adjusted Artificial Age Score (AAS)",
     "summary_zh": "本文提出了基于冗余调整人工年龄分数（AAS）的AI系统长期持久性框架，将AAS从静态评估指标扩展为周期级的年龄函数，量化结构老化并证明在多次迭代操作中结构年龄保持有界，排除了爆炸性老化。定义了多种渐近持久性状态，并证明在一定条件下AI系统可无限循环运行而不引发无界老化，甚至边际老化消失。该理论为分析长期AI系统持久性提供了结构负担有界而非不可避免退化的形式基础。",
@@ -280,14 +284,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Long-Run Persistence Theory for AI Systems under the Redundancy-Adjusted Artificial Age Score (AAS). Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04012",
     "supporting_sources": [
@@ -307,11 +311,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a0bc379",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大型语言模型提出，执行器处置：一种自验证代理工具，区分长期代理中的承诺漂移与绑定漂移",
     "title_en": "The LLM Proposes, the Executive Disposes: A Self-Verifying Agent Instrument that Dissociates Commitment Drift from Binding Drift in Long-Horizon Agents",
     "summary_zh": "本文提出了一种结构化验证长期目标代理的新方法。通过一个确定性执行器管理所有信念，语言模型仅提交带类型的提案，代理的声明只有在行动前预注册的预测与实际观察匹配时才被接受。该工具通过自动失效机制检测缺陷，并利用影子参考计划衡量漂移。实验显示，取消承诺机制导致目标完全放弃，但绑定误差保持不变，表明两种漂移可被有效区分。该方法为代理开发提供了结构化验证手段。",
@@ -324,14 +330,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The LLM Proposes, the Executive Disposes: A Self-Verifying Agent Instrument that Dissociates Commitment Drift from Binding Drift in Long-Horizon Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04066",
@@ -352,11 +358,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7098029",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于蒙特卡洛树搜索的表格到多模态报告生成",
     "title_en": "Monte Carlo Tree Search for Table-to-Multimodal Report Generation",
     "summary_zh": "本文提出了MCTS-Report框架，利用蒙特卡洛树搜索（MCTS）将表格数据到多模态报告的生成过程视为结构化搜索空间中的渐进式构建。通过将报告生成分解为章节规划、可视化任务识别、图表生成、洞察组织和叙述优化等原子动作，每一步都由大型语言模型（LLM）基于当前报告状态动态推理执行。设计了多维度奖励函数综合评估数值事实一致性、图表质量、图文对齐及结构完整性，并通过多样性惩罚和有效性检查提升生成质量。同时构建了涵盖六个领域的MMRBench基准，实验结果显示MCTS-Report在结构完整性、数字准确率、图文对齐和洞察新颖性方面明显优于强基线，总体得分达到77.9。",
@@ -369,14 +377,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Monte Carlo Tree Search for Table-to-Multimodal Report Generation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04071",
     "supporting_sources": [
@@ -396,7 +404,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-35e52945",
@@ -489,7 +499,7 @@
   },
   {
     "id": "item-c2380e1c",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "NOLLI：一个用于诊断英韩性能差距的难度校准谜题基准",
     "title_en": "NOLLI: A Difficulty-Calibrated Puzzle Benchmark for Diagnosing the English-Korean Performance Gap",
     "summary_zh": "我们介绍了NOLLI，这是一个程序生成的英韩谜题基准，包含15种谜题类型（25个任务；7,500个条目），每个实例均可重复生成且有唯一解。该基准通过行为表现调校难度，使参考模型在指定准确率范围内。设计包括直接翻译、韩文字母改编及基于韩国文化的专有任务，主要用于诊断韩语模型性能差异。评估显示大部分模型英韩准确率相近，但涉及韩文子音字母的任务差异显著，揭示了多步骤子音拼接执行的困难。此外，结构大小未必代表难度。",
@@ -502,14 +512,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: NOLLI: A Difficulty-Calibrated Puzzle Benchmark for Diagnosing the English-Korean Performance Gap. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04397",
     "supporting_sources": [
@@ -529,11 +539,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-909834f",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "FinProBench：基于专业交付成果角色规准评估金融AI代理",
     "title_en": "FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables",
     "summary_zh": "评估金融AI代理需符合真实专业工作标准。研究提出FinProBench基准和角色规准构建流程RGRC，从相应角色的专业交付成果中提取隐性标准，区分质量层次，并可跨任务迁移。实验证明，RGRC在角色专业度高时优于仅基于提示工程的方法，且复用规准显著降低构建成本。FinProBench涵盖1723份跨57职业及8金融子行业的交付成果，初始评测包含20个任务与7个子行业。",
@@ -546,14 +558,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: FinProBench: Evaluating Financial AI Agents with Role-Grounded Rubrics Derived from Professional Deliverables. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04077",
@@ -574,11 +586,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-970ee007",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "FinPerMA：基于理论和事件的面向LLM代理的个性化记忆基准",
     "title_en": "FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents",
     "summary_zh": "本文介绍了FinPerMA，一种用于评估大型语言模型（LLM）代理在金融等高风险领域中个性化记忆能力的基准测试。FinPerMA通过模拟真实投资者的长期轨迹，结合确定性理论规则、LLM叙述和自动质量筛查，重点测试模型在关键事件发生后能否持续更新用户偏好。测试276个虚拟用户的2994个问题显示，现有顶尖模型和记忆配置准确率仍未突破约47%，多项选择题准确率约39%。分析指出，基于摘要的记忆常保留事实细节但丢失偏好信息，简单检索有时胜过专门设计的记忆系统，且事件冲击后差距更明显。",
@@ -591,14 +605,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04095",
@@ -619,11 +633,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1dad9bb5",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "BrainBench：用于全面脑电图理解的大型语言模型评测基准",
     "title_en": "BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding",
     "summary_zh": "本文介绍了BrainBench，这是一个统一的脑电图（EEG）全面理解评测基准，涵盖17个数据集和多个任务，测试大型语言模型在根据指令分析EEG信号并生成科学报告方面的能力。评测通过代码执行和结构化智能体分析两种方式进行，结果显示模型表现差异显著，体现了模型及其执行策略对EEG理解能力的影响。该基准将于近期开源提供，推动基于大型语言模型的EEG分析研究。",
@@ -636,14 +652,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.04156",
@@ -664,6 +680,8 @@
     "impact_score": 74,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 84."
+    "ranking_reason": "Selected from authoritative primary source; quality score 84.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

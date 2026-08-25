@@ -70,7 +70,7 @@
   },
   {
     "id": "item-d2c7c1c0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场: 开发数据探针以从根本上理解数据如何影响大型语言模型性能",
     "title_en": "Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance",
     "summary_zh": "数据是大型语言模型（LLM）的基础，但目前尚不清楚哪些数据在LLM工作流程的不同阶段（如训练、调优、对齐、上下文学习等）中有用，以及原因。当前方法依赖大量公开数据集的实验获取经验启发，计算资源消耗大且缺乏理论本质理解。本文主张开发系统方法，利用合成序列（称为数据探针）通过随机过程生成，帮助揭示数据特性如何驱动LLM行为。通过对数据探针的观察，研究者可以系统研究数据特性对模型性能、泛化和鲁棒性的影响，借助理论概念如典型集为LLM行为提供解释。这种方法为理解数据在LLM训练和推理中的作用提供基础性见解，超越经验启发。",
@@ -81,19 +81,21 @@
     "source_url": "https://arxiv.org/abs/2605.18801",
     "original_url": "https://arxiv.org/abs/2605.18801",
     "published_at": "2026-05-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: Let's Develop Data Probes to Fundamentally Understand How Data Affects LLM Performance. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e5c5a112",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "文档AI实操：用于OCR与大型语言模型管道的微服务架构",
     "title_en": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
     "summary_zh": "本文介绍了一种微服务架构，将分类、光学字符识别（OCR）和大型语言模型结构化字段提取等多模型管道封装在一起，支持每小时处理上千份多页文档。文章详细探讨了设计决策，包括混合分类、GPU推理与CPU协调分离、异步处理IO操作及横向独立扩展策略。批量性能分析揭示关键发现：终端延迟主要由OCR主导，系统瓶颈源自共享GPU推理能力而非工作线程数。旨在为实践者提供可行架构模式，助力文档理解系统在生产环境中的有效运行。",
@@ -104,19 +106,21 @@
     "source_url": "https://arxiv.org/abs/2605.18818",
     "original_url": "https://arxiv.org/abs/2605.18818",
     "published_at": "2026-05-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ec3806a2",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "评估个人健康记录在个性化健康人工智能中的效用",
     "title_en": "Evaluating the Utility of Personal Health Records in Personalized Health AI",
     "summary_zh": "本研究评估了大型语言模型（如Gemini 3.0 Flash）在利用患者管理的个人健康记录（PHRs）数据回答健康查询中的表现。通过分析2257条来自不同患者提问场景的查询，并结合1945份匿名PHRs，研究对比了无PHR上下文、仅基本摘要及完整临床记录三种条件下的回答效果。结果显示，使用PHR数据显著提升了答案的有用性、安全性、准确性、相关性和个性化，揭示了模型在时间顺序理解及罕见信息生成方面的不足。研究提出了一套新的评估框架，推动未来更好利用个人健康记录促进用户理解自身健康。",
@@ -127,19 +131,21 @@
     "source_url": "https://arxiv.org/abs/2605.18937",
     "original_url": "https://arxiv.org/abs/2605.18937",
     "published_at": "2026-05-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Evaluating the Utility of Personal Health Records in Personalized Health AI. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-82f69903",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "闪亮的故事，隐秘的挣扎：通过大型语言模型视角调查残疾人形象",
     "title_en": "Shiny Stories, Hidden Struggles: Investigating the Representation of Disability Through the Lens of LLMs",
     "summary_zh": "现代大型语言模型(LLMs)因能模拟人类行为和生成反映不同人群和身份的文本而备受关注。然而，这些模型可能放大偏见或歧视，或因去偏见而过度理想化残疾人形象，忽视其真实复杂的生活。本文通过模拟残疾人视角生成社交媒体帖子，并与真实残疾人帖子比较，发现LLMs常理想化残疾经历，过于正面且不真实；同时，残疾人相关主题如职业和娱乐较少出现，强化了排斥性叙述。研究指出LLMs难以真实反映边缘群体复杂经验，需批判性审视其表现。",
@@ -150,19 +156,21 @@
     "source_url": "https://arxiv.org/abs/2605.20191",
     "original_url": "https://arxiv.org/abs/2605.20191",
     "published_at": "2026-05-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Shiny Stories, Hidden Struggles: Investigating the Representation of Disability Through the Lens of LLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-83f69a96",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "利用大型语言模型进行情感分析：Decentraland的MANA代币多模态分析",
     "title_en": "Leveraging Large Language Models for Sentiment Analysis: Multi-Modal Analysis of Decentraland's MANA Token",
     "summary_zh": "本文研究了Decentraland虚拟现实平台的社区情感与多模态金融数据结合，用于提升虚拟世界经济中加密货币价格预测的准确性。通过BERT模型进行Discord社区情感分析，并基于LSTM构建融合历史价格、情感评分、交易量和市值的多模态预测模型。结果显示，社区情感以中性为主带正向偏斜，多模态模型在预测效果上显著优于仅用价格的基线模型，证明了社区信号在虚拟经济预测中的价值。",
@@ -173,16 +181,18 @@
     "source_url": "https://arxiv.org/abs/2605.20192",
     "original_url": "https://arxiv.org/abs/2605.20192",
     "published_at": "2026-05-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Leveraging Large Language Models for Sentiment Analysis: Multi-Modal Analysis of Decentraland's MANA Token. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3c094d53",

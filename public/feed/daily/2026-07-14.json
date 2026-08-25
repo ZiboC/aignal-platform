@@ -177,7 +177,7 @@
   },
   {
     "id": "item-ac216e5d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "从机器学习预测到基于图尔曼论证模型的诊断辅助",
     "title_en": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
     "summary_zh": "该研究将基于图像的诊断拆解为图尔曼论证模型的组成部分，包括主张、依据、保证、限定词、反驳和支持。针对视网膜诊断中的机器学习生成主张，系统通过图像生物标志物提取模型提供依据，医学知识代理MedGemma分析连接依据与主张的保证，结合整体定量评估确定限定词，并利用MedSigLip计算图像相似度构建反驳，从而为专家提供结构化、可解释的诊断评估。",
@@ -190,14 +190,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09664",
@@ -218,7 +218,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ab216cca",
@@ -266,7 +268,7 @@
   },
   {
     "id": "item-9a1f1370",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "忠实传递，非纠正：多跳智能体中消息格式效应依赖传递层级",
     "title_en": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
     "summary_zh": "本文研究了大型语言模型智能体间信息传递时消息格式的重要性。通过设立多跳中继测试平台，比较五种消息格式（自由自然语言、精确定向自然语言、JSON、三元组、键值对）在六跳传递中的表现，结果显示消息格式效应依赖中继层级。强能力中继基本无损失，格式间差异微小；弱能力中继下格式差异显著，固定键JSON表现出更强的抗漂移能力。错误信息一旦产生，会高度保留至最终跳。结论是结构化消息提供了一种忠实且定位错误的通道，但不是纠错编码，格式选择应以链中最弱的环节为准。",
@@ -279,14 +281,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09678",
@@ -307,11 +309,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-38ac524a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Index SLM 技术报告",
     "title_en": "Index SLM Technical Report",
     "summary_zh": "本文介绍了Bilibili开发的一系列开源小型语言模型Index-1.9B。该系列包括四个模型：Index-1.9B-Base，拥有19亿非嵌入参数，预训练数据量为2.8万亿中英文标记；Index-1.9B-Pure，过滤所有指导性数据的版本；Index-1.9B-Chat，通过有监督微调和直接偏好优化对基础模型进行对齐；以及结合检索增强生成以支持少样本角色扮演定制的Index-1.9B-Character。模型采用Warmup-Stable-Decay学习率调度和Norm-Head输出层，实现训练稳定。Index-1.9B-Base在涵盖考试、推理、数学和代码的标准基准测试中得分64.92，表现优于体积大数倍的开源模型。报告还研究了模型深度、学习率大小及调度、数据质量和指导数据预训练的影响，以及训练过程中的性能异常提升。所有模型和评估代码均已在GitHub开源。",
@@ -324,14 +328,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Index SLM Technical Report. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09885",
     "supporting_sources": [
@@ -351,7 +355,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3e132026",
@@ -577,7 +583,7 @@
   },
   {
     "id": "item-a31ce304",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "玻尔兹曼MapReduce：可分叉沙箱的配分函数规约",
     "title_en": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
     "summary_zh": "本文提出在局部渐近正态性（LAN）下，工人对大小为n的数据块发出的置信密度是一个Gibbs--Boltzmann测度，其逆温度为样本量β=n。该方法表明，不相交的数据块携带独立的Boltzmann因子，字面理解下MapReduce的规约操作即为一个配分函数Z的积分，其极大值对应加权精度（逆方差）合并；另外，频率学一致性对应零温度极限T=1/n趋近于0。",
@@ -590,14 +596,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09689",
     "supporting_sources": [
@@ -617,11 +623,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-9e1a9c8e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "将潜在链式推理解读为动力系统",
     "title_en": "Interpreting Latent CoT Reasoning as Dynamical Systems",
     "summary_zh": "本文针对近期潜在推理方法（如CODI和COCONUT）存在的可解释性问题，提出将潜在令牌序列建模为表示空间中的轨迹，并应用动力系统分析方法来刻画推理的演化过程。通过定量指标（步步变化、方向一致性、Lyapunov敏感性）和定性投影（UMAP、DMD/PHATE）分析，发现潜在链式推理展示出结构化的非随机动力特性，存在两类稳定性：CODI表现为稳定吸引子，COCONUT表现为不稳定扩展系统，SIM-CoT监督收紧了这些行为但未改变底层动力学。该工作提升了潜在链式推理的可解释性并为改进潜在推理性能提供了实际洞见。相关代码与项目页面已在线发布。",
@@ -634,14 +642,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Interpreting Latent CoT Reasoning as Dynamical Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09698",
     "supporting_sources": [
@@ -661,6 +669,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

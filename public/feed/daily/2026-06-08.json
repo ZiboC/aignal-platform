@@ -117,7 +117,7 @@
   },
   {
     "id": "item-5c319bd3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "DiBS：基于扩散模型的分支选择",
     "title_en": "DiBS: Diffusion-Informed Branch Selection",
     "summary_zh": "本文提出了一种名为DiBS的新方法，利用扩散模型指导数独问题的分支选择搜索过程，结合符号求解的完整性与扩散模型的全局引导，显著减少搜索成本，特别是在长尾搜索中表现出优势。",
@@ -128,19 +128,21 @@
     "source_url": "https://arxiv.org/abs/2606.06518",
     "original_url": "https://arxiv.org/abs/2606.06518",
     "published_at": "2026-06-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: DiBS: Diffusion-Informed Branch Selection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5b319a40",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "SafeGene：可复用的安全适配器，实现安全对齐的可迁移性",
     "title_en": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
     "summary_zh": "本文提出了SafeGene，一种可复用的安全适配器模块，针对开源大语言模型（LLM）在进行下游微调时安全对齐性减弱导致的安全恢复问题。SafeGene 把安全能力作为独立且可复用的适配器表示，从对齐与降级模型差异中获取安全向量，经过数据感知层选择优化，并通过少样本层级系数重新校准用于各个下游任务中。多模型、多任务实验证明，SafeGene有效减少有害回答率，同时保持任务性能，优于现有安全适配方法。",
@@ -151,19 +153,21 @@
     "source_url": "https://arxiv.org/abs/2606.06519",
     "original_url": "https://arxiv.org/abs/2606.06519",
     "published_at": "2026-06-08T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SafeGene: Reusable Adapters for Transferable Safety Alignment. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6842f7d8",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过一致性驱动的强化学习提升跨语言事实回忆能力",
     "title_en": "Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning",
     "summary_zh": "本论文介绍了PolyFact，一个包含12种语言、10万条基于Wikidata事实的多语种平行问答数据集，旨在研究大型语言模型在非英语语言中的事实表达不一致问题。研究比较了轻量持续预训练、监督微调和基于Group Relative Policy Optimization (GRPO)的强化学习方法，发现在Qwen-2.5-7B和OLMo-2-1124-7B模型上，GRPO在跨语言一致性和对未见语言的泛化能力上均优于其他方法。此外，机制分析表明GRPO通过减弱多层感知机和注意力头中的语言特化，提高了共享的跨语言表示。研究团队将公开代码、模型和数据集。",
@@ -174,19 +178,21 @@
     "source_url": "https://arxiv.org/abs/2606.06586",
     "original_url": "https://arxiv.org/abs/2606.06586",
     "published_at": "2026-06-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-71e281bf",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "UnpredictaBench：评估大型语言模型分布随机性的新基准",
     "title_en": "UnpredictaBench: A Benchmark for Evaluating Distributional Randomness in LLMs",
     "summary_zh": "UnpredictaBench是一项测试大型语言模型（LLM）捕捉真实底层分布能力的评估基准。随着LLM越来越多地被用来替代其他实体（如经济模拟中的人类），模型趋向于仅给出单一合理答案，未能体现真实系统的不可预测性。UnpredictaBench设计了448个简化但核心的采样问题，涉及统计分布、随机程序和自然语言描述的随机过程。该基准引入KS@N评价指标，通过Kolmogorov-Smirnov检验量化模型样本与目标分布的接近度。测试显示各模型在分布采样能力上差异显著，最高也未超出40%，表明该能力仍有很大提升空间。即使引入推理，提升有限，表明简单的分布模拟对LLM依然是挑战，是将LLM用作复杂系统代理的必要前提。",
@@ -197,19 +203,21 @@
     "source_url": "https://arxiv.org/abs/2606.06622",
     "original_url": "https://arxiv.org/abs/2606.06622",
     "published_at": "2026-06-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: UnpredictaBench: A Benchmark for Evaluating Distributional Randomness in LLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fcd8cf34",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "泛化的搭便车假说：解释与缓解新兴错配问题",
     "title_en": "The Piggyback Hypothesis of Generalization: Explaining and Mitigating Emergent Misalignment",
     "summary_zh": "本文针对大型语言模型（LLMs）在训练数据之外广泛过度泛化的问题，提出了搭便车假说：聊天模板的特定前缀标记可以将微调后的行为“搭便车”到域外查询。通过对前缀的细微扰动或用未微调模型的前缀表示替换，能在不改动用户查询的情况下恢复模型对齐。基于此，提出了Token正则化微调（TReFT）方法，在多模型和数据集上有效降低了新兴错配（EM），同时保留了领域内学习效果。TReFT在法律领域微调的Llama-3.1-8B模型上，相较于数据交叉训练减少了33.5%的EM，且在其他狭窄微调场景如回避、工具使用中同样表现优异（场外泛化平均减少54.3%）。研究揭示了LLMs可能以意外方式学习和泛化，并为更受约束的微调提供了新途径。",
@@ -220,15 +228,17 @@
     "source_url": "https://arxiv.org/abs/2606.06667",
     "original_url": "https://arxiv.org/abs/2606.06667",
     "published_at": "2026-06-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The Piggyback Hypothesis of Generalization: Explaining and Mitigating Emergent Misalignment. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e008587d",

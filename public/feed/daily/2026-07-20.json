@@ -177,7 +177,7 @@
   },
   {
     "id": "item-643e66a5",
-    "category": "tools_apps",
+    "category": "research_papers",
     "title_zh": "手工特征学习与卷积神经网络在人脸表情识别中的实证研究",
     "title_en": "An Empirical Study of Handcrafted Feature Learning and Convolutional Neural Networks for Facial Expression Recognition",
     "summary_zh": "人脸表情识别是计算机视觉中的重要任务，应用于人机交互、心理健康监测、驾驶员警示和行为分析。虽然卷积神经网络（CNN）在现代表情识别中占主导地位，手工特征描述符如定向梯度直方图（HOG）和局部二值模式（LBP）仍是经典基线。该研究比较了HOG+支持向量机（SVM）、LBP+逻辑回归以及轻量级CNN在FER-2013、CK+和KDEF三个数据集上的表现。结果显示，CNN整体表现最佳，尤其在复杂数据上，而HOG在受控环境中表现强劲，LBP表现较差。研究强调数据集复杂度显著影响表现，稳定的特征学习对实际应用至关重要。",
@@ -190,14 +190,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-20T12:00:00.000Z",
-    "image_name": "tools_apps",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/tools.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: An Empirical Study of Handcrafted Feature Learning and Convolutional Neural Networks for Facial Expression Recognition. Category: tools_apps. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "tools",
-      "apps"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15288",
     "supporting_sources": [
@@ -217,11 +217,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f2b61f7b",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "重新思考读出机制：解锁视频骨干网络以检测AI生成视频",
     "title_en": "Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection",
     "summary_zh": "AI生成视频通常包含跨帧不一致引起的微妙时间伪影。捕捉这些伪影的检测器应受益于视频预训练骨干网络，而非仅用图像预训练网络。但实际上，采用标准全局读出的视频骨干网络未必能超越强大的图像预训练探针。主要原因在于读出中过度的时空聚合，将每帧压缩成单个全局描述符，抑制了局部补丁级时间动态，丢失了重要的补丁间关系。基于此，作者提出Velocity Gated Patch Velocity Profiling (V-PVP)，一种轻量级读出模块，通过双流处理补丁速度场，仅增加约0.5M参数。V-PVP作为即插即用模块，在多种视频骨干和训练设置下均能稳定提升性能。该方法在完全冻结骨干情况下，在AIGVDBench上达到了95.28的AUC，证明替换聚合层激活了视频骨干的时间潜力，恢复其在AI生成视频检测上的优势。代码已公开。",
@@ -234,14 +236,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-20T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Rethinking the Readout: Unlocking Video Backbones for AI-Generated Video Detection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15321",
     "supporting_sources": [
@@ -261,7 +263,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 68."
+    "ranking_reason": "Selected from authoritative primary source; quality score 68.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f6b8645e",
@@ -309,7 +313,7 @@
   },
   {
     "id": "item-6c3e733d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "GraphDx：一种考虑成本的知识增强多智能体顺序诊断框架",
     "title_en": "GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis",
     "summary_zh": "顺序诊断需要在诊断准确率与资源成本之间通过迭代信息收集实现平衡。现有的大型语言模型（LLM）方法虽编码了丰富的医学知识，但在成本约束下推理系统性不足，常导致过度检测。本文提出GraphDx框架，包含两大创新：一是自动利用LLM构建具有量化典型性、以行为为中心拓扑及诊断相关性和成本敏感双目标属性的医疗诊断知识图谱（MDKG）；二是引入感知、推理和决策三协作智能体，其中推理智能体在MDKG上进行确定证据评分和成本感知规划。基于MedQA和MIMIC-IV数据，结合三种LLM骨干（DeepSeek-V3、Kimi-k2、Llama-3.3）实验结果表明，GraphDx将诊断成功率从50-68%提升至79-93%，并减少20-54%的检测成本，提供了一种稳健、经济且可解释的自动临床诊断解决方案。",
@@ -322,14 +326,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: GraphDx: A Cost-Aware Knowledge-Enhanced Multi-Agent Framework for Sequential Diagnosis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15280",
@@ -350,11 +354,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6b3e71aa",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "因果审计：通过目标感知因果链构建实现显式且可审计的图谱推理",
     "title_en": "Causal-Audit: Explicit and Auditable Graph-based Reasoning via Target-Aware Causal Chain Construction",
     "summary_zh": "本文提出了一种用于无上下文干预式问答的显式且可审计的因果推理框架。该方法将因果推理表述为通过四个模块化阶段在显式因果图上进行结构化推理，而非依赖隐式端到端预测。核心创新包括目标感知的因果图构建策略，以目标变量为约束，有效抑制无关变量和伪因果关系，以及路径级因果证据聚合机制，结合多条因果路径的强化与抵消效应，实现比单链更鲁棒的决策。大量基准测试表明该框架在提供可解释、可审计的因果推理的同时，性能显著优于现有基于大型语言模型的方法。",
@@ -367,14 +373,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Causal-Audit: Explicit and Auditable Graph-based Reasoning via Target-Aware Causal Chain Construction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15281",
     "supporting_sources": [
@@ -394,11 +400,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-67bd936f",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Cura 1T：专为医疗智能设计的模型",
     "title_en": "Cura 1T: Specialized Model for Agentic Healthcare",
     "summary_zh": "Cura 1T是一款专门针对医疗领域设计的大型语言模型（LLM），涵盖患者咨询、文本及图像临床推理、交互式诊断和电子病历工具使用等功能。通过一个人类监督的自我演化循环训练，模型在不同任务中协调提升，避免单一更新导致性能退化。该循环利用针对性合成和精选数据改进模型，目前在医疗评估套件中表现优异，并在跨领域推理和智能代理基准中保持竞争力。",
@@ -411,14 +419,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-20T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Cura 1T: Specialized Model for Agentic Healthcare. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
     ],
@@ -440,11 +448,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3e1613bb",
-    "category": "video_ai",
+    "category": "research_papers",
     "title_zh": "控制L2口语英语自动评分中的隐式捷径依赖",
     "title_en": "Controlling Implicit Shortcut Reliance in L2 Spoken English Auto-markers",
     "summary_zh": "本文提出了一种新的训练标准，用于减少语言能力评估自动评分器对输入中特定特征“捷径”的过度依赖。此类捷径可能被考生利用，提升成绩而非真实能力。该方法在基于音频和语音识别文本的两种评估系统上进行验证，结果显示应用新训练标准后，评分器对捷径特征的依赖降低，更接近人工参考水平。",
@@ -457,14 +467,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-20T04:00:00.000Z",
-    "image_name": "video_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/video-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Controlling Implicit Shortcut Reliance in L2 Spoken English Auto-markers. Category: video_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "video",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.16085",
     "supporting_sources": [
@@ -484,7 +494,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-de96f5ce",
@@ -577,7 +589,7 @@
   },
   {
     "id": "item-6bc216e9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过强化学习的推理引导部件级视觉定位",
     "title_en": "Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning",
     "summary_zh": "多模态大语言模型（MLLM）能从自由形式语言查询定位整个物体，但对于查询仅指定物体部件时效果较差。原因在于缺失了物体-部件层级结构，部件和物体被统一定位。本文提出对象-部件层级反射定位（OP-HRG），采用粗到细的推理方法，先定位父对象，再定位其中部件，并通过自我检查反思结果，扩展方法通过重编码预测区域进行校正。提出了一个部件感知的GRPO框架，用阶段性奖励训练该管线。训练的4B模型在PascalPart、PartImageNet和InstructPart数据集上优于7B定位LLM和SAM3，并可迁移到推理分割。",
@@ -590,14 +602,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-20T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Reasoning-Guided Part-Level Visual Grounding via Reinforcement Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15374",
     "supporting_sources": [
@@ -617,11 +629,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-68bfd399",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "AnovaX：具备大语言模型规划、类型化执行器与自适应恢复的本地多智能体语音助理",
     "title_en": "AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery",
     "summary_zh": "AnovaX是一款完全运行于用户电脑上的本地优先语音助理，利用单一Python进程集成唤醒词检测、语音处理、大语言模型规划（Gemini）生成工具调用的JSON计划，以及多智能体协作系统。它通过类型化的子代理执行计划中的操作，具备超时、重试与资源锁控机制，并且采用递归MetaAgent支持子目标委派。异常恢复环路结合ReAct式提示实现故障处理和工具的预读执行。伴随的Flask服务器支持局域网内手机远程控制与实时事件镜像，并通过MJPEG流回传电脑屏幕画面。AnovaX展示了一个几千行代码的助理即可完成打开应用、输入、搜索及并发操作协调且能自动恢复单步失败，且可从他室手机远程操控，无需将大语言模型连接键盘，区别于云端助理如Siri或Alexa。",
@@ -634,14 +648,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.15367",
@@ -662,6 +676,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

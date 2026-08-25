@@ -1,7 +1,7 @@
 [
   {
     "id": "item-c969fab8",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RISE：针对世界动作模型的自适应想象",
     "title_en": "RISE: Adaptive Imagination for World Action Models",
     "summary_zh": "世界动作模型（WAMs）通过将未来世界演变纳入动作生成来改进规划，但现有方法对每个场景分配固定的想象预算。我们提出了RISE（通过选择性展开细化想象）的系统级自适应想象框架，根据继续展开预期的规划收益做出顺序的展开/停止决策。在每一步，潜在评估器估计当前前缀揭示的风险及继续想象带来的规划改进潜力，而展开门则权衡预期收益与额外计算成本。鉴于事实驾驶日志仅暴露一种实现的未来，我们构建了包含多样结果和风险等级的反事实数据集CounterDrive，以丰富未来动态并提供局部风险监督。每个保留样本均经过专家验证及轨迹有效性、事件发生时点和因果类别的标注，为安全关键的世界建模研究提供可复用资源。在NAVSIM和nuScenes上的实验显示，RISE在减少不必要展开的同时实现了最佳整体规划性能，且转移实验支持其在不同WAM架构中的插件通用性。",
@@ -14,14 +14,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: RISE: Adaptive Imagination for World Action Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.98,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20430",
@@ -42,11 +42,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4473b6b5",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "使用最优传输聚合视觉信息以压缩VideoLM令牌",
     "title_en": "Aggregating Visual Information with Optimal Transport for VideoLM Token Compression",
     "summary_zh": "视频语言模型将视频处理为密集的视觉令牌序列，存在大量冗余。压缩这些序列对于减轻语言模型解码过程中的视觉令牌负担至关重要。该方法通过最优传输将视频帧观察的密集经验测度映射到紧凑目标测度，从而构建压缩表示。该方法结合任务和空间维度调整压缩过程，针对问题条件优化传输成本，并在不同空间粒度上计算区域特定时间传输计划，实现对相关内容的关注。评估显示，AVIOT在多种视频理解基准上表现不逊于未压缩模型，且在高压缩率下依然保持强劲性能。",
@@ -59,14 +61,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Aggregating Visual Information with Optimal Transport for VideoLM Token Compression. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20473",
     "supporting_sources": [
@@ -86,11 +88,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c35ae6bc",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "作为Rollouts的注释：用于视频多模态大语言模型的高效可扩展强化学习",
     "title_en": "Annotations as Rollouts: Efficient and Scalable Reinforcement Learning for Video MLLMs",
     "summary_zh": "多模态大语言模型（MLLM）在统一视频感知领域占据主流，但在大规模多任务数据集上的后训练依然具有挑战性。现有强化学习方法即使采用计算昂贵的链式推理生成，也仅采样少量高质量的策略组。本文研究了视频MLLM强化学习后训练的样本效率与可扩展性，提出了OraRL方法。该方法将注释不仅用于评估，还作为oracle rollout直接作为正向优化目标。通过去耦优势估计器解决了“优势倒置”问题，同时采用符号平衡剪枝，只保留oracle及最强正负样本，显著提高效率。OraRL相较于基线在模型规模从0.8B到9B、数据量达到10万提示时均有提升。Video-ORA-9B解码速度从4780ms提升至130ms且无链式推理。实验中，其时间mIoU从62.5提升至66.0，追踪AO从73.0提升到78.2，分割从64.3提升到70.4，空间智能三大基准平均从51.0升至56.1，在VSI-Bench达73.1分，优于GPT-5和Gemini-3-Pro。",
@@ -103,14 +107,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Annotations as Rollouts: Efficient and Scalable Reinforcement Learning for Video MLLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20492",
     "supporting_sources": [
@@ -130,11 +134,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e5dc82ea",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "DiffVC-ONE：基于扩散的一步式视频生成压缩框架",
     "title_en": "DiffVC-ONE: Diffusion-based Generative Video Compression with One-Step Video Diffusion Transformer",
     "summary_zh": "生成式视频压缩能在低码率下恢复丰富视觉细节，但同时实现高时间一致性和低推理成本具有挑战。本文提出DiffVC-ONE框架，基于一步视频扩散变换器，通过统一单向潜在压缩器压缩潜在切片，并用视频DiT的一步扩散增强器对图像组进行空间-时间感知增强。同时，通过混合条件生成器提取结构、强度和语义信息，提升细节和控制生成过程。多基准实验证明该方法在感知质量和时间一致性上达最优，且推理成本低。",
@@ -147,14 +153,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: DiffVC-ONE: Diffusion-based Generative Video Compression with One-Step Video Diffusion Transformer. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20515",
     "supporting_sources": [
@@ -174,11 +180,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6f9b3d81",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SDAD：面向AI原生软件开发生命周期的规范驱动智能代理开发",
     "title_en": "SDAD: Spec-Driven Agentic Development for the AI-Native SDLC",
     "summary_zh": "领先的编码智能代理依托大规模语言模型，借助数十万乃至百万级上下文窗口，正在重塑软件开发生命周期（SDLC）。丰富的上下文处理和多步推理能力使得功能需求文档和代码仓库上下文可在单次流程中被吸收，规范质量成为自主交付的关键驱动力。该报告正式提出规范驱动智能代理开发（SDAD）——集成前期规范化、机器可读规格、智能合成及多代理独立验证，并由人工审核的高效实施模式。文中回顾了瀑布模型与敏捷开发的演进，引入AI代码作为第四生产范式，比较了2020年的人机敏捷与2026年的智能代理开发在工件、节奏、责任及安全等方面的差异。报告还拓展至团队角色变革、量化治理指标，以及混合估算与渐进迁移的实用路径。结合工业与研究成果，对AI增强测试与验证进行了探讨，强调合成与发布权限分离的重要性。总体来看，本文论证智能代理的高速不消解工程纪律，而是将其前移至规范精度、明确关卡与可审计溯源。",
@@ -191,14 +199,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SDAD: Spec-Driven Agentic Development for the AI-Native SDLC. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20341",
@@ -219,11 +227,13 @@
     "impact_score": 87,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 85."
+    "ranking_reason": "Selected from authoritative primary source; quality score 85.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4073b069",
-    "category": "video_ai",
+    "category": "research_papers",
     "title_zh": "STCO：用于时间依赖偏微分方程的条件神经算子",
     "title_en": "STCO: Conditional Neural Operators for Time-Dependent PDEs",
     "summary_zh": "该论文提出了时空条件算子（STCO），一种用于预设条件算子学习（PCOL）的统一接口，能够向多样化的骨干架构提供目标时间条件场，同时保留各自的核心计算和上下文路径。STCO结合了流感知图叶（FAGL）和双点特征线性调制（DSFiLM），在浸没边界CFD基准测试中表现卓越，显著降低了预测误差。",
@@ -236,14 +246,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "video_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/video-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: STCO: Conditional Neural Operators for Time-Dependent PDEs. Category: video_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "video",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20477",
     "supporting_sources": [
@@ -263,11 +273,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5de3fb97",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "多模态大型语言模型时代的体积放射学人工智能",
     "title_en": "Volumetric Radiology AI in the Era of Multimodal Large Language Models",
     "summary_zh": "多模态大型语言模型（MLLMs）的进展正在将放射学人工智能从特定任务的图像分析扩展到多模态理解与推理。然而，体积放射学存在表示不匹配问题：临床解读往往需要全体积空间上下文和采集相关的定量信息，而当前MLLMs通常依赖选定的二维图像、压缩视觉表示或报告文本。可靠的体积放射学AI需要保留任务相关的三维信息，并能跨临床工作流访问、验证和整合这些信息。本文综述了截至2026年7月的200多篇文献，涵盖体积表示与多模态理解、系统级的智能调度，以及与临床应用和评估的联系，介绍了体积基础模型、语言对齐与压缩策略、以及具备规划、工具、记忆和工作流交互功能的智能系统。文章提出了Claim-Design-Validation框架，强调临床可信度依赖于真实的体积表示、可追溯系统行为、声明匹配的验证及明确的人类监督。",
@@ -280,14 +292,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Volumetric Radiology AI in the Era of Multimodal Large Language Models. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20549",
@@ -308,7 +320,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b834b6c4",
@@ -533,7 +547,7 @@
   },
   {
     "id": "item-6c9b38c8",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "PrimeAgentOrchestrator：用于个人AI基础设施的记忆预加载智能体生成器",
     "title_en": "PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure",
     "summary_zh": "大型语言模型编码智能体每次会话开始时上下文窗口为空，丢失之前工作中累积的知识。PrimeAgentOrchestrator（PAO）提出通过预加载来自用户个人数据库的相关记忆，生成新的Claude Code终端编码智能体实例。PAO在生成时并行查询两个独立记忆后端（PostgreSQL实体-观察数据库和Cloudflare Worker语义搜索索引），融合结果并通过利用宿主智能体配置自动读取行为的文件系统注入交付汇编内容。系统管理完整智能体生命周期，包括信任预设、就绪轮询及自适应终端文本注入。报告涵盖2025年12月至2026年3月四个月的实际部署，介绍三代上下文传递机制、失败原因及异构记忆系统桥接的工程权衡。",
@@ -546,14 +560,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: PrimeAgentOrchestrator: Memory-Primed Agent Spawning for Personal AI Infrastructure. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20342",
@@ -574,11 +588,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 80."
+    "ranking_reason": "Selected from authoritative primary source; quality score 80.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7099007d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "真相深藏：通过潜在意图验证应对语义伪装攻击",
     "title_en": "Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification",
     "summary_zh": "大型语言模型（LLMs）的安全对齐常依赖于生成末阶段的拒绝机制，无法消除训练阶段对有害概念的基础认知。本文揭示了语义伪装攻击，即通过包裹在无害叙述中的恶意意图，绕过标准防护机制。通过分析Phi-3、Qwen2.5和Gemma-2b三种小型语言模型在攻击下的潜在激活轨迹，发现“意图地平线”现象，即模型约15-20%层深处，其对有害意图的独特表征因情境化为“安全”叙述而崩溃。尽管后期层表示难以区分伪装攻击和安全查询，早期层却保留明显的“有害特征”。基于此，提出轻量级探测防御方法——潜在意图验证（LIV）。在PKU-SafeRLHF数据集上的实验表明，LIV较标准防护提升20%-50%检测率，有效应对零日语义攻击且无需模型重训。",
@@ -591,14 +607,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20378",
     "supporting_sources": [
@@ -618,11 +634,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6f98feea",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "多模态智能代理框架的基础与前沿综述：技术与应用",
     "title_en": "A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications",
     "summary_zh": "随着大型语言模型（LLMs）的进展，智能代理框架聚焦于感知、记忆与决策，最近多模态大模型（LMMs）使系统可处理图像、音频和视频等多种模态，提升真实环境中的应用性。本文综述了多模态在感知、推理、规划、记忆和行动等核心模块中的作用，追踪了从文本中心代理到多模态框架的发展，分析了不同模态融合架构及其对智能行为的影响，并评估了在机器人、界面导航、多媒体内容生成及长视频理解等领域的应用和性能表现。文章还探讨了效率与扩展性的权衡，为构建更稳健通用的智能系统提供了路线图。",
@@ -635,14 +653,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.20379",
@@ -663,6 +681,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

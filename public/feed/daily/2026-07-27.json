@@ -269,7 +269,7 @@
   },
   {
     "id": "item-e8cf1886",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Oxygen-TryOn：适用于任意单品的时尚原生虚拟试衣基础模型",
     "title_en": "Oxygen-TryOn: Fashion-Native Foundation Model for Any-item Virtual Try-On",
     "summary_zh": "我们推出了Oxygen-TryOn，一种统一的任意单品虚拟试穿基础模型。它不是简单改造通用图像编辑器，而是专为试衣打造，配备专门的数据引擎和针对试穿的训练方法。只需一张目标主体图像和一件或多件参考单品（无论是干净的产品图片还是穿着实拍），即可合成主体穿戴该单品的真实感图像，覆盖几乎所有时尚类别。相比以往只支持单一服装类别的模型，Oxygen-TryOn支持多样单品和场景，包括全身或半身、多参考、自由组合，多层面保持主体身份和商品外观。它将试穿任务重构为多参考、理解驱动的生成任务，通过规模化数据引擎采集和标注高质量数据，采用三阶段训练方案：持续预训练、监督微调和强化学习。强化学习结合内部试穿奖励模型与专有多任务模型，确保细节一致性和指令质量，支持同轮次姿态等编辑指令。公开和自研基准测试中，Oxygen-TryOn在单品和多品类虚拟试穿表现均超越主流专有及开源模型，达到最新一流水平。",
@@ -282,14 +282,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-27T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Oxygen-TryOn: Fashion-Native Foundation Model for Any-item Virtual Try-On. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.21694",
@@ -310,11 +310,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e52f804",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "保持一致性！通过一致性约束增强大型视觉语言模型的鲁棒视觉推理能力",
     "title_en": "Be Consistent! Enhancing Robust Visual Reasoning in LVLMs with Consistency Constraints",
     "summary_zh": "大型视觉语言模型（LVLMs）虽具备强大的感知能力，但在视觉推理任务中仍存在弱点。现有基准测试多侧重符号数学、科学问题及简单视觉任务，难以评估复杂视觉推理与逻辑一致性。我们提出ConVBench基准测试，包含六类配对逻辑等价问题，涵盖动作与状态、复杂计数、空间推理、因果与意图理解、常识推理及时间感知。结合此测试，设计逻辑一致性和鲁棒准确度两项指标，共同评估答案的正确性与一致性。我们进一步研发ConVLM，采用基于集团相对策略优化（GRPO）的强化学习，融入一致性奖励，利用自动生成的逻辑等价问答对及准确率与一致性双重激励，推动模型回答保持一致。该框架可在有无严格答案监督条件下有效运行。",
@@ -327,14 +329,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-27T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Be Consistent! Enhancing Robust Visual Reasoning in LVLMs with Consistency Constraints. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.21722",
     "supporting_sources": [
@@ -354,11 +356,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7b3a0bb5",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "稳健超声图像分割的风险引导隐式边界细化",
     "title_en": "Risk-Routed Implicit Boundary Refinement for Robust Ultrasound Image Segmentation",
     "summary_zh": "医学超声图像分割面临散斑噪声、低对比边界、声影及不同操作员和临床中心采集差异等挑战。本文提出了一种紧凑的分割框架——风险引导隐式边界细化（RIBR），利用隐式神经表示作为风险引导的残差校正，而非无约束的全掩码预测器，结合边界细化隐式残差、风险引导残差控制及几何与散斑感知边界正则化，有效细化不确定轮廓并抑制非边界振荡。在包含淋巴结、乳腺病灶、甲状腺结节和前列腺的九个超声数据集上，RIBR表现出最佳宏观平均性能和稳定降低边界误差，且参数量紧凑，展现了该方法在资源受限和边界敏感的超声分割中的实用性。源代码已公开。",
@@ -371,14 +375,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-27T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Risk-Routed Implicit Boundary Refinement for Robust Ultrasound Image Segmentation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.21787",
     "supporting_sources": [
@@ -398,7 +402,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e7bb0b7",
@@ -446,7 +452,7 @@
   },
   {
     "id": "item-813c53be",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Agentic Evaluation of Copyright Law Compliance",
     "title_en": "Agentic Evaluation of Copyright Law Compliance",
     "summary_zh": "arXiv:2607.21799v1 Announce Type: new Abstract: Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content such as images and, where appropriate, reproducing that co…",
@@ -459,14 +465,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-27T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Agentic Evaluation of Copyright Law Compliance. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.21799",
@@ -487,7 +493,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-18b1dc28",

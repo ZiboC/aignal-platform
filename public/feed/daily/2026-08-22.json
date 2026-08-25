@@ -267,7 +267,7 @@
   },
   {
     "id": "item-a6e41c90",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "用于更快更鲁棒的视觉语言模型的聚类与令牌去噪方法",
     "title_en": "Clustering and Token Denoising for Faster and More Robust VLMs",
     "summary_zh": "近期视觉语言模型（VLMs）通过在预训练大语言模型（LLMs）中加入视觉令牌显著提升能力，诸如LLaVA展现出优异性能。但处理多达576或729个视觉令牌带来的计算负担，限制了边缘设备的部署。现有令牌剪枝方法多需重训练，而一些无训练需求的方法虽便于架构调整，却难保证性能。本文提出ClustRS，一种无训练的双阶段令牌剪枝算法，包括基于注意力加权的聚类选取语义代表令牌和一次性残差缩减的去噪步骤。该轻量流程提升LLaVA对多种图像噪声的鲁棒性，使其适应真实世界数据。在ScienceQA-IMG与MM-VET等基准测试中，ClustRS在极端噪声和令牌条件下比基于注意力和多样性的剪枝方法好20%，在LLaVA 1.5 7b上令牌数量减少97%至16个；对LLaVA-OneVision于轻度噪声下，用不到三分之一令牌达到基线性能。研究表明，该简单高效方法为计算高效且抗噪的VLM部署提供了新思路。",
@@ -280,14 +280,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Clustering and Token Denoising for Faster and More Robust VLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19285",
     "supporting_sources": [
@@ -307,11 +307,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3d5e2095",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "边际覆盖能否保证零样本视觉-语言模型在分布转移下的类条件安全性？",
     "title_en": "Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?",
     "summary_zh": "分割一致性预测在交换性条件下提供边际覆盖，日益被用作零样本视觉-语言模型（VLMs）的拒绝层。本文审计了CLIP、OpenCLIP和SigLIP在ImageNet及非ImageNet环境下的部署转移表现。结果显示，尽管边际覆盖保持较高（约0.86），但类条件尾部覆盖显著下降：在ImageNet-Sketch中，表现最差类别的覆盖几乎为零，且10-12%的类别低于有限样本假设下限。该失效与目标域类别准确率相关，但源域诊断无法预测。源域蒙德里安校准提升了分布内尾部覆盖但不具备迁移性，聚类一致性及Conf-OT改进了边际或平均指标，却未恢复最差类尾部覆盖。目标端类别校准可显著提升尾部表现，但需每类标签且计算开销大。还发现存在2-3倍的跨家族效率差距，SigLIP的原生sigmoid分数破坏了APS概率质量的解释。上述结论在不同模型规模、预训练数据、提示词、错过率和非ImageNet转移环境中均成立。因此，边际一致性覆盖应被视作平均可靠性指标，而非类别尾部的安全保障。",
@@ -324,14 +326,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19376",
     "supporting_sources": [
@@ -351,11 +353,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-cd4c2724",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CAViAR：用于现实交通事故细粒度因果推理的视频数据集",
     "title_en": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
     "summary_zh": "现代自动驾驶系统虽在物体检测和轨迹预测等感知任务表现优异，但缺乏对交通事故进行因果推理的高层能力，尤其是在确定责任归属和交通违规方面仍无有效标准。为此，CAViAR提供了一个含2249段真实交通事故视频的人工标注仪表盘摄像头基准数据集，包含环境条件、事故类型、因果解释、责任方、受影响方及规则违反类别等结构化标签。评测了多个先进视觉语言模型，发现其对光照等感知任务表现较好，但对天气、路况及责任推理表现较差，体现出现有模型在安全关键场景下感知与推理的鸿沟。数据集代码和评测工具均已开放。",
@@ -368,14 +372,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19380",
     "supporting_sources": [
@@ -395,6 +399,8 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

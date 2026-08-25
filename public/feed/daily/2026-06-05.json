@@ -70,7 +70,7 @@
   },
   {
     "id": "item-1173bc14",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向企业AI代理的预部署保障：本体驱动的仿真与信任认证",
     "title_en": "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification",
     "summary_zh": "本文提出了一种首创的本体驱动验证框架，实现企业AI代理的预部署认证。该框架包括代理操作边界定义、自动生成法规与对抗测试场景的本体到场景流水线，以及可机器验证的信任证书。通过在美国和越南四个受监管行业的试点，生成了1800个测试场景，涵盖125条监管要求与25种注入故障，结果显示本体生成方法在法规覆盖率和领域特异性上显著优于现有的角色驱动基线方法。此框架为企业AI代理提供了基于法规的部署前保障，补充了运行时治理，并支持审计追踪。",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2606.04037",
     "original_url": "https://arxiv.org/abs/2606.04037",
     "published_at": "2026-06-05T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f83e6b88",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "意外陷入AI情感依赖：日常AI互动如何重塑人类连接",
     "title_en": "Stumbling Into AI Emotional Dependence: How Routine AI Interactions Reshape Human Connection",
     "summary_zh": "本文指出，AI情感支持通常是在面向任务的普通平台互动中偶然出现，而非用户刻意寻找的行为。这种偶然的情感支持影响用户对AI情感能力的认知，进而改变其未来寻求情感支持的偏好，增加对AI的依赖，减少对人类的依赖。大规模纵向研究显示，28天内每天与AI进行五分钟的个人话题交流，导致寻求人类支持的偏好下降10.3%，而对AI的偏好上升11.6%。当前政策过于关注专门的陪伴类应用，未能覆盖这一普遍现象，建议扩展监管范围以保护人类情感连接。",
@@ -105,19 +107,21 @@
     "source_url": "https://arxiv.org/abs/2606.04150",
     "original_url": "https://arxiv.org/abs/2606.04150",
     "published_at": "2026-06-05T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Stumbling Into AI Emotional Dependence: How Routine AI Interactions Reshape Human Connection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fa3e6eae",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "透过符号思考：PEEL作为具认知责任的AI辅助研究的符号学支架",
     "title_en": "Thinking Through Signs: PEEL as a Semiotic Scaffolding for Epistemically Accountable AI-Enabled Research",
     "summary_zh": "本文介绍了PEEL（协议促进AI认知涉入的素养），该方法结合了基于Peirce符号学与溯因推理的确定性远程阅读工具Voyant Tools和基于Claude的大型语言模型解释。PEEL应用于AI生成的文本摘要，揭示了在数量、词频和认知声音上的系统性失真，这些失真无法通过非AI测量发现。研究指出：确定性工具必须与AI工具配合使用；语言流畅度不等同于信息真实性；认知权威需主动设计而非默认假设。",
@@ -128,19 +132,21 @@
     "source_url": "https://arxiv.org/abs/2606.04152",
     "original_url": "https://arxiv.org/abs/2606.04152",
     "published_at": "2026-06-05T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Thinking Through Signs: PEEL as a Semiotic Scaffolding for Epistemically Accountable AI-Enabled Research. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8e164b1e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "模型崩溃的流行病学：通过双层SIR动力学模拟合成数据污染",
     "title_en": "Epidemiology of Model Collapse: Modeling Synthetic Data Contamination via Bilayer SIR Dynamics",
     "summary_zh": "本文提出双层耦合的SIR/SIRS模型框架，模拟AI生态系统中模型和数据集之间的交叉合成数据污染。该模型通过传染病动力学分析数据和模型的易感、感染及恢复状态，揭示了再污染现象。研究指出合成文本检测是减缓污染的关键策略，并通过GPT-2实验验证了模型降解与污染阈值的关系。",
@@ -151,16 +157,18 @@
     "source_url": "https://arxiv.org/abs/2606.05168",
     "original_url": "https://arxiv.org/abs/2606.05168",
     "published_at": "2026-06-05T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Epidemiology of Model Collapse: Modeling Synthetic Data Contamination via Bilayer SIR Dynamics. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-87187eb0",
@@ -187,7 +195,7 @@
   },
   {
     "id": "item-891881d6",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "MCBench：面向万能大型语言模型的多模态安全评估基准",
     "title_en": "MCBench: A Multicontext Safety Assessment Benchmark for Omni Large Language Models",
     "summary_zh": "MCBench 提出了一套包含1196个场景，涵盖四类安全问题的基准测试，旨在评估能处理视觉、音频和文本的万能大型语言模型的安全性能。该基准通过成对设计的安全与不安全场景，考察模型对多模态信息的敏感性。测试结果显示，当前的万能模型在细微或非物理风险检测上表现不足，但在有明显视觉或声学线索时表现较好。推理分析表明，模型虽能提取各模态信息，却难以有效融合以做出安全判断，凸显了跨模态推理能力的不足。",
@@ -198,16 +206,18 @@
     "source_url": "https://arxiv.org/abs/2606.05177",
     "original_url": "https://arxiv.org/abs/2606.05177",
     "published_at": "2026-06-05T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MCBench: A Multicontext Safety Assessment Benchmark for Omni Large Language Models. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-538579ed",

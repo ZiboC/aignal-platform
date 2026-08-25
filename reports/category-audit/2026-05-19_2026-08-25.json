@@ -1,0 +1,809 @@
+{
+  "generated_at": "2026-08-25T22:20:41.070Z",
+  "date_range": {
+    "from": "2026-05-19",
+    "to": "2026-08-25"
+  },
+  "methodology": {
+    "mode": "deterministic evidence audit",
+    "min_confidence": 0.72,
+    "notes": [
+      "The audit compares each archived category with an independent weighted classifier using title, summary, and source evidence.",
+      "Likely mismatch is a review flag, not an automatic historical rewrite.",
+      "Repeated archive URLs are counted once using their latest appearance."
+    ]
+  },
+  "summary": {
+    "archive_entries": 1314,
+    "unique_signals": 869,
+    "likely_mismatches": 38,
+    "likely_mismatch_rate": 4.37,
+    "weak_assigned_evidence": 324,
+    "weak_assigned_evidence_rate": 37.28
+  },
+  "assigned_categories": {
+    "research_papers": 499,
+    "coding_ai": 140,
+    "tools_apps": 84,
+    "models_products": 58,
+    "image_ai": 53,
+    "business_investment": 19,
+    "video_ai": 16
+  },
+  "predicted_categories": {
+    "research_papers": 527,
+    "coding_ai": 111,
+    "tools_apps": 78,
+    "models_products": 59,
+    "image_ai": 35,
+    "business_investment": 35,
+    "video_ai": 24
+  },
+  "mismatch_routes": {
+    "coding_ai -> research_papers": 9,
+    "models_products -> business_investment": 8,
+    "image_ai -> models_products": 5,
+    "coding_ai -> video_ai": 3,
+    "coding_ai -> business_investment": 3,
+    "tools_apps -> models_products": 2,
+    "image_ai -> research_papers": 2,
+    "coding_ai -> tools_apps": 2,
+    "image_ai -> coding_ai": 1,
+    "coding_ai -> models_products": 1,
+    "business_investment -> coding_ai": 1,
+    "image_ai -> business_investment": 1
+  },
+  "category_review": [
+    {
+      "category": "coding_ai",
+      "assigned": 140,
+      "likely_mismatches": 18,
+      "weak_assigned_evidence": 118
+    },
+    {
+      "category": "image_ai",
+      "assigned": 53,
+      "likely_mismatches": 9,
+      "weak_assigned_evidence": 52
+    },
+    {
+      "category": "video_ai",
+      "assigned": 16,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 4
+    },
+    {
+      "category": "research_papers",
+      "assigned": 499,
+      "likely_mismatches": 0,
+      "weak_assigned_evidence": 11
+    },
+    {
+      "category": "models_products",
+      "assigned": 58,
+      "likely_mismatches": 8,
+      "weak_assigned_evidence": 56
+    },
+    {
+      "category": "business_investment",
+      "assigned": 19,
+      "likely_mismatches": 1,
+      "weak_assigned_evidence": 10
+    },
+    {
+      "category": "tools_apps",
+      "assigned": 84,
+      "likely_mismatches": 2,
+      "weak_assigned_evidence": 73
+    }
+  ],
+  "examples": [
+    {
+      "id": "item-292cbe73",
+      "archive_date": "2026-07-19",
+      "title": "45 AI Video Generation Statistics Reshaping Creative Production in 2026",
+      "source_name": "Luma AI News",
+      "original_url": "https://lumalabs.ai/news/reshaping-creative-production",
+      "assigned_category": "coding_ai",
+      "predicted_category": "video_ai",
+      "confidence": 0.98,
+      "margin": 11.95,
+      "assigned_score": 0.75,
+      "predicted_score": 12.7,
+      "evidence": [
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "video-oriented source"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-8a0a77e6",
+      "archive_date": "2026-07-19",
+      "title": "Text-to-Video AI Statistics for Creative Teams in 2026",
+      "source_name": "Luma AI News",
+      "original_url": "https://lumalabs.ai/news/text-video-ai-statistics",
+      "assigned_category": "coding_ai",
+      "predicted_category": "video_ai",
+      "confidence": 0.98,
+      "margin": 11.95,
+      "assigned_score": 0.75,
+      "predicted_score": 12.7,
+      "evidence": [
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "video-oriented source"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-d37189d4",
+      "archive_date": "2026-07-28",
+      "title": "29 Cinematic AI Video Generation Trends Reshaping Creative Production",
+      "source_name": "Luma AI News",
+      "original_url": "https://lumalabs.ai/news/cinematic-ai-video-generation-trends",
+      "assigned_category": "coding_ai",
+      "predicted_category": "video_ai",
+      "confidence": 0.98,
+      "margin": 11.95,
+      "assigned_score": 0.75,
+      "predicted_score": 12.7,
+      "evidence": [
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "\\b(text[- ]to[- ]video|image[- ]to[- ]video|video generation|video generator|video editing|video editor|video model)\\b",
+        "video-oriented source"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-c13bfad3",
+      "archive_date": "2026-06-14",
+      "title": "OpenAI to acquire Ona",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/openai-to-acquire-ona",
+      "assigned_category": "coding_ai",
+      "predicted_category": "business_investment",
+      "confidence": 0.98,
+      "margin": 10.45,
+      "assigned_score": 0.75,
+      "predicted_score": 11.2,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b",
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-128eddc9",
+      "archive_date": "2026-08-16",
+      "title": "Qwen/Qwen3.8-27B Updated on Hugging Face",
+      "source_name": "Qwen on Hugging Face",
+      "original_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 10.45,
+      "assigned_score": 0.75,
+      "predicted_score": 11.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b",
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-66bfadcd",
+      "archive_date": "2026-05-28",
+      "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.98,
+      "margin": 7.65,
+      "assigned_score": 0.75,
+      "predicted_score": 8.4,
+      "evidence": [
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b",
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-36da26e8",
+      "archive_date": "2026-06-05",
+      "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+      "source_name": "Hugging Face Blog",
+      "original_url": "https://huggingface.co/blog/hf-cli-for-agents",
+      "assigned_category": "image_ai",
+      "predicted_category": "coding_ai",
+      "confidence": 0.98,
+      "margin": 7.65,
+      "assigned_score": 0.75,
+      "predicted_score": 8.4,
+      "evidence": [
+        "\\b(github copilot|claude code|codebase|pull requests?|repositories?|developer tools?|ide|sdk|cli)\\b",
+        "\\b(github copilot|claude code|codebase|pull requests?|repositories?|developer tools?|ide|sdk|cli)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-459f1939",
+      "archive_date": "2026-06-13",
+      "title": "NVIDIA Blackwell Leads on First Agentic AI Infrastructure Benchmark",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.98,
+      "margin": 7.65,
+      "assigned_score": 0.75,
+      "predicted_score": 8.4,
+      "evidence": [
+        "\\b(benchmark|dataset|evaluation|survey|empirical study|we (introduce|propose|present))\\b",
+        "\\b(benchmark|dataset|evaluation|survey|empirical study|we (introduce|propose|present))\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-a8be9cab",
+      "archive_date": "2026-07-26",
+      "title": "SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://nvidianews.nvidia.com/news/sk-group-and-nvidia-expand-strategic-partnership-across-ai-factories-and-next-generation-memory",
+      "assigned_category": "coding_ai",
+      "predicted_category": "business_investment",
+      "confidence": 0.98,
+      "margin": 7.65,
+      "assigned_score": 0.75,
+      "predicted_score": 8.4,
+      "evidence": [
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b",
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-308cbcb8",
+      "archive_date": "2026-07-28",
+      "title": "Ilya Sutskever’s Safe Superintelligence Inc. and NVIDIA Announce Long-Term Strategic Partnership",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.98,
+      "margin": 7.65,
+      "assigned_score": 0.75,
+      "predicted_score": 8.4,
+      "evidence": [
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b",
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-f9489058",
+      "archive_date": "2026-07-09",
+      "title": "NVIDIA Nemotron Achieves Benchmark-Leading Performance With LangChain Deep Agents Harness",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.98,
+      "margin": 6.65,
+      "assigned_score": 0.75,
+      "predicted_score": 7.4,
+      "evidence": [
+        "\\b(benchmark|dataset|evaluation|survey|empirical study|we (introduce|propose|present))\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-aa7cb5d0",
+      "archive_date": "2026-07-29",
+      "title": "tencent/HunyuanOCR Updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/HunyuanOCR",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-12056281",
+      "archive_date": "2026-07-19",
+      "title": "Tencent Hy-Embodied-RxBrain-1.0 Updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/Hy-Embodied-RxBrain-1.0",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-5ba6d539",
+      "archive_date": "2026-08-18",
+      "title": "Tencent/UI-Mate-9B Updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/UI-Mate-9B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-3509c5fa",
+      "archive_date": "2026-08-21",
+      "title": "tencent/UI-Mate-democua-27B updated on Hugging Face",
+      "source_name": "Tencent Hunyuan on Hugging Face",
+      "original_url": "https://huggingface.co/tencent/UI-Mate-democua-27B",
+      "assigned_category": "image_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.98,
+      "margin": 6.45,
+      "assigned_score": 0.75,
+      "predicted_score": 7.2,
+      "evidence": [
+        "\\b(model release|released? (a|an|the|new)? ?model|new ai model|model update|updated on hugging face)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-9f5d0a22",
+      "archive_date": "2026-05-29",
+      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "source_name": "Hugging Face Blog",
+      "original_url": "https://huggingface.co/blog/delta-weight-sync",
+      "assigned_category": "tools_apps",
+      "predicted_category": "models_products",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(api release|api update|inference platform|parameters?|model family|model available)\\b",
+        "\\b(api release|api update|inference platform|parameters?|model family|model available)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-a040b5c1",
+      "archive_date": "2026-06-01",
+      "title": "OpenAI’s Frontier Governance Framework",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/openai-frontier-governance-framework",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b",
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-2ef24ac8",
+      "archive_date": "2026-06-03",
+      "title": "OpenAI Public Policy Agenda",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/public-policy-agenda",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b",
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-bb7a08ab",
+      "archive_date": "2026-06-03",
+      "title": "A Blueprint for Democratic Governance of Frontier AI",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/frontier-safety-blueprint",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b",
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-4b0d1a8d",
+      "archive_date": "2026-06-28",
+      "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+      "source_name": "Google AI Blog",
+      "original_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "assigned_category": "image_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-cd5d3e20",
+      "archive_date": "2026-07-06",
+      "title": "How Open Models Are Driving AI Research",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-de48c88",
+      "archive_date": "2026-08-16",
+      "title": "Aug 12, 2026 Economic Research Reviewing the Evidence on Worker Retraining Programs",
+      "source_name": "Anthropic Research",
+      "original_url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-644e3265",
+      "archive_date": "2026-08-19",
+      "title": "Run Massive-Scale UMAP in Minutes Using Multiple GPUs—Without Losing Accuracy",
+      "source_name": "NVIDIA Developer Blog",
+      "original_url": "https://developer.nvidia.com/blog/run-massive-scale-umap-in-minutes-using-multiple-gpus-without-losing-accuracy/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.93,
+      "margin": 4.85,
+      "assigned_score": 0.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b",
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-bdeae2b",
+      "archive_date": "2026-06-13",
+      "title": "NVIDIA Achieves Leading Agentic Coding Performance on First Agentic AI Benchmark",
+      "source_name": "NVIDIA Developer Blog",
+      "original_url": "https://developer.nvidia.com/blog/nvidia-achieves-leading-agentic-coding-performance-on-first-agentic-ai-benchmark/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.91,
+      "margin": 4.65,
+      "assigned_score": 0.75,
+      "predicted_score": 5.4,
+      "evidence": [
+        "\\b(benchmark|dataset|evaluation|survey|empirical study|we (introduce|propose|present))\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-6d238f31",
+      "archive_date": "2026-06-16",
+      "title": "Build Your Own Transaction Foundation Model for Financial Intelligence",
+      "source_name": "NVIDIA Developer Blog",
+      "original_url": "https://developer.nvidia.com/blog/build-your-own-transaction-foundation-model-for-financial-intelligence/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "models_products",
+      "confidence": 0.91,
+      "margin": 4.65,
+      "assigned_score": 0.75,
+      "predicted_score": 5.4,
+      "evidence": [
+        "\\b(open weights?|foundation model|language model release|reasoning model|multimodal model release)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-6f31c2d0",
+      "archive_date": "2026-08-11",
+      "title": "NVIDIA Partners With Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to Establish AI Compute Infrastructure Financing Platforms",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.91,
+      "margin": 4.65,
+      "assigned_score": 0.75,
+      "predicted_score": 5.4,
+      "evidence": [
+        "\\b(partnership|partners? with|revenue|valuation|market share|enterprise adoption)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-83c7ccf4",
+      "archive_date": "2026-06-23",
+      "title": "PP-OCRv6 on Hugging Face: 50-Language OCR from 1.5M to 34.5M Parameters",
+      "source_name": "Hugging Face Blog",
+      "original_url": "https://huggingface.co/blog/PaddlePaddle/pp-ocrv6",
+      "assigned_category": "tools_apps",
+      "predicted_category": "models_products",
+      "confidence": 0.83,
+      "margin": 2.85,
+      "assigned_score": 2.75,
+      "predicted_score": 5.6,
+      "evidence": [
+        "\\b(api release|api update|inference platform|parameters?|model family|model available)\\b",
+        "\\b(api release|api update|inference platform|parameters?|model family|model available)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": false
+    },
+    {
+      "id": "item-5245aa9c",
+      "archive_date": "2026-08-02",
+      "title": "Default Model Enablement for Copilot Business and Enterprise",
+      "source_name": "GitHub Copilot What's New",
+      "original_url": "https://github.blog/changelog/2026-07-29-default-model-enablement-for-copilot-business-and-enterprise",
+      "assigned_category": "business_investment",
+      "predicted_category": "coding_ai",
+      "confidence": 0.82,
+      "margin": 3,
+      "assigned_score": 0.75,
+      "predicted_score": 5,
+      "evidence": [
+        "coding source"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-b7e95438",
+      "archive_date": "2026-07-22",
+      "title": "Building AI infrastructure with the Effingham County community",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "assigned_category": "coding_ai",
+      "predicted_category": "business_investment",
+      "confidence": 0.8,
+      "margin": 3.25,
+      "assigned_score": 0.75,
+      "predicted_score": 4,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-f7abdfa3",
+      "archive_date": "2026-08-11",
+      "title": "What Building an AI-Native Finance Function Taught Me",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.8,
+      "margin": 3.25,
+      "assigned_score": 0.75,
+      "predicted_score": 4,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-55d6d125",
+      "archive_date": "2026-08-12",
+      "title": "NVIDIA AI Factory Compute Is Becoming an Investable Asset Class",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/",
+      "assigned_category": "image_ai",
+      "predicted_category": "business_investment",
+      "confidence": 0.8,
+      "margin": 3.25,
+      "assigned_score": 0.75,
+      "predicted_score": 4,
+      "evidence": [
+        "\\b(funding round|raised? \\$|series [a-f]|acquisition|acquires?|merger|investment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-b294e047",
+      "archive_date": "2026-05-31",
+      "title": "A New Experiment Brings Better Group Meetings to Google Beam",
+      "source_name": "Google AI Blog",
+      "original_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
+      "assigned_category": "image_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-c47e1d5",
+      "archive_date": "2026-06-02",
+      "title": "Codex for every role, tool, and workflow",
+      "source_name": "OpenAI Blog",
+      "original_url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "assigned_category": "coding_ai",
+      "predicted_category": "tools_apps",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(productivity|workflow|application|assistant|plugin)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-27ec7bda",
+      "archive_date": "2026-06-30",
+      "title": "Into the Omniverse: Three Workflows for Improving Vision AI Agent Accuracy With Synthetic Data and Fine-Tuning",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/vision-ai-agent-skills-omniverse-metropolis/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-2f61a6bd",
+      "archive_date": "2026-07-01",
+      "title": "Unlocking Britain’s next era of productivity: Building a nation of AI trailblazers",
+      "source_name": "Google AI Blog",
+      "original_url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "tools_apps",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(productivity|workflow|application|assistant|plugin)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-599c21d1",
+      "archive_date": "2026-07-27",
+      "title": "NVIDIA Nemotron 3 Ultra Leads Open Models on Accuracy and Efficiency in Agentic RTL Coding",
+      "source_name": "NVIDIA Developer Blog",
+      "original_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-leads-open-models-on-accuracy-and-efficiency-in-agentic-rtl-coding/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-7f9446e9",
+      "archive_date": "2026-08-05",
+      "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+      "source_name": "NVIDIA Newsroom",
+      "original_url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
+      "assigned_category": "models_products",
+      "predicted_category": "business_investment",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(policy|regulation|regulatory|governance|commercial|business strategy|advertising campaign)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    },
+    {
+      "id": "item-25ed1c3e",
+      "archive_date": "2026-08-16",
+      "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study",
+      "source_name": "Google AI Blog",
+      "original_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+      "assigned_category": "coding_ai",
+      "predicted_category": "research_papers",
+      "confidence": 0.76,
+      "margin": 2.85,
+      "assigned_score": 0.75,
+      "predicted_score": 3.6,
+      "evidence": [
+        "\\b(research|experiment|methodology|findings|accuracy|assessment)\\b"
+      ],
+      "likely_mismatch": true,
+      "weak_assigned_evidence": true
+    }
+  ]
+}

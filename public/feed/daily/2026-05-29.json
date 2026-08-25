@@ -93,7 +93,7 @@
   },
   {
     "id": "item-4e009b85",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "行为引导的镜像-近端时序差分学习实现更快的离策略预测",
     "title_en": "Behavior-Induced Mirror-Prox Temporal-Difference Learning for Faster Off-Policy Prediction",
     "summary_zh": "本文提出了一种行为引导的镜像-近端时序差分方法（STHTD-MP），通过用行为策略贝尔曼矩阵的对称部分替代协方差度量，改进了传统方法的更新几何，从而实现更稳定和更快速的离策略线性预测。该方法保持单一学习率，并采用预测校正步骤，配合标准随机逼近假设完成收敛性分析。实证分析表明，当行为引导度量提升鞍点结构时，STHTD-MP的收敛速度优于现有方法GT2D-MP，同时也揭示了边界案例和方法适用条件。",
@@ -104,19 +104,21 @@
     "source_url": "https://arxiv.org/abs/2605.28849",
     "original_url": "https://arxiv.org/abs/2605.28849",
     "published_at": "2026-05-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Behavior-Induced Mirror-Prox Temporal-Difference Learning for Faster Off-Policy Prediction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-be038a6c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向行为感知的辅助校正用于离策略时序差分预测",
     "title_en": "Behavior-Aware Auxiliary Corrections for Off-Policy Temporal-Difference Prediction",
     "summary_zh": "该论文研究了在带函数近似的离策略时序差分（TD）学习中，通过替换辅助协方差矩阵为行为Bellman矩阵，实现对线性预测设置中辅助几何的行为感知校正，并进一步正则化得到两阶段构造的算法BA-TDC和BA-TDRC。理论分析证明固定点保持性及收敛性，并在多个经典反例和实验中展示行为感知替换在部分任务中的显著收益，同时表明正则化对提升难度任务的稳健性必不可少。",
@@ -127,19 +129,21 @@
     "source_url": "https://arxiv.org/abs/2605.28855",
     "original_url": "https://arxiv.org/abs/2605.28855",
     "published_at": "2026-05-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Behavior-Aware Auxiliary Corrections for Off-Policy Temporal-Difference Prediction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4cfc1cc4",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "认知范畴变换器：面向语言建模的范畴理论归纳偏置",
     "title_en": "The Cognitive Categorical Transformer: Category-Theoretic Inductive Biases for Language Modeling",
     "summary_zh": "认知范畴变换器（CCT）是一种拥有3.06亿参数的架构，基于预训练的GPT-2 Small，并引入了来自范畴理论和认知科学的认知驱动组件。在WikiText-103数据集上，CCT经过匹配步数训练后，验证困惑度达到21.27，优于同条件下调优的GPT-2 Small基线的24.19，带来了12%的相对困惑度降低。消融实验表明，引入单纯形消息传递是提升性能的主要因素，贡献了84%的改进效果。该研究首次验证了在3.06亿参数规模下，单纯形消息传递能显著改善语言模型困惑度。同时，三种一致性样式的范畴先验未能带来提升，支持了“结构/一致性区分”模式，即增加拓扑结构对语言建模有益，而强制一致性则无效。",
@@ -150,16 +154,18 @@
     "source_url": "https://arxiv.org/abs/2605.28864",
     "original_url": "https://arxiv.org/abs/2605.28864",
     "published_at": "2026-05-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The Cognitive Categorical Transformer: Category-Theoretic Inductive Biases for Language Modeling. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c305d0e2",
@@ -186,7 +192,7 @@
   },
   {
     "id": "item-c405d275",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "他们在想什么？大语言模型中的概念划定、探测与追踪",
     "title_en": "What are They Thinking? Delineation, Probing and Tracking of Concepts in LLMs",
     "summary_zh": "随着大语言模型（LLMs）影响力的扩大，了解它们的决策过程变得至关重要。文章提出开发低成本且易于应用的探针，用于检测LLM计算的嵌入中是否存在某些概念，从而揭示模型的“思考”内容。研究展示了概念数据集的精确定义、线性探针的训练与测试，以及在多层次和大语境下追踪概念的能力，涵盖四个概念和三种LLM。该方法若规模化，将有助于轻松监控更多新模型。",
@@ -197,15 +203,17 @@
     "source_url": "https://arxiv.org/abs/2605.28823",
     "original_url": "https://arxiv.org/abs/2605.28823",
     "published_at": "2026-05-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: What are They Thinking? Delineation, Probing and Tracking of Concepts in LLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bd05c770",

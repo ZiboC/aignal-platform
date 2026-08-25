@@ -70,7 +70,7 @@
   },
   {
     "id": "item-cbb1311",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于深度强化学习的Transformer方法解决开放车间排序问题",
     "title_en": "A Deep Reinforcement Learning (DRL)-Based Transformer Method for Solving the Open Shop Scheduling Problem",
     "summary_zh": "开放车间排序问题（OSSP）在工业和服务领域中普遍存在，但随着作业和机器数量增加，计算难度显著提升。传统精确方法难以应对大规模问题，经典调度规则和元启发式方法则需大量调参保证解的质量。本文提出了一种基于Transformer的调度策略，采用编码器-解码器架构和多头注意力机制，使用仅含处理时间矩阵的输入，在Taillard基准（4x4至10x10）上训练，生成的调度计划的完工时间通常在最优值的15-30%范围内。该策略在未经再训练的情况下应用于40x40至100x100的随机大规模实例，表现出对比经典调度启发式（SPT、LPT、MWKR、EST）具有良好的竞争力，平均误差在12.89%-15.12%间，优于SPT和LPT，表现与EST相近。结果表明，该Transformer策略具备从小规模实例推广到大规模问题的能力，且作为一种特征轻量的基于学习的方法，是经典调度规则的有效替代方案。",
@@ -81,19 +81,21 @@
     "source_url": "https://arxiv.org/abs/2606.13682",
     "original_url": "https://arxiv.org/abs/2606.13682",
     "published_at": "2026-06-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Deep Reinforcement Learning (DRL)-Based Transformer Method for Solving the Open Shop Scheduling Problem. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bbb117e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "UP-NRPA：基于用户画像的嵌套展开策略自适应，用于目标导向对话系统中的大型语言模型规划",
     "title_en": "UP-NRPA: User Portrait based Nested Rollout Policy Adaptation for Planning with Large Language Models in Goal-oriented Dialogue Systems",
     "summary_zh": "本文提出了UP-NRPA，一种基于用户画像的嵌套展开策略自适应在线框架，利用大型语言模型动态调整目标导向对话系统中的对话策略。该方法通过实时用户反馈和用户个性、偏好及目标的映射，实现无需离线强化学习即可适配多样化用户特征。UP-NRPA在协作与非协作对话基准测试中表现优异，多任务成功率达100%，谈判任务中售出率提升56.41%。",
@@ -104,16 +106,18 @@
     "source_url": "https://arxiv.org/abs/2606.13683",
     "original_url": "https://arxiv.org/abs/2606.13683",
     "published_at": "2026-06-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: UP-NRPA: User Portrait based Nested Rollout Policy Adaptation for Planning with Large Language Models in Goal-oriented Dialogue Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1f3818e1",
@@ -140,7 +144,7 @@
   },
   {
     "id": "item-10bb195d",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "电商欺骗界面下的网页代理安全基准测试",
     "title_en": "Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces",
     "summary_zh": "本文研究了电商领域中现实欺骗界面对网页代理行为的影响。通过引入WebDecept框架，作者能够在已有网页环境中注入七类常见欺骗模式，包括定向广告、域名重定向及购物操控等。测试显示当前多模态网页代理易受多类欺骗界面影响，且基于提示的安全约束难以防范这些失败。此外，研究分析了欺骗设计选择如何影响操控成功率。该成果揭示了随着网页代理向真实环境扩展，亟需解决的安全挑战。",
@@ -151,20 +155,22 @@
     "source_url": "https://arxiv.org/abs/2606.13686",
     "original_url": "https://arxiv.org/abs/2606.13686",
     "published_at": "2026-06-15T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Benchmarking Web Agent Safety under E-commerce Deceptive Interfaces. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-994411e2",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "哪种模型在继承推理中表现更好？",
     "title_en": "Which Models Perform Better in Inheritance Reasoning?",
     "summary_zh": "本文介绍了团队PSL参加QIAS 2026阿拉伯伊斯兰继承推理共享任务的情况。该任务评估大型语言模型解决需法律解释、多步推理及精确数值计算的继承案例能力。作者比较了商业模型与开源模型在统一提示策略下的表现，以衡量它们在结构化法律推理中的有效性，同时最小化特定任务的适配。结果显示商业模型在识别继承人、排除规则应用及推理连贯性方面表现更佳，而开源模型在处理依赖性法律决策与份额调整时较不稳定。最佳模型为Gemini 2.5 Flash，MRE达0.989。",
@@ -175,20 +181,22 @@
     "source_url": "https://arxiv.org/abs/2606.13751",
     "original_url": "https://arxiv.org/abs/2606.13751",
     "published_at": "2026-06-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Which Models Perform Better in Inheritance Reasoning?. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-94440a03",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "QIAS 2026：伊斯兰继承推理共享任务概述",
     "title_en": "QIAS 2026: Overview of the Shared Task on Islamic Inheritance Reasoning",
     "summary_zh": "本文全面介绍了QIAS 2026共享任务，该任务作为OSACT7研讨会的一部分并与LREC 2026同期举办。该任务旨在评估大型语言模型在复杂的宗教与法律领域伊斯兰继承推理中的能力。与传统问答基准不同，QIAS 2026强调从自然语言案例端到端推理，包括识别继承人及分配正确份额。任务基于包含12,500个阿拉伯继承案例的MAWARITH数据集，并使用多阶段评估指标MIR-E。共有16支队伍参与，采用提示、检索增强生成及微调等方法。结果显示，伊斯兰继承推理对当前语言模型依然具有极大挑战，尤其在精确法律解释及结构化数字推理阶段。本文总结了任务设计、数据集、评价框架、参赛系统及主要结果。",
@@ -199,15 +207,17 @@
     "source_url": "https://arxiv.org/abs/2606.13756",
     "original_url": "https://arxiv.org/abs/2606.13756",
     "published_at": "2026-06-15T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: QIAS 2026: Overview of the Shared Task on Islamic Inheritance Reasoning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ac6c18bd",

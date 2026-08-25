@@ -179,7 +179,7 @@
   },
   {
     "id": "item-d6b4ddbf",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "微笑的拓扑学：牙科影像中的持续同调",
     "title_en": "Topology of a Smile: Persistent Homology in Dental Imaging",
     "summary_zh": "锥束CT（CBCT）扫描提供详细的三维图像，广泛应用于牙科诊断和治疗规划。尽管价值巨大，分析和记录这些扫描通常耗时耗力，因此自动化关键步骤如解剖结构的分类与分割变得重要。本文提出利用持续同调的拓扑数据分析方法，通过识别多尺度下的数据形态特征（连通组件、洞和空腔）结合支持向量机，实现对CBCT扫描牙齿的分类和诊断。该方法在牙齿标记和诊断任务中分别达到97.67%和96.77%的平均准确率，显著优于训练相同数据的卷积神经网络(CNN)的70.27%和86.67%。",
@@ -192,14 +192,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-25T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Topology of a Smile: Persistent Homology in Dental Imaging. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.21422",
     "supporting_sources": [
@@ -219,11 +219,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d4b4da99",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "EditStream：一个用于交互式视频生成和编辑的统一自回归框架",
     "title_en": "EditStream: A Unified Autoregressive Framework for Interactive Video Generation and Editing",
     "summary_zh": "EditStream是一种统一的框架，支持交互式视频生成和编辑。该框架基于DiT模型，通过灵活的任务特定条件，整合了文本到视频、图像到视频、视频到视频、编辑传播、参考引导视频编辑及相机姿态变换等多种视频创建与操作任务。通过结合速度矩匹配（VMM）和自回归展开的两阶段蒸馏方法，EditStream实现了快速、少步的自回归生成，提升了视频质量和运动表现的稳定性，解决了过饱和、运动退化和时间不稳定等常见问题，提供了一个适合交互式创意流程的实用且可扩展的解决方案。",
@@ -236,14 +238,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-25T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: EditStream: A Unified Autoregressive Framework for Interactive Video Generation and Editing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.21424",
     "supporting_sources": [
@@ -263,7 +265,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-781445a5",
@@ -362,7 +366,7 @@
   },
   {
     "id": "item-7aa39e3",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "隐藏规则游戏中的人工智能学习与概念迁移",
     "title_en": "AI Learning and Conceptual Transfer in the Game of Hidden Rules",
     "summary_zh": "本报告总结了隐藏规则游戏（GOHR）中强化学习代理的研究，重点包括基于试错反馈推断隐藏规则的训练过程、表征设计、规则难度分析、迁移学习、泛化能力以及伪机器人辅助的人类学习分析。研究采用基于Transformer的A2C框架，比较了以特征为中心与以对象为中心的表征方法，呈现了实验结果并对人类学习数据进行了分类。",
@@ -375,14 +379,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-25T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AI Learning and Conceptual Transfer in the Game of Hidden Rules. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.21372",
     "supporting_sources": [
@@ -402,11 +406,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 66."
+    "ranking_reason": "Selected from authoritative primary source; quality score 66.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d2b298dc",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "评估流行好莱坞电影的多模态叙事理解能力",
     "title_en": "Evaluating Multimodal Narrative Understanding of Popular Hollywood Films",
     "summary_zh": "多模态语言模型在大规模电影计算分析中展现出潜力，有助于研究电影历史和叙事技巧演变。但版权保护使构建基于好莱坞电影的稳定基准复杂化。本文通过建立一个基于票房流行度和公共领域状态的好莱坞电影合集，发布了1922至1979年《Variety》周票房数据，并构建了一个多模态选择题基准评估模型叙事元素理解能力。实验发现许多视觉语言模型表现近似随机，音频视觉模型最高准确率为61.1%，仍远低于人类水平。",
@@ -419,14 +425,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-25T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Evaluating Multimodal Narrative Understanding of Popular Hollywood Films. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.21430",
     "supporting_sources": [
@@ -446,11 +452,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-910c5eab",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "PUMA：面向文化背景的波兰语多模态理解基准",
     "title_en": "PUMA: A Polish Benchmark for Culturally Grounded Multimodal Understanding",
     "summary_zh": "大型语言模型正逐步超越纯文本处理，增加对图像和音频等多模态数据的支持。本文提出PUMA（波兰统一多模态评估），包含900个人工设计任务，专门测试模型在波兰文化与语言背景下的多模态能力，涵盖文本、图像、音频及视觉丰富文档的理解与处理。评测显示顶级商用模型在视觉问答表现优异，但多数模型在复杂音频和文档理解上表现不足。团队开源了评测框架推动本地化多模态AI研究发展。",
@@ -463,14 +471,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-25T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: PUMA: A Polish Benchmark for Culturally Grounded Multimodal Understanding. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.21853",
     "supporting_sources": [
@@ -490,7 +498,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8707d1bf",

@@ -221,7 +221,7 @@
   },
   {
     "id": "item-e784b35a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "C-Norm：细胞分布归一化实现医学细胞图像的精准识别",
     "title_en": "C-Norm: Cell-Distribution Normalization Enables Precision Recognition of Medical-Cell Image",
     "summary_zh": "薄层细胞学检测（TCT）有助于宫颈癌早筛，但人工阅读耗时且细胞病理学家诊断结果不一致。现有AI检测模型在真实临床条件下表现欠佳，主要受TCT载玻片中细胞空间分布不均和高质量标注数据有限两大制约。为此，文中提出细胞分布归一化（C-Norm）方法，通过将异常和正常细胞从原始TCT图像中分离并重组，保证细胞群体均匀分布，减轻分布偏差带来的泛化退化。基于此，结合YOLOv12与DINOv3模块，利用YOLO的先进检测能力和DINOv3的优异特征表示，捕捉TCT图像中的细微形态差异，实现精准识别。大量实验证明该方法显著优于主流检测算法，达成先进性能。完整实现开源。",
@@ -234,14 +234,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-16T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: C-Norm: Cell-Distribution Normalization Enables Precision Recognition of Medical-Cell Image. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.13116",
     "supporting_sources": [
@@ -261,11 +261,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5d92e4a6",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于掩码自编码器的无监督钢铁表面缺陷识别方法",
     "title_en": "A Masked Autoencoder Approach to Unsupervised Steel Surface Defect Recognition",
     "summary_zh": "钢铁表面缺陷的自动化视觉检测是一项重要的质量控制任务，缺陷标注数据稀缺且获取成本高，而无标注表面图像丰富，促使采用自监督方法在无类别标签情况下学习有用表示。本文使用基于Transformer的掩码自编码器( MAE)，在预训练阶段对输入图像75%的块随机掩码，由轻量解码器从剩余25%可见块重建掩盖区域。编码器联合辅助缺陷定位目标训练，辅助定位仅作为训练信号。解码器达到结构相似度0.92和均方误差0.47。预训练编码器提取特征后，结合UMAP降维和聚合聚类，实现与六类已知缺陷的匈牙利匹配精度91.3%。",
@@ -278,14 +280,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-16T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Masked Autoencoder Approach to Unsupervised Steel Surface Defect Recognition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.13178",
     "supporting_sources": [
@@ -305,7 +307,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-49e6dc24",
@@ -354,7 +358,7 @@
   },
   {
     "id": "item-fbeca198",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OriginBlame：用于AI训练数据集的记录级和标记级数据溯源",
     "title_en": "OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets",
     "summary_zh": "本文介绍了OriginBlame（ob），一种实现作者身份传播并支持精确数据撤销请求的记录级和标记级数据溯源系统。该系统解决了现有溯源工具仅支持文件或数据集级别导致过度删除的问题，使用确定性查询精准定位需要“遗忘”的训练记录。对219,555个维基百科页面的评估显示，记录级溯源将数据集级过度删除从101倍降至1.3倍，同时在不同平台上带来的吞吐量开销较低。基于1.7B参数模型，溯源生成的“遗忘集”相比随机基准提高了42%的去学习效果。",
@@ -367,14 +371,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-16T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OriginBlame: Record- and Token-Level Data Provenance for AI Training Datasets. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.13037",
     "supporting_sources": [
@@ -394,11 +398,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f9e5e2ad",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SPINE：用智能代理AI弥合网络与物理的鸿沟",
     "title_en": "SPINE: Bridging the Cyber-Physical Gap with Agentic AI",
     "summary_zh": "SPINE 是一个智能代理框架，旨在帮助非专业机器人用户系统性地调试和部署双臂机器人，减少对专家的依赖。通过构建机器人专属环境和循环诊断修复，SPINE显著提升了机器人从遥控到实际操作的效率和成功率，实现了多平台跨环境调试，推动具身AI的可扩展现实部署。",
@@ -411,14 +417,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-16T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SPINE: Bridging the Cyber-Physical Gap with Agentic AI. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.13049",
@@ -439,7 +445,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-89c8ca3a",
@@ -487,7 +495,7 @@
   },
   {
     "id": "item-5f67751f",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "MAGE：理解多组件提示优化中的稳定性与性能权衡",
     "title_en": "MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization",
     "summary_zh": "本文介绍了MAGE（一种记忆增强的目标导向提示进化框架），用于分析提示优化中各组件的相互作用。研究发现了提示优化耦合效应（POCE）：多个随机优化信号在闭环中交互，既提升性能又放大方差。这一效果无法通过单独分析各组件预测。实验显示，基于失败反思的方法效果显著优于仅依赖分数或抽象评审的方法；MAGE在多个测试集上的表现优于GEPA；增加候选多样性显著提升准确率，同时放大方差；且该效应依赖基础模型的表现和训练数据规模。结果表明提示优化系统行为复杂，评估时应兼顾性能和稳定性。",
@@ -500,14 +508,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-16T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MAGE: Understanding Stability-Performance Trade-offs in Multi-component Prompt Optimization. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.11944",
     "supporting_sources": [
@@ -527,7 +535,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 74."
+    "ranking_reason": "Selected from authoritative primary source; quality score 74.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bfc86f8e",

@@ -70,7 +70,7 @@
   },
   {
     "id": "item-e5149fad",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "探索开放性生成的要素：利用大型视觉语言模型复现Picbreeder",
     "title_en": "In Search of the Ingredients of Open-Endedness: Replicating Picbreeder with Large Vision-Language Models",
     "summary_zh": "本文介绍了利用前沿视觉语言模型（VLM）替代人类用户，复现了Picbreeder这一经典的开放性图像进化系统。研究发现，人工智能驱动的系统与历史上的人类驱动版本在生成内容上存在显著差异，论文尝试通过系统发育复杂度、视觉和语义显著性及新颖性等指标进行分析。为探究导致差异的原因，研究引入了选择过程中的探索噪声、代理行为多样性及记忆机制等因素。相关代码已开源。",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2605.23908",
     "original_url": "https://arxiv.org/abs/2605.23908",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: In Search of the Ingredients of Open-Endedness: Replicating Picbreeder with Large Vision-Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e4149e1a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大型语言模型的置信度校准",
     "title_en": "Confidence Calibration in Large Language Models",
     "summary_zh": "本文研究了大型语言模型（LLMs）在不同任务中的置信度校准情况。预注册研究结果表明，目前的LLMs像人类一样，表现出过度自信：其置信度平均高于实际准确率。值得注意的是，这种现象受硬-易效应影响：在难度较大测试中，过度自信最为明显；而在简单测试中，则表现出明显的低估自信。我们开发了LifeEval，一种用于评估模型在不同难度水平上校准能力的测试。",
@@ -105,20 +107,22 @@
     "source_url": "https://arxiv.org/abs/2605.23909",
     "original_url": "https://arxiv.org/abs/2605.23909",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Confidence Calibration in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e7192001",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "思考多少才够？量化与理解大型语言模型推理中的冗余",
     "title_en": "How Much Thinking is Enough? Quantifying and Understanding Redundancy in LLM Reasoning",
     "summary_zh": "本文首次大规模量化大型语言模型在复杂推理任务中的步骤冗余，发现模型在8种模型与基准测试组合中的推理步骤冗余率高达61%至93%，即大部分思考步骤可被截断而不影响最终答案的正确性。作者证明这种冗余是由基于结果奖励机制的结构性原因导致，而非模型缺陷，表明“过度思考”是当前训练方式的内在属性。",
@@ -129,19 +133,21 @@
     "source_url": "https://arxiv.org/abs/2605.23926",
     "original_url": "https://arxiv.org/abs/2605.23926",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: How Much Thinking is Enough? Quantifying and Understanding Redundancy in LLM Reasoning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-56117ff9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "多角色辩论系统用于自动科学假说生成",
     "title_en": "Multi-Persona Debate System for Automated Scientific Hypothesis Generation",
     "summary_zh": "现代科学发现的瓶颈不在于数据不足，而在于难以将零散的知识综合为可执行的假说。本文提出了多角色辩论系统（MPDS），这是一个基于文献、结合长上下文大语言模型推理、基于语料驱动的角色诱导与结构化多代理辩论的自动科学假说生成框架。MPDS能构建包含500篇论文的文献快照，允许多个角色基于特定证据库进行三轮引用感知辩论，并由主持人整合观点，保持证据溯源。通过钠离子电极和全固态电池正极设计案例验证，MPDS生成的方案符合实验验证的设计逻辑，且在机制明确性和工艺意识上优于简单基线。引入了整合假说质量评分，消融实验显示MPDS在跨角度整合上优势最大。实验室后续表明该系统可作为识别流程瓶颈的辅助诊断工具，展示了其在复杂工程约束下提升科学假说形成的潜力。",
@@ -152,19 +158,21 @@
     "source_url": "https://arxiv.org/abs/2605.23917",
     "original_url": "https://arxiv.org/abs/2605.23917",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Multi-Persona Debate System for Automated Scientific Hypothesis Generation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e5191cdb",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "提升分部披露的完整性与可比性：一种大语言模型方法",
     "title_en": "Improving the Completeness and Comparability of Segment Disclosures: A Large Language Model Approach",
     "summary_zh": "分部披露是财务报告的核心，揭示企业内部组织及经济活动在各经营单元的分配，但相关信息常散布于Form 10-K报告的表格与叙述中，导致结构化数据库存在完整性与可比性问题。本文开发了一种基于大型语言模型的框架，直接从Form 10-K中提取分部披露信息，保持报告及嵌套分部数据，并设计了借助多份报告的信息增强检索系统，支持纵向及跨企业可比性。通过纵向分析企业分部变化及跨企业地理分部对齐的示范，结果显示该方法准确提取分部信息，有效解决多时期分析难题，展现了大语言模型提升分部披露度量与解读的潜力。",
@@ -175,20 +183,22 @@
     "source_url": "https://arxiv.org/abs/2605.23924",
     "original_url": "https://arxiv.org/abs/2605.23924",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Improving the Completeness and Comparability of Segment Disclosures: A Large Language Model Approach. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-580f4488",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SLAP：基于分层损失的在线数据高效指令调优剪枝方法",
     "title_en": "SLAP: Stratified Loss-based Pruning for On-Policy Data-Efficient Instruction Tuning",
     "summary_zh": "SLAP是一种新提出的批次感知数据选择框架，通过分层抽样和相对距离优化实现多样化数据覆盖，利用Hessian近似梯度进行动态批次选择，显著减少训练数据量20-40%同时提升或保持大语言模型的性能，支持多模型架构和多任务应用。",
@@ -199,15 +209,17 @@
     "source_url": "https://arxiv.org/abs/2605.23969",
     "original_url": "https://arxiv.org/abs/2605.23969",
     "published_at": "2026-05-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SLAP: Stratified Loss-based Pruning for On-Policy Data-Efficient Instruction Tuning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-91238c23",

@@ -222,7 +222,7 @@
   },
   {
     "id": "item-a1632758",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "GeoUniPR：一种几何一致性的统一跨模态地点识别框架",
     "title_en": "GeoUniPR: A Geometry-Consistent Unified Framework for Cross-Modal Place Recognition",
     "summary_zh": "跨模态地点识别旨在跨异构感知模态（如视觉与LiDAR）识别同一地点。GeoUniPR通过将LiDAR点云投影至相机视角构建几何一致的深度图像视图，实现RGB与LiDAR的直接对应，融合强度及表面法线等原生LiDAR特征，提升结构一致性。利用两个结构相同的ViT编码器，在无辅助对齐模块、多阶段训练及完全微调的情况下，通过参数高效适配学习统一嵌入空间。引入空间一致性InfoNCE对比损失抑制空间连续性导致的假负例。KITTI及KITTI-360测试表明，GeoUniPR在同模态及跨模态地点识别中达到最新性能，并具备良好跨数据集泛化能力。",
@@ -235,14 +235,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-13T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: GeoUniPR: A Geometry-Consistent Unified Framework for Cross-Modal Place Recognition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.11263",
     "supporting_sources": [
@@ -262,11 +262,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-905c50d0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "自我进化的代码-图像推理",
     "title_en": "Self-Evolving Code-with-Image Reasoning",
     "summary_zh": "多模态模型在解决视觉任务时越来越多地使用工具（裁剪、缩放、旋转、调亮），这被称为图像思考。核心挑战在于感知：工具揭示视觉证据，推理则依赖语言，大多数目标是人类可以直观判断的。然而，有些视觉问题需要执行多步视觉算法，单靠语言描述算法无法运行。Code-with-Image方法让模型通过Python解释器实现真实的视觉算法，程序本身即为推理。模型通过无训练的反思循环自我学习，修正失败程序，保留有效技能。在Code-with-Image基准测试中，即便是GPT-5.6-luna无工具思考准确率低于30%，使用裸解释器达43%，通过自我进化技能达到67%。开放的27B模型同样表现出显著提升。代码承载推理，使得调试代码即调试推理过程。",
@@ -279,14 +281,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-13T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Self-Evolving Code-with-Image Reasoning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.11292",
     "supporting_sources": [
@@ -306,7 +308,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3617c042",
@@ -486,7 +490,7 @@
   },
   {
     "id": "item-9c6dacd5",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "流程图工程中的大语言模型：从最优PFD到验证过的P&ID",
     "title_en": "LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs",
     "summary_zh": "当前流程流图（PFD）的创建及其转化为管道仪表图（P&ID）主要是手工完成。本文提出了P&ID Pilot，一个端到端的AI流程，第一阶段合成PFD，第二阶段将PFD转为P&ID。结合遗传算法与大语言模型的方法生成了最优有效的PFD，满足流量参数且无违规。基于LLM的代理成功将PFD转化为可执行且合规的P&ID，实现100%执行成功。该统一流程显著减少人工工作，实现流程设计自动化。",
@@ -499,14 +503,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-13T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LLMs in Process Diagram Engineering: From Optimal PFDs to Validated P&IDs. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.11220",
     "supporting_sources": [
@@ -526,7 +530,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e46c278a",
@@ -574,7 +580,7 @@
   },
   {
     "id": "item-e16c22d1",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "CT-ΔBench：用于纵向三维医学影像差异报告的基准测试与视觉语言模型",
     "title_en": "CT-ΔBench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models",
     "summary_zh": "CT影像在医学中不仅展示疾病的当前状态，更关键的是通过比较同一患者不同时间的序列扫描，评估疾病的发展，支持响应评估、复发检测及病人管理。然而，现有医学基础模型多仅聚焦单次扫描，缺乏对时间序列对比的支持。本文引入CT-ΔBench基准，专注于纵向影像差异报告，即利用两次时间间隔的扫描生成临床上有意义的变化描述报告，同时开发了捕捉临床纵向变化的指标并通过医生验证，提出DeltaMed模型为差异报告提供基线，推动具备时间敏感能力的医学基础模型的发展。",
@@ -587,14 +593,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-13T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CT-ΔBench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.11534",
@@ -615,7 +621,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ed27ff8a",

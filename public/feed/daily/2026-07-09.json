@@ -179,7 +179,7 @@
   },
   {
     "id": "item-ec6977f4",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "像素精准可解释的胁迫指标：用于田间作物病情严重度量化的语义分割框架",
     "title_en": "Pixel-Precise Explainable Stress Indexing: A Semantic Segmentation Framework for Disease Severity Quantification in Field Crops",
     "summary_zh": "植物病害由生物和非生物胁迫引起，全球农业产量每年损失估计20-40%，经济损失超过2200亿美元。本文提出了一个统一的深度学习流程，结合语义分割、基于回归的严重度估计和疾病分类。胁迫严重度分为四级（低到极高），基于感染叶面积比例。使用苹果树叶子病害分割数据集（1641样本，6类）评估四种模型：U-Net（MobileNetV2）、SegFormer、FCN及PSPNet。MobileNetV2的U-Net表现最佳，达98.20%像素精度、0.70 mIoU及99.41%检测准确率，且单图处理14.7毫秒，适合实时应用。SegFormer表现接近（mIoU 0.66），FCN及PSPNet空间精度较低（约0.49 mIoU）。严重度指数与专家标注高度相关（r=0.968，R^2=0.937），证明系统在自动作物监测和决策支持中的可靠性。",
@@ -192,14 +192,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-09T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Pixel-Precise Explainable Stress Indexing: A Semantic Segmentation Framework for Disease Severity Quantification in Field Crops. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.06585",
     "supporting_sources": [
@@ -219,11 +219,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-636661b2",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "文化遗产纺织品的人工智能：针对新颖乌洛斯图案合成的精细调优潜伏扩散模型",
     "title_en": "AI for Cultural Heritage Textiles: Fine-Tuned Latent Diffusion for Novel Ulos Motif Synthesis",
     "summary_zh": "为保护和振兴印度尼西亚北苏门答腊巴塔克族的文化遗产传统纺织品乌洛斯，本研究提出利用人工智能框架，针对高分辨率乌洛斯图案数据集精细调优两种潜伏扩散模型，以生成既符合文化又具创新性的图案。通过多项指标和传统织工评估，Protogen v3.4模表现优于Stable Diffusion v1.4，在视觉保真度和图案多样性方面取得显著提升，展现了生成模型在传承与创新间的平衡潜力。",
@@ -236,14 +238,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-09T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AI for Cultural Heritage Textiles: Fine-Tuned Latent Diffusion for Novel Ulos Motif Synthesis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.06590",
     "supporting_sources": [
@@ -263,11 +265,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 68."
+    "ranking_reason": "Selected from authoritative primary source; quality score 68.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-480fb190",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "AgentLens：面向代码代理评估的生产级轨迹审查",
     "title_en": "AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation",
     "summary_zh": "我们介绍了AgentLens，这是一种用于交互式代码代理的生产级基准测试。现有大多数代码代理基准只关注任务是否通过的单一结果，而AgentLens评估的是整个执行轨迹，包括代理如何执行指令、使用工具、自我验证、纠错及与用户的互动。它结合了形式化验证和由大语言模型撰写的轨迹评论及对比，生成易读的评分解释。AgentLens不仅可用于模型排名，还可用于行为诊断、版本比较及产品回归检测。该基准以开源形式发布。",
@@ -280,14 +284,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-09T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.06624",
@@ -308,7 +312,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4a61897e",
@@ -622,7 +628,7 @@
   },
   {
     "id": "item-4261236b",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "上下文搜索何时有效？基于采样复杂度的反思驱动推理理论",
     "title_en": "When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning",
     "summary_zh": "本文提出了一个将上下文搜索建模为对推理轨迹的近似推理的理论框架，其中基础模型定义先验，自我反思提供后验更新反馈。研究了推理时间内的采样复杂度，即达到高成功概率所需的序贯尝试次数。结果表明，当反思能可靠地定位早期错误时，上下文搜索能实现指数级性能提升，用多项式数目的尝试解决零次尝试概率指数小的问题；反之，条件化过去尝试不会带来渐近优势。该提升是稳健且可学习的，基于交叉熵训练的近似后验更新可用多项式样本复杂度恢复所需行为。此外，分阶段的强化学习理论中最优策略执行相同的后验重加权规则。实验验证了以上理论预测。",
@@ -635,14 +641,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-09T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: When Does In-Context Search Help? A Sampling-Complexity Theory of Reflection-Driven Reasoning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.06720",
     "supporting_sources": [
@@ -662,6 +668,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

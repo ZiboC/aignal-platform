@@ -94,7 +94,7 @@
   },
   {
     "id": "item-e2089b73",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "BrickAnything：具备结构感知标记的几何条件可构建积木生成",
     "title_en": "BrickAnything: Geometry-Conditioned Buildable Brick Generation with Structure-Aware Tokenization",
     "summary_zh": "BrickAnything提出了一种几何条件自回归框架，能够从多样的3D表示中生成物理可构建的积木结构。该方法以点云作为统一几何接口，通过结构感知树形标记表示积木间的局部连接关系，使序列生成更符合物理构建过程并减少无效状态。此外，引入偏好对齐后训练、有效性约束解码及自适应回滚，提升结构稳定性和几何逼真度。大量实验证明，BrickAnything生成的结构既几何忠实又物理可实现，且标记机制有效降低回滚和重生成。",
@@ -105,19 +105,21 @@
     "source_url": "https://arxiv.org/abs/2605.26182",
     "original_url": "https://arxiv.org/abs/2605.26182",
     "published_at": "2026-05-27T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: BrickAnything: Geometry-Conditioned Buildable Brick Generation with Structure-Aware Tokenization. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-32602c2a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大型语言模型能否自我反省？现实检验",
     "title_en": "Can LLMs Introspect? A Reality Check",
     "summary_zh": "本文基于人类元认知研究，对大型语言模型是否能检测并报告其内部状态提出质疑。研究指出，仅凭行为证据不足以证明模型具备真正的自我反省能力。通过分析两种评估范式，发现模型无法可靠区分内部状态被篡改与输入的操作，也无法证明模型对内部表征有特权访问。控制实验中模型表现接近随机，表明当前证据不足以确定大型语言模型具备元认知监测能力。",
@@ -128,15 +130,17 @@
     "source_url": "https://arxiv.org/abs/2605.26242",
     "original_url": "https://arxiv.org/abs/2605.26242",
     "published_at": "2026-05-27T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can LLMs Introspect? A Reality Check. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-34626de7",
@@ -164,7 +168,7 @@
   },
   {
     "id": "item-f81e8464",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "自我验证蒸馏：您的语言模型其实是它自己的合成数据管道",
     "title_en": "Self-Verified Distillation: Your Language Model Is Secretly Its Own Synthetic Data Pipeline",
     "summary_zh": "本文研究了大语言模型（LLM）能否仅利用无标签的提示，通过自我生成并过滤解答，进一步提升自身性能，无需外部教师或工具反馈。提出了自我验证蒸馏算法，模型生成多个候选答案，利用基于提示的三阶段自我验证（循环一致性、事实性和正确性）筛选答案，再用筛选后的数据自我训练。该方法在数学、科学和编码三个推理领域均带来显著性能提升，提升幅度在4B参数模型中最高达16.7个百分点。相较于需要推理时多次调用模型的基线方法，自我验证蒸馏只在测试时调用一次，效率更高。",
@@ -175,20 +179,22 @@
     "source_url": "https://arxiv.org/abs/2605.26132",
     "original_url": "https://arxiv.org/abs/2605.26132",
     "published_at": "2026-05-27T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Self-Verified Distillation: Your Language Model Is Secretly Its Own Synthetic Data Pipeline. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-9d679060",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "SPEAR：代码增强的智能提示优化代理",
     "title_en": "SPEAR: Code-Augmented Agentic Prompt Optimization",
     "summary_zh": "SPEAR是一种结合代码执行能力的自动提示工程优化工具，能自主使用评估、Python编程、设置提示和完成四个工具，通过在沙盒中执行Python代码进行结构化错误分析，从而持续提升下游任务性能。实验显示，SPEAR在多个工业和基准挑战任务中显著优于现有方法，尤其是Python工具对复杂评估起关键作用。",
@@ -199,20 +205,22 @@
     "source_url": "https://arxiv.org/abs/2605.26275",
     "original_url": "https://arxiv.org/abs/2605.26275",
     "published_at": "2026-05-27T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SPEAR: Code-Augmented Agentic Prompt Optimization. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a7ce0ca0",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "向量并非中立：从导出的大型语言模型表示中推断敏感信息的风险",
     "title_en": "Vectors Are Not Neutral: Sensitive-Information Inference from Exported LLM Representations in Summarization",
     "summary_zh": "大型语言模型（LLM）摘要系统可能将私密输入的向量表示传递给下游检索、监控或分析流程。即使源文档受限，导出的向量仍可能在不同访问控制下被使用，从而支持对敏感信息的推断，存在信息泄露风险。研究以临床出院摘要生成为案例，审计了两种导出向量：最终提示令牌隐藏状态和均值池化表示。结果表明，减少一种向量中敏感信息的可恢复性，不一定降低另一种向量的可恢复性。提出的SurfaceLoRA方法针对导出向量进行参数高效微调，降低目标向量中电子健康记录记录的种族信息的可恢复性，同时保持摘要效用，但其他向量的敏感信息仍较易恢复，表明隐私审计和缓解应针对具体导出向量进行。",
@@ -223,15 +231,17 @@
     "source_url": "https://arxiv.org/abs/2605.26433",
     "original_url": "https://arxiv.org/abs/2605.26433",
     "published_at": "2026-05-27T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Vectors Are Not Neutral: Sensitive-Information Inference from Exported LLM Representations in Summarization. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bcfd3835",

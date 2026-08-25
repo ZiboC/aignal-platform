@@ -142,7 +142,7 @@
   },
   {
     "id": "item-4945cb4a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "PhyDrawGen：从自然语言生成基于物理的图示",
     "title_en": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
     "summary_zh": "PhyDrawGen提出了一种神经符号方法，从文本中生成符合物理规律的力学、光学和电磁学图示。该方法首先用大语言模型提取场景图，再通过确定性求解器转换为平面图编码物理约束，最后借助微调的Qwen-VL模型在视觉层面进行约束验证和修正。经1449个问题测试，PhyDrawGen在物理精度上显著优于GPT-5-image和Gemini系列。",
@@ -153,19 +153,21 @@
     "source_url": "https://arxiv.org/abs/2605.30512",
     "original_url": "https://arxiv.org/abs/2605.30512",
     "published_at": "2026-06-01T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: PhyDrawGen: Physically Grounded Diagram Generation from Natural Language. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-333eece3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "物理可行的世界模型：为查询条件化具身AI提供理由",
     "title_en": "Physically Viable World Models: A Case for Query-Conditioned Embodied AI",
     "summary_zh": "具身人工智能的世界模型必须具备物理可行性，即通过表示影响行为结果的物理结构来回答干预查询，而不仅仅是预测未来观测。现有以观测预测为导向的世界模型虽然能生成视觉上合理的结果，却常常在物理上错误，因不同物理系统在干预下可能表现不同但视觉相同。作者通过控制基准测试揭示该问题，强调应构建包含环境表示、潜状态及参数估计、行为规范、干预动力学和查询响应等模块的模型，以最简物理抽象回答干预查询。该方法使模型可解释、组件可验证、输出可审计，并为规划、控制和验证提供设计原则和可行性测试。",
@@ -176,20 +178,22 @@
     "source_url": "https://arxiv.org/abs/2605.30542",
     "original_url": "https://arxiv.org/abs/2605.30542",
     "published_at": "2026-06-01T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Physically Viable World Models: A Case for Query-Conditioned Embodied AI. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-424381ae",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "将分解任务转换与编码为SAT求解：哪些有益，哪些有害（扩展版）",
     "title_en": "Transforming and Encoding FTS for SAT Solving: What Helps, What Hurts (Extended Version)",
     "summary_zh": "本文研究了将分解任务（FTS）编码为SAT问题的方法，提出了多种将分解的转换关系翻译成命题逻辑的策略，并分析了在该场景中如何利用不同层次的并行性及常见任务转换对基于SAT规划器性能的影响。",
@@ -200,15 +204,17 @@
     "source_url": "https://arxiv.org/abs/2605.30563",
     "original_url": "https://arxiv.org/abs/2605.30563",
     "published_at": "2026-06-01T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Transforming and Encoding FTS for SAT Solving: What Helps, What Hurts (Extended Version). Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-59c50c8b",
@@ -236,7 +242,7 @@
   },
   {
     "id": "item-49c731f2",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "CanLegalRAGBench：评估加拿大案例法中的检索增强生成技术",
     "title_en": "CanLegalRAGBench: Evaluating Retrieval-Augmented Generation on Canadian Case Law",
     "summary_zh": "RAG技术在法律助理中越来越受欢迎，但大型语言模型的幻觉问题仍可能影响司法公正。现有评测多依赖合成查询，且对加拿大法律的覆盖不足。为此，本文提出CanLegalRAGBench，一个基于真实查询和案例法专家标注答案的加拿大法律问答基准。评测显示，检索性能受设计影响显著，开源嵌入模型与闭源模型表现相当，但自动评测存在惩罚检索到其他相关文档的局限。生成答案常偏离标准答案，存在幻觉或内容过多偏题，8-29%的断言缺乏文档支持。该基准旨在推动法律RAG系统的持续改进。",
@@ -247,15 +253,17 @@
     "source_url": "https://arxiv.org/abs/2605.30497",
     "original_url": "https://arxiv.org/abs/2605.30497",
     "published_at": "2026-06-01T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CanLegalRAGBench: Evaluating Retrieval-Augmented Generation on Canadian Case Law. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-39437383",

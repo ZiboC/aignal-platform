@@ -46,7 +46,7 @@
   },
   {
     "id": "item-af1c3b97",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "StereoSplat+：结合扩散辅助渐进推理的前馈立体高斯散点法",
     "title_en": "StereoSplat+: Feed-Forward Stereo Gaussian Splatting with Diffusion-Assisted Progressive Inference",
     "summary_zh": "三维高斯散点法（3DGS）的最新进展实现了高质量的场景表示，用于新视角合成。但现有方法多依赖多视角观测或未来帧信息，这在机器人和增强现实等仅有单一立体相机的场景中难以实现。本文提出了StereoSplat+，一种扩散增强的前馈框架，可从单对立体图像因果重建高质量3DGS场景。方法包括输入不变的StereoSplat网络，通过成本体积分支和三平面三维体积分支融合几何信息，并利用连续位姿编码适配不同视角和相机配置；以及一种称为StereoSplat+的单次扩散渐进推理策略，通过从单一立体对预测3DGS，渲染新视图，使用一步扩散增强器细化，再反馈更新3DGS。KITTI-360数据集实验表明，本方法在遮挡区域和视角外推时，显著提升了新视角渲染质量和几何准确性，优于现有前馈3DGS方法。",
@@ -59,14 +59,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-13T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: StereoSplat+: Feed-Forward Stereo Gaussian Splatting with Diffusion-Assisted Progressive Inference. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08808",
     "supporting_sources": [
@@ -86,11 +86,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2e14b4bf",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "探针混合：通过探针学习多模态大语言模型中的特权模态",
     "title_en": "Mixture of Probes: Learning from Privileged Modalities in Multimodal LLMs Through Probing",
     "summary_zh": "多模态大语言模型（MLLMs）通常假设训练和推理时均可获得所有模态数据，但现实中常常只有训练阶段可获得辅助模态。本文提出了探针混合（MoP）框架，通过结构化探针机制区分模态特异和模态通用信号，保留模态依赖结构的同时实现跨模态迁移表达。结合探针解耦损失的MoP跨模态训练策略（MoP-X），在八个任务和四种模态的综合评测中，MoP在推理阶段仅用单一模态输入时，较强基线最高提升65%，显示辅助模态即使不可用于推理也可显著提升模型性能。代码、模型和评测协议将开源。",
@@ -103,14 +105,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-13T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Mixture of Probes: Learning from Privileged Modalities in Multimodal LLMs Through Probing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08839",
     "supporting_sources": [
@@ -130,11 +132,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 72."
+    "ranking_reason": "Selected from authoritative primary source; quality score 72.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a40d1fbc",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "安全伪装：医疗图像保密建模的图像伪装系统评估",
     "title_en": "Secure-by-Disguise: A Systematic Evaluation of Image Disguising for Confidential Medical Image Modeling",
     "summary_zh": "云端深度学习推动了大规模医疗图像分析，但将敏感患者图像外包进行模型开发带来了重大隐私问题。图像伪装作为一种新兴的隐私增强技术，通过将图像转换为视觉上难以理解的形式，同时保留用于后续学习的信息。我们建立了统一框架，评估了代表性方法DisguisedNets和NeuraCrypt，在涉及分类和语义分割的四个数据集上，分析它们的预测效用、效率和对重建攻击的鲁棒性。结果显示，图像伪装对不同任务的表现差异显著：对医疗图像分类保持良好效用，但对密集语义分割产生较大性能下降。随机多维变换（RMT）在性能和安全性间提供最佳平衡，而基于AES的伪装严重影响效用。此外，基于回归的重建攻击在自然图像上的有效性，在真实医疗图像上则较低。此研究系统评估了隐私增强技术在医疗AI保密应用中的适用性。",
@@ -147,14 +151,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-13T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Secure-by-Disguise: A Systematic Evaluation of Image Disguising for Confidential Medical Image Modeling. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08867",
@@ -175,11 +179,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a60ae44b",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "空间可控的多视角室内场景重光照的解耦照明先验",
     "title_en": "Decoupled Illumination Priors for Spatially Controllable Multi-View Indoor Scene Relighting",
     "summary_zh": "室内场景重光照需要实现逼真的视觉效果、精确的空间控制以及严格的多视角一致性。虽然基于扩散的图像编辑模型通过文本提示实现语义光照操作，但精确的3D光源定位往往会破坏其生成先验。本文提出了Lume-Palette，一个利用语义照明先验实现空间可控多视角室内重光照的渐进框架。该方法将重光照分为两个阶段：(1) 照明蒸馏，从预训练扩散模型提取标准照明调色板以保持真实的材质-光线交互；(2) 照明投射，将目标空间光照条件显式映射至稀疏3D几何。为高效处理密集多视角多模态输入，设计了非对称多视角条件策略，选择性注入关键空间上下文。实验证明，Lume-Palette在多种合成和真实场景中表现出逼真、空间可控且多视角一致的重光照效果。项目页面：this https URL",
@@ -192,14 +198,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-13T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Decoupled Illumination Priors for Spatially Controllable Multi-View Indoor Scene Relighting. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08879",
     "supporting_sources": [
@@ -219,7 +225,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a18ede29",
@@ -267,7 +275,7 @@
   },
   {
     "id": "item-f1382aa0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过格遍历对多层感知机的区间认证",
     "title_en": "Interval Certifications for Multilayered Perceptrons via Lattice Traversal",
     "summary_zh": "本文提出了一个严谨的理论框架，针对AI安全中的基础问题——对抗鲁棒性。研究表明，对抗鲁棒性问题可以归约为一个格遍历问题。该格的每个元素对应一个包含输入点的区间（轴对齐的超矩形）。对于多层感知机(MLP)分类器，区间若保证任意在区间内的输入扰动均不改变MLP的预测，则为一个可靠认证；若输入一旦离开区间预测必变，则为完整认证。本文开发了格遍历算子，并采用“细化与验证”的迭代方案，用形式化验证器保证可靠认证的最大性和完整认证的最小性。此外，针对完整认证的最小解可在多项式时间内通过oracle调用获得，而可靠认证则存在强不可解问题。还研究了对称区间的优化算法，并通过新系统ParallelepipedoNN进行了实证评估。",
@@ -280,14 +288,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-13T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Interval Certifications for Multilayered Perceptrons via Lattice Traversal. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08773",
     "supporting_sources": [
@@ -307,7 +315,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ac8c50af",
@@ -401,7 +411,7 @@
   },
   {
     "id": "item-f1eb6831",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "ProofCouncil：用于解决开放数学问题的大型语言模型代理",
     "title_en": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
     "summary_zh": "大型语言模型（LLM）在解决开放数学问题方面显示出越来越大的潜力，但其性能可通过更贴近实际数学工作的代理流程进一步提升。为此，作者介绍了ProofCouncil，这是一种数学代理，采用作者-评论架构来解决开放问题。ProofCouncil作为FirstProof挑战赛第二批参赛作品，针对10个真实数学问题中，6个问题的提交结果被评审认为正确（最多需小修），表现最佳。它还在30个收集的开放数学问题中进行评估，在收到人类反馈的21个解决方案中，5个被认定完全正确，2个有望最终验证正确，8个提供了有用的部分进展。本文简要介绍了ProofCouncil的发展及所用的开源代理构建库。",
@@ -414,14 +424,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-13T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ProofCouncil: An LLM Agent for Solving Open Mathematical Problems. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.09474",
@@ -442,7 +452,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 84."
+    "ranking_reason": "Selected from authoritative primary source; quality score 84.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f7383412",
@@ -581,7 +593,7 @@
   },
   {
     "id": "item-f83835a5",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CogniConsole：将推理时控制外部化作为可靠大型语言模型交互的形式抽象",
     "title_en": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
     "summary_zh": "本文提出CogniConsole架构，将推理时控制外部化为结构化接口，结合程序化协调和有界提示推理，显著提升大型语言模型（LLM）系统的可靠性。通过489个多步骤互动探查，展示增加结构化脚手架能系统性降低输出方差和失败率，表明失败模式多因控制不足而非能力不足。",
@@ -594,14 +606,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-13T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.08774",
     "supporting_sources": [
@@ -621,11 +633,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b52d8e2a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "GATS：结合分层世界模型的图增强树搜索实现高效智能体规划",
     "title_en": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
     "summary_zh": "大型语言模型（LLM）智能体在多步骤规划任务中表现出潜力，但现有方法如LATS和ReAct在规划过程中高度依赖LLM推理，导致计算成本高且行为具有随机性。本文提出GATS（图增强树搜索），结合基于UCB1的系统搜索和分层世界模型，消除推理期间的LLM调用，同时实现更优规划性能。分层世界模型包括精确符号动作匹配、执行日志学习统计和基于LLM的未知动作预测。在合成规划任务和12个挑战场景中，GATS均实现100%成功率，显著优于LATS和ReAct，且零LLM调用、规划结果确定无方差。结果表明系统搜索结合学习世界模型，在智能体规划中大幅优于LLM引导探索。",
@@ -638,14 +652,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-13T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
     ],
@@ -667,6 +681,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 72."
+    "ranking_reason": "Selected from authoritative primary source; quality score 72.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

@@ -117,7 +117,7 @@
   },
   {
     "id": "item-ae5a2404",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "神经符号驱动：基于规则的忠实推理实现驾驶视觉语言代理",
     "title_en": "Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs",
     "summary_zh": "本文提出了Neuro-Symbolic Drive框架，通过结合经典规则基规划器生成的符号推理轨迹，监督驾驶视觉语言代理（VLA）的训练，使其推理步骤与规划动作紧密关联。该方法在模拟器生成的基准测试中显著提升了轨迹预测精度和降低错误率，验证了神经符号规划逻辑作为结构化监督的有效性。代码已开源。",
@@ -128,19 +128,21 @@
     "source_url": "https://arxiv.org/abs/2606.23938",
     "original_url": "https://arxiv.org/abs/2606.23938",
     "published_at": "2026-06-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a34b0829",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "代理模型批判",
     "title_en": "Critique of Agent Model",
     "summary_zh": "本文探讨了什么是代理及其构成要素，特别是在大型语言模型（LLM）中被称为“编码代理”、“AI协同科学家”等“代理性”工具兴起的背景下。文章基于笛卡尔对代理独立思考的定义，分析了当前AI代理架构的五个维度：目标、身份、决策、自我调节和学习。作者强调真正的代理应具备内在化结构，而非依赖外部搭建，区分了“代理性”系统与“代理化”系统，提出了一种结合层级目标分解、身份进化、模拟推理、自我调节和自主学习的Goal-Identity-Configurator（GIC）架构。此外，讨论了具备更高自主性的代理系统的可审核性、可控性与安全性。",
@@ -151,21 +153,23 @@
     "source_url": "https://arxiv.org/abs/2606.23991",
     "original_url": "https://arxiv.org/abs/2606.23991",
     "published_at": "2026-06-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Critique of Agent Model. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ca704a12",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "EXPO-SQL：基于执行的文本到SQL子句级策略优化",
     "title_en": "EXPO-SQL: Execution-based Clause-level Policy Optimization for Text-to-SQL",
     "summary_zh": "EXPO-SQL提出了一种为文本到SQL任务设计的细粒度子句级奖励机制，通过分析SQL执行结果来识别错误子句，改进了基于大语言模型的强化学习训练方法。实验显示，该方法在多项标准文本到SQL基准上优于现有的监督微调、提示和强化学习方法。",
@@ -176,15 +180,17 @@
     "source_url": "https://arxiv.org/abs/2606.23693",
     "original_url": "https://arxiv.org/abs/2606.23693",
     "published_at": "2026-06-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: EXPO-SQL: Execution-based Clause-level Policy Optimization for Text-to-SQL. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c5704233",
@@ -211,7 +217,7 @@
   },
   {
     "id": "item-4ab61c67",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于实体识别的知识库视觉问答方法“先识别后排序”",
     "title_en": "Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification",
     "summary_zh": "知识库视觉问答（KB-VQA）需要将视觉查询与图片中无法直接观察到的外部知识关联。现有多模态大语言模型在KB-VQA中对细粒度实体和证据的识别能力不足。本文提出了一种无需训练的“先识别后排序”（IBA）框架，先通过大语言模型从候选实体中选择高置信度实体，再用文本重排序器完成证据选择。该方法在Encyclopedic-VQA和InfoSeek任务上优于多模态重排序的微调基线，且降低了训练和推理复杂度。",
@@ -222,15 +228,17 @@
     "source_url": "https://arxiv.org/abs/2606.23881",
     "original_url": "https://arxiv.org/abs/2606.23881",
     "published_at": "2026-06-24T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Ground Then Rank: Revisiting Knowledge-Based VQA with Training-Free Entity Identification. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-32e7bf9e",

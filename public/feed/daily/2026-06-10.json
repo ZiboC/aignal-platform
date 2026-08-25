@@ -70,7 +70,7 @@
   },
   {
     "id": "item-354a6813",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Business World Model",
     "title_en": "Business World Model",
     "summary_zh": "arXiv:2606.10044v1 Announce Type: new Abstract: Businesses are increasingly adopting AI-enabled tools to improve productivity, reduce costs, and enhance products and services. However, the transformative potential of AI…",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2606.10044",
     "original_url": "https://arxiv.org/abs/2606.10044",
     "published_at": "2026-06-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Business World Model. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4b460d87",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Deployment-Time Memorization in Foundation-Model Agents",
     "title_en": "Deployment-Time Memorization in Foundation-Model Agents",
     "summary_zh": "arXiv:2606.10062v1 Announce Type: new Abstract: Foundation-model agents are increasingly long-lived systems that remember users across interactions, making memorization an explicit deployment-time function rather than s…",
@@ -105,21 +107,23 @@
     "source_url": "https://arxiv.org/abs/2606.10062",
     "original_url": "https://arxiv.org/abs/2606.10062",
     "published_at": "2026-06-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Deployment-Time Memorization in Foundation-Model Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3754f895",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Exploratory Responsiveness and Adaptive Rigidity under AI-Assisted Optimization",
     "title_en": "Exploratory Responsiveness and Adaptive Rigidity under AI-Assisted Optimization",
     "summary_zh": "arXiv:2606.10086v1 Announce Type: new Abstract: This paper develops a theory of exploratory adaptation under AI-assisted optimization. The central argument is that the long-run adaptive effects of AI systems depend crit…",
@@ -130,15 +134,17 @@
     "source_url": "https://arxiv.org/abs/2606.10086",
     "original_url": "https://arxiv.org/abs/2606.10086",
     "published_at": "2026-06-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Exploratory Responsiveness and Adaptive Rigidity under AI-Assisted Optimization. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-d5f02282",
@@ -189,7 +195,7 @@
   },
   {
     "id": "item-3654f702",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CodeAlchemy: Synthetic Code Rewriting at Scale",
     "title_en": "CodeAlchemy: Synthetic Code Rewriting at Scale",
     "summary_zh": "arXiv:2606.10087v1 Announce Type: new Abstract: Pre-training on raw code teaches syntax but provides sparse signal for diverse real-world task formats. While synthetic data has proven transformative for language models,…",
@@ -200,15 +206,17 @@
     "source_url": "https://arxiv.org/abs/2606.10087",
     "original_url": "https://arxiv.org/abs/2606.10087",
     "published_at": "2026-06-10T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CodeAlchemy: Synthetic Code Rewriting at Scale. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-456403c0",

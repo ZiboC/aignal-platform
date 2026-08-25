@@ -70,7 +70,7 @@
   },
   {
     "id": "item-737ab27c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "从显式元素到隐式意图：可审计行为推理的预定义库",
     "title_en": "From Explicit Elements to Implicit Intent: A Predefined Library for Auditable Behavioral Inference",
     "summary_zh": "SemantiClean 是一个模块化框架，用于从电商会话数据中提取结构化语义信号，并通过共享元素库驱动多种推理目标如购买意图、客户细分和产品关联。不同于仅优化准确性的端到端预测器，SemantiClean 优先考虑可审计性、结构治理和零误差可复现性，换取元素级透明度和可辩护的决策轨迹。框架基于 OSPI 数据集，将24个行为元素组织为四层架构，并通过多种机制确保信号质量。该报告还介绍了集成大语言模型的两阶段推理引擎，实现了推理时完整元素元数据的利用，结果可控且部分具有一定输出变异性。",
@@ -81,15 +81,17 @@
     "source_url": "https://arxiv.org/abs/2606.11207",
     "original_url": "https://arxiv.org/abs/2606.11207",
     "published_at": "2026-06-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: From Explicit Elements to Implicit Intent: A Predefined Library for Auditable Behavioral Inference. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-58492ae",
@@ -116,7 +118,7 @@
   },
   {
     "id": "item-85f2ddf0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "AI代理能综合科学结论吗？",
     "title_en": "Can AI Agents Synthesize Scientific Conclusions?",
     "summary_zh": "本文介绍了SciConBench，一个包含9110个问题和专家撰写结论的大规模实时基准，用于评估开放领域科学结论综合能力。研究发现，在控制环境下，领先AI模型的事实准确率较低，最佳模型的事实F1仅为0.337。通过引入SciConHarness的‘无泄露’评估框架，证明过去的性能评估存在数据泄露问题，夸大了模型的实际能力。对消费者端AI代理的审计显示，即使有准确答案，它们产生的结论仍不完整甚至自相矛盾，显示可靠综合科学结论依然是重要挑战。",
@@ -127,20 +129,22 @@
     "source_url": "https://arxiv.org/abs/2606.11337",
     "original_url": "https://arxiv.org/abs/2606.11337",
     "published_at": "2026-06-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can AI Agents Synthesize Scientific Conclusions?. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-727ab0e9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "利用多模态语言模型检测社交媒体上的AI生成内容",
     "title_en": "Detecting AI-Generated Content on Social Media with Multi-modal Language Models",
     "summary_zh": "生成式AI推动了具有高度逼真性的图像和视频创作，被广泛传播于社交媒体，用于垃圾信息、误导、操控与欺诈。现有AIGC检测方法面临泛化能力差、单一模态依赖及缺乏可解释性等难题。本文提出通过持续收集多模态社交媒体数据，训练紧凑的视觉语言模型，实现检测及解释功能。该模型在公开基准测试中表现卓越，并在多平台内部数据集上展现出强健的检测与解释能力。部署于社交媒体的帖子推荐系统后，显著提升了用户参与度，证明在动态真实环境中有效检测AIGC的可行性。",
@@ -151,20 +155,22 @@
     "source_url": "https://arxiv.org/abs/2606.11200",
     "original_url": "https://arxiv.org/abs/2606.11200",
     "published_at": "2026-06-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Detecting AI-Generated Content on Social Media with Multi-modal Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-707aadc3",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "一键越狱，多语种理解：学习语言无关的意图表示以检测多语种越狱攻击",
     "title_en": "One Jailbreak, Many Tongues: Learning Language-Insensitive Intention Representations for Multilingual Jailbreak Detection",
     "summary_zh": "随着大型语言模型（LLM）在全球多语种用户中的广泛应用，安全训练主要集中于主流语言，未能同步提升多语种能力，导致越狱攻击的可利用漏洞。当前的越狱防御主要针对主流语言开发和评估，受限于多语种对齐监督稀缺和语言差异引起的表示分散问题。为此，本文提出MLJailDe框架，利用多语种回译数据增强构建涵盖11种语言的数据集，并通过相对距离约束减少跨语种表示分散，使意图相似的越狱提示在多语种中形成一致聚类，同时采用不平衡感知分类目标缓解类别不平衡，提升多语种决策边界的可靠性。实验显示MLJailDe在多语种环境中性能超越最新方法，F1分数达98.5%，对未见语种平均F1为97.1%，展现出强大的效果和跨语种泛化能力。",
@@ -175,19 +181,21 @@
     "source_url": "https://arxiv.org/abs/2606.11202",
     "original_url": "https://arxiv.org/abs/2606.11202",
     "published_at": "2026-06-11T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: One Jailbreak, Many Tongues: Learning Language-Insensitive Intention Representations for Multilingual Jailbreak Detection. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6f7aac30",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "LatticeBridge：用于忠实结构化序列合成的稀有事件顺序推断",
     "title_en": "LatticeBridge: Rare-Event Sequential Inference for Faithful Structured Sequence Synthesis",
     "summary_zh": "LatticeBridge提出了一种结合紧凑前缀语言模型、实例编译的表面自动机和扭曲顺序蒙特卡洛解码器的新方法，用于在结构化序列生成中满足多个输入约束。该方法在2,610个验证任务上提升了严格锚点满足率和平均锚点覆盖度，优于传统贪婪、束搜索和多样本基线。评估全面涵盖了锚点覆盖、源覆盖率、干扰诊断、重叠度、运行时间和粒子统计，刻画了忠实度、重叠率和延迟之间的权衡。",
@@ -198,15 +206,17 @@
     "source_url": "https://arxiv.org/abs/2606.11203",
     "original_url": "https://arxiv.org/abs/2606.11203",
     "published_at": "2026-06-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LatticeBridge: Rare-Event Sequential Inference for Faithful Structured Sequence Synthesis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fff5caac",

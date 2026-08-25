@@ -223,7 +223,7 @@
   },
   {
     "id": "item-34eddff0",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "JEPA预测器：一种用于遮挡特征补全的可迁移算子",
     "title_en": "The JEPA Predictor: A Transferable Operator for Occluded Feature Completion",
     "summary_zh": "本文提出的联合嵌入预测架构（JEPA）训练一个预测器与编码器共同工作，但实际应用时只用编码器的特征。该预测器是从可见上下文特征到被遮挡位置特征的学习算子，我们验证这个算子可以跨编码器家族迁移。通过将冻结的I-JEPA和V-JEPA 2预测器通过单线性投影接入多种非JEPA编码器（CLIP、DINOv3、DINOv2、MAE），在ImageNet-9和Stanford Dogs数据集上对遮挡特征完成任务表现出显著提升，尤其在重遮挡情况下效果最佳。该方法不需重新训练模型，仅需针对不同遮挡比例拟合线性映射，展现了JEPA预测器作为遮挡特征补全的通用算子的潜力。",
@@ -236,14 +236,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The JEPA Predictor: A Transferable Operator for Occluded Feature Completion. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.16274",
     "supporting_sources": [
@@ -263,11 +263,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-41edf467",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "迈向可信风险感知人脸检索（RA-FR）的一步",
     "title_en": "A Step Forward Towards Trustworthy Risk-Aware Facial Retrieval (RA-FR)",
     "summary_zh": "在人脸图像检索中，尤其是在不受控制的监控环境下，错过关注目标（单个假阴性）是不可接受的。现有系统虽在标准测试中表现优异，但在实际环境中如低分辨率、运动模糊及光照不佳时表现欠佳。本文提出风险感知人脸检索（RA-FR）框架，通过自适应检索集生成，保证在用户指定风险水平和置信度下包含真实目标。方法结合了基于盲复原的混合模型减少数据不确定性、利用自监督ViT特征提取及服从Hoeffding不等式的可证校准机制，实现了在IMFDB数据集上5%风险目标下仅约10张图片的平均检索集大小。该框架融合了领域复原、鲁棒特征学习及可验证决策规则，使监控人脸检索更加可靠且可审计。代码已公开。",
@@ -280,14 +282,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Step Forward Towards Trustworthy Risk-Aware Facial Retrieval (RA-FR). Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.16279",
     "supporting_sources": [
@@ -307,11 +309,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a3aed820",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RLHF偏好数据中的评分者状态偏差：审计框架",
     "title_en": "Rater State Bias in RLHF Preference Data: An Audit Framework",
     "summary_zh": "本文识别出强化学习中基于人类反馈（RLHF）中的一种结构性混淆：评分者的偏好标签不仅反映输出比较，也可能反映评分者在注释时的状态。持续的压力或困扰条件下，评分者的偏好会随时间变化，导致偏好数据同时编码评分者状态和质量判断。这种状态相关偏差可跨评分者共享，并通过奖励建模和策略优化传播。文章提出了评分者状态偏差的假设和审计框架，定义了相关概念，提出可测量指标并提供审计协议及试点方案，旨在公开模型中检测这种结构性偏差。",
@@ -324,14 +328,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Rater State Bias in RLHF Preference Data: An Audit Framework. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.16195",
     "supporting_sources": [
@@ -351,7 +355,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-36eba47f",
@@ -401,7 +407,7 @@
   },
   {
     "id": "item-fea44cdf",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "基于约束锚定的推理轨迹",
     "title_en": "Constraint-Anchored Reasoning Traces",
     "summary_zh": "最新研究提出了一种神经符号框架——基于约束锚定的推理轨迹（CART），旨在解决多模态大语言模型（MLLMs）在链式思维推理中错误雪崩的问题。该方法通过在自然语言推理步骤中交插符号约束断言，使用双重约束传播模块持续验证视觉内容及其逻辑一致性，一旦检测到矛盾即回退至最后的有效状态，从而显著降低错误传播。通过对开源模型微调并在五个基准测试中验证，CART将错误雪崩率从65%降至14%，GQA准确率提升4.6个百分点，同时保持推理开销较低。",
@@ -414,14 +420,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-21T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Constraint-Anchored Reasoning Traces. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.16727",
     "supporting_sources": [
@@ -441,7 +447,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-843cdecd",
@@ -533,7 +541,7 @@
   },
   {
     "id": "item-e1d41105",
-    "category": "video_ai",
+    "category": "research_papers",
     "title_zh": "医生-患者对话的鲁棒总结：TalTech在Beyond Transcription挑战赛中的系统",
     "title_en": "Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge",
     "summary_zh": "本文介绍了TalTech团队参加Beyond Transcription挑战赛的成果，该挑战赛要求直接从长时间的医生-患者对话录音中生成SOAP笔记，无需中间转录。团队选用了开放权重的语音大语言模型，采用LoRA监督微调及基于挑战指标Open Medical Concept F1的DAPO强化学习，分别基于轻量级和重量级模型构建系统。系统在两个赛道均获得第一名，且独立评审显示其幻觉率最低，表明基于概念匹配指标的强化学习并未影响事实可靠性。研究还发现基于文本转录的微调可有效迁移至语音输入，增强了模型对不同领域真实录音的鲁棒性。",
@@ -546,14 +554,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-21T04:00:00.000Z",
-    "image_name": "video_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/video-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Robust Summarization of Doctor-Patient Conversations: TalTech Systems for the Beyond Transcription Challenge. Category: video_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "video",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.17230",
     "supporting_sources": [
@@ -573,7 +581,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-9bbc083d",

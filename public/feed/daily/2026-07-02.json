@@ -266,7 +266,7 @@
   },
   {
     "id": "item-810b28ce",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "建设性对齐：人机交互中的偏好动态调控",
     "title_en": "Constructive Alignment: Governing Preference Dynamics in Human-AI Interaction",
     "summary_zh": "传统的AI对齐方法将人类偏好视为固定目标进行推断和优化，但实证研究表明偏好是分层、动态且通过与适应性技术互动建构的。随着AI系统日益个性化和社会化，它们影响人们的关注点、价值观和认同。本文提出“建设性对齐”范式，将对齐视为对不断演变的人类偏好轨迹的控制问题，利用控制理论模型描述AI系统如何共同影响世界状态与人类评价状态。对齐旨在规范AI对人类价值形成的影响，确保价值轨迹连贯、反思认可、知识基础扎实、防范操纵且在不确定下赋能。",
@@ -279,14 +279,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-02T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Constructive Alignment: Governing Preference Dynamics in Human-AI Interaction. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.00001",
     "supporting_sources": [
@@ -306,7 +306,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-800b273b",
@@ -354,7 +356,7 @@
   },
   {
     "id": "item-860d6f44",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "MMM数据模型——去中心化知识共享中的知识互操作性规范",
     "title_en": "The MMM Data Model -- A Normative Specification for Knowledge Interoperability in a Decentralisable Knowledge Commons",
     "summary_zh": "本文提出MMM数据模型，解决了传统以文档为中心的信息系统在知识结构、更新和共享上的限制。MMM结合规范约束和自由文本标签，支持跨学科、跨应用的互操作性，无需语义收敛。通过参考实现和试点部署数据，验证了其可实现性和早期可用性。",
@@ -367,14 +369,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-02T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: The MMM Data Model -- A Normative Specification for Knowledge Interoperability in a Decentralisable Knowledge Commons. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.00032",
@@ -395,11 +397,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-b9b9f5b5",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "AI原生游戏：调查与路线图",
     "title_en": "AI Native Games: A Survey and Roadmap",
     "summary_zh": "生成式AI现已使游戏能在运行时生成对话、任务、角色、图像和世界。但仅仅生成并不代表游戏是AI原生的，也不保证游戏可玩性。本文通过定义AI原生游戏：若去除或轻易替代AI组件，核心玩法将崩溃或变得根本不同，从而区分AI原生游戏与AI辅助游戏、边界产物、聊天机器人等。分析了53款公开的AI原生游戏与原型，提出G/N双轴分类法，G轴为面向玩家的游戏类型，N轴为生成式AI的核心机制。研究发现语音交互、叙事冒险和生成叙事占主流，语义裁决、多智能体模拟等较少。核心设计问题是将语义开放性组织成稳定玩法，设计依赖机械不变量如目标、规则、状态、反馈、节奏和玩家能动性，使开放式AI输出可解释且结果有意义。最后提出了可控生成、AI作为机制设计、多模态与多智能体系统等未来发展路线。",
@@ -412,14 +416,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-02T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AI Native Games: A Survey and Roadmap. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.98,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.00527",
     "supporting_sources": [
@@ -439,7 +443,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-46d2d892",
@@ -620,7 +626,7 @@
   },
   {
     "id": "item-850d6db1",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "安全失败：用于开放网络数据收集的受限可验证代理框架",
     "title_en": "Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection",
     "summary_zh": "大型语言模型和代理可以根据自然语言需求生成网页爬虫，但直接生成代码易出错，如依赖错误、选择器失效、结构不匹配和页面结构多样。本文提出一种受限且可验证的代理框架，将LLM输出从自由代码转为类型化JSON采集器配置，结合六大采集器分类、模板及工具函数约束、静态Airflow DAG执行、规则质量检查及结构化反馈修正。138个任务实验证明该分类支持基于描述的需求类型，同时稳定实例化需完成数据源、字段和执行约束。80个独立验证任务中，该框架无需执行阶段LLM令牌且平均运行时间最低，虽一轮质量略有折中，但提供了可复用、确定且可验证的执行路径，特别适合重复调度的数据收集。该框架为开放网络数据收集提供了低成本、可验证的可复用执行方案。",
@@ -633,14 +639,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-02T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.00035",
@@ -661,6 +667,8 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

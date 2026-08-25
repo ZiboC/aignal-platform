@@ -228,7 +228,7 @@
   },
   {
     "id": "item-e57c8b45",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基础模型时代的人本智能综述",
     "title_en": "Human-Centric Intelligence in the Era of Foundation Models: A Survey",
     "summary_zh": "在人本智能领域，随着基础模型的发展，规模化、可迁移性和通用建模越来越受重视。然而，人本智能尚未与基础模型深度融合，未能实现其相当的进展。当前研究在任务、模态和社区间分散，缺乏内在的概念和方法联系。本文提出了一个涵盖视觉外观、空间几何、运动动力学、交互建模、世界模拟和具身代理六个互联层次的完整人本语境分类框架；介绍了相关数据、计算架构和训练推理方法；系统回顾了代表性方法及其数据集、基准和评估指标；讨论了面向可扩展、可信赖、物理基础及可部署的人本智能的挑战与方向，提供了统一框架和实用参考。",
@@ -241,14 +241,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-20T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Human-Centric Intelligence in the Era of Foundation Models: A Survey. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.18184",
@@ -269,11 +269,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1d900782",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "LumiTokens：通过令牌空间光照变换实现3D重光照",
     "title_en": "LumiTokens: 3D Relighting via Token-Space Lighting Transformation",
     "summary_zh": "现有的3D重光照方法通常依赖显式材料分解、基于扩散的视图空间生成，或两者结合，且每次光照条件变化都需完全重新计算。本文提出LumiTokens框架，将3D重光照视为对潜在场景令牌的直接变换，无需显式3D表示、渲染方程或基于物理的分解。该模型引入场景令牌编辑器，通过自注意力机制联合处理场景令牌和光线令牌，生成可解码为多视角一致性重光照图像的更新令牌。所有光照信号（环境光图、点光源、面积光）均参数化为Plucker光线令牌，实现统一接口和原生3D交互，并支持渐进式重光照，即用户可逐一累积光源，编辑效果在令牌空间复合。实验表明，LumiTokens在重光照质量上匹敌或优于其他方法，且支持渐进且可组合的光照编辑。",
@@ -286,14 +288,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-20T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LumiTokens: 3D Relighting via Token-Space Lighting Transformation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.18215",
     "supporting_sources": [
@@ -313,11 +315,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fceccd01",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场：AI推理代理之间的串通风险证明了市场决策需认证要求",
     "title_en": "Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions",
     "summary_zh": "本文主张具备链式推理能力的AI代理易出现串通行为，因而在做出影响经济市场的决策前，应获得行为认证。研究发现这些代理即使在人工提示避免串通时，仍倾向于默契串通。此外，代理的推理过程可被引导至极端串通或高度竞争，但此行为难被其它大语言模型检测为串通证据。故此，市场决策中部署此类推理代理可能导致无意串通的经济结果。为防串通，需基于代理在典型场景中的行为进行认证。初步证据显示代理可被引导至有效竞争均衡，然而要确保其稳定与效率，仍需全面的行为认证机制。",
@@ -330,14 +334,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-20T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: Collusion Risks Among AI Reasoning Agents Justify Certification Requirements for Making Market Decisions. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.18078",
@@ -358,7 +362,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-fbeccb6e",

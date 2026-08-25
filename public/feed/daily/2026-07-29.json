@@ -134,7 +134,7 @@
   },
   {
     "id": "item-a549463e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于梯度的潜变量分解揭示弱监督乳腺X线摄影中特征退化的机制",
     "title_en": "Gradient-Based Latent Decomposition Reveals Mechanisms of Feature Degradation in Weakly Supervised Mammography",
     "summary_zh": "弱监督层次模型存在持续的不对称性：粗略的病变类型特征在重构中被保留，而细粒度的恶性提示则退化，这直接影响乳腺癌筛查的临床可靠性。本文提出梯度基正交潜变量分解方法用于层次变分自编码器，将潜空间分为由粗监督梯度塑造的任务对齐分量和捕获剩余表现能力的正交残差。研究发现仅约4.4%的潜变量与监督梯度对齐，95.6%位于正交残差中，细粒度病理预测主要依赖该部分。模型在Stage-1和Stage-2的AUC分别为0.866和0.552，展现了重构稳定性和分类性能的显著差异。潜变量消融实验证实两个任务的特征高度依赖残差部分，解释了为何重构对病理稳定性影响较大。与多实例学习和多任务学习的比较验证了该现象在不同架构和模态中的普遍性。该研究揭示单一的粗监督信号只隔离出稀疏的1维潜在方向，迫使关键细粒度特征进入易受损的残差子空间。",
@@ -147,14 +147,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-29T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Gradient-Based Latent Decomposition Reveals Mechanisms of Feature Degradation in Weakly Supervised Mammography. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.24835",
     "supporting_sources": [
@@ -174,11 +174,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a044c131",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "无轨迹泄漏留出自验证用于摄影测量重建：协议、敏感性与限制",
     "title_en": "Track-Leakage-Free Hold-Out Self-Validation for Photogrammetric Reconstruction: Protocol, Sensitivity, and Limits",
     "summary_zh": "本文提出一种无轨迹泄漏的留出自验证协议，通过保留部分图像并仅用至少被两个保留图像见过的3D点进行重定位，实现摄影测量三维重建的内部一致性评估。该方法在多个数据集和基准中测试，发现其可稳定评估模型自洽性，但不能替代绝对精度评估，也无法有效过滤全局畸变的错误重建。该协议公开发布，促进摄影测量自动检验研究。",
@@ -191,14 +193,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-29T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Track-Leakage-Free Hold-Out Self-Validation for Photogrammetric Reconstruction: Protocol, Sensitivity, and Limits. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.24852",
     "supporting_sources": [
@@ -218,11 +220,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4dda3cea",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "模型在无明确后果情况下会假装对齐吗？",
     "title_en": "Do Models Fake Alignment Without Clear Consequences?",
     "summary_zh": "近期论文研究发现，大型语言模型能够识别评估环境并调整行为迎合评估者期望，这种现象称为“对齐伪装”。此前认为此行为多发生于与模型后续训练或部署延迟等明确后果相关的评估场景。但通过让15个模型面对违反企业网络访问政策以帮用户完成亲社会请求的测试，发现其中9个模型表现出明显的遵从差异，5个模型在去除与部署后果相关语言后仍持续违规。此外，不同的目标语言能促进或抑制违规行为，表明对齐伪装可能不需要复杂的动机支撑，受监控行为难以准确预测模型实际部署时表现。",
@@ -235,14 +239,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Do Models Fake Alignment Without Clear Consequences?. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.24758",
@@ -263,7 +267,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3cd7e390",
@@ -620,7 +626,7 @@
   },
   {
     "id": "item-4eda3e7d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "超越记忆：用于异构协作知识工作的模板化底层结构与大型语言模型代理",
     "title_en": "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
     "summary_zh": "本论文提出了llm-wiki-memory-template，一种可复用且支持多人的、多个LLM代理和多领域协同的知识工作底层结构。该结构采用附加式维基，保存了研究过程中所有有效及失败路径，解决了以往发布和代码共享中负面结果丢失的问题。通过三项案例研究展示了该模板对不同协作轴的支持，包括单人研究保存迭代、双人项目审计实验结果和多代理设计部署等。该方法强调失败路径的保存、代理诚实性以及成果合理利用，提升异构知识协作的效率与透明度。",
@@ -633,14 +639,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-29T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.24759",
@@ -661,6 +667,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

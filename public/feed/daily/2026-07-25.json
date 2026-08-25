@@ -222,7 +222,7 @@
   },
   {
     "id": "item-35d3f0a6",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RealVDeblur：一步扩散实现通用真实视频去模糊",
     "title_en": "RealVDeblur: One-Step Diffusion for Generalizable Real-World Video Deblurring",
     "summary_zh": "真实视频去模糊因运动模式多样、退化复杂及真实训练数据匮乏而具挑战性。RealVDeblur提出了一个高效生成框架，通过基于3D高斯点云和高帧率视频的大规模物理真实模糊合成，提供逼真训练数据覆盖摄像机及物体运动模糊。采用视频扩散先验，禁用VAE的时间压缩并采用逐帧编码以适应帧间模糊变化。为长视频实用，设计了一步生成器和训练免费时序窗口掩码，实现稳定推理与恒定内存。实验证明在多个真实基准上具备优异视觉质量、语义一致性及时间连贯性，并提升三维重建对强模糊视频的鲁棒性。",
@@ -235,14 +235,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: RealVDeblur: One-Step Diffusion for Generalizable Real-World Video Deblurring. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20628",
     "supporting_sources": [
@@ -262,11 +262,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c5ca45fa",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Axolotl3D：统一的忠实三维形状补全框架",
     "title_en": "Axolotl3D: a Unified Framework for Faithful 3D Shape Completion",
     "summary_zh": "最新的三维生成模型利用大规模先验和扩散架构，从单张图像生成高质量几何形状，但通常假设视野完整且仅用单视角输入，限制了在多视角、遮挡或编辑等场景的应用。Axolotl3D提出了一种多模态且具备遮挡感知的三维生成模型，联合条件输入包括图像、可见性掩码、相机参数和部分点云。部分点云作为几何锚点促进准确的形状补全，而相机参数确保多视角在共享三维坐标系下的一致对齐。该模型通过统一训练策略，从大规模三维数据合成多样化条件，实现了跨模态稳健推理。在Toys4K和OmniObject3D数据集上，Axolotl3D在干净和遮挡条件下均取得了最先进的表现，并在实际重建与几何一致编辑中表现出色。",
@@ -279,14 +281,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Axolotl3D: a Unified Framework for Faithful 3D Shape Completion. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20660",
     "supporting_sources": [
@@ -306,11 +308,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bbc5b90e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "参数化CAD的自监督学习中的掩码拓扑建模",
     "title_en": "Masked Topology Modeling for Self-Supervised Learning on Parametric CAD",
     "summary_zh": "计算机辅助设计（CAD）无处不在，几乎所有现代物体都是用可编辑的CAD工具设计的。然而，由于原生可编辑和参数化格式的CAD数据集匮乏（尤其是边界表示B-Rep），开发数据高效的方法变得非常重要。本文提出了一种新的自监督预训练任务——掩码拓扑建模（MTM），利用B-Rep特有的面邻接图结构，要求编码器重建该结构。MTM通过掩盖部分边并训练一个小型头部从编码器处理后的面特征预测每条掩盖边的凸性和曲线类型。结合MoCo风格的动量队列对比学习、基于B-Rep的增强、BFS连通面区域掩码重建目标，在ABC数据集和新生成数据集上预训练，展示了多项基准测试中的强劲表现。",
@@ -323,14 +327,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Masked Topology Modeling for Self-Supervised Learning on Parametric CAD. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20642",
@@ -351,11 +355,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2bcd2523",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ODeform：利用神经常微分方程学习连续4D形变运动",
     "title_en": "ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs",
     "summary_zh": "连续物体形变的建模对于计算机视觉和机器人等领域非常重要。现有方法多基于离散时间步长或计算复杂，难以实时应用。本文提出ODeform，将神经常微分方程扩展至3D空间中形变物体的连续4D动力学，将3D点云和物理条件映射到统一潜空间，通过求解微分方程模拟连续形变流，实现高效且准确的运动预测，并成功应用于新形状和物理参数的实物3D数据。代码和数据将公开。",
@@ -368,14 +374,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20670",
     "supporting_sources": [
@@ -395,6 +401,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

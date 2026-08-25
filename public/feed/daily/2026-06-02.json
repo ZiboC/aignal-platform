@@ -163,7 +163,7 @@
   },
   {
     "id": "item-3c9b4293",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场论文：决策引擎中的求解后鲁棒性——参数扰动下的可行区域和平滑性",
     "title_en": "Position Paper: Post-Solve Robustness in Decision Engines: Feasible Regions and Smoothness Under Perturbations",
     "summary_zh": "混合整数线性规划（MILP）决策引擎常用于生成高风险工业系统的名义最优方案。然而，部署环境常不满足求解时的假设，成本、需求或资源的细微扰动可能导致方案不可行或发生不连续的质变。本文指出，目前优化流程中缺乏对这种求解后鲁棒性的关注，也缺少对学习驱动决策系统的这一维度评估。文章提出不替代鲁棒优化或随机规划，而是增加一个基于求解器验证的层，评估当前方案在扰动下的可信度。研究定义了两个核心对象：（i）参数空间中ε-近似最优可行邻域，表征方案在扰动下的可行性和近优性；（ii）决策空间中的解的平滑性，考察小组合变动下邻近解的竞争力。结合敏感性分析、稳定性分析、鲁棒优化、邻域搜索、对抗测试及学习增强，提出统一的求解后鲁棒性方案，呼吁认证的内部近似、概率鲁棒估计、对抗鲁棒边界及基于学习的预测和解释。最终给出紧凑的报告模板与评估协议，使鲁棒性成为决策引擎的核心输出。",
@@ -174,15 +174,17 @@
     "source_url": "https://arxiv.org/abs/2606.00002",
     "original_url": "https://arxiv.org/abs/2606.00002",
     "published_at": "2026-06-02T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position Paper: Post-Solve Robustness in Decision Engines: Feasible Regions and Smoothness Under Perturbations. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3f9908b5",

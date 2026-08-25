@@ -266,7 +266,7 @@
   },
   {
     "id": "item-3606b293",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "用于参数化CAD的自监督学习掩码拓扑建模",
     "title_en": "Masked Topology Modeling for Self-Supervised Learning on Parametric CAD",
     "summary_zh": "计算机辅助设计（CAD）无处不在：几乎所有现代物体均使用可编辑的CAD工具设计。然而，缺乏以其原生可编辑和参数化格式（边界表示，B-Rep）存在的CAD数据集，促使开发高效数据利用方法显得尤为重要。本文提出一种新的自监督预训练任务——掩码拓扑建模（MTM），利用B-Rep独有的面邻接图结构，要求编码器重构。MTM随机掩码部分边，并训练小型头部从编码器的面特征预测被掩边的凸性和曲线类型。结合基于MoCo风格动量队列的对比学习、B-Rep感知增强、一种基于广度优先搜索的面区域掩码重构目标，以及在ABC数据集和新建程序生成数据集上的预训练，展示了在多个基准上的强劲性能。",
@@ -279,14 +279,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Masked Topology Modeling for Self-Supervised Learning on Parametric CAD. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20642",
@@ -307,11 +307,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c40c0f4b",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Axolotl3D：一个统一的真实3D形状补全框架",
     "title_en": "Axolotl3D: a Unified Framework for Faithful 3D Shape Completion",
     "summary_zh": "当前的3D生成模型依赖大规模先验和扩散架构，从单张图像生成高质量几何形状，但假设物体完全可见且仅用单视角输入，限制了其在多视角、遮挡或编辑场景中的应用。Axolotl3D提出一个多模态且具备遮挡感知的3D生成模型，联合利用图像、可见性掩模、相机参数和局部点云进行条件控制。点云作为几何锚点促进准确形状补全，相机参数确保多视角在统一3D坐标系下的对齐。其统一训练策略通过大规模3D数据合成多样化条件，增强跨模态推理能力。实验表明，Axolotl3D在清晰及被遮挡条件下均达到先进性能，并在真实世界重建和几何一致编辑任务中表现优异。",
@@ -324,14 +326,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Axolotl3D: a Unified Framework for Faithful 3D Shape Completion. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20660",
     "supporting_sources": [
@@ -351,11 +353,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-be09c742",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ODeform：基于神经常微分方程学习连续4D运动进行形状变形",
     "title_en": "ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs",
     "summary_zh": "连续物体形变建模对于计算机视觉和机器人任务（如操作和仿真）非常重要。现有方法依赖基于学习的方法或物理模拟器，但要么采用离散时间步长，要么计算复杂度高，不适合实时应用。ODeform提出将神经常微分方程扩展到三维空间中可形变物体的连续4D动力学，通过将3D点云和物理条件映射到统一潜空间，利用ODE连续建模形变运动，提升了计算效率。实验证明其在未见物理参数配置下的运动预测准确性优于基线方法，并能成功迁移到真实3D对象，实现了动力学的有效插值与外推。相关代码与数据将公开。",
@@ -368,14 +372,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-24T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20670",
     "supporting_sources": [
@@ -395,11 +399,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ebe56ecb",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "标记错误的症状：评估医学文本中大型语言模型的水印效果",
     "title_en": "Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts",
     "summary_zh": "本文首次严格研究了大型语言模型（LLM）水印在医疗领域的表现，测试了5种水印方案，涵盖11个LLM和7个视觉语言模型（VLM），评估了单模态和多模态临床推理任务。通过引入专家验证的审计流程，分析了水印对医学推理质量、术语精确度和虚假信息的影响。结果显示，水印会导致词汇污染、虚假术语、图像发现误归因或遗漏等多种严重表现下降。研究强调缺乏领域特定评估和依赖总体指标可能掩盖医疗文本中的实际问题。",
@@ -412,14 +418,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-24T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Marking the Wrong Symptoms: Evaluating LLM Watermarks in Medical Texts. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.20462",
     "supporting_sources": [
@@ -439,7 +445,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-5ce01080",
@@ -621,7 +629,7 @@
   },
   {
     "id": "item-6e778836",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "MedGame：基于大型语言模型的医学教育故事化游戏化",
     "title_en": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
     "summary_zh": "大型语言模型（LLMs）在医学教育中展示出潜力，但现有系统多聚焦于局部交互如问答或单轮反馈，而非将整个临床案例组织成决策导向的学习路径。我们提出MedGame框架，将静态临床案例转化为结构化、可执行的故事化游戏。MedGame采用双引擎设计：医学叙事设计师合成基于案例的临床故事线，包含状态和决策节点；故事导演将其转换为依赖感知的多模态编排计划，并通过发布的交互平台呈现。我们构建了包含5000案例的MedGame Bench基准和评测协议，用于医学叙事生成和故事导演。实验表明，针对任务的微调显著提升开源LLM在MedGame Bench上的表现，缩小与商业模型差距。初步学生研究显示，学习者认为MedGame比纯文本更具吸引力和实用性。",
@@ -634,14 +642,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-24T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.21570",
@@ -662,6 +670,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

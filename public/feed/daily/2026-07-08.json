@@ -313,7 +313,7 @@
   },
   {
     "id": "item-8bb3a0f4",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "SearchEyes：通过搜索世界模拟迈向前沿多模态深度搜索智能",
     "title_en": "SearchEyes: Towards Frontier Multimodal Deep Search Intelligence via Search World Simulation",
     "summary_zh": "本文提出了SearchEyes，一种以类型化知识图为核心的模拟搜索世界，该世界统一构建训练数据、搜索环境和奖励信号，解决多跳推理训练中结构断连的问题。通过引入感知-知识链（PKC）和跃点锚定策略优化（HaPO），实现了多模态搜索代理的高效训练。实验表明，SearchEyes在六个多模态知识密集基准上表现优异，SearchEyes-27B版本平均超越现有最强开源模型6.2分。",
@@ -326,14 +326,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-08T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: SearchEyes: Towards Frontier Multimodal Deep Search Intelligence via Search World Simulation. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.05943",
     "supporting_sources": [
@@ -353,7 +353,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7d327dbd",

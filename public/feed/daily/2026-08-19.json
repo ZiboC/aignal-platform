@@ -134,7 +134,7 @@
   },
   {
     "id": "item-575f137b",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "多观测者车辆定位案例研究：路边雷达与车联网感知融合",
     "title_en": "Multi-Observer Vehicle Localization Case Study with Roadside Radar and Connected Vehicle Sensing",
     "summary_zh": "在现代智能交通系统中，准确估计车辆位置尤为重要，特别是在车联网车辆与传统车辆混行的环境下。本文提出了一种多观测者车辆定位框架，将静态路边雷达和配备激光雷达的车联网车辆的目标级检测结果进行融合。通过在芬兰赫尔辛基城市路口收集的真实数据进行验证，比较了基于扩展卡尔曼滤波器的两种融合策略，并分析了多种感知条件和车辆运动状态下的表现。结果表明，在完整激光雷达可用时，融合效果主要受激光雷达观测驱动，雷达仅带来有限改进，但融合策略在部分场景下仍展现场景相关的优势。研究成果及数据集已开源，支持后续研究。",
@@ -147,14 +147,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-19T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Multi-Observer Vehicle Localization Case Study with Roadside Radar and Connected Vehicle Sensing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.16966",
     "supporting_sources": [
@@ -174,11 +174,13 @@
     "impact_score": 74,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 78."
+    "ranking_reason": "Selected from authoritative primary source; quality score 78.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-da5c101d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "AerialYield-B2D：含五阶段成熟度掩码与果实计数的温室蓝莓数据集",
     "title_en": "AerialYield-B2D: A Greenhouse Blueberry Dataset with Five-Stage Ripeness Masks and Fruit Counts",
     "summary_zh": "蓝莓成熟度通过浆果颜色、果穗组成及植株中不同成熟阶段的分布来判断，但公开含密集成熟阶段掩码的温室蓝莓图像资源有限。本文发布了AerialYield-B2D数据集，包含514幅RGB图像和30,195个注释蓝莓实例，覆盖五个成熟阶段：绿色未熟、淡粉色、粉变紫、完全成熟和过熟。数据集提供类别二进制掩码、整体浆果掩码、语义标签图、图像级计数表、SHA-256哈希、源元数据及推荐的训练/验证/测试划分和技术验证。虽然名为AerialYield，该数据集不含收获重量、水果质量或单位面积产量测量，计数标签应理解为图像级浆果数量而非产量估计。图像来源包括424张智能手机采集的温室图、67帧视频画面和23帧DJI Fly视频画面，适用于成熟度分割、浆果计数及类别不平衡分析的研究。",
@@ -191,14 +193,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-19T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AerialYield-B2D: A Greenhouse Blueberry Dataset with Five-Stage Ripeness Masks and Fruit Counts. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.16973",
     "supporting_sources": [
@@ -218,7 +220,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-cbeac0fc",

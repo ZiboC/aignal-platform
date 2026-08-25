@@ -179,7 +179,7 @@
   },
   {
     "id": "item-f7d4fc63",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "聚类与令牌去噪：加速且更稳健的视觉语言模型",
     "title_en": "Clustering and Token Denoising for Faster and More Robust VLMs",
     "summary_zh": "近期视觉语言模型（VLMs）通过结合视觉和文本令牌，提升了预训练大型语言模型的能力，但庞大的视觉令牌数量带来了计算负担，限制了边缘部署。本文提出了ClustRS，一种无需训练的双重算法，包括基于注意力加权的聚类令牌选择和残差收缩去噪步骤，大幅提升模型对多种图像噪声的鲁棒性并极大减少视觉令牌数量。在ScienceQA-IMG和MM-VET基准测试中，ClustRS在极端噪声和令牌条件下相较现有方法提升了最高20%的性能，在令牌大幅减少的同时保持甚至超越基线表现，展现了高效且抗噪的视觉语言模型部署新方向。",
@@ -192,14 +192,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Clustering and Token Denoising for Faster and More Robust VLMs. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19285",
     "supporting_sources": [
@@ -219,11 +219,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 79."
+    "ranking_reason": "Selected from authoritative primary source; quality score 79.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-796c6747",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "CAViAR：用于真实场景细粒度交通事故因果推理的视频数据集",
     "title_en": "CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios",
     "summary_zh": "尽管现代自动驾驶系统在对象检测和轨迹预测等感知任务上表现出色，但缺乏解读交通事故所需的高级因果推理能力。现有基准中，对责任判定（如判定过错方和违反的交通规则）研究较少。为此，CAViAR数据集收录了2249段真实交通事故行车记录视频，并附有人类标注的环境条件、事故类型、因果解释、过错方及其违反规则类别等结构化标签。我们还评测了多种视觉语言模型，发现虽然模型能较好识别光照环境，但对天气和路况的识别准确率较低，且在事故类型和责任推理上表现显著下降，揭示了当前模型感知与推理能力间的差距。相关代码和数据已公开。",
@@ -236,14 +238,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-21T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: CAViAR: A Causal Video Dataset for Fine-Grained Accident Reasoning in Real-World Scenarios. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19380",
     "supporting_sources": [
@@ -263,11 +265,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8cc0cc3a",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "主动推理作为AI代理的上下文获取",
     "title_en": "Active Inference as Context Acquisition for AI Agents",
     "summary_zh": "本文提出主动推理框架，帮助交互式AI代理高效获取合适的上下文。当用户遗漏约束、偏好、文件或任务变量时，代理能通过默认假设或消耗资源提问、检索、调用工具或试探提示来明确上下文。该方法通过内部推理更新潜在任务状态的信念，外部决策选择最优上下文动作或任务动作以最小化预期自由能和成本。框架在确定性条件下简化为期望信息增益，并以最优提问问答为实例，在多达300个候选的分类任务中对前沿语言模型进行基准测试。研究还涵盖生成前澄清和令牌预算下自动提示优化，方法适用于各种模型，是AI代理上下文获取层的设计原则。",
@@ -280,14 +284,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-21T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Active Inference as Context Acquisition for AI Agents. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19202",
@@ -308,11 +312,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8cc30ad1",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "不确定性下的稳健元启发式方法在泊位分配与码头起重机调度中的综述",
     "title_en": "Robust Metaheuristics under Uncertainty for Berth Allocation and Quay Crane Assignment: A Review",
     "summary_zh": "本文围绕码头泊位分配与起重机调度问题（BACAP）在存在船舶到港时间偏差、处理时间波动及资源中断等不确定性条件下的优化，综述了稳健的基于群体的元启发式算法。文章总结了BACAP中的不确定性来源与信息表示，梳理了现有方法在解的表示与解码、稳健性评估与选择、以稳健性为导向的搜索动态及可行性维护与恢复等方面的机制。文中还提出了针对不确定BACAP的基准测试集，并结合不同稳健策略展示了典型元启发式算法的基线实验结果，最后指出了拓展基准、设计稳健搜索、时间适应性稳健性及非平稳不确定性等未来挑战。",
@@ -325,14 +331,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Robust Metaheuristics under Uncertainty for Berth Allocation and Quay Crane Assignment: A Review. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19214",
     "supporting_sources": [
@@ -352,11 +358,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-89c0c781",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "合规性、能力与冲突：系统消息下多模态大型语言模型的基准测试",
     "title_en": "Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages",
     "summary_zh": "本文介绍了VSysBench，一个基于MMVet-v2的多模态大型语言模型（MLLM）系统消息合规性基准测试工具。该工具涵盖5大类22小类约束，结合文本与视觉指令，通过联合满意率（JSR）和跨约束敏感度（CCS）评价模型回答的合规性与正确性。测试16款MLLM发现，系统消息的强制执行显著降低了基础任务准确率；开源模型在用户冲突情况下合规性大跌，而顶级专有模型表现稳定；视觉指令为所有模型的最大挑战。",
@@ -369,14 +377,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-21T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Compliance, Capability, and Conflict: Benchmarking Multimodal LLMs under System Messages. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.19207",
     "supporting_sources": [
@@ -396,7 +404,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6449b3f6",

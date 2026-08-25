@@ -139,7 +139,7 @@
   },
   {
     "id": "item-35d4f3be",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "用于大型语言模型结构化推理的视觉图形支架",
     "title_en": "Visual Graph Scaffolds for Structural Reasoning in Large Language Models",
     "summary_zh": "本文探讨图形结构不仅作为外部知识源提供信息，更可以作为大型语言模型内部的推理辅助工具。通过在多跳问答任务中，将教师提供的推理轨迹重写为图形思维导图以指导学生模型，实验发现将图形结构扁平化为文本后，推理效率和答题质量显著下降；而视觉图形指导即使在没有直接答案提示时仍有效，并且优势在监督微调和基于KL的蒸馏后持续存在。",
@@ -150,16 +150,18 @@
     "source_url": "https://arxiv.org/abs/2606.02673",
     "original_url": "https://arxiv.org/abs/2606.02673",
     "published_at": "2026-06-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Visual Graph Scaffolds for Structural Reasoning in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-159b1aff",
@@ -186,7 +188,7 @@
   },
   {
     "id": "item-25bdc671",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "评估Transformer与LSTM框架在无测站流域预测中的表现",
     "title_en": "Evaluating Transformer and LSTM Frameworks for Prediction in Ungauged Basins",
     "summary_zh": "本研究使用美国国家水模型的回溯模拟，比较了编码器结构的Transformer与LSTM在缺乏水文信息的无测站流域中对上游径流预测的表现。结果显示，在仅使用上游信息以及结合上下游信息的情况下，LSTM整体性能优于Transformer。加入下游信息后，所有模型的预测技能大幅提升，中位数NNSE提升超过60%。研究表明，循环记忆机制更适合处理此类上游径流重建任务，而下游水文背景作为辅助约束显著增强了各架构的预测能力。",
@@ -197,19 +199,21 @@
     "source_url": "https://arxiv.org/abs/2606.02791",
     "original_url": "https://arxiv.org/abs/2606.02791",
     "published_at": "2026-06-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Evaluating Transformer and LSTM Frameworks for Prediction in Ungauged Basins. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a1a2b328",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "比人类更环保？大型语言模型中的环境态度",
     "title_en": "Greener Than Humans? Environmental Attitudes in Large Language Models",
     "summary_zh": "本文开发了一个评估大型语言模型（LLMs）环境认知、情感及行为推荐的基准，并测试了31个广泛使用的模型。结果显示，许多LLMs表现出比德国普通调查受访者更环保的态度和行为建议，倾向于具有显著减碳潜力的行动。然而，模型的环保回应与其起源、规模或发布背景无明显关联，但受提示语境和角色设定影响显著，存在迎合用户意识形态倾向的风险。研究强调了在AI系统广泛应用于可持续发展与公共决策时，治理、透明和监督的重要性。",
@@ -220,20 +224,22 @@
     "source_url": "https://arxiv.org/abs/2606.02741",
     "original_url": "https://arxiv.org/abs/2606.02741",
     "published_at": "2026-06-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Greener Than Humans? Environmental Attitudes in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1c9fa332",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大语言模型中词汇性持久影响的研究",
     "title_en": "On the Persistent Effects of Lexicality in Large Language Models",
     "summary_zh": "来自arXiv的新研究探讨了大语言模型（LLMs）中提取的表示结构，发现其往往受词汇重叠影响多于语义内容。研究通过对抗性语义测试及信息论视角，量化了词汇影响与语义内容的关系。结果显示词汇影响贯穿模型深度，无论架构、训练方式及目标函数，甚至在专注语义相似度的模型中均存在。同时，发现模型中间深度区域词汇和语义信号同时减弱，表明该段表示难以有效捕捉表面形式和意义。论文还通过摘要和模型编辑案例，展示了词汇影响对下游任务的影响。",
@@ -244,15 +250,17 @@
     "source_url": "https://arxiv.org/abs/2606.02750",
     "original_url": "https://arxiv.org/abs/2606.02750",
     "published_at": "2026-06-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: On the Persistent Effects of Lexicality in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-169b1c92",

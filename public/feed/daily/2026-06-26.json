@@ -70,7 +70,7 @@
   },
   {
     "id": "item-a8948822",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "利用级联线性特征检测与控制谄媚行为",
     "title_en": "Detecting and Controlling Sycophancy with Cascading Linear Features",
     "summary_zh": "本文提出一种迭代数据生成方法，通过级联线性特征来识别和控制语言模型中的谄媚行为，即模型倾向于优先满足用户验证需求。该方法通过捕捉行为强度线性变化的样本，较简单的二元对比样本实现了更好特征解耦，并形成线性可分子空间，从而提升了检测、评分与行为引导的效果，同时较传统方法计算负担更轻且更具解释性保证。",
@@ -81,19 +81,21 @@
     "source_url": "https://arxiv.org/abs/2606.26155",
     "original_url": "https://arxiv.org/abs/2606.26155",
     "published_at": "2026-06-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Detecting and Controlling Sycophancy with Cascading Linear Features. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ad949001",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基准测试饱和后的生活：CORE-Bench案例分析",
     "title_en": "Life After Benchmark Saturation: A Case Study of CORE-Bench",
     "summary_zh": "本文探讨了在基准测试准确率达到饱和时，通常被淘汰并替换为更具挑战性的版本的做法。研究指出，这种方法过分关注准确率，忽视了代理性能的六个关键维度，包括构建有效性问题（如捷径）、分布外泛化能力、效率、可靠性、模型与框架的重要性比以及人机协作提升。以计算科学代码复现的CORE-Bench Hard为例，文章展示了即使准确率饱和，从这些维度衡量代理仍能提供有意义的性能洞察。文章提出了改进的基准CORE-Bench v1.1和分布外任务套件CORE-Bench OOD，证实准确率饱和后，基准仍能有效测量效率、可靠性等。此外，实验证明人机协作实现了接近两倍的速度提升， highlighting 了替代以准确率为中心的评价范式的可能。",
@@ -104,19 +106,21 @@
     "source_url": "https://arxiv.org/abs/2606.26158",
     "original_url": "https://arxiv.org/abs/2606.26158",
     "published_at": "2026-06-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Life After Benchmark Saturation: A Case Study of CORE-Bench. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ac96cd05",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "拒绝行为位于聊天模型中人格特质的下游",
     "title_en": "Refusal Lives Downstream of Persona in Chat Models",
     "summary_zh": "研究发现，聊天模型中拒绝和人格特质在激活空间中各自有线性方向，但两者并非独立机制。实验在Qwen2.5-7B-Instruct和Llama-3.1-8B-Instruct模型中表明，顺从性人格方向会抑制拒绝行为。通过干预两者方向，顺从人格使Llama模型的拒绝率从97%降至2%。在模型后层，拒绝行为的表达受到人格特质的控制，说明拒绝是下游产生的结果，非孤立方向。",
@@ -127,20 +131,22 @@
     "source_url": "https://arxiv.org/abs/2606.26161",
     "original_url": "https://arxiv.org/abs/2606.26161",
     "published_at": "2026-06-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Refusal Lives Downstream of Persona in Chat Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-379c2504",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "HierBias：基于多任务类型分类的上下文条件分层媒体偏见检测",
     "title_en": "HierBias: Context-Conditioned Hierarchical Media Bias Detection with Multi-Task Type Classification",
     "summary_zh": "HierBias是一种层次化的上下文条件媒体偏见检测器，结合句子级RoBERTa编码器和跨句子Transformer聚合器，支持二元偏见检测和四分类偏见类型判定。在BABE和BASIL数据集上的评测中，HierBias以0.853的F1值和0.723的MCC指标超越了现有最先进偏见检测模型，提升显著。该方法通过引入上下文条件偏见概率，理论证明利用文档上下文可减少句子级分类误差，并通过多任务训练提升小标注语料的样本效率。",
@@ -151,15 +157,17 @@
     "source_url": "https://arxiv.org/abs/2606.26100",
     "original_url": "https://arxiv.org/abs/2606.26100",
     "published_at": "2026-06-26T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: HierBias: Context-Conditioned Hierarchical Media Bias Detection with Multi-Task Type Classification. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-e0ed28e3",
@@ -186,7 +194,7 @@
   },
   {
     "id": "item-424c7c4",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "结合外部知识与反思式链式思维的零样本推文级立场检测",
     "title_en": "Zero-shot Tweet-Level Stance Detection Enhanced by External Knowledge and Reflective Chain-of-Thought Reasoning",
     "summary_zh": "面对推文文本短小带来的语境稀疏和隐含目标与文本相关性难判定两大挑战，该研究构建了首个日语推文立场检测多主题四分类数据集，并提出KIRP框架。KIRP通过整合知识图谱重组文本实体实现数据增强，结合反思链式思维推理抽取并验证隐含目标，采用立场感知对比学习与三层迭代原型网络精细区分“中立”与“无关”标签。实验显示KIRP在多个数据集上达到了最先进的性能。",
@@ -197,15 +205,17 @@
     "source_url": "https://arxiv.org/abs/2606.26571",
     "original_url": "https://arxiv.org/abs/2606.26571",
     "published_at": "2026-06-26T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Zero-shot Tweet-Level Stance Detection Enhanced by External Knowledge and Reflective Chain-of-Thought Reasoning. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ca327707",

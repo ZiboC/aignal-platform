@@ -359,7 +359,7 @@
   },
   {
     "id": "item-36da0517",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
     "title_en": "OSGuard: A Benchmark for Safety in Computer-Use Agents",
     "summary_zh": "arXiv:2606.15034v1 Announce Type: new Abstract: Computer-use agents are increasingly evaluated by whether they complete realistic desktop and web tasks. However, task success alone can miss failures in which an agent re…",
@@ -372,14 +372,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-06-16T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OSGuard: A Benchmark for Safety in Computer-Use Agents. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.65,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2606.15034",
@@ -400,7 +400,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-26d7ad50",

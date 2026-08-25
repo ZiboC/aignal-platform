@@ -310,7 +310,7 @@
   },
   {
     "id": "item-707ae466",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Xemo-Talker：显式解锁音频驱动的情感控制说话人像合成",
     "title_en": "Xemo-Talker: Unlock Emotions Explicitly for Audio-Driven Talking Portrait Synthesis",
     "summary_zh": "现有的音频驱动说话人像系统在情感控制方面依赖隐式调节，导致控制间接且不足。本文发现，将判别监督集中于运动空间中的次要成分能更好地平衡情感表达与准确的唇动同步。基于此，Xemo-Talker先学习中性语音到动作的映射以保证稳定的唇动同步，再通过轻量级情感分支和三重损失设计实现细粒度的情感控制。该方法在保持竞争性唇动同步的同时，达到了先进的情感分类准确率且推理效率高，性能接近真实数据。源代码已公开。",
@@ -323,14 +323,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-18T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Xemo-Talker: Unlock Emotions Explicitly for Audio-Driven Talking Portrait Synthesis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.14700",
     "supporting_sources": [
@@ -350,11 +350,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-717ae5f9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "眼周软生物特征调查及其在多媒体取证与虚假信息检测中的应用",
     "title_en": "Periocular Soft Biometrics: A Survey and Applications to Multimedia Forensics and Disinformation Detection",
     "summary_zh": "软生物特征如性别、年龄和族裔在无法实现完整身份识别时提供辅助证据，支持取证调查、身份验证、监控和合成/篡改媒体检测。眼周区域作为生物特征模态之一，因常在面部其他部分遮挡时依然可见，且适用多种采集条件，是可靠的软生物特征来源。本文调研了基于眼周图像的人口属性估计，包括公开数据集、从手工特征到深度学习方法的发展趋势，以及性别、年龄和族裔预测的最新进展。讨论了多媒体取证与虚假信息检测的应用，如监控视频中的人口过滤、年龄验证及合成数据中的人口不一致检测。并指出开放挑战，包括数据集偏差、跨域泛化、公平性、伦理问题及缺乏面向取证的基准。",
@@ -367,14 +369,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-18T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Periocular Soft Biometrics: A Survey and Applications to Multimedia Forensics and Disinformation Detection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.14701",
     "supporting_sources": [
@@ -394,7 +396,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 66."
+    "ranking_reason": "Selected from authoritative primary source; quality score 66.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1f00d768",
@@ -486,7 +490,7 @@
   },
   {
     "id": "item-9f5b67de",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "立场观点：AI治理需ISO式互操作协议，而非仅依赖法律",
     "title_en": "Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws",
     "summary_zh": "随着人工智能系统深度嵌入全球关键基础设施，治理框架的需求日益紧迫。目前各国法律和政策如欧盟AI法案、中国算法治理及美国NIST AI风险管理框架导致监管分散。本文主张AI治理应基于类似ISO的互操作协议，实现跨境标准化、机器可读的风险沟通。借鉴GDPR通过ISO 27001和隐私设计标准实施的经验，建议开发统一偏见、能耗和数据溯源指标的AI“营养标签”，促进跨司法管辖区合规，降低中小企业负担，建立公众信任。该方案通过模块化和版本化协议应对技术演进，并推动从法律合规转向技术互操作，共建负责任AI的全球语言。",
@@ -499,14 +503,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-18T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.14568",
     "supporting_sources": [
@@ -526,7 +530,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1918ef8",

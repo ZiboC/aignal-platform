@@ -177,7 +177,7 @@
   },
   {
     "id": "item-909ef953",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "保留什么，适应哪里：持续妇科图像分割中遗忘的深度分析",
     "title_en": "What to Preserve, Where to Adapt: A Depth-Wise Analysis of Forgetting in Continual Gynecological Image Segmentation",
     "summary_zh": "大多数医学图像分割模型假设所有数据同时可用，但临床实践中数据往往是顺序到达，模型需持续适应不断变化的数据分布。本文研究了妇科图像分割中的持续学习问题，面对影像模态、解剖结构和标注协议的巨大异质性，现有方法难以防止灾难性遗忘。通过编码器-解码器各部分的块级消融分析，发现早期编码器和后期解码器区域对性能影响最大；控制性适应实验显示仅更新瓶颈附近区域时遗忘有限，但更新较浅层时遗忘迅速增加。结果表明，在持续学习中遗忘程度受网络深度更新位置强烈影响。代码与分析将在论文接受后公开。",
@@ -190,14 +190,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-17T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: What to Preserve, Where to Adapt: A Depth-Wise Analysis of Forgetting in Continual Gynecological Image Segmentation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13660",
     "supporting_sources": [
@@ -217,11 +217,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-979f0458",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Multiphase-Diff：针对高对比度多相物理系统中尖锐界面的扩散生成建模",
     "title_en": "Multiphase-Diff: Diffusion-Based Generative Modeling for High-Contrast Multiphase Physical Systems with Sharp Interfaces",
     "summary_zh": "面对高对比度且具有尖锐界面的多相场，基于物理约束的扩散模型遇到三大挑战：系数跳变处强形式偏微分方程残差包含奇异梯度项，可能惩罚物理界面；极端对比度下低幅度相可能低于扩散噪声水平而被抹除、缩放错误或出现负系数；全局似然尺度导致高幅度相主导监督。Multiphase-Diff提出三项核心贡献：保守通量残差避免对不连续系数求导并保持离散守恒；解析双射映射将低幅度信号转换到阶数为1的潜变量尺度，并通过指数解码保证系数为正；Jacobi预条件似然归一化局部残差尺度，实现平衡监督。多项多相基准测试表明，该方法在物理和分布一致性方面优于七种基线，对不同相对比度和组成具备鲁棒性，证明了其在科学样本生成中的有效性。",
@@ -234,14 +236,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-17T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Multiphase-Diff: Diffusion-Based Generative Modeling for High-Contrast Multiphase Physical Systems with Sharp Interfaces. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13669",
@@ -262,11 +264,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ab9ce53d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "PROVE：使用可验证证据进行无训练提示恢复",
     "title_en": "PROVE: Training-Free Prompt Recovery using Verifiable Evidence",
     "summary_zh": "现代文本到图像模型能从自然语言提示生成高度逼真的图像，近期提示反演技术使从生成图像中恢复提示变得越来越可行，这引发了版权保护和内容所有权的新关注。PROVE是一个无训练、黑盒的提示反演攻击方法，通过组合可验证的场景描述来恢复提示，能针对原始版权作品和AI生成内容，生成完全可审计且基于显式图像证据的提示。它在多个数据集和先进生成器上，无需训练或访问生成器，均超越了基于优化、字幕和强化学习的基线，在图像相似度和文本图像对齐上表现更佳。",
@@ -279,14 +283,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-17T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: PROVE: Training-Free Prompt Recovery using Verifiable Evidence. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13671",
     "supporting_sources": [
@@ -306,7 +310,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-45538bc3",
@@ -443,7 +449,7 @@
   },
   {
     "id": "item-509bf259",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过基于幅值的专家屏蔽对Mixture-of-Experts模型进行层深敏感性分析",
     "title_en": "Depth-Aware Sensitivity Analysis of Mixture-of-Experts Models via Magnitude-Based Expert Masking",
     "summary_zh": "本文针对Qwen3.6-35B-A3B模型（40层MoE，每层256个专家，top-8路由）在XLCoST跨语言代码翻译基准上，采用基于幅值的专家屏蔽对各层敏感性进行系统分析。研究发现模型不同深度层对专家屏蔽的敏感性差异显著，早期（0-9层）和中期层（10-29层）对屏蔽高度敏感，而后期层（30-39层）尤其是35-39层对低幅值专家的屏蔽表现出较强容忍度。针对30%专家屏蔽，若均匀施行会显著降低性能，而集中于后期层的策略则能在屏蔽大量专家的同时保留较高质量输出。减少top-k路由宽度也带来显著的时钟周期减少且无性能损失。该工作为深度感知的MoE专家屏蔽提供了实证基础，并指明了进行权重手术、激活评分及训练恢复的路径。",
@@ -456,14 +462,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-17T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Depth-Aware Sensitivity Analysis of Mixture-of-Experts Models via Magnitude-Based Expert Masking. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13565",
@@ -484,11 +490,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 71."
+    "ranking_reason": "Selected from authoritative primary source; quality score 71.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4e9bef33",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大型语言模型中出现模块化认知架构",
     "title_en": "Modular Cognitive Architecture Emerges in Large Language Models",
     "summary_zh": "人脑展现出显著的功能专门化，不同网络支持语言、形式推理、社交推理和物理推理。本文研究大型语言模型（LLMs）是否也呈现出类似的模块化组织。通过涵盖语言、形式推理、社交推理和物理推理四个认知领域的46项任务的神经回路分析，发现LLMs发展出与人脑相似的模块化架构：相同认知网络相关的任务在LLMs中激活重叠的神经元，不同网络相关任务则激活不同神经元。这种脑与神经网络中模块化的趋同出现表明模块化可能是智能系统的基本属性。",
@@ -501,14 +509,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-17T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Modular Cognitive Architecture Emerges in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13567",
@@ -529,11 +537,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a90f3ca2",
-    "category": "video_ai",
+    "category": "research_papers",
     "title_zh": "StreamHear：用于半监督流式语音识别的领域适应伪标签方法",
     "title_en": "StreamHear: Domain-Adapted Pseudo-Labeling for Semi-Supervised Streaming Speech Recognition",
     "summary_zh": "StreamHear 是一个半监督学习流程，针对领域偏移的目标音频提升流式自动语音识别性能。它通过先离线微调转录教师模型生成伪标签，再用混合标签数据细调流式学生模型，并引入先验正则化的动态规划重对齐步骤，修正词语定位。在金融电话、标准朗读语音和电话质量对话四个数据集上，StreamHear 稳定超越了仅监督学习的学生模型并缩小了与离线教师的性能差距。",
@@ -546,14 +556,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-17T04:00:00.000Z",
-    "image_name": "video_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/video-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: StreamHear: Domain-Adapted Pseudo-Labeling for Semi-Supervised Streaming Speech Recognition. Category: video_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "video",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.13717",
     "supporting_sources": [
@@ -573,7 +583,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-3407c8ae",

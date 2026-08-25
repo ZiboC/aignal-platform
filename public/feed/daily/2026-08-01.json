@@ -222,7 +222,7 @@
   },
   {
     "id": "item-e99111ac",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "剧场小册子大规模字体统计对比分析",
     "title_en": "Theatre Chapbooks At Scale: A Statistical Comparative Analysis of Typography",
     "summary_zh": "我们提出了一种统计方法，用于量化历史印刷书籍之间字体的相似性，助力文献学分析。方法通过聚类和对齐自动提取的字符图像，定义任意两书字体距离，并采用统计框架判断距离的显著性。该方法应用于17世纪西班牙戏剧小册子的文献学研究，能够自动比较不同书籍中的罗马体和斜体，经专家验证，发现了新的印刷者归属并修正了旧归属，显著提升了数字书目学的规模和效率。",
@@ -235,14 +235,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Theatre Chapbooks At Scale: A Statistical Comparative Analysis of Typography. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27266",
     "supporting_sources": [
@@ -262,11 +262,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 60."
+    "ranking_reason": "Selected from authoritative primary source; quality score 60.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f5936327",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OVEarth-Bench：评估开放词汇地球观测的类别广度和查询多样性",
     "title_en": "OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation",
     "summary_zh": "开放词汇地球观测（EO）旨在通过自然语言定位地理空间概念，而非固定标签集。现有基准通常覆盖类别词汇狭窄或查询形式有限。为填补此空白，OVEarth-Bench扩展了类别广度，涵盖广泛的层级类别及正负表达，并丰富了查询多样性，包括词汇、指代和推理查询。基准支持统一的零样本掩码和框定位评估。评测显示：（1）当前方法性能有限，类别覆盖更广模型排名更稳定；（2）基于多模态大语言模型（MLLM）的方法整体表现最佳；（3）EO专用方法通常落后于通用模型且难以挑战最强方法。该研究为未来开放词汇EO方法设计提供了指导，强调开发更现实、多样、高质量和大规模基准的重要性。数据和评测工具已公开。",
@@ -279,14 +281,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27278",
     "supporting_sources": [
@@ -306,11 +308,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-7798acfb",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "VETO：保护图像免受前沿AI编辑",
     "title_en": "VETO: Towards Protecting Images From Frontier AI Editing",
     "summary_zh": "随着强大且易用的图像编辑模型如FLUX.2的兴起，高保真图像编辑变得更加普及。这些模型的能力不仅限于局部修改，还能将对象和身份提取并重新置于全新场景中。现代模型通过允许提示和生成令牌直接关注参考图像令牌，模糊了传统编辑与文本到图像生成的界限。这种生成自由的扩展也扩大了潜在滥用的空间，恶意的转换不再局限于可预测的局部编辑。现有的反编辑防护设计用于破坏传统扩散模型中参考图像编码的语义瓶颈，但新型编辑器通过联合注意力模块来提取参考信息，常常绕过这些防护。为此，我们提出VETO，一种通过扰乱现代模型读取源图像的内机制的细微反编辑保护。此外，鉴于现有编辑基准主要测试局部编辑，忽视了全面的重新语境化，我们引入VetoBench，评估防护在传统局部编辑和广泛语境变化上的效果。在两种最新编辑模型和三个基准测试中，VETO始终优于现有防护，同时提供更优越的保护与图像质量权衡。",
@@ -323,14 +327,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: VETO: Towards Protecting Images From Frontier AI Editing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27292",
     "supporting_sources": [
@@ -350,7 +354,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-4afdbfd4",
@@ -398,7 +404,7 @@
   },
   {
     "id": "item-e22327b7",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "Bunraku：将单幅插画转变为可编辑的Live2D角色",
     "title_en": "Bunraku: Turning a Single Illustration into an Editable Live2D Character",
     "summary_zh": "Live2D是动漫角色和虚拟头像主流的二维角色动画格式，以逐层RGBA图层及其网格变形驱动角色动作。尽管广泛应用于虚拟直播、手游和交互角色，创建Live2D模型仍需数周手动分层、填补遮挡、摆放网格和关键帧制作，且此前无端到端生成方法。本研究首次提出从单张插画生成Live2D运行时所需的所有结构信息：有序RGBA图层、每层变形网格及驱动角色动作的关键帧顶点偏移。第一阶段将层分解视为一种基于Live2D器官级分类的分层扩散过程，生成有序RGBA栈及隐层区域补全；第二阶段仅用alpha通道构建与内容匹配的三角网格，并联合预测所有图层关键帧位移场，通过自注意力跨层边界处理顶点，位移被分解为有界方向和对数幅度。联合预测确保生成连贯角色而非单独合理部分，且网络放大112倍效果无显著提升。对50个留出测试角色，非强制式生成阶段二顶点方向余弦中位数达0.828。网格基于alpha通道，衣物层可通过自然语言指令重贴图，网格与动画无损复用。此外，贡献了首个Live2D标准化基准Live2D-Bench及包含8884模型的带层和动画监督的Live2D数据集。",
@@ -411,14 +417,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Bunraku: Turning a Single Illustration into an Editable Live2D Character. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27348",
     "supporting_sources": [
@@ -438,6 +444,8 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 79."
+    "ranking_reason": "Selected from authoritative primary source; quality score 79.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

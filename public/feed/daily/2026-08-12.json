@@ -311,7 +311,7 @@
   },
   {
     "id": "item-1c96afa9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "LEGO：分层语言高斯散射",
     "title_en": "LEGO: Leveled Language Gaussian Splatting",
     "summary_zh": "我们提出了LEGO，用于先进的开放词汇场景理解。其核心创新在于捕捉场景内在的语义层级，如“花盆->花束->花蕾->花瓣”链条。基础模型如SAM能识别二维中的多粒度结构，但其分割受视角限制且缺乏跨视角一致性。LEGO自适应重分级多视角SAM粒度，形成统一且三维一致的层级，为结构连贯的多级三维场景分割提供精确监督。结合CLIP嵌入，LEGO恢复层级语义逻辑，并通过空间关系提升为按层级构建的语言场景图，使大语言模型能进行复杂上下文空间推理和精确视觉定位。实验结果表明，LEGO在可提示和开放词汇三维分割基准上均达新状态，展现先进的层次场景分解与上下文空间推理能力。",
@@ -324,14 +324,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-12T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: LEGO: Leveled Language Gaussian Splatting. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.10057",
     "supporting_sources": [
@@ -351,11 +351,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-96795aa3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "路标水印：视觉水印共存的联合优化",
     "title_en": "Signpost Watermarking: Joint Optimization for Visual Watermark Coexistence",
     "summary_zh": "我们提出了一种训练不可察觉视觉水印的方法，使其能与其他水印共存。近期研究表明，独立训练的图像水印模型能有限干扰地共存，实现水印集合。然而这种共存是偶然性质而非明确优化目标，导致干扰不可控，影响解码鲁棒性和视觉质量。实验展示该共存性质同样适用于视频水印。我们进一步以解码器感知目标训练图像与视频水印，提升共存性能。这为独立部署的溯源水印系统提供路标水印，实现内容真实性与权利的分层溯源信号指示。",
@@ -368,14 +370,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-12T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Signpost Watermarking: Joint Optimization for Visual Watermark Coexistence. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.10091",
     "supporting_sources": [
@@ -395,7 +397,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-be6dc3d1",
@@ -575,7 +579,7 @@
   },
   {
     "id": "item-67435a4f",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "每个标记都重要：用于测量大型语言模型态度和偏见的精确李克特分布",
     "title_en": "Every Token Counts: Exact Likert-Scale Distributions for Measuring LLM Attitudes and Biases",
     "summary_zh": "随着大型语言模型（LLM）作为自主代理的广泛应用，准确评估其潜在价值观和偏见变得至关重要。传统NLP评测多依赖大规模非结构化基准，难以区分偏见来源。本文提出一种精确的行为评估框架，通过全因子实验设计、消除文本采样噪声、利用确切的标记级概率分布和多变量序数共识指标，实现对LLM偏见的因果解析。案例研究展示了该方法如何揭示传统基准无法发现的系统性国家来源偏见。",
@@ -588,14 +592,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-12T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Every Token Counts: Exact Likert-Scale Distributions for Measuring LLM Attitudes and Biases. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.10503",
     "supporting_sources": [
@@ -615,7 +619,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 81."
+    "ranking_reason": "Selected from authoritative primary source; quality score 81.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-408a7a5a",

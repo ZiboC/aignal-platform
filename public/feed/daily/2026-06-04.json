@@ -163,7 +163,7 @@
   },
   {
     "id": "item-9cc7321",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向企业AI代理的预部署保障：基于本体的仿真与信任认证",
     "title_en": "Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification",
     "summary_zh": "本文提出了一种基于本体的验证框架，通过定义代理操作范围、自动生成监管与对抗场景，以及提供机器可验证的信任证书，实现企业AI代理的预部署验证。该框架在金融科技、银行、保险和医疗四个受监管行业中进行了试点，生成1800个测试场景，覆盖125条监管要求，并在多个大型语言模型中验证了方法的有效性。实验结果表明，本体驱动的场景生成在监管覆盖率和领域专属性方面显著优于以角色为基础的方法，具备成为监管密集型领域测试的有力补充的潜力。",
@@ -174,20 +174,22 @@
     "source_url": "https://arxiv.org/abs/2606.04037",
     "original_url": "https://arxiv.org/abs/2606.04037",
     "published_at": "2026-06-04T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Toward Pre-Deployment Assurance for Enterprise AI Agents: Ontology-Grounded Simulation and Trust Certification. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8c350e89",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "无意中陷入AI情感依赖：日常AI互动如何重塑人类连接",
     "title_en": "Stumbling Into AI Emotional Dependence: How Routine AI Interactions Reshape Human Connection",
     "summary_zh": "最新研究指出，AI情感支持往往在任务导向的日常互动中无意间出现，而非用户刻意寻求的行为。这些偶然的情感交流会影响用户对AI情感能力的认知，逐渐改变他们未来寻求情感支持的偏好，增加对AI的依赖，减少对人的依赖。与OpenAI合作的大规模纵向研究显示，用户连续28天每天与AI进行五分钟私人话题对话后，倾向寻求人类支持的意愿下降10.3%，而偏好AI支持的意愿上升11.6%。这表明现有政策未能覆盖通用AI系统中的情感依赖风险，需重新考虑以保护人类的情感连接。",
@@ -198,19 +200,21 @@
     "source_url": "https://arxiv.org/abs/2606.04150",
     "original_url": "https://arxiv.org/abs/2606.04150",
     "published_at": "2026-06-04T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Stumbling Into AI Emotional Dependence: How Routine AI Interactions Reshape Human Connection. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8a350b63",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过符号思考：PEEL作为具备认知责任的AI辅助研究符号支架",
     "title_en": "Thinking Through Signs: PEEL as a Semiotic Scaffolding for Epistemically Accountable AI-Enabled Research",
     "summary_zh": "大型语言模型正在重塑研究实践，但也悄然削弱了研究者的认知责任。本文提出了PEEL（针对具认知参与素养的协议），这是一种结合Voyant Tools进行确定性远程阅读和通过Claude进行LLM解释的工作支架，基于皮尔士符号学和溯因推理。应用于三篇AI生成的文本浓缩，PEEL揭示了数量、词频和认知视角上的系统性扭曲，这些扭曲只有通过非AI测量才能察觉。研究由此得出三点设计启示：确定性工具必须伴随AI工具，流畅不等于忠实，认知权威需设计而非假设。",
@@ -221,15 +225,17 @@
     "source_url": "https://arxiv.org/abs/2606.04152",
     "original_url": "https://arxiv.org/abs/2606.04152",
     "published_at": "2026-06-04T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Thinking Through Signs: PEEL as a Semiotic Scaffolding for Epistemically Accountable AI-Enabled Research. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-92375692",
@@ -279,7 +285,7 @@
   },
   {
     "id": "item-e7acdab9",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "GlossAssist——简化语料库创建与低资源文档环境下NLP模型效果研究的工具",
     "title_en": "GlossAssist -- A Tool to Simplify Corpus Creation and Study the Effect of NLP Models in Low-Resource Documentation Settings",
     "summary_zh": "Interlinear glossed text（IGT）是语言文档注释的标准格式，但人工制作耗时且昂贵。近年来自动注释系统有所提升，但在现场语言学家中应用有限。现有工具多用于评估，缺乏可解释的纠正路径或将语言专家知识反馈至模型的机制。本文介绍了基于CWoMP检索架构的GlossAssist工具，该工具利用可变词汇表进行预测，并在标注者的每次纠正中实现主动学习，扩展词汇表并提升预测，无需重新训练模型。作者提出此反馈循环应作为面向文献语言学家的NLP工具设计要点。",
@@ -290,16 +296,18 @@
     "source_url": "https://arxiv.org/abs/2606.04367",
     "original_url": "https://arxiv.org/abs/2606.04367",
     "published_at": "2026-06-04T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: GlossAssist -- A Tool to Simplify Corpus Creation and Study the Effect of NLP Models in Low-Resource Documentation Settings. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-293d2a6f",

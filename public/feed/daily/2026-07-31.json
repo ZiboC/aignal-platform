@@ -266,7 +266,7 @@
   },
   {
     "id": "item-eccc1740",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大规模戏剧小册子排版的统计比较分析",
     "title_en": "Theatre Chapbooks At Scale: A Statistical Comparative Analysis of Typography",
     "summary_zh": "本文提出了一种统计方法，用于量化历史印刷书籍之间字体的相似性，助力文献学分析。通过聚类和对齐自动提取的字符图像，生成字符原型，定义了书籍间的字体距离。结合反向统计框架，解读字体距离的显著性。该方法应用于17世纪西班牙戏剧小册子的文献学研究，超越了人工系统视觉检查的能力，能自动比较不同书籍中的罗马体和斜体。",
@@ -279,14 +279,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Theatre Chapbooks At Scale: A Statistical Comparative Analysis of Typography. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27266",
     "supporting_sources": [
@@ -306,11 +306,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-70cf25a3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OVEarth-Bench：评估开放词汇地球观测的类别广度与查询多样性",
     "title_en": "OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation",
     "summary_zh": "开放词汇地球观测（EO）旨在定位以自然语言指定的地理空间概念，而非固定标签集。现有基准通常覆盖狭窄类别或有限查询形式。为填补此空白，我们提出了OVEarth-Bench，扩展评估范围，涵盖广泛层级类别与包含正负表达的查询，同时支持词汇、指称和推理多样性查询。该基准统一零-shot协议下支持掩膜与盒式定位。评估显示：（1）当前方法性能有限但更广类别覆盖稳定模型排名；（2）多模态大语言模型方法整体表现最佳；（3）EO特定方法普遍不及通用模型且少有超越者。该工作为未来开放词汇EO方法设计提供指导，强调开发更真实、多样、高质量及大规模基准的重要性。数据及评测包已开放获取。",
@@ -323,14 +325,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OVEarth-Bench: Evaluating Category Breadth and Query Diversity for Open-Vocabulary Earth Observation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27278",
     "supporting_sources": [
@@ -350,11 +352,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-f2e7f72f",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "VETO：保护图像免受前沿AI编辑",
     "title_en": "VETO: Towards Protecting Images From Frontier AI Editing",
     "summary_zh": "强大且易用的图像编辑模型如FLUX.2使高保真编辑变得普及。它们不仅能局部修改，还可提取和重新构建对象与身份于全新场景中。通过让提示和生成令牌直接关注参考图像令牌，现代模型模糊了传统编辑与文本生成图像的界限。但更广泛的生成自由也带来潜在滥用风险，现有防编辑方法难以应对新型联合关注结构。为此，本文提出VETO，一种细微的反编辑保护，破坏现代模型读取源图的内部机制。同时引入VetoBench评估不仅局部编辑，也涵盖广泛的上下文重构。实验证明，VETO在两种现代编辑模型及三种基准上均优于现有防护方案，兼顾保护效果与图像质量。",
@@ -367,14 +371,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-31T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: VETO: Towards Protecting Images From Frontier AI Editing. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.27292",
     "supporting_sources": [
@@ -394,7 +398,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-85341420",
@@ -487,7 +493,7 @@
   },
   {
     "id": "item-17be872c",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "Eco3S：基于代理的复杂社会经济系统模拟",
     "title_en": "Eco3S: Complex Socio-Economic System Simulation via Agent-Based Models",
     "summary_zh": "随着大型语言模型（LLM）的迅速发展，代理模型（ABM）研究重新受到关注。然而，现有的LLM驱动ABM面临代理-环境交互演变、灵活反事实推理及自动化模拟工作流程等挑战。本文提出了Eco3S，一个用于经济研究和政策分析的社会经济系统模拟框架，通过共进化环境设计、结构因果模拟和模拟-分析-优化范式三大机制，实现了更真实的行为生成和灵活的因果推断。实验证明Eco3S能够复制多个经济研究成果，并具备良好的扩展性和通用性，展示了其在严谨经济研究及政策制定中的潜力。",
@@ -500,14 +506,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-31T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Eco3S: Complex Socio-Economic System Simulation via Agent-Based Models. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents",
       "models"
     ],
@@ -529,7 +535,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 79."
+    "ranking_reason": "Selected from authoritative primary source; quality score 79.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-df81bce8",

@@ -45,7 +45,7 @@
   },
   {
     "id": "item-2bad4bb3",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "面向工业因果推理的模拟器驱动大型语言模型：工具使用、结构化注入及可移植检索支持废水处理决策",
     "title_en": "Simulator-Grounded Large Language Models for Industrial Causal Reasoning: Tool-Use, Structured Injection, and Plant-Portable Retrieval for Wastewater Treatment Decision Support",
     "summary_zh": "废水运营者在询问诸如“N2O为何上升？”或“减少20%曝气会怎样？”等因果问题时，需基于工厂变量交互和效应传播速度的回答，而非通用预训练文本。本文对冻结的Qwen2.5-32B-Instruct模型利用可解释的废水模拟器（CCSS-IX）进行实地模拟调用（方法1）、结构化参数注入（方法2）和解耦回忆推理检索器（方法3）三种接地方式进行比较。三种方法在198个因果问题基准上的准确率分别为99.5%、79%和75.8%，远超最强检索增强基线的48%。方法3检索器参数仅1.1亿，单厂训练约17秒，跨厂转移后仍达88%，而方法2的静态表无法迁移。在60问反事实基准上，方法3能处理干预后的问题，优于方法2 16.3个百分点（95%置信区间[7.1,26.4]），且对时间尺度和操作状态类问题均达100%。在搭载OpenBookQA语料的AI2推理挑战中，选择性检索机制达79%，超越不受限的Llama-3.1-8B（76%）和全量注入（74%），显示非废水处理特定的领域外复现能力。本文首次提供单一模拟器下三种工业因果问答技术的综合比较。",
@@ -58,14 +58,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Simulator-Grounded Large Language Models for Industrial Causal Reasoning: Tool-Use, Structured Injection, and Plant-Portable Retrieval for Wastewater Treatment Decision Support. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05151",
@@ -86,11 +86,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2cad4d46",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "大型语言模型链式思维的均场动力学",
     "title_en": "Mean-Field Dynamics of Chain-of-Thought Reasoning in Large Language Models",
     "summary_zh": "本文提出了一个框架，通过均场近似将大型语言模型（LLM）的链式思维推理过程建模为基于线索图的引导发现过程，并通过一个一维常微分方程描述已发现线索的比例。实验中利用学生模型对教师模型输出的归一化意外度识别线索词，统计推理链的规律性，结果显示这些统计规律在同一数据集内具有重现性且能由理论方程拟合。",
@@ -103,14 +105,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Mean-Field Dynamics of Chain-of-Thought Reasoning in Large Language Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05152",
@@ -131,11 +133,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2dad4ed9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通用病理学，条件性后果：多跳可追溯性的三重稳健性分析",
     "title_en": "Universal Pathologies, Conditional Consequences: A Triple-Robustness Analysis of RAG for Multi-Hop Traceability",
     "summary_zh": "本文通过保持检索架构不变，分别从嵌入器、语料库和评判者三个正交轴对GraphRAG进行了三重稳健性分析。结果发现，GraphRAG普遍存在过度引用现象，引用精确度较低但召回率较高，其忠实度表现依赖于语料库类型，在类型边缘需求文档中多跳忠实度大幅下降，而在维基百科链中有所提升。此外，不同语料库条件下胜出方法不同，但对嵌入器表现稳定。单评判者的语言模型忠实性评判对检索状态较为脆弱。研究强调三重稳健性分析是可信赖RAG架构声称的最低标准。",
@@ -148,14 +152,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Universal Pathologies, Conditional Consequences: A Triple-Robustness Analysis of RAG for Multi-Hop Traceability. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05153",
     "supporting_sources": [
@@ -175,7 +179,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ac421d9a",
@@ -355,7 +361,7 @@
   },
   {
     "id": "item-72084115",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "无辜画面，仇恨故事：多轮视觉故事生成中的仇恨意图评估与检测",
     "title_en": "Innocent Panels, Hateful Stories: Evaluating and Detecting Hateful Intent in Multi-Turn Visual Story Generation",
     "summary_zh": "图画书和漫画因易于被儿童理解，长期被用来传播仇恨叙事，如臭名昭著的纳粹宣传图画书《毒蘑菇》。近期，前沿文本到图像(T2I)系统如Gemini和GPT-Image支持多轮对话生成，能保持角色和场景一致，使得制作包含仇恨叙事的视觉故事变得廉价且规模化。以往研究多聚焦单张图像的仇恨内容，未深入探讨组图层面的仇恨含义。本文构建了包含330个多轮配置、涵盖55个仇恨故事的\\texttt{HatefulStoryPrompts}，跨两种语言和三种视觉风格，评测五个前沿模型的4950次尝试，模型完成率超80%，最佳达99.0%。对人标数据集\\texttt{HatefulVisualStory}（969组仇恨图像集与990组正常对照）评测现有内容审核系统，发现它们常漏判组图仇恨意图，专用安全模型召回最高仅34.9%，强视觉-语言模型达67.5%。文中提出主动与生成后防护措施，交互感知监控对仅提示内容召回率达97.3%，用户提供首图时为92.6%，而联合分析完成图组的生成后方法召回率达80.2%。研究表明，随着图像生成从单个输出向连贯视觉叙事发展，安全策略也需从单图监控演进为基于交互与图像关系的状态推理。",
@@ -368,14 +374,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-07T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Innocent Panels, Hateful Stories: Evaluating and Detecting Hateful Intent in Multi-Turn Visual Story Generation. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05210",
     "supporting_sources": [
@@ -395,11 +401,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 75."
+    "ranking_reason": "Selected from authoritative primary source; quality score 75.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6f083c5c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "StyleComposer：无训练的多参考风格组合",
     "title_en": "StyleComposer: Training-Free Multi-Reference Style Composition",
     "summary_zh": "绘画风格并非单一整体：颜色、纹理和结构可能来自不同来源。现有方法将它们作为一个整体风格信号进行迁移，用户难以单独控制每个属性的来源和强度。本文提出StyleComposer，在扩散模型中分别针对每个属性找到最佳表示，并在去噪过程中协调这些表示，实现属性分离。该方法无需训练或反演，能更好地联合满足多参考风格和文本提示，并且为每个属性提供一个强度调节滑杆。项目页面提供更多信息。",
@@ -412,14 +420,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-07T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: StyleComposer: Training-Free Multi-Reference Style Composition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05213",
     "supporting_sources": [
@@ -439,7 +447,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1649f51b",
@@ -487,7 +497,7 @@
   },
   {
     "id": "item-2ead506c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "RIG-RoPE：具有关联和实例门控的旋转位置编码及时长感知时间坐标",
     "title_en": "RIG-RoPE: Relation- and Instance-Gated Rotary Positional Encoding with Duration-Aware Temporal Coordinates",
     "summary_zh": "本文提出了RIG-RoPE，一种针对多模态大语言模型的改进旋转位置编码方法，解决了多模态输入中静态多维位置信息分配的两大缺陷：跨模态和跨实例的空间干扰以及时间坐标步长不一致问题。该方法引入模态指示、视觉实例标识和信息时长坐标，仅对同一视觉实例的查询-键对应用高宽旋转，时间旋转则基于插值的累计区块时长进行，文本、图像和视频的时间尺度各异，实现更合理的时空编码。RIG-RoPE无需新增训练参数，可在注意力机制中高效实现。本文侧重方法建模和理论验证，未主张经验优势。",
@@ -500,14 +510,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: RIG-RoPE: Relation- and Instance-Gated Rotary Positional Encoding with Duration-Aware Temporal Coordinates. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05154",
     "supporting_sources": [
@@ -527,11 +537,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2fad51ff",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "超越情感分析：传统NLP与基于大型语言模型的多维度政治新闻评估比较",
     "title_en": "Beyond Sentiment: Comparing Traditional NLP and LLM-Based Multi-Dimensional Analysis for Political News Evaluation",
     "summary_zh": "本文比较了基于RoBERTa的传统情感分析与大型语言模型（LLM）多维度框架分析平台在分析来自17个国际媒体的50篇政治新闻文章中的表现。结果显示，传统情感分析存在“中性崩溃”问题，即70%的文章被归为中性，掩盖了丰富的政治内容。而LLM方法则能够捕捉政治偏向及强度、耸动性、情感诉求和政治框架，提供符合社会科学和人文学科研究需求的多维分析结果。",
@@ -544,14 +556,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Beyond Sentiment: Comparing Traditional NLP and LLM-Based Multi-Dimensional Analysis for Political News Evaluation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05155",
     "supporting_sources": [
@@ -571,11 +583,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-30ad5392",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "基于脚手架的后训练：模型参数与程序化脚手架图的协同进化",
     "title_en": "Scaffold-Mediated Post-Training: Co-Evolving Model Parameters and Procedural Scaffold Graphs",
     "summary_zh": "本文提出了一种新的后训练范式，通过将程序化脚手架组织成可进化的图结构，并与模型参数共同进化，实现复杂策略的自动获取和内化。该方法在FeatureBench测试中，自动发现的技能使通过率提升了8.1个百分点，且经过逐步蒸馏，模型在无外部脚手架条件下依然保持27.7%的通过率，显著优于传统的有监督微调。",
@@ -588,14 +602,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-08T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Scaffold-Mediated Post-Training: Co-Evolving Model Parameters and Procedural Scaffold Graphs. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.05156",
@@ -616,7 +630,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-31ad5525",

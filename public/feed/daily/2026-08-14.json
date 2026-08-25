@@ -89,7 +89,7 @@
   },
   {
     "id": "item-5080239f",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "MV2：用于新视角合成的多视角多车辆驾驶数据集",
     "title_en": "MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis",
     "summary_zh": "微分渲染推动了新视角合成（NVS）的发展，但由于抓拍视角稀疏、动态物体及多轨迹数据有限，应用于真实驾驶场景仍具挑战。我们推出多视角多车辆（MV2）数据集及基准，用于评估动态城市场景中大视角变化下的NVS模型。MV2包括来自汽车、踏板车和无人机的同步捕获数据，轨迹各异但同步。通过训练一种车辆摄像头数据并测试另一辆，实现比传统单轨迹数据更大视角差异的评估。所有序列通过结构光法注册，摄像头位姿经人工像素级对应校验，共含50个高质量场景和12000张图像。最近的NVS和位姿估计方法基准测试表明，视角差异越大NVS性能越差，且前馈位姿估计器远落后于优化方法，凸显MV2作为驾驶场景NVS严格测试平台的价值。数据集、基准协议及项目资源均开放获取。",
@@ -102,14 +102,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: MV2: Multi-View Multi-Vehicle Driving Dataset for Novel View Synthesis. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12442",
     "supporting_sources": [
@@ -129,11 +129,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-59df0630",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "HIMEC：用于遥感图像变化描述的方向性变化表示与固定接口解码",
     "title_en": "HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning",
     "summary_zh": "遥感图像变化描述（RSICC）将双时相影像转换为描述语义变化的句子。大多数方法直接将融合的视觉特征用于解码，忽视了中间变化结构和解码接口一致性。本文提出HIMEC，通过方向性变化表示（DCR）分离外观、消失和共享上下文三流差异，再进行融合。学习查询编码器将融合表示转为视觉条件的变化查询令牌，作为场景解码器唯一的样本相关记忆。训练阶段使用固定零输入保持解码器接口一致，同时采用辅助短语解码器提供监督。实验表明，HIMEC在LEVIR-CC测试集上达到142.81±0.60的CIDEr分数，优于基线的139.51±3.40，在SECOND-CC上也表现出色。源码将在论文发布后公开。",
@@ -146,14 +148,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12502",
     "supporting_sources": [
@@ -173,11 +175,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-cb50393d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "立场：推理是一种可学习的基于规则的过程",
     "title_en": "Position: Reasoning is a Learnable Rule-Based Process",
     "summary_zh": "本文讨论了自主推理作为AI领域的重要话题，指出尽管生成式AI取得进展，但对推理的定义缺乏共识，且往往忽视了逻辑和可验证自动推理的传统观点。文章认为这种模糊性导致推理评估的构念效度无法验证，阻碍了可信自主推理的量化进展。作者提出基于文献综合的操作性定义，将有效且可靠的推理定位为一种可学习的基于规则的过程，并给出AI推理研究沟通的最佳实践清单。",
@@ -190,14 +194,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Position: Reasoning is a Learnable Rule-Based Process. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12325",
     "supporting_sources": [
@@ -217,7 +221,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-c7412867",
@@ -265,7 +271,7 @@
   },
   {
     "id": "item-c8503484",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "法律本体学习中的语义保持测量",
     "title_en": "On Measuring Semantic Preservation in Legal Ontology Learning",
     "summary_zh": "本研究提出了一种评估方法，通过比较大型语言模型（LLM）在原始文档和转换后本体表示上的任务表现，量化法律本体学习过程中语义损失。在复杂且语义要求严格的法律合并协议分析中，结果显示语义损失具有系统性且依赖于推理复杂度和模型与方法的组合。",
@@ -278,14 +284,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-14T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: On Measuring Semantic Preservation in Legal Ontology Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12326",
     "supporting_sources": [
@@ -305,7 +311,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 68."
+    "ranking_reason": "Selected from authoritative primary source; quality score 68.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-be5024c6",
@@ -618,7 +626,7 @@
   },
   {
     "id": "item-5ce14980",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "视觉语言模型能否从机器人第一视角图像评估近距离风险？",
     "title_en": "Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?",
     "summary_zh": "从机器人第一视角评估近距离危险对于安全的机器人导航至关重要，这需要视觉和上下文推理。我们评估了三种开源视觉语言模型（InternVL、Qwen-VL 和 SmolVLM）在对机器人第一视角图像进行四级危险分类上的表现，比较了三种提示策略和两轮QLoRA微调与随机基线的效果。未经微调时，所有模型表现接近基线，微调后整体提升有限，但Qwen-VL通过高级提示在高危险案例的召回率上明显优于其他模型。人物定位分析显示正确的危险分类并不意味着空间定位更准确，表明模型可能在未关注相关场景区域的情况下仍能输出安全标签。结果表明，当前视觉语言模型在细粒度近距离推理和空间定位方面仍有限，尽管针对性提示和微调可提升部分模型对高危险检测的能力。",
@@ -631,14 +639,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12515",
@@ -659,6 +667,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

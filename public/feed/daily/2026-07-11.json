@@ -179,7 +179,7 @@
   },
   {
     "id": "item-2422edba",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "揭示公众舆论：基于LSTM与传统模型的情感分析研究",
     "title_en": "Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models",
     "summary_zh": "本文研究了使用LSTM和传统机器学习模型对推特文本进行情感分析的方法。通过对数据集进行分词、词形还原和去停用词预处理，比较了逻辑回归、随机森林、朴素贝叶斯、梯度提升及LSTM等算法的效果。结果显示，LSTM模型在训练准确率90.98%、测试准确率80.00%及ROC-AUC 0.92的表现上优于传统方法，体现了其在捕捉文本上下文和序列特征方面的优势。",
@@ -192,14 +192,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Unveiling Public Opinion: A Study of Sentiment Analysis Using LSTM and Traditional Models. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07772",
@@ -220,11 +220,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 65."
+    "ranking_reason": "Selected from authoritative primary source; quality score 65.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-1b22df8f",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "从求解器到研究：大型语言模型驱动的形式数学研究前沿",
     "title_en": "From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier",
     "summary_zh": "近期在数学AI（AI4Math）领域，特别是基于大型语言模型（LLM）的定理证明器，在利用交互式定理证明语言生成形式化证明方面取得显著进展。但现有系统在处理前沿数学研究，如发现新定理或解决悬而未决的猜想时仍受限，因其问题多为开放式、多层次抽象。本文综述该领域，包括数据集、自自动形式化和证明合成，指出现有系统作为数学研究代理的核心瓶颈，并提出未来AI4Math的发展路线图。",
@@ -237,14 +239,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07779",
@@ -265,11 +267,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-a221e348",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "DeepSearch-World：可验证环境中的深度搜索代理自我蒸馏",
     "title_en": "DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment",
     "summary_zh": "本文介绍了DeepSearch-Evolve，一种基于DeepSearch-World可验证环境的自我蒸馏框架，用于训练网页搜索代理。DeepSearch-World包含42万个多跳问答任务，支持进度验证、反思和故障恢复等关键认知行为，有助于代理自我进化。DeepSearch-Evolve通过轨迹生成、筛选、数据混合和微调，逐步提升代理性能。无需从更强模型蒸馏，DeepSearch-World-9B在BrowseComp、GAIA和HotpotQA等测试集上表现优异，展示了可验证环境对于长远网页代理自我进化的潜力。本文还将开放环境、数据集、模型和代码，促进相关研究。",
@@ -282,14 +286,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07820",
@@ -310,7 +314,9 @@
     "impact_score": 74,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 79."
+    "ranking_reason": "Selected from authoritative primary source; quality score 79.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8810d296",
@@ -359,7 +365,7 @@
   },
   {
     "id": "item-87be68c6",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "利用低成本无人机和起重机摄影测量技术进行落叶树三维重建以监测整冠的枝条伸长",
     "title_en": "3D Reconstruction of Deciduous Trees Using Low-Cost UAV- and Crane-Based Photogrammetry for Monitoring Shoot Elongation Across Entire Canopies",
     "summary_zh": "树木生长决定了大气中二氧化碳的固定量及其在木质生物量中的暂时储存，同时受气候变化带来的高温、干旱、晚霜等极端事件影响。虽然径向生长的连续监测已有成熟的树径仪技术，枝条伸长（初级生长）的监测因缺乏合适测量手段而被忽视，使得气候变化对初级生长的影响了解不足。本研究基于原生落叶树的三维重建，利用低成本无人机摄影测量和多摄像机起重机系统，实现对整冠枝条伸长的测量与监控。实验在两个区域进行，评估了传感器、数据采集及处理策略。结果表明，使用小于250g的消费者级无人机可实现5-6毫米的三维点准确度，重建完整度达92%-98%。论文还引入了3D打印的地面真值枝条用于验证细节重建能力，并讨论了操作挑战及基于点云的树木骨架化初步尝试。",
@@ -372,14 +378,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-07-10T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: 3D Reconstruction of Deciduous Trees Using Low-Cost UAV- and Crane-Based Photogrammetry for Monitoring Shoot Elongation Across Entire Canopies. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07905",
     "supporting_sources": [
@@ -399,7 +405,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-91d39c08",
@@ -447,7 +455,7 @@
   },
   {
     "id": "item-2315e268",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "我怎样知道下一句该说什么？巴伦霍尔茨的自生理论作为哈里斯整合主义的丰富补充",
     "title_en": "How Do I Know What to Say Next? Barenholtz's Autogenerative Theory as an Enrichment of Harrisean Integrationism",
     "summary_zh": "罗伊·哈里斯的整合语言学批判了传统的指称主义方法，认为语言是一种面向未来共同行动的情境性双向活动，而非映射预先存在世界的代码。但该理论对符号维持开放性的结构机制、语言与非语言符号活动的连续性及过往整合积累的结构特性解释不足。本文提出埃兰·巴伦霍尔茨的自生语言理论，可以填补这些空白，丰富整合主义而不违背其核心观点，提供了开放性的结构机制、越界符号活动的计算对应及存档理论，对自然语言处理和大语言模型设计提供了理论支持。",
@@ -460,14 +468,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: How Do I Know What to Say Next? Barenholtz's Autogenerative Theory as an Enrichment of Harrisean Integrationism. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07891",
     "supporting_sources": [
@@ -487,11 +495,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 58."
+    "ranking_reason": "Selected from authoritative primary source; quality score 58.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-2715e8b4",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "通过人类与大型语言模型协作构建可扩展且具有文化特异性的刻板印象数据集",
     "title_en": "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
     "summary_zh": "研究大型语言模型中的刻板印象多集中于英语环境，因其他语言缺乏数据集且手工标注成本高。本文提出一种高效的人类与大型语言模型协作标注框架，构建了EspanStereo，这是一套涵盖欧洲和拉美多西班牙语国家的刻板印象数据集。EspanStereo包含已知刻板印象及独特文化偏见，通过大型语言模型生成候选刻板印象，由本土标注者验证，体现框架有效识别细微地区偏见。该数据集评估显示不同国家的西班牙语支持模型存在显著刻板行为差异，强调文化基础评估的必要性。该框架适用于其它语言及地区，为多语言刻板印象基准测试提供扩展途径。",
@@ -504,14 +514,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07895",
     "supporting_sources": [
@@ -531,11 +541,13 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 80."
+    "ranking_reason": "Selected from authoritative primary source; quality score 80.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-95c0bd67",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "去偏见反而适得其反：基于预处理的刻板印象缓解方法的反直觉副作用",
     "title_en": "When Debiasing Backfires: Counterintuitive Side Effects of Preprocessing-Based Stereotype Mitigation",
     "summary_zh": "基于预处理的刻板印象缓解方法，如在去偏见语料上进行训练，虽能减少目标群体的可测刻板印象，但研究发现它们常引发意外副作用，即对其他人口群体的刻板印象或反刻板印象相较中性基线增加，这种效应跨模型类型、预处理策略和训练数据规模均存在。传统基准测试往往未能察觉这些变化。通过注意力展开分析，副作用与注意力流变化不大，增加了解释难度。作者讨论了评估影响，提供可操作诊断，并呼吁重视副作用、推进透明的缓解实践。",
@@ -548,14 +560,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: When Debiasing Backfires: Counterintuitive Side Effects of Preprocessing-Based Stereotype Mitigation. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07937",
     "supporting_sources": [
@@ -575,11 +587,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 76."
+    "ranking_reason": "Selected from authoritative primary source; quality score 76.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-16b6fb1e",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于MiniLM嵌入的多簇边界学习方法用于超范围意图检测",
     "title_en": "A Multi-cluster Boundary Learning Method for Out-of-Scope Intent Detection via MiniLM Embedding",
     "summary_zh": "本文针对意图检测中的超范围（OOS）意图识别提出了一种基于MiniLM（all-MiniLM-L6-v2）嵌入的多簇边界学习方法。该方法将OOS检测视为单类分类问题，通过学习训练语句的多簇嵌入边界，实现对域外语句的准确拒绝。实验证明，在CLINC150、StackOverflow和Banking77数据集上，该方法的OOS检测表现优于多种基线模型，且MiniLM嵌入更适应该工作流程与语句特征。代码随附公开。",
@@ -592,14 +606,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: A Multi-cluster Boundary Learning Method for Out-of-Scope Intent Detection via MiniLM Embedding. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07974",
     "supporting_sources": [
@@ -619,11 +633,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 63."
+    "ranking_reason": "Selected from authoritative primary source; quality score 63.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-14b6f7f8",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "当不合理的词元被强化：用于大语言模型强化学习的尾部感知信用校准",
     "title_en": "When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning",
     "summary_zh": "强化学习显著提升了大语言模型的推理能力，但常用的无审稿者强化学习方法均匀分配信用，导致罕见且错误的尾部词元获得与合理词元相同的正面信用，称为正信用污染问题。本文提出尾部感知信用校准（TACO）方法，计算每个词元的尾部风险分数，调整其正面信用，从而降低噪声影响并保留有用罕见模式。实验证明TACO在三个大语言模型和八个基准上优于GRPO基线，提升了训练稳定性和长期强化学习表现。源码公开于Github。",
@@ -636,14 +652,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.07976",
     "supporting_sources": [
@@ -663,6 +679,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 73."
+    "ranking_reason": "Selected from authoritative primary source; quality score 73.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

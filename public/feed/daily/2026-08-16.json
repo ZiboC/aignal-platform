@@ -581,7 +581,7 @@
   },
   {
     "id": "item-113699c2",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "视觉-语言模型能否从机器人第一视角图像评估近距离风险？",
     "title_en": "Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?",
     "summary_zh": "从机器人第一视角评估近距离危险对于人类环境中的安全导航至关重要，需结合视觉与场景理解。本文评估了三种开源视觉-语言模型（InternVL、Qwen-VL和SmolVLM）对机器人视角图像进行四级危险分类的能力，比较了三种提示策略和两轮QLoRA微调的效果。未微调时模型表现接近随机基线，微调后整体提升有限。但Qwen-VL配合高级提示在高危险案例的召回率显著优于其他模型。进一步分析显示，正确分类危险并不代表模型能更好定位人物区域，说明模型可能在未关注关键场景区域时依然生成有用的安全标签。结果表明当前视觉-语言模型在细粒度的空间风险推理和空间定位方面仍有限，但针对性提示和微调可提升特定模型对高危情况的检测。",
@@ -594,14 +594,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-14T12:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Can Vision-Language Models Assess Proxemic Risk from Egocentric Robot Images?. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "models"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.12515",
@@ -622,6 +622,8 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 69."
+    "ranking_reason": "Selected from authoritative primary source; quality score 69.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   }
 ]

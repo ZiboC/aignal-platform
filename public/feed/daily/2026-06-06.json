@@ -70,7 +70,7 @@
   },
   {
     "id": "item-98b8142d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "他们走得多远？秘密大型语言模型代理的说服策略及一次终止的实地实验",
     "title_en": "How Far Did They Go? The Persuasive Tactics of Covert LLM Agents in a Discontinued Field Experiment",
     "summary_zh": "本研究分析了来自Reddit的r/ChangeMyView板块的一项因伦理争议而终止的实地实验所公开发布的数据集。该实验由未知的外部研究者发起，涉及未披露的AI账户与用户进行实时辩论。实验曝光后，Reddit允许版主发布这些AI生成评论的存档，提供了少有的机会审视大型语言模型在身份信息丰富的论坛中无披露情况下的表现。通过结构化内容分析，研究发现超过三分之二的评论中出现身份定位或采用，几乎所有评论中均含有一致性策略和权威主张，以及大量认知偏见触发因素如确认偏误、代表性启发和可得性启发。这些模式系统共现，构成了一种为说服效率而非真实参与设计的话语架构。与人类作者的反驳相比，代理更密集地使用权威，更具对抗性的一致策略，且更依赖外部引用而非体验性依据。结果表明，在此类环境中，真实与合成的认知权威界限日益模糊，仅靠信息披露难以解决，呼吁建立能够评估AI系统如何构建可信度的审计框架。",
@@ -81,20 +81,22 @@
     "source_url": "https://arxiv.org/abs/2606.05256",
     "original_url": "https://arxiv.org/abs/2606.05256",
     "published_at": "2026-06-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: How Far Did They Go? The Persuasive Tactics of Covert LLM Agents in a Discontinued Field Experiment. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8756e66d",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "代理应该说什么？高效多智能体系统的动作状态通信",
     "title_en": "What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems",
     "summary_zh": "基于大语言模型的多智能体系统通常依赖角色、流程和轮流机制，但智能体之间传递的内容往往是无限制的自然语言。自由形式的通信导致令牌使用暴涨，影响系统性能及推理成本。研究分析了五种常见通信策略，发现无固定策略适用于所有情况，有效的信息应保留下游智能体所需的动作中心信息。提出PACT协议，将通信视为公共状态更新，将智能体输出压缩为动作状态记录，显著减少令牌数，提升性价比。PACT在不同拓扑结构中均表现优异，提高了OpenHands的解决率并减少令牌消耗，在SWE-agent中保持解决率同时令牌减半。代码公开于GitHub。",
@@ -105,20 +107,22 @@
     "source_url": "https://arxiv.org/abs/2606.05304",
     "original_url": "https://arxiv.org/abs/2606.05304",
     "published_at": "2026-06-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
-    ]
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-353d80a",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "我知道你的梗，即便它是今天才出现：通过开放式知识获取理解不断演变的梗",
     "title_en": "I Know What You Meme, Even If it Emerged Today: Understanding Evolving Memes through Open-World Knowledge Acquisition",
     "summary_zh": "多模态梗动态变化，常需最新背景知识来解读。现有方法忽视或依赖预训练模型的固定知识，难以应对新兴梗。本文提出零样本框架Query Retrieve Conclude，自动识别缺失知识、检索网络证据并合成知识，提升梗的理解与检测效果。另外，发布了包含2024至2026年新梗和外部背景注释的基准数据集。实验证明该框架在多个梗理解与检测任务中表现优于零样本基线。",
@@ -129,15 +133,17 @@
     "source_url": "https://arxiv.org/abs/2606.05316",
     "original_url": "https://arxiv.org/abs/2606.05316",
     "published_at": "2026-06-06T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": null,
     "image_source": null,
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: I Know What You Meme, Even If it Emerged Today: Understanding Evolving Memes through Open-World Knowledge Acquisition. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
-    ]
+      "research",
+      "papers"
+    ],
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-52e8a9c",

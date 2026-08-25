@@ -399,7 +399,7 @@
   },
   {
     "id": "item-67406dd0",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "大规模AI工具发现：只需DNS",
     "title_en": "AI Tool Discovery at Scale: All You Need is DNS",
     "summary_zh": "随着自主AI代理时代的到来，需求一种能够高效导航数百万工具的发现机制。现有方案因O(N)复杂度和集中治理而受限。本文提出ToolDNS，一种将语义工具发现嵌入互联网最稳健的基础设施——域名系统（DNS）的全新框架。通过在分层命名空间中嵌入功能意图和组织信任，将昂贵的语义搜索转化为轻量的O(log N)名称解析。引入部分展开名称、EDNS0意图负载和逻辑子域等三项协议增强，实现分散治理和语义剪枝。借助涵盖33,688个现实工具的异构基准测试，ToolDNS将查询空间缩减95.26%，实现与最先进检索精度相当的性能，且UDP原生设计使发现延迟大幅降低。此工作表明，实现可扩展AI互操作性，关键在于更智能地利用现有基础设施，而非增加中间件。",
@@ -412,14 +412,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-07-22T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: AI Tool Discovery at Scale: All You Need is DNS. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.18242",
     "supporting_sources": [
@@ -439,7 +439,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 82."
+    "ranking_reason": "Selected from authoritative primary source; quality score 82.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-6e42b76c",

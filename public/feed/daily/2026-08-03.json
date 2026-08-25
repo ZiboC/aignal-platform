@@ -45,7 +45,7 @@
   },
   {
     "id": "item-a1cb9804",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "ReLoop-UME：具有可学习检索寄存器的递归深度实现通用多模态嵌入",
     "title_en": "ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding",
     "summary_zh": "通用多模态嵌入（UME）将多样化的多模态输入映射到共享的嵌入空间。现有的UME模型要么通过单次前向编码生成嵌入，要么通过显式推理标记和潜在自回归状态增加计算，导致检索延迟和对中间状态依赖。本文分析了独立训练UME模型每层的正负相似度分离，发现初期层负责多模态上下文化，中后期层形成检索区分特征，最终层映射到嵌入空间。基于此，提出ReLoop-UME，通过早期层一次执行、参数共享的检索形成模块递归重用以及最终映射层，借助可学习检索寄存器在循环间累积和交换证据，并以最终寄存器作为嵌入读出。在MMEB-V2和MRMR数据集上，ReLoop-UME在多种骨干网络下均提升检索性能，且速度分别比UME-R1快44.9倍，比PLUME快1.5倍。",
@@ -58,14 +58,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-03T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.28751",
     "supporting_sources": [
@@ -85,11 +85,13 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-19c40627",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "基于多视角结构学习的不确定性感知深度伪造检测",
     "title_en": "Uncertainty-Aware Deepfake Detection via Multi-View Structural Learning",
     "summary_zh": "安全关键的生物特征和取证应用需要准确的预测和可靠的置信度估计，尤其在分布偏移条件下。这对深度伪造检测尤为重要，因基础模型常在分布外操作中表现出过度自信，限制实际部署。本文提出一个不确定性感知的深伪检测框架，通过识别互补证据来源间的不一致性来发现伪造。框架集成视觉流（基于改编的CLIP编码器）、语义流（通过可微约束建模面部属性一致性）和结构流（捕捉语义和取证特征间的类别依赖模式）。引入分支间分歧校准（IBDC），一个关联预测不确定性与证据流冲突的机制。大量交叉数据集实验表明，该框架在多个分布外基准上实现了最先进的泛化能力，并持续提升校准和选择性预测性能，证明该方法在分布偏移下为可信赖且校准良好的深伪检测构建了坚实基础。",
@@ -102,14 +104,14 @@
     "source_pool_id": "arxiv_cs_cv",
     "authority_tier": "S",
     "published_at": "2026-08-03T12:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Uncertainty-Aware Deepfake Detection via Multi-View Structural Learning. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.28769",
     "supporting_sources": [
@@ -129,7 +131,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 70."
+    "ranking_reason": "Selected from authoritative primary source; quality score 70.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-56599ca5",
@@ -309,7 +313,7 @@
   },
   {
     "id": "item-8798847c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "OpenClaw与Ollama在Agentic AI中的应用：迈向完全自主且可扩展的AI代理系统",
     "title_en": "OpenClaw and Ollama in Agentic AI: Toward Fully Autonomous and Scalable AI Agent Systems",
     "summary_zh": "本文提出了Agentic AI的分层架构，探讨了从被动响应的大型语言模型（LLM）到具备记忆、规划和持续执行能力的自主AI代理的演进。通过分析OpenClaw和Ollama的组合，展示了一个完整的agentic系统：Ollama负责LLM推理层，OpenClaw实现代理运行时的协同管理，包括推理、工具使用及行动执行。实验验证表明，持续记忆、工具利用和自适应决策等能力源于系统级集成，且随架构复杂度提升性能不断优化。论文还讨论了可扩展性、安全、隐私、治理及评估等挑战，强调了统一基准和系统设计的必要性，规划未来多代理、分布式及人本Agentic AI框架。所有模型、代码和数据集均已公开，支持复现和性能基准测试。",
@@ -322,14 +326,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-03T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: OpenClaw and Ollama in Agentic AI: Toward Fully Autonomous and Scalable AI Agent Systems. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.28629",
@@ -350,7 +354,9 @@
     "impact_score": 61,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 84."
+    "ranking_reason": "Selected from authoritative primary source; quality score 84.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-107d85aa",
@@ -444,7 +450,7 @@
   },
   {
     "id": "item-a430ab32",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "超越检索：面向多模态智能体的分析记忆",
     "title_en": "Beyond Retrieval: Analytic Memory for Multimodal Agents",
     "summary_zh": "本文提出了一种称为分析记忆（analytic memory）的新抽象方法，补充传统的检索记忆，支持对多模态观察结果进行过滤、聚合、排序和时间比较。所提出的AdaMM框架结合了检索记忆和分析记忆，通过自动从对话、图像和上下文元数据中提取带有来源信息的属性值，发现结构并实现可查询分析访问。实验结果显示，在两个多模态长期记忆基准测试MemEye和MemGallery上，AdaMM性能分别提升了11.3%和7.3%。",
@@ -457,14 +463,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-03T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Beyond Retrieval: Analytic Memory for Multimodal Agents. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai",
+      "research",
+      "papers",
       "agents"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.29440",
@@ -485,7 +491,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 77."
+    "ranking_reason": "Selected from authoritative primary source; quality score 77.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-8f96527d",
@@ -533,7 +541,7 @@
   },
   {
     "id": "item-8c8981d1",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "TokenSwap：多模态大语言模型中的模态差异基准测试及缩小方法",
     "title_en": "TokenSwap: Benchmarking and Reducing the Modality Gap in Multimodal LLMs",
     "summary_zh": "多模态大语言模型（MLLMs）在语义等价的跨模态输入下应生成一致响应，但实际预测存在系统性差异。本文定义模态差异为文本与多模态输入下模型性能的差异。提出TokenSwap方法，通过将文本概念替换为语义对齐的图像，生成文本与视觉标记交织的序列。基于此，将文本基准如MMLU转换为含图像的新基准TokenSwap-Bench。研究发现42个MLLM中普遍存在模态差异，性能从文本到图文输入平均下降19.6%。推理模型模态差异较小，约10.1%，非推理模型达25.5%。提示策略和仅增加训练计算量难以消除差异，加入TokenSwap训练有效减小模态差异，同时保持文本和视觉语言表现。",
@@ -546,14 +554,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-03T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: TokenSwap: Benchmarking and Reducing the Modality Gap in Multimodal LLMs. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2607.28640",
     "supporting_sources": [
@@ -573,7 +581,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 67."
+    "ranking_reason": "Selected from authoritative primary source; quality score 67.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-ec3f4d6",

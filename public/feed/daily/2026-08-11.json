@@ -361,7 +361,7 @@
   },
   {
     "id": "item-98e4383c",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "迈向评估型人工智能的论证基础",
     "title_en": "Towards an Argumentative Foundation for Evaluative AI",
     "summary_zh": "本文提出评估型人工智能（EAI）作为支持人类决策的新方式，不是产出单一建议，而是呈现带有正反证据的竞争假设。作者主张采用计算论证作为EAI的形式化、可计算基础，以实现可解释和可争辩的系统，推动面向分布式和以人为中心的EAI长期研究。",
@@ -374,14 +374,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Towards an Argumentative Foundation for Evaluative AI. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.07473",
     "supporting_sources": [
@@ -401,11 +401,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-97e436a9",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "逐流治理：在高损失领域绕过内容判断以控制AI输出",
     "title_en": "Flow-by-Flow: Content-Judgment Bypass for Governing AI Output in High-Loss Domains",
     "summary_zh": "本文针对在高损失领域，当AI输出速度超过人类认知极限时，传统人类监督机制难以为继的问题。研究指出认知负担由输出速度与每项任务的认知负载共同决定，每项认知负载包括筛选、判断和响应，其对AI能力提升的响应不对称。提出了“逐流”治理范式，通过基于形式化可计数特征的认知成本评分非线性地控制高产量，并以机构容量上限控制处理量，避免内容判断，从而绕过人类认知瓶颈。文中还定义了四个设计不变性，展示了实现路径及其实际挑战，并通过蒙特卡洛分析验证该方法相较单一监督增强更优。",
@@ -418,14 +420,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Flow-by-Flow: Content-Judgment Bypass for Governing AI Output in High-Loss Domains. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.07474",
     "supporting_sources": [
@@ -445,11 +447,13 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-95e43383",
-    "category": "coding_ai",
+    "category": "research_papers",
     "title_zh": "结构理论中的确定化：通过闭包、可比性与联合容许性的统一框架",
     "title_en": "Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility",
     "summary_zh": "本文提出了一个形式化框架，用于从多重结构理论构造规范解释。结构理论由符号、 公理和推理策略组成，其容许的解释集合包含所有全局一致的结构结论分配。文章区分了三种规范化层次：闭包稳定（针对单一起点的收敛）、全局完成（起点无关的收敛）及确定化（唯一容许解释）。非确定性分为认知多元（类型E）和结构多元（类型S），且S-强子类特点为缺乏共同上界。两种规范化机制为基于算子的完成和基于选择器的构造。研究证明了这些机制存在的充分结构条件，并在正向、非回退规则下，将纯推理完成归约为饱和闭包算子。类型E理论可实现闭包稳定，而完全确定化依赖一个未解决的全局合流性属性。类型S-强理论通过规范选择实现确定化。多层规范化形成一个结构上非交换的系统，且框架适用于结合LLM推理，视幻觉为不支持的规范化。",
@@ -462,14 +466,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-11T04:00:00.000Z",
-    "image_name": "coding_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/coding-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: Determinization in Structure Theories: A Unified Framework via Closure, Comparability, and Joint Admissibility. Category: coding_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "coding",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.07476",
     "supporting_sources": [
@@ -489,7 +493,9 @@
     "impact_score": 35,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 62."
+    "ranking_reason": "Selected from authoritative primary source; quality score 62.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-383df6c1",
@@ -537,7 +543,7 @@
   },
   {
     "id": "item-da341317",
-    "category": "image_ai",
+    "category": "research_papers",
     "title_zh": "APEX-VW：医疗领域的英西文档级后编辑数据集",
     "title_en": "APEX-VW: A Document-Level English-Spanish Post-Editing Dataset in the Healthcare Domain",
     "summary_zh": "APEX-VW数据集基于NHS虚拟病区的文档，包含七个连贯的英文源文本，共约4.2万词，使用四种不同的机器翻译系统进行英西翻译后，由专业译者在Trados Studio中后编辑。该数据集保持文档顺序和CAT工具上下文，适用于研究术语规范化、翻译纠错传播及人机协作的翻译支持。",
@@ -550,14 +556,14 @@
     "source_pool_id": "arxiv_api",
     "authority_tier": "S",
     "published_at": "2026-08-11T04:00:00.000Z",
-    "image_name": "image_ai",
+    "image_name": "research_papers",
     "image_url": "/images/fallbacks/image-ai.svg",
     "image_source": "fallback",
     "image_prompt": "Modern editorial square illustration for an AI news app. Topic: APEX-VW: A Document-Level English-Spanish Post-Editing Dataset in the Healthcare Domain. Category: image_ai. Clean, premium, technology-focused, no text, no logos.",
     "confidence": 0.95,
     "tags": [
-      "image",
-      "ai"
+      "research",
+      "papers"
     ],
     "canonical_id": "url:https://arxiv.org/abs/2608.08059",
     "supporting_sources": [
@@ -577,7 +583,9 @@
     "impact_score": 48,
     "content_quality_score": 85,
     "penalties": [],
-    "ranking_reason": "Selected from authoritative primary source; quality score 64."
+    "ranking_reason": "Selected from authoritative primary source; quality score 64.",
+    "category_confidence": 0.98,
+    "classification_method": "heuristic"
   },
   {
     "id": "item-bf8c64da",
