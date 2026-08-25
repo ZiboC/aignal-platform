@@ -46,7 +46,7 @@ export function Shell({ language, children, rightSlot }: Props) {
               <Bookmark size={16} />
               <span className="hidden sm:inline">{t.navSaved}</span>
             </Link>
-            {rightSlot ? <div className="hidden sm:block">{rightSlot}</div> : null}
+            {rightSlot ? <div>{rightSlot}</div> : null}
           </nav>
         </div>
       </header>

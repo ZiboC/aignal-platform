@@ -158,7 +158,7 @@ export function DashboardClient({ archive }: Props) {
             <div className="radar-panel-motion__grid" />
             <div className="radar-panel-motion__scan" />
 
-            <div className="relative flex min-h-[620px] min-w-0 flex-col justify-between">
+            <div className="relative flex min-w-0 flex-col justify-between xl:min-h-[620px]">
               <div>
                 <div className="flex flex-wrap items-center gap-3 text-[11px] font-black uppercase text-source">
                   <span>
@@ -172,7 +172,7 @@ export function DashboardClient({ archive }: Props) {
                     [ {language === "zh" ? "简报日期" : "briefing date"} : {selectedDate} ]
                   </span>
                 </div>
-                <div className="mt-14 max-w-xl">
+                <div className="mt-10 max-w-xl xl:mt-14">
                   <h1
                     className="text-5xl font-black uppercase leading-[0.9] tracking-normal text-ivory drop-shadow-[0_0_22px_rgba(34,245,255,0.22)] sm:text-6xl"
                     aria-label={language === "zh" ? "AI 信号雷达" : "AI Signal Radar"}
@@ -195,14 +195,14 @@ export function DashboardClient({ archive }: Props) {
                 </div>
               </div>
 
-              <div className="mt-8 grid grid-cols-1 gap-2 text-center sm:grid-cols-3 xl:grid-cols-1">
+              <div className="mt-8 hidden gap-2 text-center xl:grid xl:grid-cols-1">
                 <Metric value={String(totalCollectedSignals)} label={language === "zh" ? "累计信号" : "Total signals"} />
                 <Metric value={String(totalCollectedSources)} label={language === "zh" ? "累计来源" : "Total sources"} />
               </div>
             </div>
 
             <div
-              className="relative flex min-h-[620px] min-w-0 flex-col items-center justify-center px-0"
+              className="relative flex min-h-[380px] min-w-0 flex-col items-center justify-center px-0 xl:min-h-[620px]"
               data-radar-interaction="true"
             >
               <div className="radar-panel-motion__pulse radar-panel-motion__pulse--radar" />
@@ -217,7 +217,12 @@ export function DashboardClient({ archive }: Props) {
               />
             </div>
 
-            <div className="relative flex min-h-[620px] min-w-0 flex-col justify-between border-t border-white/18 pt-5 xl:border-t-0 xl:pt-0">
+            <div className="relative grid grid-cols-2 gap-2 text-center xl:hidden">
+              <Metric value={String(totalCollectedSignals)} label={language === "zh" ? "累计信号" : "Total signals"} />
+              <Metric value={String(totalCollectedSources)} label={language === "zh" ? "累计来源" : "Total sources"} />
+            </div>
+
+            <div className="relative flex min-w-0 flex-col justify-between border-t border-white/18 pt-5 xl:min-h-[620px] xl:border-t-0 xl:pt-0">
               <div>
                 <div className="flex items-center gap-2 text-sm font-black uppercase text-category">
                   <RadioTower size={16} />
@@ -658,7 +663,7 @@ function SignalRadar({
 
   return (
     <div className="flex min-w-0 flex-1 flex-col items-center justify-center">
-      <div className="relative mx-auto flex h-[360px] w-[360px] max-w-full items-center justify-center overflow-visible sm:h-[460px] sm:w-[460px]">
+      <div className="relative mx-auto flex aspect-square w-full max-w-[360px] items-center justify-center overflow-visible sm:h-[460px] sm:w-[460px] sm:max-w-none">
         <svg viewBox="0 0 320 320" role="img" aria-label="Signal distribution radar" className="h-full w-full overflow-visible">
           <defs>
             <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
