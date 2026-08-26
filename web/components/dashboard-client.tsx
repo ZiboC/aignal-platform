@@ -644,6 +644,7 @@ function SignalRadar({
     const angle = (index / categories.length) * Math.PI * 2 - Math.PI / 2;
     const weight = stat?.weight ?? 0;
     const radius = 20 + weight * (maxRadius - 20);
+    const rawLabelX = center + Math.cos(angle) * (maxRadius + 18);
     return {
       id: category.id,
       count: stat?.count ?? 0,
@@ -652,7 +653,7 @@ function SignalRadar({
       y: center + Math.sin(angle) * radius,
       axisX: center + Math.cos(angle) * maxRadius,
       axisY: center + Math.sin(angle) * maxRadius,
-      labelX: center + Math.cos(angle) * (maxRadius + 18),
+      labelX: Math.min(center + 110, Math.max(center - 110, rawLabelX)),
       labelY: center + Math.sin(angle) * (maxRadius + 17)
     };
   });
@@ -737,7 +738,7 @@ function SignalRadar({
                 textAnchor={point.labelX < center - 8 ? "end" : point.labelX > center + 8 ? "start" : "middle"}
                 dominantBaseline="middle"
                 fill={isSelected ? "#FF38D1" : point.count > 0 ? "#EAFBFF" : "#637B93"}
-                fontSize="14"
+                className="text-[13px] sm:text-[14px]"
                 fontWeight={isSelected ? "900" : "700"}
               >
                 {shortCategoryLabel(point.id, language)}
