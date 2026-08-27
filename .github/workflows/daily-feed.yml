@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # Trigger at both possible UTC offsets, then gate on 06:00 in Los Angeles.
-    - cron: "0 13,14 * * *"
+    # Avoid the top-of-hour Actions surge; gate both UTC offsets on 06:00 in LA.
+    - cron: "17 13,14 * * *"
   workflow_dispatch:
 
 permissions:
